@@ -84,8 +84,7 @@
 
 **Goals:** Finishing touches
 
-| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
-| --- | --- | --- | --- | --- | --- | --- |
-|  | | | | | | |
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun | Mon |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|  | | | | | | | **Demo Day** |
 
-### Demo Day (16 Jun)
