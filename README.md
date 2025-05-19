@@ -6,53 +6,47 @@
 
 ### Harry
 
-**Week 1:** project ideas
-
-**Week 2:**
-
-**Week 3:**
-
-**Week 4:**
+| | |
+| --- | --- |
+| **Week 1** | project ideas |
+| **Week 2** | |
+| **Week 3** | |
+| **Week 4** | |
 
 ### Aadin
 
-**Week 1:** project ideas, setting up PYNQ board
-
-**Week 2:**
-
-**Week 3:**
-
-**Week 4:**
+| | |
+| --- | --- |
+| **Week 1** | project ideas, setting up PYNQ board |
+| **Week 2** | |
+| **Week 3** | |
+| **Week 4** | |
 
 ### Yuki
 
-**Week 1:** project ideas
-
-**Week 2:**
-
-**Week 3:**
-
-**Week 4:**
+| | |
+| --- | --- |
+| **Week 1** | project ideas |
+| **Week 2** | |
+| **Week 3** | |
+| **Week 4** | |
 
 ### Ethan
-
-**Week 1:** project ideas, visualisation
-
-**Week 2:**
-
-**Week 3:**
-
-**Week 4:**
+| | |
+| --- | --- |
+| **Week 1** | project ideas, visualisation |
+| **Week 2** | |
+| **Week 3** | |
+| **Week 4** | |
 
 ### Sean
 
-**Week 1:** Admin/Planning, Setting up hardware design workflow, project ideas
-
-**Week 2:**
-
-**Week 3:**
-
-**Week 4:**
+| | |
+| --- | --- |
+| **Week 1** | pAdmin/Planning, Setting up hardware design workflow, project ideas |
+| **Week 2** | |
+| **Week 3** | |
+| **Week 4** | |
 
 ## Project Planning
 
