@@ -4,8 +4,6 @@
 
 ## Group Member Roles
 
-### Harry
-
 | | Harry | Aadin | Yuki | Ethan | Sean |
 | --- | --- | --- | --- | --- | --- |
 | **Week 1** | project ideas | project ideas, setting up PYNQ board | project ideas | project ideas, visualisation | Admin/Planning, Setting up hardware design workflow, project ideas |
