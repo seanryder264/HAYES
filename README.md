@@ -6,7 +6,7 @@
 
 | | Harry | Aadin | Yuki | Ethan | Sean |
 | --- | --- | --- | --- | --- | --- |
-| **Week 1** | project ideas | project ideas, setting up PYNQ board | project ideas | project ideas, visualisation | Admin/Planning, Setting up hardware design workflow, project ideas |
+| **Week 1** | project ideas | project ideas, setting up PYNQ board, building the starter projects, got vivado stuff set up | project ideas | project ideas, visualisation | Admin/Planning, Setting up hardware design workflow, project ideas |
 | **Week 2** | | | | | |
 | **Week 3** | | | | | |
 | **Week 4** | | | | | |
@@ -47,4 +47,4 @@
 
 ## Interim Presentation
 
-[[https://1drv.ms/p/c/5b5b455b362fa0fd/EVXppV1wf9tKpbiSq3gQuBIBEY36Pw4G7i25KFM_G4_9DA?e=X0gVyx]]
+https://1drv.ms/p/c/5b5b455b362fa0fd/EVXppV1wf9tKpbiSq3gQuBIBEY36Pw4G7i25KFM_G4_9DA?e=X0gVyx
