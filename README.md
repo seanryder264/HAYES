@@ -45,3 +45,6 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  | | | | | | | **Demo Day** |
 
+## Interim Presentation
+
+[[https://1drv.ms/p/c/5b5b455b362fa0fd/EVXppV1wf9tKpbiSq3gQuBIBEY36Pw4G7i25KFM_G4_9DA?e=X0gVyx]]
