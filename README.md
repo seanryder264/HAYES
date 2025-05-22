@@ -23,6 +23,8 @@
 
 **Proposals** - https://imperiallondon-my.sharepoint.com/:w:/r/personal/hh1823_ic_ac_uk/Documents/Ideas%20for%20Consultation.docx?d=w64da16023ef14e0098bc3b67b661a416&csf=1&web=1&e=dfb4Sq
 
+Inspiration for Complex Function Colouring Proposal - https://www.algorithm-archive.org/contents/domain_coloring/domain_coloring.html
+
 ### Week 2 (26 - 1 Jun)
 
 **Goals:** Working Prototype
