@@ -5302,50 +5302,8 @@
 		)
 	)
 	(sheet
-		(at 101.6 73.66)
-		(size 12.7 43.18)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "0cf4fcef-47ce-4027-a9fc-54da6382d206")
-		(property "Sheetname" "Rx Preamp 4"
-			(at 101.6 72.9484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 101.6 117.4246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 203.2 22.86)
-		(size 12.7 43.18)
+		(size 12.7 93.98)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5359,134 +5317,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "0d65395a-9eaf-47f0-b189-6efe6e4cb2c6")
-		(property "Sheetname" "Rx Preamp 7"
+		(property "Sheetname" "Rx Preamp 4"
 			(at 203.2 22.1484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 203.2 66.6246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
-					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 152.4 22.86)
-		(size 12.7 43.18)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "26f54fdc-4132-476a-8060-cb8a2c9e1866")
-		(property "Sheetname" "Rx Preamp 5"
-			(at 152.4 22.1484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 152.4 66.6246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 101.6 22.86)
-		(size 12.7 43.18)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "3213ddf0-427f-4c0b-85aa-925c5c3be698")
-		(property "Sheetname" "Rx Preamp 3"
-			(at 101.6 22.1484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 101.6 66.6246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 203.2 73.66)
-		(size 12.7 43.18)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "713be4f5-a62e-4f5f-b3ca-0ac24e81c1d1")
-		(property "Sheetname" "Rx Preamp 8"
-			(at 203.2 72.9484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5506,14 +5338,14 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
-					(page "10")
+					(page "9")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 50.8 73.66)
-		(size 12.7 43.18)
+		(at 152.4 22.86)
+		(size 12.7 93.98)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5526,51 +5358,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "93b5e8a7-dd36-4220-952a-47616d8cf5db")
-		(property "Sheetname" "Rx Preamp 2"
-			(at 50.8 72.9484 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 50.8 117.4246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 152.4 73.66)
-		(size 12.7 43.18)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "bad8746f-d8e8-4e3c-a579-4fe86f837a89")
-		(property "Sheetname" "Rx Preamp 6"
-			(at 152.4 72.9484 0)
+		(uuid "26f54fdc-4132-476a-8060-cb8a2c9e1866")
+		(property "Sheetname" "Rx Preamp 3"
+			(at 152.4 22.1484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5590,14 +5380,56 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
-					(page "8")
+					(page "7")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 50.8 22.86)
-		(size 12.7 43.18)
+		(at 101.6 22.86)
+		(size 12.7 93.98)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3213ddf0-427f-4c0b-85aa-925c5c3be698")
+		(property "Sheetname" "Rx Preamp 2"
+			(at 101.6 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Rx_Preamp.kicad_sch"
+			(at 101.6 117.4246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50.8 24.13)
+		(size 12.7 92.71)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5612,7 +5444,7 @@
 		)
 		(uuid "f2897f03-1c65-406d-938e-483190e13ecf")
 		(property "Sheetname" "Rx Preamp  1"
-			(at 50.8 22.1484 0)
+			(at 50.8 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5621,7 +5453,7 @@
 			)
 		)
 		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 50.8 66.6246 0)
+			(at 50.8 117.4246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
