@@ -1,0 +1,360 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "9cf2c738-49e7-4b4e-a958-4528e914e41b")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "Rx15"
+		(shape input)
+		(at 38.1 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "01dedc36-f307-4a53-a858-21251d0f25fb")
+	)
+	(hierarchical_label "Rx17"
+		(shape input)
+		(at 38.1 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "090342cb-7ab4-4ab8-a6f7-ac2c7dcd51ee")
+	)
+	(hierarchical_label "Rx32"
+		(shape input)
+		(at 38.1 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "15a15870-785d-41d1-ae85-48efff7d39bd")
+	)
+	(hierarchical_label "Rx3"
+		(shape input)
+		(at 38.1 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1be66e9d-1f4c-436e-aad7-a811ed67e3b1")
+	)
+	(hierarchical_label "Rx18"
+		(shape input)
+		(at 38.1 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1eb5fa41-7e9c-468d-a199-cf79d84c9941")
+	)
+	(hierarchical_label "Rx9"
+		(shape input)
+		(at 38.1 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1f210c58-0fed-4bec-bdde-8d7b39479191")
+	)
+	(hierarchical_label "Rx31"
+		(shape input)
+		(at 38.1 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2124f1c4-d385-4a8d-a105-cf8a9ce6795d")
+	)
+	(hierarchical_label "Rx19"
+		(shape input)
+		(at 38.1 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "279771e8-c1db-4763-97fe-2832cfe39e82")
+	)
+	(hierarchical_label "Rx4"
+		(shape input)
+		(at 38.1 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "31dbe43b-6780-4659-af89-0356bbc470bd")
+	)
+	(hierarchical_label "Rx10"
+		(shape input)
+		(at 38.1 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "33a06294-526a-4199-b450-0c76d37321ea")
+	)
+	(hierarchical_label "Rx21"
+		(shape input)
+		(at 38.1 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "41c9b909-eb7e-4de2-b30e-cc22accf9bd1")
+	)
+	(hierarchical_label "Rx23"
+		(shape input)
+		(at 38.1 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4afc1295-2d14-4b84-bf99-bdcd201afa88")
+	)
+	(hierarchical_label "Rx13"
+		(shape input)
+		(at 38.1 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "504e8e5e-1e6e-4298-8b7f-71e27ca41630")
+	)
+	(hierarchical_label "Rx29"
+		(shape input)
+		(at 38.1 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "57767213-9974-4631-8d11-13d8b1a76ace")
+	)
+	(hierarchical_label "Rx25"
+		(shape input)
+		(at 38.1 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6259f137-f38a-4be7-986e-e5faca16cfba")
+	)
+	(hierarchical_label "Rx22"
+		(shape input)
+		(at 38.1 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "631a1165-f72c-4c03-add9-dd3eb67dd04f")
+	)
+	(hierarchical_label "Rx6"
+		(shape input)
+		(at 38.1 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6f6a4b32-83fe-4b83-bbcd-85091b354c9a")
+	)
+	(hierarchical_label "Rx11"
+		(shape input)
+		(at 38.1 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7daa2bd7-e01e-4ae4-a8c9-6f3728d3ddf9")
+	)
+	(hierarchical_label "Rx8"
+		(shape input)
+		(at 38.1 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7ec3d207-3bdb-480d-a210-c45832ea1344")
+	)
+	(hierarchical_label "Rx27"
+		(shape input)
+		(at 38.1 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "855293d9-009e-4869-86fa-dac65d560ec3")
+	)
+	(hierarchical_label "Rx1"
+		(shape input)
+		(at 38.1 25.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a615c5b6-c728-4118-a860-e58654b408f5")
+	)
+	(hierarchical_label "Rx28"
+		(shape input)
+		(at 38.1 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a6dfe476-5e8a-4a50-aff2-a03650027b5c")
+	)
+	(hierarchical_label "Rx16"
+		(shape input)
+		(at 38.1 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "afc91309-40df-4928-8292-4b80fe255278")
+	)
+	(hierarchical_label "Rx7"
+		(shape input)
+		(at 38.1 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b3dee6f3-59f9-458d-a1e1-a496c578c23c")
+	)
+	(hierarchical_label "Rx20"
+		(shape input)
+		(at 38.1 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b6957143-e0ee-4cf8-8a14-1ab5d0bd0600")
+	)
+	(hierarchical_label "Rx5"
+		(shape input)
+		(at 38.1 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "be4a4d5a-71c2-4642-b5ac-bcb6499755ca")
+	)
+	(hierarchical_label "Rx14"
+		(shape input)
+		(at 38.1 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c8ed0659-5249-47a3-84f8-7a26927be728")
+	)
+	(hierarchical_label "Rx24"
+		(shape input)
+		(at 38.1 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c9168148-0e95-45db-80fc-9bcd8c2faa37")
+	)
+	(hierarchical_label "Rx12"
+		(shape input)
+		(at 38.1 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cd0a6147-554e-48b1-a99f-670509fbfc7c")
+	)
+	(hierarchical_label "Rx30"
+		(shape input)
+		(at 38.1 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d268233c-8352-443b-951c-efff49eb332b")
+	)
+	(hierarchical_label "Rx2"
+		(shape input)
+		(at 38.1 27.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dfd2c345-ecb4-4517-aa13-9f98599522eb")
+	)
+	(hierarchical_label "Rx26"
+		(shape input)
+		(at 38.1 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f8d3fdac-46fd-427d-96c1-1c60c9094c78")
+	)
+)
