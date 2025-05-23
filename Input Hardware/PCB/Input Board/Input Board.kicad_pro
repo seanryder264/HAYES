@@ -622,12 +622,24 @@
       "Rx Preamp  1"
     ],
     [
+      "be7b6b67-fb63-4121-a158-51987fefa9a9",
+      "Multiplex, Gain & Filter 3"
+    ],
+    [
       "3213ddf0-427f-4c0b-85aa-925c5c3be698",
       "Rx Preamp 2"
     ],
     [
+      "bf2971a4-4e8b-460e-806a-6c5050f52bee",
+      "Multiplex, Gain & Filter 2"
+    ],
+    [
       "26f54fdc-4132-476a-8060-cb8a2c9e1866",
       "Rx Preamp 3"
+    ],
+    [
+      "908995ee-e872-4b00-89ed-692dff603043",
+      "Multiplex, Gain & Filter 4"
     ],
     [
       "0d65395a-9eaf-47f0-b189-6efe6e4cb2c6",
@@ -635,7 +647,11 @@
     ],
     [
       "0fc095cc-6ee6-4117-a537-6519c9828b80",
-      "Multiplexing, Gain & Filtering"
+      "Multiplex, Gain & Filter 1"
+    ],
+    [
+      "5c16bd2e-d56c-40b8-b84c-f5532d41d46a",
+      "Measurement & Control"
     ]
   ],
   "text_variables": {}

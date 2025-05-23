@@ -1,0 +1,96 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "ceb86e33-a9b8-4395-b077-01199fec4261")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "Mux C"
+		(shape output)
+		(at 38.1 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "35283b73-a516-4d61-a31e-7c7a98692875")
+	)
+	(hierarchical_label "Rx1"
+		(shape input)
+		(at 38.1 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4299e5a2-8a0e-432b-82bb-bba95e59f628")
+	)
+	(hierarchical_label "Mux Inhibit"
+		(shape output)
+		(at 38.1 58.42 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5d52e462-e38c-4d9c-8776-cab1b5e77fcf")
+	)
+	(hierarchical_label "Rx4"
+		(shape input)
+		(at 38.1 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "96168d31-292f-4f3a-a85b-eea7c83aeec2")
+	)
+	(hierarchical_label "Mux A"
+		(shape output)
+		(at 38.1 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a44cd116-c509-4f90-9bed-edc3af622df0")
+	)
+	(hierarchical_label "Mux B"
+		(shape output)
+		(at 38.1 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a6538eca-466e-448a-bcf3-2b2aaddda5a0")
+	)
+	(hierarchical_label "Rx3"
+		(shape input)
+		(at 38.1 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a8f4d95f-43c8-41cd-ac64-edb7951544e4")
+	)
+	(hierarchical_label "Rx2"
+		(shape input)
+		(at 38.1 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dd8587f4-eda7-4dd7-9ee4-d498f0cddc0e")
+	)
+)
