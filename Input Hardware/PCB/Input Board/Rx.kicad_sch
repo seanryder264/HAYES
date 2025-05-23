@@ -5443,7 +5443,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "f2897f03-1c65-406d-938e-483190e13ecf")
-		(property "Sheetname" "Rx Preamp  1"
+		(property "Sheetname" "Rx Preamp 1"
 			(at 50.8 23.4184 0)
 			(effects
 				(font
