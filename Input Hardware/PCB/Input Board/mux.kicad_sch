@@ -1689,12 +1689,6 @@
 		(color 0 0 0 0)
 		(uuid "566cace9-d9dd-44b1-be7f-4578042d3637")
 	)
-	(junction
-		(at 38.1 163.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b2e339d-f1c3-4677-b01d-56755c8faf65")
-	)
 	(wire
 		(pts
 			(xy 50.8 167.64) (xy 50.8 163.83)
