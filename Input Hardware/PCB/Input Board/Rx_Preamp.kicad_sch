@@ -823,6 +823,28 @@
 		)
 		(uuid "fcc098b1-0242-42fc-a634-318ec8f57159")
 	)
+	(global_label "hello"
+		(shape input)
+		(at 127 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0bd38853-d97b-496c-ba2e-a9fabe20d0a7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 134.7022 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(symbol
 		(lib_id "Amplifier_Operational:TLV9064")
 		(at 88.9 76.2 0)
