@@ -652,6 +652,14 @@
     [
       "5c16bd2e-d56c-40b8-b84c-f5532d41d46a",
       "Measurement & Control"
+    ],
+    [
+      "ced93e12-f689-438b-9d87-486bfa8af468",
+      "Transmit Coils"
+    ],
+    [
+      "6ff1d53f-9520-4015-acff-de10540e78ee",
+      "User Input"
     ]
   ],
   "text_variables": {}
