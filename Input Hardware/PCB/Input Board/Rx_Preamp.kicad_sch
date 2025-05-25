@@ -7090,6 +7090,10 @@
 		)
 	)
 	(symbol
+<<<<<<< HEAD
+		(lib_id "Device:R")
+		(at 143.51 45.72 0)
+=======
 		(lib_id "Amplifier_Operational:TLV9064")
 		(at 88.9 127 0)
 		(unit 4)
@@ -7208,6 +7212,7 @@
 	(symbol
 		(lib_id "power:GNDA")
 		(at 88.9 172.72 0)
+>>>>>>> ae7be7f70325decc35decee2c023c8c0f0a9fbbc
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
