@@ -1351,7 +1351,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "0fc095cc-6ee6-4117-a537-6519c9828b80")
-		(property "Sheetname" "Multiplex, Gain & Filter 1"
+		(property "Sheetname" "Demux & Amplifier 4"
 			(at 50.8 25.9584 0)
 			(effects
 				(font
@@ -1779,7 +1779,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "908995ee-e872-4b00-89ed-692dff603043")
-		(property "Sheetname" "Multiplex, Gain & Filter 4"
+		(property "Sheetname" "Demux & Amplifier 3"
 			(at 50.8 102.1584 0)
 			(effects
 				(font
@@ -1951,7 +1951,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "be7b6b67-fb63-4121-a158-51987fefa9a9")
-		(property "Sheetname" "Multiplex, Gain & Filter 3"
+		(property "Sheetname" "Demux & Amplifier 1"
 			(at 50.8 76.7584 0)
 			(effects
 				(font
@@ -2123,7 +2123,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "bf2971a4-4e8b-460e-806a-6c5050f52bee")
-		(property "Sheetname" "Multiplex, Gain & Filter 2"
+		(property "Sheetname" "Demux & Amplifier 2"
 			(at 50.8 51.3584 0)
 			(effects
 				(font
@@ -2387,7 +2387,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "e110e9b7-e557-4981-bab6-c28116ad040e")
-		(property "Sheetname" "Receive Coils"
+		(property "Sheetname" "Receiver Stage"
 			(at 25.4 24.6884 0)
 			(effects
 				(font
