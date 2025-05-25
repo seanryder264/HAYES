@@ -3818,7 +3818,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ba2a7661-fb31-4e58-9e47-4db2a5c5c506")
+		(uuid "ba2a7661-fb31-4e58-9e47-4db2a5c5c505")
 		(property "Reference" "#PWR0132"
 			(at 158.75 86.36 0)
 			(effects
@@ -3864,7 +3864,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2469dd55-580a-4570-861e-201356c5ee26")
+			(uuid "2469dd55-580a-4570-861e-201356c5ee25")
 		)
 		(instances
 			(project "Input Board"
@@ -4430,7 +4430,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ef7a8bf7-37c1-465c-924d-2ac53acc1a2c")
+		(uuid "ef7a8bf7-37c1-465c-924d-2ac53acc1a2b")
 		(property "Reference" "FB2"
 			(at 147.3708 100.33 90)
 			(effects
@@ -4475,10 +4475,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "24859bd7-cde3-4c28-a0a2-742673037a49")
+			(uuid "24859bd7-cde3-4c28-a0a2-742673037a48")
 		)
 		(pin "1"
-			(uuid "64e73971-26ea-4076-b549-90e641a242f0")
+			(uuid "64e73971-26ea-4076-b549-90e641a242ef")
 		)
 		(instances
 			(project "Input Board"

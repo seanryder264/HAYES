@@ -442,6 +442,16 @@
 		)
 		(uuid "d2d9d16a-6f71-43a2-a691-ebe200aeeabf")
 	)
+	(text "D-Pad?\nGain?\nTransform  Selector (z, laplace, fourier)?\n\n"
+		(exclude_from_sim no)
+		(at 177.8 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fc438a90-d6b3-4b18-8f8b-80b43c945450")
+	)
 	(symbol
 		(lib_id "Device:RotaryEncoder_Switch_MP")
 		(at 81.28 45.72 0)
