@@ -35,7 +35,7 @@ Inspiration for Complex Function Colouring Proposal - https://www.algorithm-arch
 
 ### Week 3 (2 - 8 Jun)
 
-**Goals:** Itterate on prototype
+**Goals:** Itterate on prototype, Hardware working
 
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 | --- | --- | --- | --- | --- | --- | --- |
