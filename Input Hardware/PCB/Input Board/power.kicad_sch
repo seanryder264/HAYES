@@ -785,7 +785,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "1.8V\n"
+	(text "1.65V\n"
 		(exclude_from_sim no)
 		(at 90.17 97.79 0)
 		(effects
@@ -2688,7 +2688,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "768"
+		(property "Value" "750"
 			(at 92.71 128.2699 0)
 			(effects
 				(font
