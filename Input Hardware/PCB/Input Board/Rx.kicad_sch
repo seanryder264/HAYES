@@ -343,7 +343,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 38.1) (xy 39.37 38.1)
+			(xy 38.1 38.1) (xy 40.64 38.1)
 		)
 		(stroke
 			(width 0)
@@ -353,7 +353,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 50.8) (xy 198.12 50.8)
+			(xy 139.7 50.8) (xy 142.24 50.8)
 		)
 		(stroke
 			(width 0)
@@ -363,37 +363,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 114.3) (xy 68.58 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d132512-1370-4854-af73-740245b30587")
-	)
-	(wire
-		(pts
-			(xy 67.31 88.9) (xy 68.58 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1378f179-2bb9-4217-8480-99e11fc53c07")
-	)
-	(wire
-		(pts
-			(xy 46.99 63.5) (xy 50.8 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "176385e1-408a-4127-8678-844dbe3e1eda")
-	)
-	(wire
-		(pts
-			(xy 246.38 76.2) (xy 248.92 76.2)
+			(xy 190.5 76.2) (xy 193.04 76.2)
 		)
 		(stroke
 			(width 0)
@@ -403,7 +373,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 50.8) (xy 39.37 50.8)
+			(xy 38.1 50.8) (xy 40.64 50.8)
 		)
 		(stroke
 			(width 0)
@@ -413,7 +383,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 76.2) (xy 39.37 76.2)
+			(xy 38.1 76.2) (xy 40.64 76.2)
 		)
 		(stroke
 			(width 0)
@@ -423,7 +393,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 88.9) (xy 39.37 88.9)
+			(xy 38.1 88.9) (xy 40.64 88.9)
 		)
 		(stroke
 			(width 0)
@@ -433,17 +403,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 88.9) (xy 50.8 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3737e947-80f9-4315-97f1-82d9af36d262")
-	)
-	(wire
-		(pts
-			(xy 144.78 63.5) (xy 147.32 63.5)
+			(xy 88.9 63.5) (xy 91.44 63.5)
 		)
 		(stroke
 			(width 0)
@@ -453,7 +413,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 63.5) (xy 39.37 63.5)
+			(xy 38.1 63.5) (xy 40.64 63.5)
 		)
 		(stroke
 			(width 0)
@@ -463,17 +423,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 25.4) (xy 68.58 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ad92fe5-ca67-44b1-8175-07ff107f1586")
-	)
-	(wire
-		(pts
-			(xy 36.83 25.4) (xy 39.37 25.4)
+			(xy 38.1 25.4) (xy 40.64 25.4)
 		)
 		(stroke
 			(width 0)
@@ -483,17 +433,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 38.1) (xy 50.8 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f89179f-ce02-44d4-b76c-88c373eacd90")
-	)
-	(wire
-		(pts
-			(xy 144.78 38.1) (xy 147.32 38.1)
+			(xy 88.9 38.1) (xy 91.44 38.1)
 		)
 		(stroke
 			(width 0)
@@ -503,27 +443,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 114.3) (xy 50.8 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59a7aa7f-fb03-44fe-b629-2a624951152b")
-	)
-	(wire
-		(pts
-			(xy 67.31 38.1) (xy 68.58 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6334c4b2-dfb3-4823-a7c8-f6d67756e463")
-	)
-	(wire
-		(pts
-			(xy 144.78 101.6) (xy 147.32 101.6)
+			(xy 88.9 101.6) (xy 91.44 101.6)
 		)
 		(stroke
 			(width 0)
@@ -533,7 +453,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 25.4) (xy 248.92 25.4)
+			(xy 190.5 25.4) (xy 193.04 25.4)
 		)
 		(stroke
 			(width 0)
@@ -543,7 +463,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 88.9) (xy 147.32 88.9)
+			(xy 88.9 88.9) (xy 91.44 88.9)
 		)
 		(stroke
 			(width 0)
@@ -553,17 +473,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 63.5) (xy 68.58 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75af895b-0440-4454-94ac-f8a39442b943")
-	)
-	(wire
-		(pts
-			(xy 195.58 101.6) (xy 198.12 101.6)
+			(xy 139.7 101.6) (xy 142.24 101.6)
 		)
 		(stroke
 			(width 0)
@@ -573,7 +483,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 101.6) (xy 248.92 101.6)
+			(xy 190.5 101.6) (xy 193.04 101.6)
 		)
 		(stroke
 			(width 0)
@@ -583,7 +493,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 114.3) (xy 198.12 114.3)
+			(xy 139.7 114.3) (xy 142.24 114.3)
 		)
 		(stroke
 			(width 0)
@@ -593,17 +503,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 76.2) (xy 50.8 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e3f9294-f17d-47b4-bbe8-47826c6a12f1")
-	)
-	(wire
-		(pts
-			(xy 195.58 63.5) (xy 198.12 63.5)
+			(xy 139.7 63.5) (xy 142.24 63.5)
 		)
 		(stroke
 			(width 0)
@@ -613,17 +513,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 25.4) (xy 50.8 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bbac786-2705-41f2-b680-ff8e08e79537")
-	)
-	(wire
-		(pts
-			(xy 195.58 88.9) (xy 198.12 88.9)
+			(xy 139.7 88.9) (xy 142.24 88.9)
 		)
 		(stroke
 			(width 0)
@@ -633,7 +523,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 25.4) (xy 147.32 25.4)
+			(xy 88.9 25.4) (xy 91.44 25.4)
 		)
 		(stroke
 			(width 0)
@@ -643,7 +533,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 50.8) (xy 147.32 50.8)
+			(xy 88.9 50.8) (xy 91.44 50.8)
 		)
 		(stroke
 			(width 0)
@@ -653,7 +543,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 114.3) (xy 248.92 114.3)
+			(xy 190.5 114.3) (xy 193.04 114.3)
 		)
 		(stroke
 			(width 0)
@@ -663,7 +553,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 88.9) (xy 248.92 88.9)
+			(xy 190.5 88.9) (xy 193.04 88.9)
 		)
 		(stroke
 			(width 0)
@@ -673,17 +563,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 50.8) (xy 50.8 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6e4fbd5-476e-4275-95df-71a252d93856")
-	)
-	(wire
-		(pts
-			(xy 246.38 50.8) (xy 248.92 50.8)
+			(xy 190.5 50.8) (xy 193.04 50.8)
 		)
 		(stroke
 			(width 0)
@@ -693,7 +573,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 114.3) (xy 39.37 114.3)
+			(xy 38.1 114.3) (xy 40.64 114.3)
 		)
 		(stroke
 			(width 0)
@@ -703,27 +583,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 76.2) (xy 68.58 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c72de66b-2a02-4463-803d-d69a2e501f5b")
-	)
-	(wire
-		(pts
-			(xy 67.31 101.6) (xy 68.58 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7ba3197-9fbc-47c6-a269-d23bde263ed3")
-	)
-	(wire
-		(pts
-			(xy 246.38 38.1) (xy 248.92 38.1)
+			(xy 190.5 38.1) (xy 193.04 38.1)
 		)
 		(stroke
 			(width 0)
@@ -733,7 +593,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 63.5) (xy 248.92 63.5)
+			(xy 190.5 63.5) (xy 193.04 63.5)
 		)
 		(stroke
 			(width 0)
@@ -743,7 +603,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 25.4) (xy 198.12 25.4)
+			(xy 139.7 25.4) (xy 142.24 25.4)
 		)
 		(stroke
 			(width 0)
@@ -753,17 +613,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 101.6) (xy 50.8 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d35672fd-4dc8-4ed1-a20e-65e0c19f27a6")
-	)
-	(wire
-		(pts
-			(xy 144.78 114.3) (xy 147.32 114.3)
+			(xy 88.9 114.3) (xy 91.44 114.3)
 		)
 		(stroke
 			(width 0)
@@ -773,7 +623,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 38.1) (xy 198.12 38.1)
+			(xy 139.7 38.1) (xy 142.24 38.1)
 		)
 		(stroke
 			(width 0)
@@ -783,7 +633,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 76.2) (xy 198.12 76.2)
+			(xy 139.7 76.2) (xy 142.24 76.2)
 		)
 		(stroke
 			(width 0)
@@ -793,7 +643,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 101.6) (xy 39.37 101.6)
+			(xy 38.1 101.6) (xy 40.64 101.6)
 		)
 		(stroke
 			(width 0)
@@ -803,7 +653,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 76.2) (xy 147.32 76.2)
+			(xy 88.9 76.2) (xy 91.44 76.2)
 		)
 		(stroke
 			(width 0)
@@ -813,7 +663,7 @@
 	)
 	(hierarchical_label "Rx23"
 		(shape output)
-		(at 223.52 81.28 0)
+		(at 167.64 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -824,7 +674,7 @@
 	)
 	(hierarchical_label "Rx11"
 		(shape output)
-		(at 172.72 30.48 0)
+		(at 116.84 30.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -835,7 +685,7 @@
 	)
 	(hierarchical_label "Rx19"
 		(shape output)
-		(at 223.52 30.48 0)
+		(at 167.64 30.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -846,7 +696,7 @@
 	)
 	(hierarchical_label "Rx18"
 		(shape output)
-		(at 223.52 27.94 0)
+		(at 167.64 27.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -857,7 +707,7 @@
 	)
 	(hierarchical_label "Rx29"
 		(shape output)
-		(at 274.32 76.2 0)
+		(at 218.44 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -868,7 +718,7 @@
 	)
 	(hierarchical_label "Rx20"
 		(shape output)
-		(at 223.52 33.02 0)
+		(at 167.64 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -879,7 +729,7 @@
 	)
 	(hierarchical_label "Rx1"
 		(shape output)
-		(at 68.58 25.4 0)
+		(at 66.04 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -890,7 +740,7 @@
 	)
 	(hierarchical_label "Rx26"
 		(shape output)
-		(at 273.05 27.94 0)
+		(at 217.17 27.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -901,7 +751,7 @@
 	)
 	(hierarchical_label "Rx17"
 		(shape output)
-		(at 223.52 25.4 0)
+		(at 167.64 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -912,7 +762,7 @@
 	)
 	(hierarchical_label "Rx14"
 		(shape output)
-		(at 172.72 78.74 0)
+		(at 116.84 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -923,7 +773,7 @@
 	)
 	(hierarchical_label "Rx22"
 		(shape output)
-		(at 223.52 78.74 0)
+		(at 167.64 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -934,7 +784,7 @@
 	)
 	(hierarchical_label "Rx9"
 		(shape output)
-		(at 172.72 25.4 0)
+		(at 116.84 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -945,7 +795,7 @@
 	)
 	(hierarchical_label "Rx10"
 		(shape output)
-		(at 172.72 27.94 0)
+		(at 116.84 27.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -956,7 +806,7 @@
 	)
 	(hierarchical_label "Rx5"
 		(shape output)
-		(at 68.58 76.2 0)
+		(at 66.04 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -967,7 +817,7 @@
 	)
 	(hierarchical_label "Rx27"
 		(shape output)
-		(at 273.05 30.48 0)
+		(at 217.17 30.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -978,7 +828,7 @@
 	)
 	(hierarchical_label "Rx21"
 		(shape output)
-		(at 223.52 76.2 0)
+		(at 167.64 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -989,7 +839,7 @@
 	)
 	(hierarchical_label "Rx25"
 		(shape output)
-		(at 273.05 25.4 0)
+		(at 217.17 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1000,7 +850,7 @@
 	)
 	(hierarchical_label "Rx16"
 		(shape output)
-		(at 172.72 83.82 0)
+		(at 116.84 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1011,7 +861,7 @@
 	)
 	(hierarchical_label "Rx6"
 		(shape output)
-		(at 68.58 88.9 0)
+		(at 66.04 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1022,7 +872,7 @@
 	)
 	(hierarchical_label "Rx12"
 		(shape output)
-		(at 172.72 33.02 0)
+		(at 116.84 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1033,7 +883,7 @@
 	)
 	(hierarchical_label "Rx13"
 		(shape output)
-		(at 172.72 76.2 0)
+		(at 116.84 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1044,7 +894,7 @@
 	)
 	(hierarchical_label "Rx3"
 		(shape output)
-		(at 68.58 50.8 0)
+		(at 66.04 30.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1055,7 +905,7 @@
 	)
 	(hierarchical_label "Rx2"
 		(shape output)
-		(at 68.58 38.1 0)
+		(at 66.04 27.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1066,7 +916,7 @@
 	)
 	(hierarchical_label "Rx24"
 		(shape output)
-		(at 223.52 83.82 0)
+		(at 167.64 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1077,7 +927,7 @@
 	)
 	(hierarchical_label "Rx28"
 		(shape output)
-		(at 273.05 33.02 0)
+		(at 217.17 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1088,7 +938,7 @@
 	)
 	(hierarchical_label "Rx8"
 		(shape output)
-		(at 68.58 114.3 0)
+		(at 66.04 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1099,7 +949,7 @@
 	)
 	(hierarchical_label "Rx7"
 		(shape output)
-		(at 68.58 101.6 0)
+		(at 66.04 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1110,7 +960,7 @@
 	)
 	(hierarchical_label "Rx15"
 		(shape output)
-		(at 172.72 81.28 0)
+		(at 116.84 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1121,7 +971,7 @@
 	)
 	(hierarchical_label "Rx30"
 		(shape output)
-		(at 274.32 78.74 0)
+		(at 218.44 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1132,7 +982,7 @@
 	)
 	(hierarchical_label "Rx31"
 		(shape output)
-		(at 274.32 81.28 0)
+		(at 218.44 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1143,7 +993,7 @@
 	)
 	(hierarchical_label "Rx32"
 		(shape output)
-		(at 274.32 83.82 0)
+		(at 218.44 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1154,7 +1004,7 @@
 	)
 	(hierarchical_label "Rx4"
 		(shape output)
-		(at 68.58 63.5 0)
+		(at 66.04 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1165,7 +1015,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 246.38 63.5 270)
+		(at 190.5 63.5 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1174,7 +1024,7 @@
 		(fields_autoplaced yes)
 		(uuid "08070fbb-8cf0-4e4f-883d-0e461789e85e")
 		(property "Reference" "#PWR028"
-			(at 241.3 63.5 0)
+			(at 185.42 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1183,7 +1033,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 242.57 63.3729 90)
+			(at 186.69 63.3729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1192,7 +1042,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 63.5 0)
+			(at 189.23 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1201,7 +1051,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 63.5 0)
+			(at 189.23 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1210,7 +1060,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 246.38 63.5 0)
+			(at 190.5 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1232,7 +1082,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 252.73 63.5 90)
+		(at 196.85 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1240,7 +1090,7 @@
 		(dnp no)
 		(uuid "085c89b6-ade0-4646-bb51-6887c0fa7957")
 		(property "Reference" "L228"
-			(at 252.73 60.96 90)
+			(at 196.85 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1248,7 +1098,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 252.73 60.96 90)
+			(at 196.85 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1257,7 +1107,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 252.73 64.77 90)
+			(at 196.85 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1265,7 +1115,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 63.5 0)
+			(at 196.85 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1274,7 +1124,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 252.73 63.5 0)
+			(at 196.85 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1299,7 +1149,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 144.78 76.2 270)
+		(at 88.9 76.2 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1308,7 +1158,7 @@
 		(fields_autoplaced yes)
 		(uuid "08e44706-d7da-4ef8-b2e0-f8f0309a3697")
 		(property "Reference" "#PWR013"
-			(at 139.7 76.2 0)
+			(at 83.82 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1317,7 +1167,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 140.97 76.0729 90)
+			(at 85.09 76.0729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1326,7 +1176,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 76.2 0)
+			(at 87.63 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1335,7 +1185,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 76.2 0)
+			(at 87.63 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1344,7 +1194,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 144.78 76.2 0)
+			(at 88.9 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1366,7 +1216,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 151.13 63.5 90)
+		(at 95.25 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1374,7 +1224,7 @@
 		(dnp no)
 		(uuid "1386e8a9-e54b-4b87-80d6-176c95dc1871")
 		(property "Reference" "L212"
-			(at 151.13 60.96 90)
+			(at 95.25 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1382,7 +1232,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 151.13 60.96 90)
+			(at 95.25 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1391,7 +1241,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 151.13 64.77 90)
+			(at 95.25 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1399,7 +1249,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 63.5 0)
+			(at 95.25 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1408,7 +1258,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 151.13 63.5 0)
+			(at 95.25 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1433,7 +1283,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 144.78 38.1 270)
+		(at 88.9 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1442,7 +1292,7 @@
 		(fields_autoplaced yes)
 		(uuid "13c83e8e-88dc-4e25-9de2-e00de06d2a02")
 		(property "Reference" "#PWR010"
-			(at 139.7 38.1 0)
+			(at 83.82 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1451,7 +1301,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 140.97 37.9729 90)
+			(at 85.09 37.9729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1460,7 +1310,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 38.1 0)
+			(at 87.63 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1469,7 +1319,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 38.1 0)
+			(at 87.63 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1478,7 +1328,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 144.78 38.1 0)
+			(at 88.9 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1500,7 +1350,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 144.78 88.9 270)
+		(at 88.9 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1509,7 +1359,7 @@
 		(fields_autoplaced yes)
 		(uuid "19fb8ea1-cd61-4176-a64f-f88b5dda59cc")
 		(property "Reference" "#PWR014"
-			(at 139.7 88.9 0)
+			(at 83.82 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1518,7 +1368,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 140.97 88.7729 90)
+			(at 85.09 88.7729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1527,7 +1377,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 88.9 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1536,7 +1386,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 88.9 0)
+			(at 87.63 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1545,7 +1395,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 144.78 88.9 0)
+			(at 88.9 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1567,7 +1417,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 43.18 76.2 90)
+		(at 44.45 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1575,7 +1425,7 @@
 		(dnp no)
 		(uuid "1e7e6726-0816-4c4e-be96-94b0ab618f70")
 		(property "Reference" "L205"
-			(at 43.18 73.66 90)
+			(at 44.45 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1583,7 +1433,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 43.18 73.66 90)
+			(at 44.45 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1592,7 +1442,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 43.18 77.47 90)
+			(at 44.45 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1600,7 +1450,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 76.2 0)
+			(at 44.45 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1609,7 +1459,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 43.18 76.2 0)
+			(at 44.45 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1634,7 +1484,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 252.73 88.9 90)
+		(at 196.85 88.9 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1642,7 +1492,7 @@
 		(dnp no)
 		(uuid "23bfe1c1-3959-49db-a91d-db34e1bf9b2b")
 		(property "Reference" "L230"
-			(at 252.73 86.36 90)
+			(at 196.85 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1650,7 +1500,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 252.73 86.36 90)
+			(at 196.85 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1659,7 +1509,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 252.73 90.17 90)
+			(at 196.85 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1667,7 +1517,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 88.9 0)
+			(at 196.85 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1676,7 +1526,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 252.73 88.9 0)
+			(at 196.85 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1701,7 +1551,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 246.38 25.4 270)
+		(at 190.5 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1710,7 +1560,7 @@
 		(fields_autoplaced yes)
 		(uuid "268977c1-9338-4737-a294-1001e9406157")
 		(property "Reference" "#PWR025"
-			(at 241.3 25.4 0)
+			(at 185.42 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1719,7 +1569,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 242.57 25.2729 90)
+			(at 186.69 25.2729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1728,7 +1578,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 25.4 0)
+			(at 189.23 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1737,7 +1587,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 25.4 0)
+			(at 189.23 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1746,7 +1596,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 246.38 25.4 0)
+			(at 190.5 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1768,7 +1618,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 36.83 114.3 270)
+		(at 38.1 114.3 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1777,7 +1627,7 @@
 		(fields_autoplaced yes)
 		(uuid "2cf1a041-f1ec-4b04-a452-2580c7995e2a")
 		(property "Reference" "#PWR08"
-			(at 31.75 114.3 0)
+			(at 33.02 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1786,7 +1636,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 33.02 114.1729 90)
+			(at 34.29 114.1729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1795,7 +1645,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 114.3 0)
+			(at 36.83 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1804,7 +1654,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 114.3 0)
+			(at 36.83 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1813,7 +1663,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 36.83 114.3 0)
+			(at 38.1 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1835,7 +1685,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 144.78 101.6 270)
+		(at 88.9 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1844,7 +1694,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d948893-13c6-4d12-9f74-a7449a05b7a6")
 		(property "Reference" "#PWR015"
-			(at 139.7 101.6 0)
+			(at 83.82 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1853,7 +1703,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 140.97 101.4729 90)
+			(at 85.09 101.4729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1862,7 +1712,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 101.6 0)
+			(at 87.63 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1871,7 +1721,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 101.6 0)
+			(at 87.63 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1880,7 +1730,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 144.78 101.6 0)
+			(at 88.9 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1902,7 +1752,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 195.58 25.4 270)
+		(at 139.7 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1911,7 +1761,7 @@
 		(fields_autoplaced yes)
 		(uuid "2fb9211e-50ae-4715-972f-2df74b15da24")
 		(property "Reference" "#PWR017"
-			(at 190.5 25.4 0)
+			(at 134.62 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1920,7 +1770,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 191.77 25.2729 90)
+			(at 135.89 25.2729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1929,7 +1779,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 25.4 0)
+			(at 138.43 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1938,7 +1788,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 25.4 0)
+			(at 138.43 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1947,7 +1797,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 195.58 25.4 0)
+			(at 139.7 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1969,7 +1819,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 246.38 101.6 270)
+		(at 190.5 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1978,7 +1828,7 @@
 		(fields_autoplaced yes)
 		(uuid "3791dc98-00df-4054-b1d8-782ea888363d")
 		(property "Reference" "#PWR031"
-			(at 241.3 101.6 0)
+			(at 185.42 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1987,7 +1837,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 242.57 101.4729 90)
+			(at 186.69 101.4729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1996,7 +1846,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 101.6 0)
+			(at 189.23 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2005,7 +1855,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 101.6 0)
+			(at 189.23 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2014,7 +1864,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 246.38 101.6 0)
+			(at 190.5 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2036,7 +1886,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 36.83 38.1 270)
+		(at 38.1 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2045,7 +1895,7 @@
 		(fields_autoplaced yes)
 		(uuid "38ae6f5e-24b1-4d53-88e1-b5ae9b5f6b9c")
 		(property "Reference" "#PWR02"
-			(at 31.75 38.1 0)
+			(at 33.02 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2054,7 +1904,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 33.02 37.9729 90)
+			(at 34.29 37.9729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2063,7 +1913,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 38.1 0)
+			(at 36.83 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2072,7 +1922,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 38.1 0)
+			(at 36.83 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2081,7 +1931,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 36.83 38.1 0)
+			(at 38.1 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2103,7 +1953,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 151.13 76.2 90)
+		(at 95.25 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2111,7 +1961,7 @@
 		(dnp no)
 		(uuid "445643b5-4fb6-46e1-af12-76266913ac19")
 		(property "Reference" "L213"
-			(at 151.13 73.66 90)
+			(at 95.25 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2119,7 +1969,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 151.13 73.66 90)
+			(at 95.25 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2128,7 +1978,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 151.13 77.47 90)
+			(at 95.25 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2136,7 +1986,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 76.2 0)
+			(at 95.25 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2145,7 +1995,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 151.13 76.2 0)
+			(at 95.25 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2170,7 +2020,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 43.18 88.9 90)
+		(at 44.45 88.9 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2178,7 +2028,7 @@
 		(dnp no)
 		(uuid "4668529e-8126-47ce-869a-c8072cbd4eda")
 		(property "Reference" "L206"
-			(at 43.18 86.36 90)
+			(at 44.45 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2186,7 +2036,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 43.18 86.36 90)
+			(at 44.45 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2195,7 +2045,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 43.18 90.17 90)
+			(at 44.45 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2203,7 +2053,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 88.9 0)
+			(at 44.45 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2212,7 +2062,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 43.18 88.9 0)
+			(at 44.45 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2237,7 +2087,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 195.58 50.8 270)
+		(at 139.7 50.8 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2246,7 +2096,7 @@
 		(fields_autoplaced yes)
 		(uuid "49f8dd79-38c8-496c-a7c3-79df100deb0a")
 		(property "Reference" "#PWR019"
-			(at 190.5 50.8 0)
+			(at 134.62 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2255,7 +2105,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 191.77 50.6729 90)
+			(at 135.89 50.6729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2264,7 +2114,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 50.8 0)
+			(at 138.43 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2273,7 +2123,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 50.8 0)
+			(at 138.43 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2282,7 +2132,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 195.58 50.8 0)
+			(at 139.7 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2304,7 +2154,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 144.78 50.8 270)
+		(at 88.9 50.8 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2313,7 +2163,7 @@
 		(fields_autoplaced yes)
 		(uuid "4fd15a2f-ba68-4682-a350-9ff0574ed419")
 		(property "Reference" "#PWR011"
-			(at 139.7 50.8 0)
+			(at 83.82 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2322,7 +2172,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 140.97 50.6729 90)
+			(at 85.09 50.6729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2331,7 +2181,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 50.8 0)
+			(at 87.63 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2340,7 +2190,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 50.8 0)
+			(at 87.63 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2349,7 +2199,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 144.78 50.8 0)
+			(at 88.9 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2371,7 +2221,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 246.38 88.9 270)
+		(at 190.5 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2380,7 +2230,7 @@
 		(fields_autoplaced yes)
 		(uuid "51fa91d8-2a25-40d8-93cf-aa5bdfbd51c4")
 		(property "Reference" "#PWR030"
-			(at 241.3 88.9 0)
+			(at 185.42 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2389,7 +2239,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 242.57 88.7729 90)
+			(at 186.69 88.7729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2398,7 +2248,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 88.9 0)
+			(at 189.23 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2407,7 +2257,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 88.9 0)
+			(at 189.23 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2416,7 +2266,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 246.38 88.9 0)
+			(at 190.5 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2438,7 +2288,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 201.93 50.8 90)
+		(at 146.05 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2446,7 +2296,7 @@
 		(dnp no)
 		(uuid "533ad0a9-1680-48d4-b28e-652563b41e34")
 		(property "Reference" "L219"
-			(at 201.93 48.26 90)
+			(at 146.05 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2454,7 +2304,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 201.93 48.26 90)
+			(at 146.05 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2463,7 +2313,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 201.93 52.07 90)
+			(at 146.05 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2471,7 +2321,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 50.8 0)
+			(at 146.05 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2480,7 +2330,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 201.93 50.8 0)
+			(at 146.05 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2505,7 +2355,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 195.58 76.2 270)
+		(at 139.7 76.2 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2514,7 +2364,7 @@
 		(fields_autoplaced yes)
 		(uuid "57e0424b-990e-4b6d-916a-5a0ee5e76768")
 		(property "Reference" "#PWR021"
-			(at 190.5 76.2 0)
+			(at 134.62 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2523,7 +2373,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 191.77 76.0729 90)
+			(at 135.89 76.0729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2532,7 +2382,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 76.2 0)
+			(at 138.43 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2541,7 +2391,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 76.2 0)
+			(at 138.43 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2550,7 +2400,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 195.58 76.2 0)
+			(at 139.7 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2572,7 +2422,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 201.93 25.4 90)
+		(at 146.05 25.4 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2580,7 +2430,7 @@
 		(dnp no)
 		(uuid "6118feb3-0d38-4e32-aac4-958a113bff53")
 		(property "Reference" "L217"
-			(at 201.93 22.86 90)
+			(at 146.05 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2588,7 +2438,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 201.93 22.86 90)
+			(at 146.05 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2597,7 +2447,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 201.93 26.67 90)
+			(at 146.05 26.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2605,7 +2455,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 25.4 0)
+			(at 146.05 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2614,7 +2464,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 201.93 25.4 0)
+			(at 146.05 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2639,7 +2489,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 144.78 114.3 270)
+		(at 88.9 114.3 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2648,7 +2498,7 @@
 		(fields_autoplaced yes)
 		(uuid "6538ef7b-f478-428c-8774-3ac5e3df1d0d")
 		(property "Reference" "#PWR016"
-			(at 139.7 114.3 0)
+			(at 83.82 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2657,7 +2507,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 140.97 114.1729 90)
+			(at 85.09 114.1729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2666,7 +2516,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 114.3 0)
+			(at 87.63 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2675,7 +2525,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 114.3 0)
+			(at 87.63 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2684,7 +2534,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 144.78 114.3 0)
+			(at 88.9 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2706,7 +2556,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 195.58 63.5 270)
+		(at 139.7 63.5 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2715,7 +2565,7 @@
 		(fields_autoplaced yes)
 		(uuid "6666787f-39fd-4e22-bb00-07bde96db9c8")
 		(property "Reference" "#PWR020"
-			(at 190.5 63.5 0)
+			(at 134.62 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2724,7 +2574,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 191.77 63.3729 90)
+			(at 135.89 63.3729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2733,7 +2583,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 63.5 0)
+			(at 138.43 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2742,7 +2592,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 63.5 0)
+			(at 138.43 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2751,7 +2601,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 195.58 63.5 0)
+			(at 139.7 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2773,7 +2623,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 252.73 101.6 90)
+		(at 196.85 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2781,7 +2631,7 @@
 		(dnp no)
 		(uuid "668ddd78-4144-4b44-bce3-b1e0f85edaab")
 		(property "Reference" "L231"
-			(at 252.73 99.06 90)
+			(at 196.85 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2789,7 +2639,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 252.73 99.06 90)
+			(at 196.85 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2798,7 +2648,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 252.73 102.87 90)
+			(at 196.85 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2806,7 +2656,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 101.6 0)
+			(at 196.85 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2815,7 +2665,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 252.73 101.6 0)
+			(at 196.85 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2840,7 +2690,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 43.18 63.5 90)
+		(at 44.45 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2848,7 +2698,7 @@
 		(dnp no)
 		(uuid "6e05883f-9658-4311-bb35-ca6a6673490c")
 		(property "Reference" "L204"
-			(at 43.18 60.96 90)
+			(at 44.45 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2856,7 +2706,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 43.18 60.96 90)
+			(at 44.45 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2865,7 +2715,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 43.18 64.77 90)
+			(at 44.45 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2873,7 +2723,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 63.5 0)
+			(at 44.45 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2882,7 +2732,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 43.18 63.5 0)
+			(at 44.45 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2907,7 +2757,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 151.13 38.1 90)
+		(at 95.25 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2915,7 +2765,7 @@
 		(dnp no)
 		(uuid "6e3c249b-cbc2-49fd-8223-02f38a01684f")
 		(property "Reference" "L210"
-			(at 151.13 35.56 90)
+			(at 95.25 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2923,7 +2773,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 151.13 35.56 90)
+			(at 95.25 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2932,7 +2782,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 151.13 39.37 90)
+			(at 95.25 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2940,7 +2790,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 38.1 0)
+			(at 95.25 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2949,7 +2799,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 151.13 38.1 0)
+			(at 95.25 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2974,7 +2824,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 151.13 25.4 90)
+		(at 95.25 25.4 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2982,7 +2832,7 @@
 		(dnp no)
 		(uuid "7bbcea84-bfe6-42d7-b543-8eb5ca8894e8")
 		(property "Reference" "L209"
-			(at 151.13 22.86 90)
+			(at 95.25 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2990,7 +2840,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 151.13 22.86 90)
+			(at 95.25 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2999,7 +2849,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 151.13 26.67 90)
+			(at 95.25 26.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3007,7 +2857,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 25.4 0)
+			(at 95.25 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3016,7 +2866,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 151.13 25.4 0)
+			(at 95.25 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3041,7 +2891,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 246.38 50.8 270)
+		(at 190.5 50.8 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3050,7 +2900,7 @@
 		(fields_autoplaced yes)
 		(uuid "81c43be5-3446-46d7-9056-fbb5dc102cd2")
 		(property "Reference" "#PWR027"
-			(at 241.3 50.8 0)
+			(at 185.42 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3059,7 +2909,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 242.57 50.6729 90)
+			(at 186.69 50.6729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3068,7 +2918,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 50.8 0)
+			(at 189.23 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3077,7 +2927,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 50.8 0)
+			(at 189.23 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3086,7 +2936,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 246.38 50.8 0)
+			(at 190.5 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3108,7 +2958,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 246.38 38.1 270)
+		(at 190.5 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3117,7 +2967,7 @@
 		(fields_autoplaced yes)
 		(uuid "81dd8511-9c8a-46a2-8f5f-e9c2099d7767")
 		(property "Reference" "#PWR026"
-			(at 241.3 38.1 0)
+			(at 185.42 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3126,7 +2976,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 242.57 37.9729 90)
+			(at 186.69 37.9729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3135,7 +2985,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 38.1 0)
+			(at 189.23 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3144,7 +2994,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 38.1 0)
+			(at 189.23 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3153,7 +3003,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 246.38 38.1 0)
+			(at 190.5 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3175,7 +3025,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 43.18 114.3 90)
+		(at 44.45 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3183,7 +3033,7 @@
 		(dnp no)
 		(uuid "83164454-a14d-467b-ba27-f129d5e45701")
 		(property "Reference" "L208"
-			(at 43.18 111.76 90)
+			(at 44.45 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3191,7 +3041,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 43.18 111.76 90)
+			(at 44.45 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3200,7 +3050,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 43.18 115.57 90)
+			(at 44.45 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3208,7 +3058,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 114.3 0)
+			(at 44.45 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3217,7 +3067,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 43.18 114.3 0)
+			(at 44.45 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3242,7 +3092,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 43.18 101.6 90)
+		(at 44.45 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3250,7 +3100,7 @@
 		(dnp no)
 		(uuid "8a8ecd50-f019-412f-a14c-555a3a0dde07")
 		(property "Reference" "L207"
-			(at 43.18 99.06 90)
+			(at 44.45 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3258,7 +3108,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 43.18 99.06 90)
+			(at 44.45 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3267,7 +3117,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 43.18 102.87 90)
+			(at 44.45 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3275,7 +3125,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 101.6 0)
+			(at 44.45 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3284,7 +3134,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 43.18 101.6 0)
+			(at 44.45 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3309,7 +3159,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 43.18 38.1 90)
+		(at 44.45 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3317,7 +3167,7 @@
 		(dnp no)
 		(uuid "8ce1f2e6-416c-4084-8532-591ef0d05a78")
 		(property "Reference" "L202"
-			(at 43.18 35.56 90)
+			(at 44.45 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3325,7 +3175,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 43.18 35.56 90)
+			(at 44.45 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3334,7 +3184,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 43.18 39.37 90)
+			(at 44.45 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3342,7 +3192,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 38.1 0)
+			(at 44.45 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3351,7 +3201,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 43.18 38.1 0)
+			(at 44.45 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3376,7 +3226,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 36.83 63.5 270)
+		(at 38.1 63.5 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3385,7 +3235,7 @@
 		(fields_autoplaced yes)
 		(uuid "914df811-4e3c-4844-b20c-fd3613255167")
 		(property "Reference" "#PWR04"
-			(at 31.75 63.5 0)
+			(at 33.02 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3394,7 +3244,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 33.02 63.3729 90)
+			(at 34.29 63.3729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3403,7 +3253,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 63.5 0)
+			(at 36.83 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3412,7 +3262,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 63.5 0)
+			(at 36.83 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3421,7 +3271,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 36.83 63.5 0)
+			(at 38.1 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3443,7 +3293,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 36.83 50.8 270)
+		(at 38.1 50.8 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3452,7 +3302,7 @@
 		(fields_autoplaced yes)
 		(uuid "94952754-e398-41f9-971c-664f68e6d687")
 		(property "Reference" "#PWR03"
-			(at 31.75 50.8 0)
+			(at 33.02 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3461,7 +3311,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 33.02 50.6729 90)
+			(at 34.29 50.6729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3470,7 +3320,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 50.8 0)
+			(at 36.83 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3479,7 +3329,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 50.8 0)
+			(at 36.83 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3488,7 +3338,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 36.83 50.8 0)
+			(at 38.1 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3510,7 +3360,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 252.73 76.2 90)
+		(at 196.85 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3518,7 +3368,7 @@
 		(dnp no)
 		(uuid "96d71b77-05dc-4e40-8256-0afd5a7676cd")
 		(property "Reference" "L229"
-			(at 252.73 73.66 90)
+			(at 196.85 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3526,7 +3376,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 252.73 73.66 90)
+			(at 196.85 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3535,7 +3385,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 252.73 77.47 90)
+			(at 196.85 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3543,7 +3393,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 76.2 0)
+			(at 196.85 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3552,7 +3402,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 252.73 76.2 0)
+			(at 196.85 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3577,7 +3427,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 36.83 101.6 270)
+		(at 38.1 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3586,7 +3436,7 @@
 		(fields_autoplaced yes)
 		(uuid "98c4de44-4f41-4cc4-ad05-db1b88c5a5b8")
 		(property "Reference" "#PWR07"
-			(at 31.75 101.6 0)
+			(at 33.02 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3595,7 +3445,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 33.02 101.4729 90)
+			(at 34.29 101.4729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3604,7 +3454,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 101.6 0)
+			(at 36.83 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3613,7 +3463,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 101.6 0)
+			(at 36.83 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3622,7 +3472,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 36.83 101.6 0)
+			(at 38.1 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3644,7 +3494,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 252.73 25.4 90)
+		(at 196.85 25.4 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3652,7 +3502,7 @@
 		(dnp no)
 		(uuid "98e84cf0-ddee-473a-bb6f-31a5b7d9de03")
 		(property "Reference" "L225"
-			(at 252.73 22.86 90)
+			(at 196.85 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3660,7 +3510,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 252.73 22.86 90)
+			(at 196.85 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3669,7 +3519,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 252.73 26.67 90)
+			(at 196.85 26.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3677,7 +3527,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 25.4 0)
+			(at 196.85 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3686,7 +3536,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 252.73 25.4 0)
+			(at 196.85 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3711,7 +3561,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 246.38 76.2 270)
+		(at 190.5 76.2 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3720,7 +3570,7 @@
 		(fields_autoplaced yes)
 		(uuid "9aa44eac-2201-4037-aa0f-e8f990f0139f")
 		(property "Reference" "#PWR029"
-			(at 241.3 76.2 0)
+			(at 185.42 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3729,7 +3579,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 242.57 76.0729 90)
+			(at 186.69 76.0729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3738,7 +3588,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 76.2 0)
+			(at 189.23 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3747,7 +3597,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 76.2 0)
+			(at 189.23 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3756,7 +3606,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 246.38 76.2 0)
+			(at 190.5 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3778,7 +3628,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 246.38 114.3 270)
+		(at 190.5 114.3 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3787,7 +3637,7 @@
 		(fields_autoplaced yes)
 		(uuid "a11fbd29-8b85-49b0-bea8-1f4fbce62398")
 		(property "Reference" "#PWR032"
-			(at 241.3 114.3 0)
+			(at 185.42 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3796,7 +3646,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 242.57 114.1729 90)
+			(at 186.69 114.1729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3805,7 +3655,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 114.3 0)
+			(at 189.23 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3814,7 +3664,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 114.3 0)
+			(at 189.23 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3823,7 +3673,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 246.38 114.3 0)
+			(at 190.5 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3845,7 +3695,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 201.93 76.2 90)
+		(at 146.05 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3853,7 +3703,7 @@
 		(dnp no)
 		(uuid "a1c202b5-d000-4d7f-9abb-bae87a485713")
 		(property "Reference" "L221"
-			(at 201.93 73.66 90)
+			(at 146.05 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3861,7 +3711,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 201.93 73.66 90)
+			(at 146.05 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3870,7 +3720,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 201.93 77.47 90)
+			(at 146.05 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3878,7 +3728,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 76.2 0)
+			(at 146.05 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3887,7 +3737,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 201.93 76.2 0)
+			(at 146.05 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3912,7 +3762,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 201.93 101.6 90)
+		(at 146.05 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3920,7 +3770,7 @@
 		(dnp no)
 		(uuid "a1d14714-09ec-44ad-aace-d6ea6923000d")
 		(property "Reference" "L223"
-			(at 201.93 99.06 90)
+			(at 146.05 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3928,7 +3778,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 201.93 99.06 90)
+			(at 146.05 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3937,7 +3787,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 201.93 102.87 90)
+			(at 146.05 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3945,7 +3795,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 101.6 0)
+			(at 146.05 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3954,7 +3804,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 201.93 101.6 0)
+			(at 146.05 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3979,7 +3829,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 252.73 50.8 90)
+		(at 196.85 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3987,7 +3837,7 @@
 		(dnp no)
 		(uuid "ace03ea9-ca1f-42e9-8ad1-e47478b27353")
 		(property "Reference" "L227"
-			(at 252.73 48.26 90)
+			(at 196.85 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3995,7 +3845,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 252.73 48.26 90)
+			(at 196.85 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4004,7 +3854,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 252.73 52.07 90)
+			(at 196.85 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4012,7 +3862,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 50.8 0)
+			(at 196.85 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4021,7 +3871,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 252.73 50.8 0)
+			(at 196.85 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4046,7 +3896,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 252.73 114.3 90)
+		(at 196.85 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4054,7 +3904,7 @@
 		(dnp no)
 		(uuid "bac5b3fb-02d4-435e-bc89-a3616ebedc78")
 		(property "Reference" "L232"
-			(at 252.73 111.76 90)
+			(at 196.85 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4062,7 +3912,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 252.73 111.76 90)
+			(at 196.85 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4071,7 +3921,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 252.73 115.57 90)
+			(at 196.85 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4079,7 +3929,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 114.3 0)
+			(at 196.85 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4088,7 +3938,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 252.73 114.3 0)
+			(at 196.85 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4113,7 +3963,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 144.78 25.4 270)
+		(at 88.9 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4122,7 +3972,7 @@
 		(fields_autoplaced yes)
 		(uuid "bc5c51eb-28bf-4b79-92e1-b21c1fb6c677")
 		(property "Reference" "#PWR09"
-			(at 139.7 25.4 0)
+			(at 83.82 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4131,7 +3981,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 140.97 25.2729 90)
+			(at 85.09 25.2729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4140,7 +3990,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 25.4 0)
+			(at 87.63 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4149,7 +3999,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 25.4 0)
+			(at 87.63 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4158,7 +4008,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 144.78 25.4 0)
+			(at 88.9 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4180,7 +4030,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 195.58 88.9 270)
+		(at 139.7 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4189,7 +4039,7 @@
 		(fields_autoplaced yes)
 		(uuid "bc6de5d8-9fff-46c7-b73b-9cda7464e00a")
 		(property "Reference" "#PWR022"
-			(at 190.5 88.9 0)
+			(at 134.62 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4198,7 +4048,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 191.77 88.7729 90)
+			(at 135.89 88.7729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4207,7 +4057,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 88.9 0)
+			(at 138.43 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4216,7 +4066,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 88.9 0)
+			(at 138.43 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4225,7 +4075,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 195.58 88.9 0)
+			(at 139.7 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4247,7 +4097,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 195.58 38.1 270)
+		(at 139.7 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4256,7 +4106,7 @@
 		(fields_autoplaced yes)
 		(uuid "bcc648e1-b5a7-444d-bd5c-c3c669581655")
 		(property "Reference" "#PWR018"
-			(at 190.5 38.1 0)
+			(at 134.62 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4265,7 +4115,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 191.77 37.9729 90)
+			(at 135.89 37.9729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4274,7 +4124,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 38.1 0)
+			(at 138.43 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4283,7 +4133,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 38.1 0)
+			(at 138.43 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4292,7 +4142,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 195.58 38.1 0)
+			(at 139.7 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4314,7 +4164,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 201.93 63.5 90)
+		(at 146.05 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4322,7 +4172,7 @@
 		(dnp no)
 		(uuid "c15d4f78-d21f-4873-8546-a9b164c9d9ad")
 		(property "Reference" "L220"
-			(at 201.93 60.96 90)
+			(at 146.05 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4330,7 +4180,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 201.93 60.96 90)
+			(at 146.05 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4339,7 +4189,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 201.93 64.77 90)
+			(at 146.05 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4347,7 +4197,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 63.5 0)
+			(at 146.05 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4356,7 +4206,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 201.93 63.5 0)
+			(at 146.05 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4381,7 +4231,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 36.83 76.2 270)
+		(at 38.1 76.2 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4390,7 +4240,7 @@
 		(fields_autoplaced yes)
 		(uuid "c7af7104-e73d-44a5-9976-b5da9db0a1c9")
 		(property "Reference" "#PWR05"
-			(at 31.75 76.2 0)
+			(at 33.02 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4399,7 +4249,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 33.02 76.0729 90)
+			(at 34.29 76.0729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4408,7 +4258,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 76.2 0)
+			(at 36.83 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4417,7 +4267,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 76.2 0)
+			(at 36.83 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4426,7 +4276,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 36.83 76.2 0)
+			(at 38.1 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4448,7 +4298,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 195.58 114.3 270)
+		(at 139.7 114.3 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4457,7 +4307,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd5e1bf0-77aa-4a62-9732-31608435df4b")
 		(property "Reference" "#PWR024"
-			(at 190.5 114.3 0)
+			(at 134.62 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4466,7 +4316,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 191.77 114.1729 90)
+			(at 135.89 114.1729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4475,7 +4325,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 114.3 0)
+			(at 138.43 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4484,7 +4334,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 114.3 0)
+			(at 138.43 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4493,7 +4343,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 195.58 114.3 0)
+			(at 139.7 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4515,7 +4365,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 151.13 88.9 90)
+		(at 95.25 88.9 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4523,7 +4373,7 @@
 		(dnp no)
 		(uuid "ce518c0b-0a49-44d7-91d2-76208b1a8192")
 		(property "Reference" "L214"
-			(at 151.13 86.36 90)
+			(at 95.25 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4531,7 +4381,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 151.13 86.36 90)
+			(at 95.25 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4540,7 +4390,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 151.13 90.17 90)
+			(at 95.25 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4548,7 +4398,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 88.9 0)
+			(at 95.25 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4557,7 +4407,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 151.13 88.9 0)
+			(at 95.25 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4582,7 +4432,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 151.13 114.3 90)
+		(at 95.25 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4590,7 +4440,7 @@
 		(dnp no)
 		(uuid "cf25cbea-9fb3-4adc-9057-511f4422bb51")
 		(property "Reference" "L216"
-			(at 151.13 111.76 90)
+			(at 95.25 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4598,7 +4448,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 151.13 111.76 90)
+			(at 95.25 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4607,7 +4457,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 151.13 115.57 90)
+			(at 95.25 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4615,7 +4465,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 114.3 0)
+			(at 95.25 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4624,7 +4474,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 151.13 114.3 0)
+			(at 95.25 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4649,7 +4499,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 195.58 101.6 270)
+		(at 139.7 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4658,7 +4508,7 @@
 		(fields_autoplaced yes)
 		(uuid "cfce6a16-0854-4b2e-8759-623b2204aad3")
 		(property "Reference" "#PWR023"
-			(at 190.5 101.6 0)
+			(at 134.62 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4667,7 +4517,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 191.77 101.4729 90)
+			(at 135.89 101.4729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4676,7 +4526,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 101.6 0)
+			(at 138.43 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4685,7 +4535,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 101.6 0)
+			(at 138.43 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4694,7 +4544,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 195.58 101.6 0)
+			(at 139.7 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4716,7 +4566,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 43.18 25.4 90)
+		(at 44.45 25.4 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4724,7 +4574,7 @@
 		(dnp no)
 		(uuid "d1ea67c9-445c-452b-95db-8803256f65a1")
 		(property "Reference" "L201"
-			(at 43.18 22.86 90)
+			(at 44.45 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4732,7 +4582,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 43.18 22.86 90)
+			(at 44.45 22.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4741,7 +4591,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 43.18 26.67 90)
+			(at 44.45 26.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4749,7 +4599,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 25.4 0)
+			(at 44.45 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4758,7 +4608,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 43.18 25.4 0)
+			(at 44.45 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4783,7 +4633,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 201.93 88.9 90)
+		(at 146.05 88.9 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4791,7 +4641,7 @@
 		(dnp no)
 		(uuid "d4c99964-802d-4d80-8441-beaf1c1c9424")
 		(property "Reference" "L222"
-			(at 201.93 86.36 90)
+			(at 146.05 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4799,7 +4649,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 201.93 86.36 90)
+			(at 146.05 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4808,7 +4658,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 201.93 90.17 90)
+			(at 146.05 90.17 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4816,7 +4666,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 88.9 0)
+			(at 146.05 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4825,7 +4675,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 201.93 88.9 0)
+			(at 146.05 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4850,7 +4700,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 36.83 25.4 270)
+		(at 38.1 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4859,7 +4709,7 @@
 		(fields_autoplaced yes)
 		(uuid "d5f2dd7f-8640-416f-ba03-746e1731f565")
 		(property "Reference" "#PWR01"
-			(at 31.75 25.4 0)
+			(at 33.02 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4868,7 +4718,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 33.02 25.2729 90)
+			(at 34.29 25.2729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4877,7 +4727,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 25.4 0)
+			(at 36.83 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4886,7 +4736,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 25.4 0)
+			(at 36.83 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4895,7 +4745,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 36.83 25.4 0)
+			(at 38.1 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4917,7 +4767,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 43.18 50.8 90)
+		(at 44.45 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4925,7 +4775,7 @@
 		(dnp no)
 		(uuid "d8ad91da-8fef-4cec-9127-c849de9b6300")
 		(property "Reference" "L203"
-			(at 43.18 48.26 90)
+			(at 44.45 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4933,7 +4783,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 43.18 48.26 90)
+			(at 44.45 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4942,7 +4792,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 43.18 52.07 90)
+			(at 44.45 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4950,7 +4800,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 50.8 0)
+			(at 44.45 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4959,7 +4809,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 43.18 50.8 0)
+			(at 44.45 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4984,7 +4834,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 252.73 38.1 90)
+		(at 196.85 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4992,7 +4842,7 @@
 		(dnp no)
 		(uuid "de1acd0c-1e2c-4142-83a4-cd1d7fdcee81")
 		(property "Reference" "L226"
-			(at 252.73 35.56 90)
+			(at 196.85 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5000,7 +4850,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 252.73 35.56 90)
+			(at 196.85 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5009,7 +4859,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 252.73 39.37 90)
+			(at 196.85 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5017,7 +4867,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 38.1 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5026,7 +4876,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 252.73 38.1 0)
+			(at 196.85 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5051,7 +4901,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 201.93 38.1 90)
+		(at 146.05 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5059,7 +4909,7 @@
 		(dnp no)
 		(uuid "df827d09-0b14-440e-a2b6-29b16017e508")
 		(property "Reference" "L218"
-			(at 201.93 35.56 90)
+			(at 146.05 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5067,7 +4917,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 201.93 35.56 90)
+			(at 146.05 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5076,7 +4926,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 201.93 39.37 90)
+			(at 146.05 39.37 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5084,7 +4934,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 38.1 0)
+			(at 146.05 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5093,7 +4943,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 201.93 38.1 0)
+			(at 146.05 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5118,7 +4968,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 201.93 114.3 90)
+		(at 146.05 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5126,7 +4976,7 @@
 		(dnp no)
 		(uuid "e04c5b3b-d81b-4d2c-b69a-5b8103a09e71")
 		(property "Reference" "L224"
-			(at 201.93 111.76 90)
+			(at 146.05 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5134,7 +4984,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 201.93 111.76 90)
+			(at 146.05 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5143,7 +4993,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 201.93 115.57 90)
+			(at 146.05 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5151,7 +5001,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 201.93 114.3 0)
+			(at 146.05 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5160,7 +5010,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 201.93 114.3 0)
+			(at 146.05 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5185,7 +5035,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 151.13 101.6 90)
+		(at 95.25 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5193,7 +5043,7 @@
 		(dnp no)
 		(uuid "eb4d550c-3b54-41c4-9b24-e6db7b9c2084")
 		(property "Reference" "L215"
-			(at 151.13 99.06 90)
+			(at 95.25 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5201,7 +5051,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 151.13 99.06 90)
+			(at 95.25 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5210,7 +5060,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 151.13 102.87 90)
+			(at 95.25 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5218,7 +5068,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 101.6 0)
+			(at 95.25 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5227,7 +5077,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 151.13 101.6 0)
+			(at 95.25 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5252,7 +5102,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 36.83 88.9 270)
+		(at 38.1 88.9 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5261,7 +5111,7 @@
 		(fields_autoplaced yes)
 		(uuid "f1fc5d75-3c52-487f-98a3-d8cd861b158a")
 		(property "Reference" "#PWR06"
-			(at 31.75 88.9 0)
+			(at 33.02 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5270,7 +5120,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 33.02 88.7729 90)
+			(at 34.29 88.7729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5279,7 +5129,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 88.9 0)
+			(at 36.83 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5288,7 +5138,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 88.9 0)
+			(at 36.83 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5297,7 +5147,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 36.83 88.9 0)
+			(at 38.1 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5319,7 +5169,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDPWR")
-		(at 144.78 63.5 270)
+		(at 88.9 63.5 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5328,7 +5178,7 @@
 		(fields_autoplaced yes)
 		(uuid "f5f71dba-af15-4cba-9c03-4c8f755de757")
 		(property "Reference" "#PWR012"
-			(at 139.7 63.5 0)
+			(at 83.82 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5337,7 +5187,7 @@
 			)
 		)
 		(property "Value" "GNDPWR"
-			(at 140.97 63.3729 90)
+			(at 85.09 63.3729 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5346,7 +5196,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 63.5 0)
+			(at 87.63 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5355,7 +5205,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 63.5 0)
+			(at 87.63 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5364,7 +5214,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDPWR\" , global ground"
-			(at 144.78 63.5 0)
+			(at 88.9 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5386,7 +5236,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 151.13 50.8 90)
+		(at 95.25 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5394,7 +5244,7 @@
 		(dnp no)
 		(uuid "f71f6377-afd8-43af-b1c9-b77d68e7c600")
 		(property "Reference" "L211"
-			(at 151.13 48.26 90)
+			(at 95.25 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5402,7 +5252,7 @@
 			)
 		)
 		(property "Value" "L"
-			(at 151.13 48.26 90)
+			(at 95.25 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5411,7 +5261,7 @@
 			)
 		)
 		(property "Footprint" "Coil:5x160"
-			(at 151.13 52.07 90)
+			(at 95.25 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5419,7 +5269,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 50.8 0)
+			(at 95.25 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5428,7 +5278,7 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 151.13 50.8 0)
+			(at 95.25 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5452,7 +5302,7 @@
 		)
 	)
 	(sheet
-		(at 259.08 22.86)
+		(at 203.2 22.86)
 		(size 12.7 93.98)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5467,8 +5317,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "0d65395a-9eaf-47f0-b189-6efe6e4cb2c6")
-		(property "Sheetname" "Rx Row Amplifier 4"
-			(at 259.08 22.1484 0)
+		(property "Sheetname" "Rx Preamp 4"
+			(at 203.2 22.1484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5477,7 +5327,7 @@
 			)
 		)
 		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 259.08 117.4246 0)
+			(at 203.2 117.4246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5494,7 +5344,7 @@
 		)
 	)
 	(sheet
-		(at 208.28 22.86)
+		(at 152.4 22.86)
 		(size 12.7 93.98)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5509,8 +5359,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "26f54fdc-4132-476a-8060-cb8a2c9e1866")
-		(property "Sheetname" "Rx Row Amplifier 3"
-			(at 208.28 22.1484 0)
+		(property "Sheetname" "Rx Preamp 3"
+			(at 152.4 22.1484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5519,7 +5369,7 @@
 			)
 		)
 		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 208.28 117.4246 0)
+			(at 152.4 117.4246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5536,7 +5386,7 @@
 		)
 	)
 	(sheet
-		(at 157.48 22.86)
+		(at 101.6 22.86)
 		(size 12.7 93.98)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5551,8 +5401,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "3213ddf0-427f-4c0b-85aa-925c5c3be698")
-		(property "Sheetname" "Rx Row Amplifier 2"
-			(at 157.48 22.1484 0)
+		(property "Sheetname" "Rx Preamp 2"
+			(at 101.6 22.1484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5561,7 +5411,7 @@
 			)
 		)
 		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 157.48 117.4246 0)
+			(at 101.6 117.4246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5579,7 +5429,7 @@
 	)
 	(sheet
 		(at 50.8 24.13)
-		(size 16.51 92.71)
+		(size 12.7 92.71)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5593,7 +5443,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "f2897f03-1c65-406d-938e-483190e13ecf")
-		(property "Sheetname" "Rx Row Amplifier 1"
+		(property "Sheetname" "Rx Preamp 1"
 			(at 50.8 23.4184 0)
 			(effects
 				(font
@@ -5609,166 +5459,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "RXIN1" input
-			(at 50.8 25.4 180)
-			(uuid "eac4bb77-5d2e-4a88-b18a-00bbc0ba3ffc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN2" input
-			(at 50.8 38.1 180)
-			(uuid "06a1a438-f226-465a-8bd1-8386656cf786")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN3" input
-			(at 50.8 50.8 180)
-			(uuid "c2de1a91-1649-4c42-90bf-53c3ce10d861")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN4" input
-			(at 50.8 63.5 180)
-			(uuid "cfa78530-fb52-40fc-b52a-85154ca81ad3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN5" input
-			(at 50.8 76.2 180)
-			(uuid "bc74259b-0d5c-4554-8e63-accae18dbd48")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN6" input
-			(at 50.8 88.9 180)
-			(uuid "a1e00a19-3125-4edf-a9a4-53f70dd43054")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN7" input
-			(at 50.8 101.6 180)
-			(uuid "74077dfc-cb2d-41d4-bd6b-eaf6af4a2a53")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN8" input
-			(at 50.8 114.3 180)
-			(uuid "c612fc31-3802-4e28-aa23-df639001508a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXOUT1" input
-			(at 67.31 25.4 0)
-			(uuid "2c5463b2-4555-4213-84f1-060d160a291b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT2" input
-			(at 67.31 38.1 0)
-			(uuid "63e8edf6-483b-4707-88c2-5be200d6b708")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT3" input
-			(at 67.31 50.8 0)
-			(uuid "b9378d28-d608-4d58-82cc-35e61330db19")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT4" input
-			(at 67.31 63.5 0)
-			(uuid "92e41314-7e66-4646-b11d-eb7b771cdaf7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT5" input
-			(at 67.31 76.2 0)
-			(uuid "b95149ac-a285-4792-8854-9d30c369bbd5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT6" input
-			(at 67.31 88.9 0)
-			(uuid "aaa15223-1a46-4904-ba5c-cfa04bb47962")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT7" input
-			(at 67.31 101.6 0)
-			(uuid "94f99403-186d-4a39-b004-22733041db52")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT8" input
-			(at 67.31 114.3 0)
-			(uuid "10a287f6-1da6-4ccf-bb6a-d798bf1d62d2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(instances
