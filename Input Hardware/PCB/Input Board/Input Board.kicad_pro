@@ -619,7 +619,7 @@
     ],
     [
       "f2897f03-1c65-406d-938e-483190e13ecf",
-      "Rx Preamp 1"
+      "Rx Row Amplifier 1"
     ],
     [
       "be7b6b67-fb63-4121-a158-51987fefa9a9",
@@ -627,7 +627,7 @@
     ],
     [
       "3213ddf0-427f-4c0b-85aa-925c5c3be698",
-      "Rx Preamp 2"
+      "Rx Row Amplifier 2"
     ],
     [
       "bf2971a4-4e8b-460e-806a-6c5050f52bee",
@@ -635,7 +635,7 @@
     ],
     [
       "26f54fdc-4132-476a-8060-cb8a2c9e1866",
-      "Rx Preamp 3"
+      "Rx Row Amplifier 3"
     ],
     [
       "908995ee-e872-4b00-89ed-692dff603043",
@@ -643,7 +643,7 @@
     ],
     [
       "0d65395a-9eaf-47f0-b189-6efe6e4cb2c6",
-      "Rx Preamp 4"
+      "Rx Row Amplifier 4"
     ],
     [
       "0fc095cc-6ee6-4117-a537-6519c9828b80",
@@ -660,6 +660,10 @@
     [
       "6ff1d53f-9520-4015-acff-de10540e78ee",
       "User Input"
+    ],
+    [
+      "11f39170-493e-4ecf-a6ba-aee1374b2ff1",
+      "Power"
     ]
   ],
   "text_variables": {}

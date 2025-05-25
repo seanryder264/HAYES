@@ -1677,17 +1677,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "include pulldown"
-		(exclude_from_sim no)
-		(at 80.01 53.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "18fe2a86-7b6d-4998-8b99-f4988efc8bf1")
-	)
 	(junction
 		(at 44.45 179.07)
 		(diameter 0)
@@ -1699,12 +1688,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "566cace9-d9dd-44b1-be7f-4578042d3637")
-	)
-	(junction
-		(at 38.1 163.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b2e339d-f1c3-4677-b01d-56755c8faf65")
 	)
 	(wire
 		(pts
