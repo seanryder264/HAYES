@@ -412,9 +412,39 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "x-pan\n"
+		(exclude_from_sim no)
+		(at 107.95 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "47973430-fb21-4531-bd3c-ae0bbf257031")
+	)
+	(text "y-pan\n"
+		(exclude_from_sim no)
+		(at 134.62 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a13f7fbf-b0ed-479b-9356-b234d6dcec69")
+	)
+	(text "Zoom\n"
+		(exclude_from_sim no)
+		(at 81.28 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d2d9d16a-6f71-43a2-a691-ebe200aeeabf")
+	)
 	(symbol
 		(lib_id "Device:RotaryEncoder_Switch_MP")
-		(at 57.15 44.45 0)
+		(at 81.28 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -423,7 +453,7 @@
 		(fields_autoplaced yes)
 		(uuid "3194fe53-3075-4d72-b63e-ee5979532cc1")
 		(property "Reference" "SW?"
-			(at 57.15 34.29 0)
+			(at 81.28 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -431,7 +461,7 @@
 			)
 		)
 		(property "Value" "RotaryEncoder_Switch_MP"
-			(at 57.15 36.83 0)
+			(at 81.28 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -439,7 +469,7 @@
 			)
 		)
 		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
-			(at 53.34 40.386 0)
+			(at 77.47 41.656 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -448,7 +478,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 57.15 0)
+			(at 81.28 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -457,7 +487,7 @@
 			)
 		)
 		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
-			(at 57.15 59.69 0)
+			(at 81.28 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -574,7 +604,7 @@
 	)
 	(symbol
 		(lib_id "Device:RotaryEncoder_Switch_MP")
-		(at 58.42 83.82 0)
+		(at 134.62 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -583,7 +613,7 @@
 		(fields_autoplaced yes)
 		(uuid "b5a9625c-ae0c-46ca-9377-b8d81377d1d3")
 		(property "Reference" "SW?"
-			(at 58.42 73.66 0)
+			(at 134.62 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -591,7 +621,7 @@
 			)
 		)
 		(property "Value" "RotaryEncoder_Switch_MP"
-			(at 58.42 76.2 0)
+			(at 134.62 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -599,7 +629,7 @@
 			)
 		)
 		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
-			(at 54.61 79.756 0)
+			(at 130.81 41.656 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -608,7 +638,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 58.42 96.52 0)
+			(at 134.62 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -617,7 +647,7 @@
 			)
 		)
 		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
-			(at 58.42 99.06 0)
+			(at 134.62 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -642,86 +672,6 @@
 		)
 		(pin "S1"
 			(uuid "6b40ed93-74d5-4b45-8aa2-09f3bbc7eb83")
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/6ff1d53f-9520-4015-acff-de10540e78ee"
-					(reference "SW?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:RotaryEncoder_Switch_MP")
-		(at 107.95 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e3ef00bb-d17f-4336-a630-74323ed07fd3")
-		(property "Reference" "SW?"
-			(at 107.95 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RotaryEncoder_Switch_MP"
-			(at 107.95 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
-			(at 104.14 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 107.95 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
-			(at 107.95 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "S2"
-			(uuid "bfceac47-da0e-4e35-951d-613331efc114")
-		)
-		(pin "C"
-			(uuid "9b422baa-61df-4636-8b26-e1b37d17b7a5")
-		)
-		(pin "MP"
-			(uuid "381a66d5-7184-489c-9b3b-347782148254")
-		)
-		(pin "B"
-			(uuid "c766f235-81d3-43b1-aa48-85e291950f7d")
-		)
-		(pin "A"
-			(uuid "f55b5a0d-a8c9-4232-8ab7-17b87ebef213")
-		)
-		(pin "S1"
-			(uuid "a66b60bd-b41d-4fad-9005-478dd6f8a39f")
 		)
 		(instances
 			(project "Input Board"
