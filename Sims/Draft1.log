@@ -1,0 +1,50 @@
+Circuit: * E:\Git\Group Project\HAYES\Sims\Draft1.asc
+
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+vernier = 0.5
+vernier = 0.25
+Gmin = 3.52136e-005
+vernier = 0.333333
+Gmin = 1.70931e-005
+vernier = 0.444444
+vernier = 0.592592
+Gmin = 5.2274e-006
+vernier = 0.790123
+vernier = 1
+Gmin = 8.60498e-007
+Gmin = 9.23953e-008
+Gmin = 9.92087e-009
+Gmin = 1.06525e-009
+Gmin = 1.1438e-010
+Gmin = 1.22814e-011
+Gmin = 1.31871e-012
+Gmin = 1.41595e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Mon May 26 21:09:26 2025
+Total elapsed time: 0.069 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 629
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 139
+fillins = 243
+solver = Normal
+Matrix Compiler1:    1217 opcodes
+Matrix Compiler2: 16.83 KB object code size  0.9/0.9/[0.7]
+
