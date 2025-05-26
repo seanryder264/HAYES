@@ -2416,7 +2416,7 @@
 	)
 	(symbol
 		(lib_id "TLV3544IDR:TLV3544IDR")
-		(at 104.14 57.15 0)
+		(at 104.14 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2425,7 +2425,7 @@
 		(fields_autoplaced yes)
 		(uuid "a3902573-026e-4895-918c-488b7472fd74")
 		(property "Reference" "IC?"
-			(at 119.38 49.53 0)
+			(at 119.38 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2433,7 +2433,7 @@
 			)
 		)
 		(property "Value" "TLV3544IDR"
-			(at 119.38 52.07 0)
+			(at 119.38 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2441,7 +2441,7 @@
 			)
 		)
 		(property "Footprint" "SOIC127P600X175-14N"
-			(at 130.81 152.07 0)
+			(at 130.81 149.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2451,7 +2451,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/tlv3544"
-			(at 130.81 252.07 0)
+			(at 130.81 249.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2461,7 +2461,7 @@
 			)
 		)
 		(property "Description" "TLV354x 200MHz, RRIO, CMOS Operational Amplifier"
-			(at 104.14 57.15 0)
+			(at 104.14 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2470,7 +2470,7 @@
 			)
 		)
 		(property "Height" "1.75"
-			(at 130.81 452.07 0)
+			(at 130.81 449.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2480,7 +2480,7 @@
 			)
 		)
 		(property "Mouser Part Number" "595-TLV3544IDR"
-			(at 130.81 552.07 0)
+			(at 130.81 549.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2490,7 +2490,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV3544IDR/?qs=9lcNTSmDlCpphxOg9cZfNA%3D%3D"
-			(at 130.81 652.07 0)
+			(at 130.81 649.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2500,7 +2500,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Texas Instruments"
-			(at 130.81 752.07 0)
+			(at 130.81 749.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2510,7 +2510,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "TLV3544IDR"
-			(at 130.81 852.07 0)
+			(at 130.81 849.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2562,8 +2562,20 @@
 			(uuid "a062dc34-1aef-4bc6-ab3f-e48dc90d4c56")
 		)
 		(instances
-			(project ""
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/0fc095cc-6ee6-4117-a537-6519c9828b80"
+					(reference "IC?")
+					(unit 1)
+				)
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/908995ee-e872-4b00-89ed-692dff603043"
+					(reference "IC?")
+					(unit 1)
+				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/be7b6b67-fb63-4121-a158-51987fefa9a9"
+					(reference "IC?")
+					(unit 1)
+				)
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/bf2971a4-4e8b-460e-806a-6c5050f52bee"
 					(reference "IC?")
 					(unit 1)
 				)
