@@ -4813,6 +4813,17 @@
 		)
 		(uuid "c02b35ea-ca89-4167-9e0d-3fb5bc6bfac7")
 	)
+	(text "connect boot0"
+		(exclude_from_sim no)
+		(at 198.12 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c0a0bd14-5682-43cd-a268-87270007a296")
+	)
 	(text "COMP4_INM"
 		(exclude_from_sim no)
 		(at 260.35 91.44 0)
@@ -4968,6 +4979,12 @@
 		(uuid "9e27c5bf-4043-4d85-8f0f-2fee29cff6de")
 	)
 	(junction
+		(at 50.8 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a363d6f8-7cc1-47df-94e1-2227566f2dc7")
+	)
+	(junction
 		(at 50.8 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5020,12 +5037,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "df21416e-5b10-4daf-a58d-ef3cac690b50")
-	)
-	(junction
-		(at 50.8 177.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e47782ed-3ed7-4176-bbb4-b3024c4927ec")
 	)
 	(junction
 		(at 158.75 133.35)
@@ -7568,6 +7579,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3VA")
+		(at 236.22 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "194da8b7-8ce2-4372-8604-3249e8351473")
+		(property "Reference" "#PWR0137"
+			(at 236.22 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VA"
+			(at 236.22 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
+			(at 236.22 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e6e0362-57a1-4460-8ca7-aac565671bf1")
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
+					(reference "#PWR0137")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 50.8 82.55 0)
 		(unit 1)
@@ -7829,6 +7906,72 @@
 			(project ""
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
 					(reference "#PWR0114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3VA")
+		(at 50.8 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25f6fd42-e3f6-48b5-ae35-bf1838735c97")
+		(property "Reference" "#PWR0139"
+			(at 50.8 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VA"
+			(at 50.8 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
+			(at 50.8 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aaa435e3-d746-43ea-9044-8eed767b8ad1")
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
+					(reference "#PWR0139")
 					(unit 1)
 				)
 			)
@@ -10654,73 +10797,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3VA")
-		(at 50.8 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9226f3d6-068c-4794-b175-54ad999a2634")
-		(property "Reference" "#PWR0199"
-			(at 50.8 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDDA"
-			(at 53.34 176.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 50.8 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5738f0be-ec48-4c3b-8fac-af5f3469f5fc")
-		)
-		(instances
-			(project ""
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "#PWR0199")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 101.6 190.5 0)
 		(unit 1)
@@ -12091,72 +12167,6 @@
 			(project ""
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
 					(reference "#PWR0121")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3VA")
-		(at 236.22 35.56 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e3af30f8-b385-4364-a18f-f8ad1b39527c")
-		(property "Reference" "#PWR0186"
-			(at 236.22 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDDA"
-			(at 236.22 33.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 236.22 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 236.22 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
-			(at 236.22 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bb28585c-0c4b-4eaa-8ec8-9842af91c092")
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "#PWR0186")
 					(unit 1)
 				)
 			)
