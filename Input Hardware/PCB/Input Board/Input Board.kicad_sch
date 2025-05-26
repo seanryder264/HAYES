@@ -1102,7 +1102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "695b809b-991a-4dcd-abfd-85d91ea52ae0")
-		(property "Reference" "H4"
+		(property "Reference" "H104"
 			(at 49.53 180.3399 0)
 			(effects
 				(font
@@ -1150,7 +1150,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(reference "H4")
+					(reference "H104")
 					(unit 1)
 				)
 			)
@@ -1166,7 +1166,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d7bba2f-9423-467b-853a-4d4cd07032c3")
-		(property "Reference" "H1"
+		(property "Reference" "H101"
 			(at 49.53 165.0999 0)
 			(effects
 				(font
@@ -1214,7 +1214,7 @@
 		(instances
 			(project ""
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(reference "H1")
+					(reference "H101")
 					(unit 1)
 				)
 			)
@@ -1230,7 +1230,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f8fc798-82db-414d-94d7-ba338e11a401")
-		(property "Reference" "H3"
+		(property "Reference" "H103"
 			(at 49.53 175.2599 0)
 			(effects
 				(font
@@ -1278,7 +1278,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(reference "H3")
+					(reference "H103")
 					(unit 1)
 				)
 			)
@@ -1294,7 +1294,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa659ac3-5c75-4eca-907a-e2c77205ce4a")
-		(property "Reference" "H2"
+		(property "Reference" "H102"
 			(at 49.53 170.1799 0)
 			(effects
 				(font
@@ -1342,7 +1342,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(reference "H2")
+					(reference "H102")
 					(unit 1)
 				)
 			)
@@ -1358,7 +1358,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b437f6a7-3819-4930-a025-a0f2a1e12732")
-		(property "Reference" "H5"
+		(property "Reference" "H105"
 			(at 49.53 185.4199 0)
 			(effects
 				(font
@@ -1406,7 +1406,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(reference "H5")
+					(reference "H105")
 					(unit 1)
 				)
 			)
@@ -1422,7 +1422,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de639a2d-5fe1-4df8-af9c-1917289b1daf")
-		(property "Reference" "H6"
+		(property "Reference" "H106"
 			(at 49.53 190.4999 0)
 			(effects
 				(font
@@ -1470,7 +1470,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(reference "H6")
+					(reference "H106")
 					(unit 1)
 				)
 			)
@@ -1513,7 +1513,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(page "14")
+					(page "12")
 				)
 			)
 		)
@@ -1855,7 +1855,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(page "11")
+					(page "9")
 				)
 			)
 		)
@@ -2057,7 +2057,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(page "13")
+					(page "11")
 				)
 			)
 		)
@@ -2349,7 +2349,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(page "4")
+					(page "8")
 				)
 			)
 		)
@@ -2411,7 +2411,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(page "15")
+					(page "13")
 				)
 			)
 		)
@@ -2785,7 +2785,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(page "12")
+					(page "10")
 				)
 			)
 		)
