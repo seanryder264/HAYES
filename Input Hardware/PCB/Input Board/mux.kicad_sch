@@ -1803,16 +1803,6 @@
 	)
 	(text "ADA4891"
 		(exclude_from_sim no)
-		(at 172.72 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "467e10ef-fa5e-4f35-a8be-5ebc9de49f58")
-	)
-	(text "ADA4891"
-		(exclude_from_sim no)
 		(at 171.45 24.13 0)
 		(effects
 			(font
