@@ -16,7 +16,7 @@ C4 N009 N003 56p
 R1 N009 1.65v 12k
 R8 N004 N003 68k
 V1 N007 1.65v SINE(0 ac)
-.ac dec 100 10k 100Meg
+.ac dec 100 1k 100Meg
 .lib ADI.lib
 .backanno
 .end

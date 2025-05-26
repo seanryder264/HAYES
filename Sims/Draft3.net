@@ -8,7 +8,7 @@ V1 N001 0 SINE(0 ac)
 V2 1.65v 0 1.65
 XU1 N002 N003 3.3v 0 N004 level2 Avol=1Meg GBW=20Meg Slew=10Meg Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
 V3 3.3v 0 3.3
-.ac dec 100 10k 100meg
+.ac dec 100 1k 100meg
 .lib UniversalOpAmp2.lib
 .backanno
 .end
