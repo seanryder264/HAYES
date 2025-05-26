@@ -5826,6 +5826,16 @@
 		)
 		(uuid "dcf82b10-b581-438b-acf5-a21f5f66c76f")
 	)
+	(wire
+		(pts
+			(xy 76.2 101.6) (xy 71.12 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e675f5a2-4397-433e-8bf7-055b11d7a377")
+	)
 	(polyline
 		(pts
 			(xy 255.27 124.46) (xy 259.08 124.46)
@@ -5865,6 +5875,16 @@
 			(type default)
 		)
 		(uuid "f08b010b-c2e0-4709-aba5-8d518e8ed83b")
+	)
+	(polyline
+		(pts
+			(xy 256.54 93.98) (xy 259.08 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0e68d50-d5b6-46ab-8f12-164df164c0e8")
 	)
 	(wire
 		(pts
@@ -5908,7 +5928,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 130.81) (xy 69.85 133.35)
+			(xy 69.85 130.81) (xy 69.85 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6105,6 +6125,16 @@
 			(justify left)
 		)
 		(uuid "87ff4a67-829c-4373-8e53-2b950deccf44")
+	)
+	(label "TX_SRCLK"
+		(at 71.12 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9f9245d2-c372-4dae-ad3f-8f3b02b605ad")
 	)
 	(label "BOOT0"
 		(at 210.82 48.26 180)
@@ -7707,6 +7737,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 76.2 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "437a5ce5-fafc-42fd-aa98-230b3076e12d")
+		(property "Reference" "TP6"
+			(at 81.28 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 81.28 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 76.2 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 76.2 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f395770a-01b5-43d5-9c42-c3c2cc291c3b")
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
 		(at 63.5 50.8 0)
@@ -8103,7 +8200,7 @@
 	(symbol
 		(lib_name "GND_2")
 		(lib_id "power:GND")
-		(at 69.85 133.35 0)
+		(at 69.85 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8112,7 +8209,7 @@
 		(fields_autoplaced yes)
 		(uuid "4b64dbc1-a9d2-425e-b01b-3e633d84b39f")
 		(property "Reference" "#PWR0115"
-			(at 69.85 139.7 0)
+			(at 69.85 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8121,7 +8218,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 69.85 138.43 0)
+			(at 69.85 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8129,7 +8226,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 133.35 0)
+			(at 69.85 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8138,7 +8235,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 133.35 0)
+			(at 69.85 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8147,7 +8244,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 69.85 133.35 0)
+			(at 69.85 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9732,12 +9829,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3VA"
-			(at 50.8 172.72 0)
+		(property "Value" "VDDA"
+			(at 53.34 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -11173,7 +11271,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3VA"
+		(property "Value" "VDDA"
 			(at 236.22 33.02 90)
 			(effects
 				(font

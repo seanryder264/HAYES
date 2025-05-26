@@ -5,6 +5,113 @@
 	(uuid "d0f650f1-274d-4feb-8567-3555262e081c")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1181,12 +1288,6 @@
 		(uuid "9dd6c503-fdb2-4371-b43a-712704660759")
 	)
 	(junction
-		(at 158.75 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0164501d-a300-4e7b-bc52-d311c085fd66")
-	)
-	(junction
 		(at 90.17 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1223,10 +1324,22 @@
 		(uuid "75ad3177-0bfd-41af-b678-c6bcd6e96996")
 	)
 	(junction
+		(at 127 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7745f55f-0630-4e84-a69e-ceeda2af729f")
+	)
+	(junction
 		(at 71.12 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "872146be-ddc3-46ae-93eb-04f0820cb2cf")
+	)
+	(junction
+		(at 166.37 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e8e113c-c1a7-4388-b9c1-392f4b810e9a")
 	)
 	(junction
 		(at 58.42 62.23)
@@ -1235,10 +1348,22 @@
 		(uuid "906e3c22-9450-4af8-b805-720af9c2a054")
 	)
 	(junction
+		(at 160.02 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c7d9947-7d0c-4cce-89e1-8345b9a33b2d")
+	)
+	(junction
 		(at 134.62 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a1323055-505c-4922-bbe9-5ccc7ca97743")
+	)
+	(junction
+		(at 167.64 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4d32a31-ae54-45a1-a560-f79847fb209c")
 	)
 	(junction
 		(at 44.45 50.8)
@@ -1247,7 +1372,7 @@
 		(uuid "a875882f-923b-46a7-afec-9ccc380e407e")
 	)
 	(junction
-		(at 158.75 124.46)
+		(at 160.02 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bc56ec57-6694-46be-9160-94eee3b41040")
@@ -1277,6 +1402,12 @@
 		(uuid "d32459e0-bafc-47da-9037-0b14611618ce")
 	)
 	(junction
+		(at 125.73 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8e663f5-a97f-4522-a3fb-6fcf3432e247")
+	)
+	(junction
 		(at 102.87 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1287,12 +1418,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f071baa7-df31-47ec-b340-db853037a398")
-	)
-	(junction
-		(at 166.37 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f3771200-c444-433b-814a-6f5059e63516")
 	)
 	(junction
 		(at 158.75 78.74)
@@ -1332,6 +1457,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 105.41) (xy 127 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "128b7969-3211-4d39-b892-a7be73cf511d")
+	)
+	(wire
+		(pts
 			(xy 134.62 62.23) (xy 143.51 62.23)
 		)
 		(stroke
@@ -1339,6 +1474,26 @@
 			(type default)
 		)
 		(uuid "15e5047c-b8a7-4864-8aea-ec37c3c23eec")
+	)
+	(wire
+		(pts
+			(xy 167.64 105.41) (xy 167.64 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21d66d33-eb80-4362-99ef-c0a2aedb5410")
+	)
+	(wire
+		(pts
+			(xy 125.73 59.69) (xy 125.73 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2297a1a3-d5aa-4b2c-bbf5-97da16c52611")
 	)
 	(wire
 		(pts
@@ -1362,7 +1517,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 107.95) (xy 158.75 107.95)
+			(xy 151.13 107.95) (xy 160.02 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1372,7 +1527,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 118.11) (xy 158.75 124.46)
+			(xy 160.02 118.11) (xy 160.02 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1392,6 +1547,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 62.23) (xy 134.62 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30e1f6df-64af-4de2-b0f0-f184f3b3ff2d")
+	)
+	(wire
+		(pts
 			(xy 90.17 87.63) (xy 115.57 87.63)
 		)
 		(stroke
@@ -1402,7 +1567,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 107.95) (xy 143.51 107.95)
+			(xy 115.57 107.95) (xy 127 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1462,7 +1627,17 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 110.49) (xy 166.37 107.95)
+			(xy 127 107.95) (xy 143.51 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c4ab84e-3693-40e1-8e26-87f600575d8b")
+	)
+	(wire
+		(pts
+			(xy 167.64 110.49) (xy 167.64 107.95)
 		)
 		(stroke
 			(width 0)
@@ -1482,7 +1657,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 124.46) (xy 158.75 124.46)
+			(xy 167.64 124.46) (xy 160.02 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1522,7 +1697,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 107.95) (xy 158.75 110.49)
+			(xy 160.02 107.95) (xy 160.02 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1532,7 +1707,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 125.73) (xy 158.75 124.46)
+			(xy 160.02 125.73) (xy 160.02 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1602,16 +1777,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 107.95) (xy 166.37 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "810069b9-c331-40df-b2f6-889a12cc9555")
-	)
-	(wire
-		(pts
 			(xy 102.87 74.93) (xy 90.17 74.93)
 		)
 		(stroke
@@ -1672,13 +1837,23 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 62.23) (xy 134.62 62.23)
+			(xy 115.57 62.23) (xy 125.73 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "acb481e0-6fb9-440a-af34-d3f8a19a698f")
+	)
+	(wire
+		(pts
+			(xy 160.02 107.95) (xy 167.64 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2bdf425-8e3b-4319-9d96-fab389b9298d")
 	)
 	(wire
 		(pts
@@ -1722,6 +1897,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 107.95) (xy 168.91 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c40e71a6-7420-4703-b59d-c3f711e3a6e1")
+	)
+	(wire
+		(pts
 			(xy 71.12 62.23) (xy 82.55 62.23)
 		)
 		(stroke
@@ -1762,13 +1947,13 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 107.95) (xy 168.91 107.95)
+			(xy 166.37 59.69) (xy 166.37 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d08cf2b4-abdd-45de-84fe-2116d7bbbd09")
+		(uuid "d2235269-f2bc-4d26-919a-867d96e20cc5")
 	)
 	(wire
 		(pts
@@ -1852,7 +2037,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 118.11) (xy 166.37 124.46)
+			(xy 167.64 118.11) (xy 167.64 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2749,7 +2934,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 158.75 114.3 0)
+		(at 160.02 114.3 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2758,7 +2943,7 @@
 		(dnp no)
 		(uuid "1096edfe-51fd-4806-a3e7-60edbd6f2cd1")
 		(property "Reference" "C?"
-			(at 158.115 111.76 0)
+			(at 159.385 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2767,7 +2952,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 158.115 116.84 0)
+			(at 159.385 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2776,7 +2961,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 157.7848 118.11 0)
+			(at 159.0548 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2785,7 +2970,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 158.75 114.3 0)
+			(at 160.02 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2794,7 +2979,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 158.75 114.3 0)
+			(at 160.02 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2803,7 +2988,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 158.75 114.3 0)
+			(at 160.02 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2812,7 +2997,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL05B104KB54PNC"
-			(at 158.75 114.3 0)
+			(at 160.02 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2821,7 +3006,7 @@
 			)
 		)
 		(property "Distributor Link" "https://jlcpcb.com/partdetail/291005-CL05B104KB54PNC/C307331"
-			(at 158.75 114.3 0)
+			(at 160.02 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2830,7 +3015,7 @@
 			)
 		)
 		(property "JLC Part Type" "Basic"
-			(at 158.75 114.3 0)
+			(at 160.02 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2839,7 +3024,7 @@
 			)
 		)
 		(property "Other Notes" "50V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 158.75 114.3 0)
+			(at 160.02 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2848,7 +3033,7 @@
 			)
 		)
 		(property "LCSC" "C307331"
-			(at 158.75 114.3 0)
+			(at 160.02 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3338,17 +3523,16 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 166.37 114.3 0)
-		(mirror y)
+		(lib_id "Connector:TestPoint")
+		(at 127 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "73ed3133-76e0-448d-bf11-1a68c9418593")
-		(property "Reference" "C?"
-			(at 165.735 111.76 0)
+		(uuid "56f697fc-5cdb-4a83-877c-7d23598e4ba0")
+		(property "Reference" "TP?"
+			(at 127 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3356,17 +3540,18 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1u"
-			(at 165.735 116.84 0)
+		(property "Value" "TestPoint"
+			(at 118.11 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 165.4048 118.11 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 132.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3375,7 +3560,141 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 166.37 114.3 0)
+			(at 132.08 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 127 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4badfc1a-39d1-4f55-9d59-f76f8a8907e6")
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/11f39170-493e-4ecf-a6ba-aee1374b2ff1"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 166.37 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73e2cf67-03d1-4d05-bd12-36856a556ed0")
+		(property "Reference" "TP?"
+			(at 166.37 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 157.48 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 171.45 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 171.45 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 166.37 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4f098f64-3587-4b63-882c-de368c706a76")
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/11f39170-493e-4ecf-a6ba-aee1374b2ff1"
+					(reference "TP?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 167.64 114.3 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73ed3133-76e0-448d-bf11-1a68c9418593")
+		(property "Reference" "C?"
+			(at 167.005 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 167.005 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 166.6748 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3384,7 +3703,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 166.37 114.3 0)
+			(at 167.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3393,7 +3712,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 166.37 114.3 0)
+			(at 167.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3402,7 +3721,7 @@
 			)
 		)
 		(property "Manufacturer Part Number" "CL21B105KBFNNNE"
-			(at 166.37 114.3 0)
+			(at 167.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3411,7 +3730,7 @@
 			)
 		)
 		(property "Distributor Link" "https://jlcpcb.com/partdetail/29074-CL21B105KBFNNNE/C28323"
-			(at 166.37 114.3 0)
+			(at 167.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3420,7 +3739,7 @@
 			)
 		)
 		(property "JLC Part Type" "Basic"
-			(at 166.37 114.3 0)
+			(at 167.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3429,7 +3748,7 @@
 			)
 		)
 		(property "Other Notes" "50V 1uF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 166.37 114.3 0)
+			(at 167.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3438,7 +3757,7 @@
 			)
 		)
 		(property "LCSC" "C28323"
-			(at 166.37 114.3 0)
+			(at 167.64 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3456,6 +3775,73 @@
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/11f39170-493e-4ecf-a6ba-aee1374b2ff1"
 					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 125.73 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "790638c5-bc90-43a3-87f9-656e3fd8a458")
+		(property "Reference" "TP?"
+			(at 125.73 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 116.84 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 130.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 125.73 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f67d04a-45b8-450e-bb70-255760004d73")
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/11f39170-493e-4ecf-a6ba-aee1374b2ff1"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
@@ -3742,7 +4128,7 @@
 	(symbol
 		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 158.75 125.73 0)
+		(at 160.02 125.73 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3752,7 +4138,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba2a7661-fb31-4e58-9e47-4db2a5c5c505")
 		(property "Reference" "#PWR0132"
-			(at 158.75 132.08 0)
+			(at 160.02 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3761,7 +4147,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 158.75 130.81 0)
+			(at 160.02 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3769,7 +4155,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 125.73 0)
+			(at 160.02 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3778,7 +4164,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 125.73 0)
+			(at 160.02 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3787,7 +4173,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 125.73 0)
+			(at 160.02 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4346,6 +4732,73 @@
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/11f39170-493e-4ecf-a6ba-aee1374b2ff1"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 167.64 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6856e4b-8bd8-4ceb-8458-03096932a7d0")
+		(property "Reference" "TP?"
+			(at 167.64 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 158.75 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 172.72 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 167.64 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c18acbe9-c0c1-4649-9011-c31d6de79dbf")
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/11f39170-493e-4ecf-a6ba-aee1374b2ff1"
+					(reference "TP?")
 					(unit 1)
 				)
 			)
