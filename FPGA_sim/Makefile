@@ -3,7 +3,7 @@ TOP = pixel_generator
 all: sim
 
 sim:
-	verilator -Wall --cc $(TOP).v --exe wrapper.cpp sim_main.cpp
+	verilator -Wall --cc $(TOP).v --exe wrapper.cpp
 	make -C obj_dir -j -f V$(TOP).mk V$(TOP)
 
 run: sim

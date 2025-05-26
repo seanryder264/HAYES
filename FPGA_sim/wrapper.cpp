@@ -1,10 +1,12 @@
 #include "Vpixel_generator.h"
 #include "verilated.h"
+#include <fstream>
+#include <iostream>
 
 int main(int argc, char** argv) {
     VerilatedContext* contextp = new VerilatedContext;
     contextp->commandArgs(argc, argv);
-    Vpixle_generator* top = new Vpixle_generator{contextp};
+    Vpixel_generator* top = new Vpixel_generator{contextp};
     while (!contextp->gotFinish()) { top->eval(); }
 
     std::ofstream out("out_stream_log.csv");
@@ -16,6 +18,8 @@ int main(int argc, char** argv) {
     top->s_axi_lite_aclk = 0;
 
     top->out_stream_tready = 1;  // Always ready to accept data
+
+    int main_time = 0; // Initial reset phase
 
     // Simulate 5 clock cycles of reset
     for (int i = 0; i < 10; i++) {
@@ -57,6 +61,6 @@ int main(int argc, char** argv) {
     delete top;
     return 0;
 }
-  }
+
 
   

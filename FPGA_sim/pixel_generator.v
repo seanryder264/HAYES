@@ -35,6 +35,8 @@ output          out_stream_tvalid,
 output [0:0]    out_stream_tuser, 
 
 //AXI-Lite S
+
+/* verilator lint_off UNUSED */
 input [AXI_LITE_ADDR_WIDTH-1:0]     s_axi_lite_araddr,
 output          s_axi_lite_arready,
 input           s_axi_lite_arvalid,
@@ -42,6 +44,7 @@ input           s_axi_lite_arvalid,
 input [AXI_LITE_ADDR_WIDTH-1:0]     s_axi_lite_awaddr,
 output          s_axi_lite_awready,
 input           s_axi_lite_awvalid,
+/* verilator lint_on UNUSED */
 
 input           s_axi_lite_bready,
 output [1:0]    s_axi_lite_bresp,
@@ -61,6 +64,7 @@ input           s_axi_lite_wvalid
 localparam X_SIZE = 640;
 localparam Y_SIZE = 480;
 parameter  REG_FILE_SIZE = 8;
+localparam int REG_ADDR_WIDTH = $bits(REG_FILE_SIZE);
 localparam REG_FILE_AWIDTH = $clog2(REG_FILE_SIZE);
 parameter  AXI_LITE_ADDR_WIDTH = 8;
 
@@ -119,7 +123,7 @@ always @(posedge s_axi_lite_aclk) begin
 end
 
 assign s_axi_lite_arready = (readState == AWAIT_RADD);
-assign s_axi_lite_rresp = (readAddr < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
+assign s_axi_lite_rresp = ({{(REG_ADDR_WIDTH-3){1'b0}}, readAddr} < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
 assign s_axi_lite_rvalid = (readState == AWAIT_READ);
 assign s_axi_lite_rdata = readData;
 
@@ -187,9 +191,7 @@ end
 assign s_axi_lite_awready = (writeState == AWAIT_WADD_AND_DATA || writeState == AWAIT_WADD);
 assign s_axi_lite_wready = (writeState == AWAIT_WADD_AND_DATA || writeState == AWAIT_WDATA);
 assign s_axi_lite_bvalid = (writeState == AWAIT_RESP);
-assign s_axi_lite_bresp = (writeAddr < REG_FILE_SIZE[REG_FILE_AWIDTH-1:0]) ? AXI_OK : AXI_ERR;
-
-
+assign s_axi_lite_bresp = ({{(REG_ADDR_WIDTH-3){1'b0}}, writeAddr} < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
 
 reg [9:0] x;
 reg [8:0] y;
@@ -197,14 +199,14 @@ reg [8:0] y;
 wire first = (x == 0) & (y==0);
 wire lastx = (x == X_SIZE - 1);
 wire lasty = (y == Y_SIZE - 1);
-wire [7:0] frame = regfile[0];
+wire [7:0] frame = regfile[0][7:0];
 wire ready;
 
 always @(posedge out_stream_aclk) begin
     if (periph_resetn) begin
         if (ready & valid_int) begin
             if (lastx) begin
-                x <= 9'd0;
+                x <= 10'd0;
                 if (lasty) y <= 9'd0;
                 else y <= y + 9'd1;
             end
@@ -223,6 +225,7 @@ wire [7:0] r, g, b;
 assign r = x[7:0] + frame;
 assign g = y[7:0] + frame;
 assign b = x[6:0]+y[6:0] + frame;
+
 
 packer pixel_packer(    .aclk(out_stream_aclk),
                         .aresetn(periph_resetn),
