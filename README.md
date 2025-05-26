@@ -6,7 +6,7 @@
 
 | | Harry | Aadin | Yuki | Ethan | Sean |
 | --- | --- | --- | --- | --- | --- |
-| **Week 1** | project ideas | project ideas, setting up PYNQ board, building the starter projects, got vivado stuff set up | project ideas, variable input ideas | project ideas, visualisation, python | Admin/Planning, Setting up simulation, project ideas, block diagram of logic |
+| **Week 1** | project ideas, hardware design | project ideas, setting up PYNQ board, building the starter projects, got vivado stuff set up | project ideas, variable input ideas, hardware design | project ideas, visualisation, python | Admin/Planning, Setting up simulation, project ideas, block diagram of logic |
 | **Week 2** | | | | | |
 | **Week 3** | | | | | |
 | **Week 4** | | | | | |
