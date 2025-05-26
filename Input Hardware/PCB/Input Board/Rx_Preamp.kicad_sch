@@ -691,7 +691,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
+		(symbol "power:+3.3VA"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -712,7 +712,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+3.3V"
+			(property "Value" "+3.3VA"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -738,7 +738,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -756,7 +756,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3.3V_0_1"
+			(symbol "+3.3VA_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -794,7 +794,7 @@
 					)
 				)
 			)
-			(symbol "+3.3V_1_1"
+			(symbol "+3.3VA_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -955,12 +955,6 @@
 		(uuid "0d5fcd1e-9f43-455b-b9fb-7c4be22ab2b2")
 	)
 	(junction
-		(at 102.87 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0efb280e-910a-433a-8b12-954f9fe8a90a")
-	)
-	(junction
 		(at 41.91 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1021,12 +1015,6 @@
 		(uuid "3894e089-14a0-4195-a514-cf0c9feefad8")
 	)
 	(junction
-		(at 69.85 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4620c108-530e-44c9-96c6-67102374b9ba")
-	)
-	(junction
 		(at 137.16 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1043,6 +1031,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "67e49d7f-9d5e-4afd-98af-c1e45c75c881")
+	)
+	(junction
+		(at 69.85 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8431bfc4-4f5c-4cb5-a01f-fa78089380b7")
 	)
 	(junction
 		(at 52.07 95.25)
@@ -1073,6 +1067,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a68e2621-9bab-4610-a542-d22800ebb249")
+	)
+	(junction
+		(at 102.87 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab163754-6f90-4d7b-88a5-ee6edf8823d0")
 	)
 	(junction
 		(at 168.91 38.1)
@@ -1298,16 +1298,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 144.78) (xy 102.87 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "307db5ac-647f-4ac5-aa64-1b6c0868ef2f")
-	)
-	(wire
-		(pts
 			(xy 242.57 99.06) (xy 242.57 100.33)
 		)
 		(stroke
@@ -1488,7 +1478,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 144.78) (xy 76.2 144.78)
+			(xy 63.5 144.78) (xy 69.85 144.78)
 		)
 		(stroke
 			(width 0)
@@ -1698,16 +1688,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 144.78) (xy 69.85 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69c0d8f3-72a6-43ae-9b08-574208e2c52a")
-	)
-	(wire
-		(pts
 			(xy 170.18 77.47) (xy 168.91 77.47)
 		)
 		(stroke
@@ -1888,7 +1868,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 144.78) (xy 109.22 144.78)
+			(xy 96.52 144.78) (xy 102.87 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2128,6 +2108,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 144.78) (xy 109.22 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c59de9c3-4b71-4d5a-a534-d04260fe622b")
+	)
+	(wire
+		(pts
 			(xy 52.07 45.72) (xy 62.23 45.72)
 		)
 		(stroke
@@ -2295,6 +2285,16 @@
 			(type default)
 		)
 		(uuid "e8420ea4-cb54-477a-8b7b-1e0a0196a991")
+	)
+	(wire
+		(pts
+			(xy 69.85 144.78) (xy 76.2 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebf4fdd2-bb07-492c-a8c3-9611b6f4342e")
 	)
 	(wire
 		(pts
@@ -2982,7 +2982,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 191.77 82.55 0)
 			(effects
 				(font
@@ -2990,7 +2990,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 191.77 90.17 0)
 			(effects
 				(font
@@ -3436,84 +3436,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 102.87 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "25b2e867-5634-44f7-8d2a-41560a747187")
-		(property "Reference" "#PWR053"
-			(at 102.87 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 102.87 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 102.87 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6a04720e-4355-4d6b-88c8-e628a8c63e88")
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/01c2bf4d-41af-41b2-9c7a-085aeaf63fad"
-					(reference "#PWR0141")
-					(unit 1)
-				)
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/8c0f373c-112a-4e29-93aa-c1271dfd575d"
-					(reference "#PWR0137")
-					(unit 1)
-				)
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/955f0dbf-7479-41ed-8780-432d3b9b57a9"
-					(reference "#PWR0118")
-					(unit 1)
-				)
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/f2897f03-1c65-406d-938e-483190e13ecf"
-					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Opamp_Quad")
 		(at 128.27 39.37 0)
 		(unit 3)
@@ -3531,7 +3453,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 128.27 31.75 0)
 			(effects
 				(font
@@ -3539,7 +3461,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 128.27 39.37 0)
 			(effects
 				(font
@@ -3683,7 +3605,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 64.77 30.48 0)
 			(effects
 				(font
@@ -3691,7 +3613,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 64.77 38.1 0)
 			(effects
 				(font
@@ -4161,7 +4083,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 191.77 33.02 0)
 			(effects
 				(font
@@ -4169,7 +4091,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 191.77 40.64 0)
 			(effects
 				(font
@@ -4378,6 +4300,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3VA")
+		(at 69.85 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "459a8845-0669-4f81-a27c-7899eb4424ec")
+		(property "Reference" "#PWR0162"
+			(at 69.85 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VA"
+			(at 69.85 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
+			(at 69.85 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ffd7fcc-50af-44e1-8b42-c2b231ab6c7f")
+		)
+		(instances
+			(project ""
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/01c2bf4d-41af-41b2-9c7a-085aeaf63fad"
+					(reference "#PWR0165")
+					(unit 1)
+				)
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/8c0f373c-112a-4e29-93aa-c1271dfd575d"
+					(reference "#PWR0164")
+					(unit 1)
+				)
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/955f0dbf-7479-41ed-8780-432d3b9b57a9"
+					(reference "#PWR0163")
+					(unit 1)
+				)
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/f2897f03-1c65-406d-938e-483190e13ecf"
+					(reference "#PWR0162")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 168.91 82.55 0)
 		(unit 1)
@@ -4477,7 +4477,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 64.77 80.01 0)
 			(effects
 				(font
@@ -4485,7 +4485,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 64.77 87.63 0)
 			(effects
 				(font
@@ -5091,6 +5091,84 @@
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/f2897f03-1c65-406d-938e-483190e13ecf"
 					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3VA")
+		(at 102.87 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72137e5d-af2d-48f4-ade0-8fef6c58a680")
+		(property "Reference" "#PWR053"
+			(at 102.87 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VA"
+			(at 102.87 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 102.87 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
+			(at 102.87 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5243166-bed5-49f3-9fda-2fd49ad5b974")
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/01c2bf4d-41af-41b2-9c7a-085aeaf63fad"
+					(reference "#PWR0135")
+					(unit 1)
+				)
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/8c0f373c-112a-4e29-93aa-c1271dfd575d"
+					(reference "#PWR0118")
+					(unit 1)
+				)
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/955f0dbf-7479-41ed-8780-432d3b9b57a9"
+					(reference "#PWR055")
+					(unit 1)
+				)
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/f2897f03-1c65-406d-938e-483190e13ecf"
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -5764,7 +5842,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 97.79 153.6699 0)
 			(effects
 				(font
@@ -5773,7 +5851,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 99.06 152.4 0)
 			(effects
 				(font
@@ -5917,7 +5995,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 255.27 83.82 0)
 			(effects
 				(font
@@ -5925,7 +6003,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 255.27 91.44 0)
 			(effects
 				(font
@@ -6151,7 +6229,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 255.27 34.29 0)
 			(effects
 				(font
@@ -6159,7 +6237,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 255.27 41.91 0)
 			(effects
 				(font
@@ -6945,19 +7023,17 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "TSV994"
-			(at 66.04 153.67 0)
+		(property "Value" "Opamp_Quad"
+			(at 71.12 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 66.04 152.4 0)
 			(effects
 				(font
@@ -7409,84 +7485,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 69.85 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d29c196c-daee-4f62-9bc5-d38bf37bcb8b")
-		(property "Reference" "#PWR?"
-			(at 69.85 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 69.85 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 69.85 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 69.85 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e8db0f65-be81-40ab-a360-dd9fad0c6366")
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/01c2bf4d-41af-41b2-9c7a-085aeaf63fad"
-					(reference "#PWR0139")
-					(unit 1)
-				)
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/8c0f373c-112a-4e29-93aa-c1271dfd575d"
-					(reference "#PWR0135")
-					(unit 1)
-				)
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/955f0dbf-7479-41ed-8780-432d3b9b57a9"
-					(reference "#PWR055")
-					(unit 1)
-				)
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e/f2897f03-1c65-406d-938e-483190e13ecf"
-					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 99.06 36.83 270)
 		(unit 1)
@@ -7665,7 +7663,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 128.27 81.28 0)
 			(effects
 				(font
@@ -7673,7 +7671,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 128.27 88.9 0)
 			(effects
 				(font
