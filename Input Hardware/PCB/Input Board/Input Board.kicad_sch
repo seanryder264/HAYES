@@ -102,6 +102,12 @@
 		(uuid "06f5ea78-45a8-41a8-bb0b-af7f177a1aa5")
 	)
 	(junction
+		(at 78.74 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6067f0f9-e2e5-4e18-ac0d-97e696e73307")
+	)
+	(junction
 		(at 81.28 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -138,12 +144,6 @@
 		(uuid "d4395dc5-e22d-489f-ae7a-baff138a5739")
 	)
 	(junction
-		(at 78.74 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e4997fb9-b608-4823-98ff-3af23ed2638a")
-	)
-	(junction
 		(at 83.82 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -170,6 +170,16 @@
 			(type default)
 		)
 		(uuid "0281e2e9-6c06-41b3-ae35-290aad427863")
+	)
+	(wire
+		(pts
+			(xy 76.2 53.34) (xy 78.74 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "039db364-9712-4bc6-9864-fa12abf9ec12")
 	)
 	(wire
 		(pts
@@ -300,16 +310,6 @@
 			(type default)
 		)
 		(uuid "2324a345-1c8b-437e-8673-e66d3549cdf9")
-	)
-	(wire
-		(pts
-			(xy 78.74 53.34) (xy 78.74 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "247eee68-f6f2-40be-b254-943ad58d5512")
 	)
 	(wire
 		(pts
@@ -503,6 +503,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 27.94) (xy 78.74 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "610bd594-f0c3-4ace-ac80-5cb9aa524ff4")
+	)
+	(wire
+		(pts
 			(xy 83.82 58.42) (xy 83.82 83.82)
 		)
 		(stroke
@@ -510,16 +520,6 @@
 			(type default)
 		)
 		(uuid "62abcb98-1a9f-484a-97ff-21974aa2f89b")
-	)
-	(wire
-		(pts
-			(xy 76.2 53.34) (xy 78.74 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "645d3815-fbe7-4473-8653-39d1a2ebdd93")
 	)
 	(wire
 		(pts
@@ -673,6 +673,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 53.34) (xy 78.74 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a56843c-8524-4b72-bd5c-ad40225226bc")
+	)
+	(wire
+		(pts
 			(xy 165.1 33.02) (xy 190.5 33.02)
 		)
 		(stroke
@@ -710,16 +720,6 @@
 			(type default)
 		)
 		(uuid "a1fbf6df-a692-4e12-a479-a53f8bc25380")
-	)
-	(wire
-		(pts
-			(xy 78.74 78.74) (xy 78.74 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9522402-461e-4759-860f-e79f5414439f")
 	)
 	(wire
 		(pts
@@ -1336,178 +1336,6 @@
 		)
 	)
 	(sheet
-		(at 50.8 26.67)
-		(size 25.4 20.32)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "0fc095cc-6ee6-4117-a537-6519c9828b80")
-		(property "Sheetname" "Mux & Amplifier 1"
-			(at 50.8 25.9584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "mux.kicad_sch"
-			(at 50.8 47.5746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "In1" input
-			(at 50.8 27.94 180)
-			(uuid "334cf21f-06b0-4d13-9207-1c7a0b52b66e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In2" input
-			(at 50.8 30.48 180)
-			(uuid "a14753f6-1b70-4a4c-a92b-a7e6c731ed93")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In3" input
-			(at 50.8 33.02 180)
-			(uuid "f00677ca-0d3f-4505-bcf8-72e5ebe0d165")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In4" input
-			(at 50.8 35.56 180)
-			(uuid "f106ee9f-29b3-4dbd-bd4c-cc074a7a48b1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In5" input
-			(at 50.8 38.1 180)
-			(uuid "1f9a93a4-77ba-4572-bbff-d6ed10d6652e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In6" input
-			(at 50.8 40.64 180)
-			(uuid "0d7117b0-774f-4885-ab95-17d534dcbd82")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In7" input
-			(at 50.8 43.18 180)
-			(uuid "6fc1105d-5e38-4b70-9929-fc47c73b9295")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In8" input
-			(at 50.8 45.72 180)
-			(uuid "4db39ec6-e8e9-4b86-a1b6-842fd223807f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Mux A" input
-			(at 76.2 27.94 0)
-			(uuid "9da9b09f-c280-4ee2-9a58-df9c3a56d69b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Mux B" input
-			(at 76.2 30.48 0)
-			(uuid "0487d953-90b7-4b70-af02-845178212d41")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Mux C" input
-			(at 76.2 33.02 0)
-			(uuid "6ee0c0e8-e310-4d8a-a27d-ed5f9fe1daa2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Mux Inhibit" input
-			(at 76.2 35.56 0)
-			(uuid "21c80a59-10b3-411d-b311-94e6d4525a66")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Out" output
-			(at 76.2 45.72 0)
-			(uuid "7649b13f-5706-4b2e-bf9e-780c0f0b4f5f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(page "11")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 139.7 139.7)
 		(size 25.4 25.4)
 		(exclude_from_sim no)
@@ -1764,8 +1592,8 @@
 		)
 	)
 	(sheet
-		(at 50.8 102.87)
-		(size 25.4 20.32)
+		(at 50.8 77.47)
+		(size 25.4 45.72)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1778,9 +1606,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "908995ee-e872-4b00-89ed-692dff603043")
-		(property "Sheetname" "Mux & Amplifier 4"
-			(at 50.8 102.1584 0)
+		(uuid "99a15fca-8895-44e6-9a10-1270216dbd6f")
+		(property "Sheetname" "Mux & Amplifier 2"
+			(at 50.8 76.7584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1798,180 +1626,8 @@
 			)
 		)
 		(pin "In1" input
-			(at 50.8 104.14 180)
-			(uuid "6580d21e-818c-497e-b578-ac45a3111845")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In2" input
-			(at 50.8 106.68 180)
-			(uuid "c0416b2d-d694-4475-9830-701981e74813")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In3" input
-			(at 50.8 109.22 180)
-			(uuid "0716a81d-883a-4a34-90a4-cbae6f5c4322")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In4" input
-			(at 50.8 111.76 180)
-			(uuid "517684ec-fc08-4475-b97a-390680e146fe")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In5" input
-			(at 50.8 114.3 180)
-			(uuid "c9d9af49-4f17-45b7-a5fe-7abfc85c2616")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In6" input
-			(at 50.8 116.84 180)
-			(uuid "d5048c47-e408-44c4-b15c-d32b652d3a81")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In7" input
-			(at 50.8 119.38 180)
-			(uuid "807cdddd-78c0-44ff-bd47-f7c117009970")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In8" input
-			(at 50.8 121.92 180)
-			(uuid "5378147b-73a5-481f-afeb-f4306b82d2a6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Mux A" input
-			(at 76.2 104.14 0)
-			(uuid "9d5261ca-ff08-4273-a2f5-5137c9fae792")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Mux B" input
-			(at 76.2 106.68 0)
-			(uuid "5de57b53-284c-4f7c-9087-80f23052ca46")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Mux C" input
-			(at 76.2 109.22 0)
-			(uuid "3473b789-f595-440f-af96-0d3028afa10b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Mux Inhibit" input
-			(at 76.2 111.76 0)
-			(uuid "6b8ba060-526c-4a79-aef5-78254a47f8b6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Out" output
-			(at 76.2 121.92 0)
-			(uuid "f7abb676-86ac-4c79-9d8c-f6433fdd439a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 50.8 77.47)
-		(size 25.4 20.32)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "be7b6b67-fb63-4121-a158-51987fefa9a9")
-		(property "Sheetname" "Mux & Amplifier 3"
-			(at 50.8 76.7584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "mux.kicad_sch"
-			(at 50.8 98.3746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "In1" input
 			(at 50.8 78.74 180)
-			(uuid "548aed87-c7ee-42e9-9a43-39eb09d5277f")
+			(uuid "c5af8589-82b8-4002-aab8-6658adf35693")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1981,7 +1637,7 @@
 		)
 		(pin "In2" input
 			(at 50.8 81.28 180)
-			(uuid "6a7cb5e2-24d6-4b72-aefc-c7ae1c82b14b")
+			(uuid "a4e6998e-eb10-4fd4-be15-68014266e30e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1991,7 +1647,7 @@
 		)
 		(pin "In3" input
 			(at 50.8 83.82 180)
-			(uuid "3ca60ba9-805a-49eb-b104-287c82ec9dc0")
+			(uuid "c1ea6bc0-77d1-408a-b2f0-985a116e8de2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2001,7 +1657,7 @@
 		)
 		(pin "In4" input
 			(at 50.8 86.36 180)
-			(uuid "696ad473-8722-4cc5-9cb8-723025823dba")
+			(uuid "518c84c1-e825-48e6-8b36-113e84b091f2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2011,7 +1667,7 @@
 		)
 		(pin "In5" input
 			(at 50.8 88.9 180)
-			(uuid "cb2822d3-a5c8-4f63-8d1b-264e99930e18")
+			(uuid "8136380f-d44c-413f-acd0-6871eea81ece")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2021,7 +1677,7 @@
 		)
 		(pin "In6" input
 			(at 50.8 91.44 180)
-			(uuid "7522a625-b9a5-41d4-963f-3ed4dbe1636e")
+			(uuid "f7acf4b6-4286-4cbb-b60a-52a34e78cb81")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2031,7 +1687,7 @@
 		)
 		(pin "In7" input
 			(at 50.8 93.98 180)
-			(uuid "f9e76a99-8489-426b-9538-b42b34d389e2")
+			(uuid "b4ee6eab-f61f-493f-bb18-9529aa08df77")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2041,7 +1697,7 @@
 		)
 		(pin "In8" input
 			(at 50.8 96.52 180)
-			(uuid "e231ea1f-d6aa-4b11-bee3-b818827fd8c3")
+			(uuid "8385d7c2-5201-4134-b1c7-5e7f127c963b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2051,7 +1707,7 @@
 		)
 		(pin "Mux A" input
 			(at 76.2 78.74 0)
-			(uuid "1ccc80cb-82a0-48ba-b409-09ecab89e2a9")
+			(uuid "022e07b1-a0db-445f-b8fa-184a2619daf9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2061,7 +1717,7 @@
 		)
 		(pin "Mux B" input
 			(at 76.2 81.28 0)
-			(uuid "4df9d762-6679-4c0e-ba5f-0358e9865f74")
+			(uuid "daa74ee5-03c5-4ee7-985a-13801e778342")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2071,7 +1727,7 @@
 		)
 		(pin "Mux C" input
 			(at 76.2 83.82 0)
-			(uuid "7033c0f1-9b3b-4ad1-923c-026a5d10e0e5")
+			(uuid "fcd301fa-e7cb-4def-b745-668600f67581")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2079,9 +1735,9 @@
 				(justify right)
 			)
 		)
-		(pin "Mux Inhibit" input
+		(pin "Mux Inhibit1" input
 			(at 76.2 86.36 0)
-			(uuid "985d30a6-4fb8-4a52-8423-947dd6c8e400")
+			(uuid "6fc28c8e-dfa5-4060-bfa9-1c7f8db83b67")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2089,9 +1745,139 @@
 				(justify right)
 			)
 		)
-		(pin "Out" output
+		(pin "Out1" output
 			(at 76.2 96.52 0)
-			(uuid "459de92b-e5e0-472c-a431-f933320f2980")
+			(uuid "11cfb69e-c177-4eac-bda0-e3ef12a89379")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Out2" output
+			(at 76.2 121.92 0)
+			(uuid "647f941d-44b7-4714-b9c2-ba8ae98ecce9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Mux Inhibit2" input
+			(at 76.2 111.76 0)
+			(uuid "a2401e3a-2409-4a30-ba81-8b200811319c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Mux F" input
+			(at 76.2 109.22 0)
+			(uuid "b24415e1-8478-4631-993a-f411e87934f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "In11" input
+			(at 50.8 109.22 180)
+			(uuid "12642688-72ad-4ac1-9e0f-d736b4328985")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In10" input
+			(at 50.8 106.68 180)
+			(uuid "525d60ee-4664-4cb8-94ac-27134e89059d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In16" input
+			(at 50.8 121.92 180)
+			(uuid "2aba1203-6180-4d10-8314-eddfc7f1a6bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In14" input
+			(at 50.8 116.84 180)
+			(uuid "f8c39a05-9342-4ae9-8e1a-a43aacee78f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In12" input
+			(at 50.8 111.76 180)
+			(uuid "6a61b4c9-dfe3-4be6-bbc2-64dfcd4a19e0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In9" input
+			(at 50.8 104.14 180)
+			(uuid "a47301f9-796e-48fa-851c-ceacdaa0d309")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In15" input
+			(at 50.8 119.38 180)
+			(uuid "fe07741d-f27c-45fb-8c0b-40df7744614b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In13" input
+			(at 50.8 114.3 180)
+			(uuid "feaa0a52-00d4-4d18-9e02-a60b93e3a8c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Mux D" input
+			(at 76.2 104.14 0)
+			(uuid "1ff54665-1c53-4aaa-9f8e-744fc45c4fd6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Mux E" input
+			(at 76.2 106.68 0)
+			(uuid "2c619d2b-2715-4928-a2fc-01489c746310")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2103,178 +1889,6 @@
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
 					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 50.8 52.07)
-		(size 25.4 20.32)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "bf2971a4-4e8b-460e-806a-6c5050f52bee")
-		(property "Sheetname" "Mux & Amplifier 2"
-			(at 50.8 51.3584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "mux.kicad_sch"
-			(at 50.8 72.9746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "In1" input
-			(at 50.8 53.34 180)
-			(uuid "8eefdf0d-509c-47a1-8346-d90058979ff8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In2" input
-			(at 50.8 55.88 180)
-			(uuid "d00c755b-719e-409e-a6c4-b1c803c57e3b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In3" input
-			(at 50.8 58.42 180)
-			(uuid "61624c33-02d4-4940-9231-777f9990d5cc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In4" input
-			(at 50.8 60.96 180)
-			(uuid "81a34f06-5a98-42e0-8256-1b1e3afac543")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In5" input
-			(at 50.8 63.5 180)
-			(uuid "4dcf5faa-90bf-48e8-a133-300dfafbe3b5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In6" input
-			(at 50.8 66.04 180)
-			(uuid "7584d3f9-6411-4e4f-b1d8-bac4fa74a959")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In7" input
-			(at 50.8 68.58 180)
-			(uuid "f999455a-496d-49cb-8b3e-a6c6a1882710")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "In8" input
-			(at 50.8 71.12 180)
-			(uuid "bcc84235-0dc9-4c25-a814-e9e8f2dc6a64")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Mux A" input
-			(at 76.2 53.34 0)
-			(uuid "9aa4ebef-ac67-4397-9698-c507ed62ab79")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Mux B" input
-			(at 76.2 55.88 0)
-			(uuid "40691929-5cd3-4c52-80d3-b0f521e2f922")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Mux C" input
-			(at 76.2 58.42 0)
-			(uuid "d9319706-4e8f-4eda-b187-e1594b8c20d1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Mux Inhibit" input
-			(at 76.2 60.96 0)
-			(uuid "6393e89a-eb74-40ce-8501-3143828ba6c3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Out" output
-			(at 76.2 71.12 0)
-			(uuid "3f24a493-af22-4cc2-92c2-6784ad038c93")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
-					(page "6")
 				)
 			)
 		)
@@ -2317,6 +1931,318 @@
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
 					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 50.8 26.67)
+		(size 25.4 45.72)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ccfc9974-2797-4490-9af9-c0259e48d54a")
+		(property "Sheetname" "Mux & Amplifier 1"
+			(at 50.8 25.9584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mux.kicad_sch"
+			(at 50.8 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "In1" input
+			(at 50.8 27.94 180)
+			(uuid "ef3aceed-1184-4966-aa4a-24b591c1cf36")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In2" input
+			(at 50.8 30.48 180)
+			(uuid "9c362d1a-547e-438a-ac90-7bd23c90ef82")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In3" input
+			(at 50.8 33.02 180)
+			(uuid "ee6af1e3-dc06-4286-8795-d9b84d750313")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In4" input
+			(at 50.8 35.56 180)
+			(uuid "0733a915-61bd-4fdd-b8ac-0566257ce8b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In5" input
+			(at 50.8 38.1 180)
+			(uuid "4ad069b0-cf04-4c32-ab30-fe3dc4ae9626")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In6" input
+			(at 50.8 40.64 180)
+			(uuid "0d6a292f-251c-474a-b5b2-fe1cfb14db2a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In7" input
+			(at 50.8 43.18 180)
+			(uuid "9a7a9a50-9525-468d-a571-c3117533e7f9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In8" input
+			(at 50.8 45.72 180)
+			(uuid "8190c22c-f71b-47ba-9e5e-1d2f893ab8ac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Mux A" input
+			(at 76.2 27.94 0)
+			(uuid "1a5d27fe-40b4-457a-9c57-1c3ec5088386")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Mux B" input
+			(at 76.2 30.48 0)
+			(uuid "2c2e9cc6-58d1-42d8-a47f-cd7164b4eead")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Mux C" input
+			(at 76.2 33.02 0)
+			(uuid "01214e9a-1f3f-415a-a016-3143f5fe8e58")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Mux Inhibit" input
+			(at 76.2 35.56 0)
+			(uuid "1ce32ec7-1320-4daa-9b1b-19ec668bf81a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Out1" output
+			(at 76.2 45.72 0)
+			(uuid "c8f08220-4095-4faf-bb09-49da8319bbbc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Mux Inhibit1" input
+			(at 76.2 38.1 0)
+			(uuid "dd4facab-23e3-4e09-81ad-4c195390eb2e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Out2" output
+			(at 76.2 71.12 0)
+			(uuid "77642695-e17c-4619-aea5-10f777f872ed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Mux Inhibit2" input
+			(at 76.2 60.96 0)
+			(uuid "55616a7b-11dc-493e-a8de-12f29c14398a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Mux F" input
+			(at 76.2 58.42 0)
+			(uuid "3ae4af82-8dad-4cbe-b627-b04d3bb904b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "In11" input
+			(at 50.8 58.42 180)
+			(uuid "d8e76d82-2a00-4480-a027-9ac6d6385ab8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In10" input
+			(at 50.8 55.88 180)
+			(uuid "ff13c33e-68f3-4474-bf61-26d854867a9f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In16" input
+			(at 50.8 71.12 180)
+			(uuid "766a75a1-adef-4d30-953b-934142095dba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In14" input
+			(at 50.8 66.04 180)
+			(uuid "4e7516c3-e7f8-4bb3-8843-b6d600a73420")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In12" input
+			(at 50.8 60.96 180)
+			(uuid "ded4a9ca-232e-419a-9bfb-82848e01a920")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In9" input
+			(at 50.8 53.34 180)
+			(uuid "2dbdaaab-3ad9-486d-9e0c-fad9fab39b2f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In15" input
+			(at 50.8 68.58 180)
+			(uuid "bf789334-dd61-447b-b268-7c7d69565de6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "In13" input
+			(at 50.8 63.5 180)
+			(uuid "8c918fc5-8ddd-40b9-bd3f-29e05c660780")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Mux E" input
+			(at 76.2 55.88 0)
+			(uuid "d84d9e62-7015-4c43-beea-97e2d54c8d90")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Mux D" input
+			(at 76.2 53.34 0)
+			(uuid "ac5dc8ea-876b-4be8-ae51-e435088d409c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
+					(page "6")
 				)
 			)
 		)
