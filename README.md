@@ -31,7 +31,7 @@ Inspiration for Complex Function Colouring Proposal - https://www.algorithm-arch
 
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | | | | |
+| | 14:00 Advice for EE2 | | | | | |
 
 ### Week 3 (2 - 8 Jun)
 
