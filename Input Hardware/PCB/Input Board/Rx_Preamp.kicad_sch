@@ -948,6 +948,16 @@
 		)
 		(uuid "70a82b67-640a-4c0f-80e0-a95e9bfe9023")
 	)
+	(text "This is almost certainly wrong look at the transfer functions\nalso sims rely on a slight approximation of this opamp so \nmay actually be completley incorrect"
+		(exclude_from_sim no)
+		(at 236.22 152.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a266b629-0857-42cc-87a0-4fe476346c3e")
+	)
 	(junction
 		(at 41.91 85.09)
 		(diameter 0)

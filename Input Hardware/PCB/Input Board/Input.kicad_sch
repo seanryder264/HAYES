@@ -1398,6 +1398,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "what is this?\n"
+		(exclude_from_sim no)
+		(at 21.59 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "05faa685-b1a4-4430-8a1c-a8c322ac26ad")
+	)
 	(text "Input offset"
 		(exclude_from_sim no)
 		(at 133.35 31.75 0)
@@ -1407,6 +1417,16 @@
 			)
 		)
 		(uuid "18634abc-dfec-40ef-a5a0-4b071e5fc205")
+	)
+	(text "Do you just wanna make all the TBD LED resistors 220/330ohm?\n"
+		(exclude_from_sim no)
+		(at 149.86 140.97 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "317e179f-0012-4938-a473-6baf818eb4c0")
 	)
 	(text "Output offset"
 		(exclude_from_sim no)
@@ -1420,7 +1440,7 @@
 	)
 	(text "Input scale"
 		(exclude_from_sim no)
-		(at 88.9 31.75 0)
+		(at 88.9 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1430,7 +1450,7 @@
 	)
 	(text "Output scale"
 		(exclude_from_sim no)
-		(at 88.9 95.25 0)
+		(at 88.9 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)

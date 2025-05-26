@@ -89,6 +89,29 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 186.69 109.22)
+		(end 246.38 153.67)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f180c3fb-a3fe-49ef-aad4-3b75425ff0be)
+	)
+	(text "Broken Stuff/Fixes/Recs:\n\n> Input Offset Wiring\n> Rotary Encoder Wiring\n> No names on buttons if possible to allow for maximum \nflexibility (potentially ontop instead?)\n> OSC_OUT conflict with Cube"
+		(exclude_from_sim no)
+		(at 187.96 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "120dcecb-a735-4da9-b1d2-f804e8aad32a")
+	)
 	(junction
 		(at 83.82 58.42)
 		(diameter 0)
