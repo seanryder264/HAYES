@@ -96,10 +96,10 @@
 		(uuid "04b8b0cb-d719-4fd5-a3c2-b5b8ba311388")
 	)
 	(junction
-		(at 86.36 60.96)
+		(at 88.9 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "06f5ea78-45a8-41a8-bb0b-af7f177a1aa5")
+		(uuid "2926bcdc-325e-49d9-bdad-3fb94d976dfe")
 	)
 	(junction
 		(at 78.74 53.34)
@@ -132,12 +132,6 @@
 		(uuid "b34c457f-edf8-4a73-9a00-fae58ce622f8")
 	)
 	(junction
-		(at 86.36 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cf972330-b69d-4b14-bc3a-de9bc1aec372")
-	)
-	(junction
 		(at 78.74 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -154,12 +148,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fc8bf4fc-56e2-4e30-9ed4-fb7e74212a6a")
-	)
-	(junction
-		(at 86.36 35.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fe15c6cc-a29e-4e5d-a54d-afe2810105ff")
 	)
 	(wire
 		(pts
@@ -273,16 +261,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 86.36) (xy 86.36 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "151f60e5-a1f1-4dde-afe1-bf6009cf3d13")
-	)
-	(wire
-		(pts
 			(xy 81.28 81.28) (xy 81.28 55.88)
 		)
 		(stroke
@@ -343,16 +321,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 35.56) (xy 139.7 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28710047-1920-4ed2-b77e-f6dfe079e5cc")
-	)
-	(wire
-		(pts
 			(xy 78.74 27.94) (xy 139.7 27.94)
 		)
 		(stroke
@@ -370,16 +338,6 @@
 			(type default)
 		)
 		(uuid "2c7d3fd9-1631-4860-9dc3-055b404eaf67")
-	)
-	(wire
-		(pts
-			(xy 86.36 86.36) (xy 86.36 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ec0b38b-ec8e-4dbc-b730-4dbb43baec3c")
 	)
 	(wire
 		(pts
@@ -463,7 +421,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 35.56) (xy 86.36 35.56)
+			(xy 76.2 35.56) (xy 139.7 35.56)
 		)
 		(stroke
 			(width 0)
@@ -543,16 +501,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 111.76) (xy 86.36 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fc574f3-169f-4fb3-921e-180004688258")
-	)
-	(wire
-		(pts
 			(xy 38.1 27.94) (xy 50.8 27.94)
 		)
 		(stroke
@@ -590,6 +538,16 @@
 			(type default)
 		)
 		(uuid "7e4d6118-1a17-43ae-b4a5-0fd9dd1db579")
+	)
+	(wire
+		(pts
+			(xy 88.9 86.36) (xy 88.9 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85558c74-71b8-4a07-97ae-1edb86ae702d")
 	)
 	(wire
 		(pts
@@ -693,16 +651,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 111.76) (xy 86.36 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9df14372-a58c-4739-9d5f-53da95db6e27")
-	)
-	(wire
-		(pts
 			(xy 38.1 121.92) (xy 50.8 121.92)
 		)
 		(stroke
@@ -710,16 +658,6 @@
 			(type default)
 		)
 		(uuid "9eb4253a-cbf0-446b-a4a1-2f71a1ac0b8e")
-	)
-	(wire
-		(pts
-			(xy 86.36 60.96) (xy 86.36 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1fbf6df-a692-4e12-a479-a53f8bc25380")
 	)
 	(wire
 		(pts
@@ -853,6 +791,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 86.36) (xy 88.9 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df4f4724-1f2b-45c6-bd7e-ea990269568e")
+	)
+	(wire
+		(pts
 			(xy 76.2 55.88) (xy 81.28 55.88)
 		)
 		(stroke
@@ -940,16 +888,6 @@
 			(type default)
 		)
 		(uuid "fb9b1490-fbb5-4e60-9ba3-fb6cfc5ae792")
-	)
-	(wire
-		(pts
-			(xy 76.2 60.96) (xy 86.36 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fddb1da9-8b21-4ba4-89e1-28a517a41662")
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
@@ -1735,16 +1673,6 @@
 				(justify right)
 			)
 		)
-		(pin "Mux Inhibit1" input
-			(at 76.2 86.36 0)
-			(uuid "6fc28c8e-dfa5-4060-bfa9-1c7f8db83b67")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "Out1" output
 			(at 76.2 96.52 0)
 			(uuid "11cfb69e-c177-4eac-bda0-e3ef12a89379")
@@ -1758,16 +1686,6 @@
 		(pin "Out2" output
 			(at 76.2 121.92 0)
 			(uuid "647f941d-44b7-4714-b9c2-ba8ae98ecce9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Mux Inhibit2" input
-			(at 76.2 111.76 0)
-			(uuid "a2401e3a-2409-4a30-ba81-8b200811319c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1878,6 +1796,16 @@
 		(pin "Mux E" input
 			(at 76.2 106.68 0)
 			(uuid "2c619d2b-2715-4928-a2fc-01489c746310")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Mux Inhibit" input
+			(at 76.2 86.36 0)
+			(uuid "2fa1c8d5-24be-4987-b417-605f25caa9e7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2099,29 +2027,9 @@
 				(justify right)
 			)
 		)
-		(pin "Mux Inhibit1" input
-			(at 76.2 38.1 0)
-			(uuid "dd4facab-23e3-4e09-81ad-4c195390eb2e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "Out2" output
 			(at 76.2 71.12 0)
 			(uuid "77642695-e17c-4619-aea5-10f777f872ed")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Mux Inhibit2" input
-			(at 76.2 60.96 0)
-			(uuid "55616a7b-11dc-493e-a8de-12f29c14398a")
 			(effects
 				(font
 					(size 1.27 1.27)
