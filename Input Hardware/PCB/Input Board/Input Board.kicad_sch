@@ -2280,6 +2280,48 @@
 		)
 	)
 	(sheet
+		(at 190.5 63.5)
+		(size 12.7 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c7ca0110-3f74-4b47-9986-2317814e0c37")
+		(property "Sheetname" "OLED"
+			(at 190.5 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "display.kicad_sch"
+			(at 190.5 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 190.5 25.4)
 		(size 12.7 25.4)
 		(exclude_from_sim no)

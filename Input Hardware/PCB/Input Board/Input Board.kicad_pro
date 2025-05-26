@@ -664,6 +664,10 @@
     [
       "11f39170-493e-4ecf-a6ba-aee1374b2ff1",
       "Power"
+    ],
+    [
+      "c7ca0110-3f74-4b47-9986-2317814e0c37",
+      "OLED"
     ]
   ],
   "text_variables": {}
