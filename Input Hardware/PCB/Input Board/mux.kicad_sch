@@ -5692,123 +5692,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Analog_Switch:CD4051B")
-		(at 59.69 43.18 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "64de9d51-991c-42ac-b075-cc4f79de0fee")
-		(property "Reference" "U?"
-			(at 55.0067 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CD4051B"
-			(at 55.0067 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd4052b.pdf"
-			(at 60.198 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CMOS single 8-channel analog multiplexer demultiplexer, TSSOP-16/DIP-16/SOIC-16"
-			(at 59.69 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "11"
-			(uuid "fe54569b-1533-41ed-9137-f7123a282b0b")
-		)
-		(pin "4"
-			(uuid "47d61e2f-4536-49ce-8a79-d15df68180d3")
-		)
-		(pin "5"
-			(uuid "3266cba4-81ad-4976-a1f8-74cda95bbe2a")
-		)
-		(pin "14"
-			(uuid "5792ac8f-b2fa-47a2-9af6-d521fb83b944")
-		)
-		(pin "16"
-			(uuid "885adc8d-7105-45f3-bb9f-a50bfef564af")
-		)
-		(pin "7"
-			(uuid "4cd28805-689f-4a74-acb2-3785ee034222")
-		)
-		(pin "6"
-			(uuid "68bfa37d-fc02-4d88-a9b0-a360eb339481")
-		)
-		(pin "3"
-			(uuid "f6a014e5-5228-4dfd-9dc3-f8264578cd92")
-		)
-		(pin "9"
-			(uuid "2897399c-afcd-49a2-9361-4665882be620")
-		)
-		(pin "8"
-			(uuid "b97df606-cf53-498d-8100-c3a3c4a64500")
-		)
-		(pin "1"
-			(uuid "4a40e1e4-234a-4b5d-a188-aa3d260b65d4")
-		)
-		(pin "10"
-			(uuid "a08463fd-bee2-4a61-9b5d-520900f797af")
-		)
-		(pin "12"
-			(uuid "cf0af975-4724-406c-b36c-bd0d72d2e0da")
-		)
-		(pin "15"
-			(uuid "0e248422-c2e7-4702-acc6-e83d80a3303b")
-		)
-		(pin "13"
-			(uuid "a8a811aa-47b8-45d2-a352-3161834caf3a")
-		)
-		(pin "2"
-			(uuid "f418b5ea-db76-4473-9927-5329563ee921")
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/99a15fca-8895-44e6-9a10-1270216dbd6f"
-					(reference "U?")
-					(unit 1)
-				)
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ccfc9974-2797-4490-9af9-c0259e48d54a"
-					(reference "U?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Opamp_Quad")
 		(at 140.97 96.52 0)
 		(unit 3)
@@ -6093,6 +5976,123 @@
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ccfc9974-2797-4490-9af9-c0259e48d54a"
 					(reference "R?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Analog_Switch:CD4051B")
+		(at 59.69 43.18 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "78952943-9f06-40e8-8b15-b6f35bd39d50")
+		(property "Reference" "U?"
+			(at 55.0067 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CD4051B"
+			(at 55.0067 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+			(at 55.88 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd4052b.pdf"
+			(at 60.198 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CMOS single 8-channel analog multiplexer demultiplexer, TSSOP-16/DIP-16/SOIC-16"
+			(at 59.69 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "2ddfeff8-7da5-442b-bd1e-4af206ebef6a")
+		)
+		(pin "14"
+			(uuid "f0f397aa-6b4b-4594-92da-803f40762561")
+		)
+		(pin "13"
+			(uuid "2e9a92d8-57bc-4853-99e8-d9fdba4189a4")
+		)
+		(pin "4"
+			(uuid "1bf55cd4-1e16-4665-9f66-999b171f110a")
+		)
+		(pin "2"
+			(uuid "e74d6887-33d3-4647-906e-7981cc577207")
+		)
+		(pin "9"
+			(uuid "d003455f-e3e4-491b-96be-6ca5f1e66727")
+		)
+		(pin "10"
+			(uuid "44ea92dd-67d5-4f3d-8c2d-06f3198a8064")
+		)
+		(pin "1"
+			(uuid "ec4d6654-021c-4b07-85c9-4c5f399cd0c9")
+		)
+		(pin "15"
+			(uuid "7f46d3ba-d45f-4956-9b46-9f6b7cf06c56")
+		)
+		(pin "6"
+			(uuid "e7dcb357-213e-4d6f-9d57-4f415895caf9")
+		)
+		(pin "16"
+			(uuid "55e7526d-3290-40d6-a7bc-3ec5070d5840")
+		)
+		(pin "3"
+			(uuid "a6c1af4a-9d9b-45fe-a7ac-40ac69e4bdd7")
+		)
+		(pin "7"
+			(uuid "892ee848-a827-4e65-b4d8-cacf22c42d80")
+		)
+		(pin "12"
+			(uuid "fbb8805d-94f7-41f2-a0d7-b5e68a10bdf6")
+		)
+		(pin "5"
+			(uuid "d3e9edb6-6930-4dba-bacd-9a8e22601bb0")
+		)
+		(pin "11"
+			(uuid "4c5300e1-9108-4aad-b2fa-92fc2faf32ee")
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/99a15fca-8895-44e6-9a10-1270216dbd6f"
+					(reference "U?")
+					(unit 1)
+				)
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ccfc9974-2797-4490-9af9-c0259e48d54a"
+					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -6965,6 +6965,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Analog_Switch:CD4051B")
+		(at 60.96 96.52 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c90aa778-90d6-4d4e-87c2-fd6d0c465a07")
+		(property "Reference" "U"
+			(at 56.2767 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CD4051B"
+			(at 56.2767 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+			(at 57.15 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd4052b.pdf"
+			(at 61.468 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CMOS single 8-channel analog multiplexer demultiplexer, TSSOP-16/DIP-16/SOIC-16"
+			(at 60.96 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "1f400a7a-2d3a-43d6-90af-ea1ec804c968")
+		)
+		(pin "14"
+			(uuid "6041ebe9-324e-4cfe-8dfe-a4ea2f6b218b")
+		)
+		(pin "13"
+			(uuid "e1373254-2fbe-4a8b-b00f-34c059725f3e")
+		)
+		(pin "4"
+			(uuid "59aabc24-6bd1-41d1-ba04-57da53f45b36")
+		)
+		(pin "2"
+			(uuid "b21efc0e-5a59-45c0-8ae3-1388626aadb7")
+		)
+		(pin "9"
+			(uuid "7a4b9b00-091c-4859-9213-7f8d92f759d6")
+		)
+		(pin "10"
+			(uuid "c18bf16c-fdad-4a73-b4e4-9a6a056c956f")
+		)
+		(pin "1"
+			(uuid "a70f365c-b543-44d6-b4db-27d2be96a3f8")
+		)
+		(pin "15"
+			(uuid "88c8e02c-c4f8-46c4-b58a-beb3f7b25a08")
+		)
+		(pin "6"
+			(uuid "ce79addd-b3e8-4571-8890-1e2c643962a5")
+		)
+		(pin "16"
+			(uuid "7b60c72d-a8c6-46f8-bfba-5a0ce60b2f83")
+		)
+		(pin "3"
+			(uuid "10a99a3f-e9e2-49f4-9173-fd0f8faa21d3")
+		)
+		(pin "7"
+			(uuid "bf39e683-27de-4514-bf01-a391c24157d6")
+		)
+		(pin "12"
+			(uuid "1b013112-7212-4fde-b372-88c472e4781f")
+		)
+		(pin "5"
+			(uuid "7b14da4f-b574-4531-9ce1-401c062f24ac")
+		)
+		(pin "11"
+			(uuid "9eefd637-1be0-4fbc-a4c7-e6ec46fb1a83")
+		)
+		(instances
+			(project ""
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ccfc9974-2797-4490-9af9-c0259e48d54a"
+					(reference "U?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 149.86 49.53 0)
 		(mirror x)
@@ -7033,123 +7146,6 @@
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ccfc9974-2797-4490-9af9-c0259e48d54a"
 					(reference "R?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Analog_Switch:CD4051B")
-		(at 60.96 96.52 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d22dac41-9f00-4d47-adcd-6e2baeb75ab1")
-		(property "Reference" "U?"
-			(at 56.2767 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CD4051B"
-			(at 56.2767 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 57.15 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/cd4052b.pdf"
-			(at 61.468 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CMOS single 8-channel analog multiplexer demultiplexer, TSSOP-16/DIP-16/SOIC-16"
-			(at 60.96 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "11"
-			(uuid "8b591f38-7dd5-4de5-84a3-b70cadbe4f8e")
-		)
-		(pin "4"
-			(uuid "888727dc-3628-4f0b-9663-17024de9bb54")
-		)
-		(pin "5"
-			(uuid "a814c808-fd20-414d-b480-a0bad3572f80")
-		)
-		(pin "14"
-			(uuid "a69db032-2e44-424d-8675-43db758185ba")
-		)
-		(pin "16"
-			(uuid "d2ab233a-22d9-4bb6-a752-e8446fe898d5")
-		)
-		(pin "7"
-			(uuid "bdafc252-744f-4033-a99b-3d9b9e342f8a")
-		)
-		(pin "6"
-			(uuid "a432800c-ecb9-4808-a1c8-3864f55c02bc")
-		)
-		(pin "3"
-			(uuid "0cf0944e-10ef-47a6-9d80-3acae1c0e242")
-		)
-		(pin "9"
-			(uuid "533e1238-e64b-46e1-a2dd-7e5f468b393a")
-		)
-		(pin "8"
-			(uuid "7bdb29a7-bd0b-4294-818a-bc06bb357299")
-		)
-		(pin "1"
-			(uuid "6ad73547-4601-474c-942e-1f03eb8f032f")
-		)
-		(pin "10"
-			(uuid "5d078521-7b86-47b9-8edc-8910f288dd31")
-		)
-		(pin "12"
-			(uuid "41abca7f-a864-46ad-ab98-2ed494d4e997")
-		)
-		(pin "15"
-			(uuid "ef41f3a8-4d1f-477d-9e07-5197c689977d")
-		)
-		(pin "13"
-			(uuid "7ad697d2-1850-43cf-8420-50a0fb120797")
-		)
-		(pin "2"
-			(uuid "ccf35df9-0865-427e-bba5-3f58694cc030")
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/99a15fca-8895-44e6-9a10-1270216dbd6f"
-					(reference "U?")
-					(unit 1)
-				)
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ccfc9974-2797-4490-9af9-c0259e48d54a"
-					(reference "U?")
 					(unit 1)
 				)
 			)
