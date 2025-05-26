@@ -1,14 +1,14 @@
 * E:\Git\Group Project\HAYES\Sims\Draft3.asc
-R1 1.65 N002 1k
-R2 N004 N005 1k
-R3 N003 N004 16k
+R1 1.65v N002 1k
+R2 N003 N005 1k
+R3 N004 N003 16k
 C1 N002 N001 1.8n
-C2 0 N005 1.8n
+C2 1.65v N005 1.8n
 V1 N001 0 SINE(0 ac)
-V2 1.65 0 1.65
-XU1 N004 N002 3.3v 0 N003 level2 Avol=1Meg GBW=20Meg Slew=10Meg Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+V2 1.65v 0 1.65
+XU1 N002 N003 3.3v 0 N004 level2 Avol=1Meg GBW=20Meg Slew=10Meg Ilimit=25m Rail=0 Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
 V3 3.3v 0 3.3
-.ac dec 100 100k 100meg
+.ac dec 100 10k 100meg
 .lib UniversalOpAmp2.lib
 .backanno
 .end
