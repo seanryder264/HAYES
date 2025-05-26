@@ -1,4 +1,4 @@
 (sym_lib_table
   (version 7)
-  (lib (name "TLV3544IDR")(type "KiCad")(uri "C:/Users/harry/Downloads/New folder (39)/New folder/TLV3544IDR/KiCad/TLV3544IDR.kicad_sym")(options "")(descr ""))
+  (lib (name "TS12-74-60")(type "KiCad")(uri "${KIPRJMOD}/Symbol/TS12-74-60.kicad_sym")(options "")(descr ""))
 )
