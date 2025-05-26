@@ -2982,7 +2982,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 191.77 82.55 0)
 			(effects
 				(font
@@ -2990,7 +2990,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 191.77 90.17 0)
 			(effects
 				(font
@@ -3531,7 +3531,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 128.27 31.75 0)
 			(effects
 				(font
@@ -3539,7 +3539,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 128.27 39.37 0)
 			(effects
 				(font
@@ -3683,7 +3683,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 64.77 30.48 0)
 			(effects
 				(font
@@ -3691,7 +3691,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 64.77 38.1 0)
 			(effects
 				(font
@@ -4161,7 +4161,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 191.77 33.02 0)
 			(effects
 				(font
@@ -4169,7 +4169,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 191.77 40.64 0)
 			(effects
 				(font
@@ -4477,7 +4477,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 64.77 80.01 0)
 			(effects
 				(font
@@ -4485,7 +4485,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 64.77 87.63 0)
 			(effects
 				(font
@@ -5764,7 +5764,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 97.79 153.6699 0)
 			(effects
 				(font
@@ -5773,7 +5773,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 99.06 152.4 0)
 			(effects
 				(font
@@ -5917,7 +5917,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 255.27 83.82 0)
 			(effects
 				(font
@@ -5925,7 +5925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 255.27 91.44 0)
 			(effects
 				(font
@@ -6151,7 +6151,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 255.27 34.29 0)
 			(effects
 				(font
@@ -6159,7 +6159,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 255.27 41.91 0)
 			(effects
 				(font
@@ -6945,19 +6945,17 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "TSV994"
-			(at 66.04 153.67 0)
+		(property "Value" "Opamp_Quad"
+			(at 71.12 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 66.04 152.4 0)
 			(effects
 				(font
@@ -7665,7 +7663,7 @@
 				)
 			)
 		)
-		(property "Value" "TSV994"
+		(property "Value" "Opamp_Quad"
 			(at 128.27 81.28 0)
 			(effects
 				(font
@@ -7673,7 +7671,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+		(property "Footprint" ""
 			(at 128.27 88.9 0)
 			(effects
 				(font
