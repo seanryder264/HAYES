@@ -720,7 +720,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "32b3f6a7-1346-4503-a086-f9116798cc33")
 		(property "Reference" "SW?"
 			(at 107.95 35.56 0)

@@ -5942,8 +5942,8 @@
 		)
 	)
 	(sheet
-		(at 242.57 24.13)
-		(size 20.32 93.98)
+		(at 242.57 25.4)
+		(size 20.32 92.71)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5956,9 +5956,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "0d65395a-9eaf-47f0-b189-6efe6e4cb2c6")
+		(uuid "01c2bf4d-41af-41b2-9c7a-085aeaf63fad")
 		(property "Sheetname" "Rx Row Amplifier 4"
-			(at 242.57 23.4184 0)
+			(at 242.57 24.6884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5973,11 +5973,12 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
 		(pin "RXIN1" input
 			(at 242.57 26.67 180)
-			(uuid "19d7fbce-eefd-4ce5-bc2b-58be497e4389")
+			(uuid "11bdcdb6-7348-40a9-a1c5-76668ce93aae")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5985,29 +5986,9 @@
 				(justify left)
 			)
 		)
-		(pin "RXOUT1" input
-			(at 262.89 26.67 0)
-			(uuid "6f78f4f1-bb28-400b-963e-af7410f982cc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT2" input
-			(at 262.89 39.37 0)
-			(uuid "f4558515-21ce-4e7b-9749-f1b1380b4d83")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "RXIN2" input
-			(at 242.57 40.64 180)
-			(uuid "159a8028-4aad-4eb5-81b7-f20e887e1f59")
+			(at 242.57 39.37 180)
+			(uuid "ad2c60d0-dc74-4222-9e6b-72ec2ece457f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6017,77 +5998,17 @@
 		)
 		(pin "RXIN3" input
 			(at 242.57 52.07 180)
-			(uuid "a2d9a9dc-9a5b-455f-ac5a-6d4b5c3b3514")
+			(uuid "a27cfb04-cef4-47e3-af3e-8f96e44b7610")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "RXOUT3" input
-			(at 262.89 52.07 0)
-			(uuid "f8f5e7c9-9226-4fc6-b576-6d56abf0d023")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT4" input
-			(at 262.89 64.77 0)
-			(uuid "a9174168-62f5-4380-af14-fb2045076fc7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "RXIN4" input
 			(at 242.57 64.77 180)
-			(uuid "c034eba1-f1c1-49a3-b80a-b58d36a5f0cd")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN8" input
-			(at 242.57 115.57 180)
-			(uuid "537a6fc9-2913-4a3d-b0d9-64700c228672")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXOUT6" input
-			(at 262.89 90.17 0)
-			(uuid "39c339ea-1803-45b1-a5f9-6664637786e6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXIN7" input
-			(at 242.57 102.87 180)
-			(uuid "a6d08245-9b88-460c-bea4-0bbb6b705816")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN6" input
-			(at 242.57 90.17 180)
-			(uuid "3cd73f11-8fc0-4263-9a3d-c0062dbb7127")
+			(uuid "9553216f-5ffa-439c-bfe6-225d6e27b8e9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6097,7 +6018,7 @@
 		)
 		(pin "RXIN5" input
 			(at 242.57 77.47 180)
-			(uuid "20aab0a0-33dd-40a2-aeaa-3a4761f9aef5")
+			(uuid "615d43a0-4cb5-42c2-bce1-d3e0c7d204bc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6105,9 +6026,89 @@
 				(justify left)
 			)
 		)
+		(pin "RXIN6" input
+			(at 242.57 90.17 180)
+			(uuid "549186a6-240b-4f05-84a3-15db97bb13e8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXIN7" input
+			(at 242.57 102.87 180)
+			(uuid "f6c10850-2b44-49db-be07-c98580347071")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXIN8" input
+			(at 242.57 115.57 180)
+			(uuid "59b1ef16-ca40-4480-b430-9eece973c5ac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXOUT1" input
+			(at 262.89 26.67 0)
+			(uuid "d60044d5-9a24-4465-bb6e-e02e0593c6db")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RXOUT2" input
+			(at 262.89 39.37 0)
+			(uuid "7a18c1d8-56a2-47d0-aaad-576b9a47a6a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RXOUT3" input
+			(at 262.89 52.07 0)
+			(uuid "42ecd54e-99cc-4d14-8603-621072c94506")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RXOUT4" input
+			(at 262.89 64.77 0)
+			(uuid "071a810f-6c21-4911-a2c5-d790695f283d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(pin "RXOUT5" input
 			(at 262.89 77.47 0)
-			(uuid "0a585a07-49c8-4491-acff-d41a67196edb")
+			(uuid "d35396eb-9225-49a8-9e58-e8be4c768ad4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RXOUT6" input
+			(at 262.89 90.17 0)
+			(uuid "bfb7b6f1-ebfd-4294-8b9c-8d37218b7d41")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6117,7 +6118,7 @@
 		)
 		(pin "RXOUT7" input
 			(at 262.89 102.87 0)
-			(uuid "79b6daf8-981c-4c3d-8aea-a5b46118a24a")
+			(uuid "960b06cd-06ab-4bf1-b5b2-f5e6ffd7bea8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6127,7 +6128,7 @@
 		)
 		(pin "RXOUT8" input
 			(at 262.89 115.57 0)
-			(uuid "be5d5dcc-5f23-46c4-ad45-1226204437d0")
+			(uuid "0822713a-35ba-4d3e-9cb0-410dc5e26002")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6138,14 +6139,14 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
-					(page "9")
+					(page "8")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 172.72 24.13)
-		(size 20.32 93.98)
+		(at 172.72 25.4)
+		(size 20.32 92.71)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6158,9 +6159,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "26f54fdc-4132-476a-8060-cb8a2c9e1866")
+		(uuid "8c0f373c-112a-4e29-93aa-c1271dfd575d")
 		(property "Sheetname" "Rx Row Amplifier 3"
-			(at 172.72 23.4184 0)
+			(at 172.72 24.6884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6175,31 +6176,12 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
 		(pin "RXIN1" input
 			(at 172.72 26.67 180)
-			(uuid "6ae3d826-81b0-4040-8a0c-02ac3f981405")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXOUT1" input
-			(at 193.04 26.67 0)
-			(uuid "932ae01f-8776-41db-8137-15f74843761f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT2" input
-			(at 172.72 39.37 180)
-			(uuid "e99ee7a3-1373-4463-83e0-47dae79cd09d")
+			(uuid "0b4808a9-075a-4c66-beb7-f7b9d886b032")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6208,18 +6190,8 @@
 			)
 		)
 		(pin "RXIN2" input
-			(at 193.04 39.37 0)
-			(uuid "483d9cc9-fded-4050-9b8b-7685c8366733")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXIN3" input
-			(at 172.72 52.07 180)
-			(uuid "2206cffd-b49e-4cad-b4e8-1033b6f4f873")
+			(at 172.72 39.37 180)
+			(uuid "ebcef7e3-2d4c-486e-b1c3-203e7b21e4ba")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6227,19 +6199,9 @@
 				(justify left)
 			)
 		)
-		(pin "RXOUT3" input
-			(at 193.04 52.07 0)
-			(uuid "6cabf42a-6f15-44f8-9e55-99ca5d8cf07b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT4" input
-			(at 172.72 64.77 180)
-			(uuid "c283bf5c-7caf-4780-9df6-11f256fa0c69")
+		(pin "RXIN3" input
+			(at 172.72 52.07 180)
+			(uuid "514c43b6-9263-41f6-bd73-f138f86ccfe4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6248,48 +6210,8 @@
 			)
 		)
 		(pin "RXIN4" input
-			(at 193.04 64.77 0)
-			(uuid "f6e98b87-8058-4c74-b9f7-331050109554")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXIN8" input
-			(at 172.72 115.57 180)
-			(uuid "3fd9fb4f-bbf5-419a-8ea8-c6653430caf3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXOUT6" input
-			(at 193.04 90.17 0)
-			(uuid "61ba56d1-6635-492b-b7b6-e75a1f992c16")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXIN7" input
-			(at 172.72 102.87 180)
-			(uuid "c1b92a0e-87ef-4e68-af7e-d1835148ab9c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN6" input
-			(at 172.72 90.17 180)
-			(uuid "c09a9792-b5d2-48ab-a9e0-a27d46406086")
+			(at 172.72 64.77 180)
+			(uuid "64d4cc39-a3c2-472c-88c9-1c3a91e2916b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6299,7 +6221,7 @@
 		)
 		(pin "RXIN5" input
 			(at 172.72 77.47 180)
-			(uuid "66a07ab8-608d-4538-b2b2-e8297534874e")
+			(uuid "56583e83-94c9-4bc8-9910-5a88cfdd5536")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6307,9 +6229,89 @@
 				(justify left)
 			)
 		)
+		(pin "RXIN6" input
+			(at 172.72 90.17 180)
+			(uuid "1e79cc73-e8fd-42fe-b840-27962e211b63")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXIN7" input
+			(at 172.72 102.87 180)
+			(uuid "3348acb1-b30f-408f-b1de-9becc061c8f1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXIN8" input
+			(at 172.72 115.57 180)
+			(uuid "89d9d63b-326c-4b6d-bf68-dea17f553047")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXOUT1" input
+			(at 193.04 26.67 0)
+			(uuid "209dbbf7-5198-4f7d-8abd-f73dbfa53f88")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RXOUT2" input
+			(at 193.04 39.37 0)
+			(uuid "8d145955-9539-4fa4-a553-5d984a6818a1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RXOUT3" input
+			(at 193.04 52.07 0)
+			(uuid "70e4f1d3-d453-47ac-96ea-e46dbd689ec4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RXOUT4" input
+			(at 193.04 64.77 0)
+			(uuid "542f535c-4fcf-405b-b7bd-79154c584f39")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(pin "RXOUT5" input
 			(at 193.04 77.47 0)
-			(uuid "25a94edc-13ff-4f72-b497-edddafc2d2e8")
+			(uuid "73485ba5-7f58-44d4-855c-7d4ff549251e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RXOUT6" input
+			(at 193.04 90.17 0)
+			(uuid "e888c539-f2e9-4aed-b568-4cd12ca4a0b9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6319,7 +6321,7 @@
 		)
 		(pin "RXOUT7" input
 			(at 193.04 102.87 0)
-			(uuid "d71ed578-a6c3-4f50-bb68-e06a9aa15edd")
+			(uuid "36d2b53f-1bec-44fe-ac69-b913ca28b172")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6329,7 +6331,7 @@
 		)
 		(pin "RXOUT8" input
 			(at 193.04 115.57 0)
-			(uuid "fdec39ad-fbb8-4490-b540-48ec9c3afd61")
+			(uuid "b9002d42-0e92-4cdd-b25b-bcef9cc019fd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6347,7 +6349,7 @@
 	)
 	(sheet
 		(at 113.03 24.13)
-		(size 20.32 93.98)
+		(size 20.32 92.71)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6360,7 +6362,7 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "3213ddf0-427f-4c0b-85aa-925c5c3be698")
+		(uuid "955f0dbf-7479-41ed-8780-432d3b9b57a9")
 		(property "Sheetname" "Rx Row Amplifier 2"
 			(at 113.03 23.4184 0)
 			(effects
@@ -6371,17 +6373,88 @@
 			)
 		)
 		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 113.03 118.6946 0)
+			(at 113.03 117.4246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
 		(pin "RXIN1" input
 			(at 113.03 25.4 180)
-			(uuid "48450df0-ee86-48cf-8a45-1302fd8bf783")
+			(uuid "02c67d9b-a91d-4bd6-9caf-0316c2fa8911")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXIN2" input
+			(at 113.03 38.1 180)
+			(uuid "65916c34-337b-4948-89d3-98d6994b68c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXIN3" input
+			(at 113.03 50.8 180)
+			(uuid "01a941e0-b07b-4aa5-accd-13d23aef79b0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXIN4" input
+			(at 113.03 63.5 180)
+			(uuid "4fa45a39-216d-4063-bb49-b5e4db20d640")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXIN5" input
+			(at 113.03 76.2 180)
+			(uuid "269eab37-64da-4483-ad31-bf2fc76059a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXIN6" input
+			(at 113.03 88.9 180)
+			(uuid "3ef396d3-35ee-4f08-a6b1-98c5d8d8bf3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXIN7" input
+			(at 113.03 101.6 180)
+			(uuid "e8c18d6a-5ec6-4971-8ece-fdfad80de42a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RXIN8" input
+			(at 113.03 114.3 180)
+			(uuid "55406b9e-0301-4b43-8f1a-760a10dad4b3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6391,7 +6464,7 @@
 		)
 		(pin "RXOUT1" input
 			(at 133.35 25.4 0)
-			(uuid "75bb61ff-8cd1-4285-8c03-5dfd3fbeaeaa")
+			(uuid "d828e4e4-b990-49ee-8117-8df3360692ab")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6400,18 +6473,8 @@
 			)
 		)
 		(pin "RXOUT2" input
-			(at 113.03 38.1 180)
-			(uuid "ab67e653-a30a-46d9-9f9c-ed236379b8c4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN2" input
 			(at 133.35 38.1 0)
-			(uuid "7116fc10-175a-41f0-a969-7e735bc5f6a6")
+			(uuid "c4792d52-b13a-421a-b4f6-dfed508305f6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6419,19 +6482,9 @@
 				(justify right)
 			)
 		)
-		(pin "RXIN3" input
-			(at 113.03 50.8 180)
-			(uuid "9b72c65c-b078-47db-a7cf-53453c445459")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "RXOUT3" input
 			(at 133.35 50.8 0)
-			(uuid "bf1a9aba-77a7-4f81-882a-35ff629c11cf")
+			(uuid "d81cef06-0daf-40be-8537-d79beaf7c276")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6440,78 +6493,28 @@
 			)
 		)
 		(pin "RXOUT4" input
-			(at 113.03 63.5 180)
-			(uuid "739ccd10-6bba-405b-a17f-3f6e69175d60")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN4" input
 			(at 133.35 63.5 0)
-			(uuid "a79a9712-0deb-450c-b16d-bc95b44d273c")
+			(uuid "7188fb46-f5c0-4b9d-a4ce-0224168bbc70")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-		(pin "RXIN8" input
-			(at 113.03 76.2 180)
-			(uuid "cda8daa3-09d9-41cf-9c66-f7c0f0186f0b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXOUT6" input
-			(at 133.35 76.2 0)
-			(uuid "3f79e731-5eb4-41f1-bca5-3a1c9dd901c5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXIN7" input
-			(at 113.03 88.9 180)
-			(uuid "b4043351-3b3e-40b3-b7b3-390cffeec771")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN6" input
-			(at 133.35 88.9 0)
-			(uuid "61e61497-abd4-4ee7-ba0b-1cd67bd4f8be")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXIN5" input
-			(at 113.03 101.6 180)
-			(uuid "00768123-ff99-4c51-8f01-eb4ab08e1e54")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(pin "RXOUT5" input
-			(at 133.35 101.6 0)
-			(uuid "d68f089a-1f1a-4c6e-a520-0d6dd9890075")
+			(at 133.35 76.2 0)
+			(uuid "8d8807a9-f2cd-40f3-b888-9d20c6788a06")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RXOUT6" input
+			(at 133.35 88.9 0)
+			(uuid "095d798a-bea9-42ff-b207-52e85c756b79")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6520,18 +6523,18 @@
 			)
 		)
 		(pin "RXOUT7" input
-			(at 113.03 114.3 180)
-			(uuid "790588d0-ef3c-4811-ace8-292642398d4f")
+			(at 133.35 101.6 0)
+			(uuid "1234d952-a389-4823-b9c0-3fb5774aad67")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "RXOUT8" input
 			(at 133.35 114.3 0)
-			(uuid "91a7f2d8-2ca5-442c-85a2-f231d8eccd1b")
+			(uuid "123bc1c0-56fa-4550-a83f-3310ef6d0d41")
 			(effects
 				(font
 					(size 1.27 1.27)

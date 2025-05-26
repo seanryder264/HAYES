@@ -1,7 +1,7 @@
 * E:\Git\Group Project\HAYES\Sims\Draft3.asc
 R1 1.65v N002 1k
 R2 N003 N005 1k
-R3 N004 N003 16k
+R3 N004 N003 15k
 C1 N002 N001 1.8n
 C2 1.65v N005 1.8n
 V1 N001 0 SINE(0 ac)
