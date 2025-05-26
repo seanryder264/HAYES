@@ -432,6 +432,16 @@
 		)
 		(uuid "a13f7fbf-b0ed-479b-9356-b234d6dcec69")
 	)
+	(text "Gain"
+		(exclude_from_sim no)
+		(at 161.29 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a177e0f2-3c1f-40c9-829f-58f5f4051d1e")
+	)
 	(text "Zoom\n"
 		(exclude_from_sim no)
 		(at 81.28 31.75 0)
@@ -442,15 +452,185 @@
 		)
 		(uuid "d2d9d16a-6f71-43a2-a691-ebe200aeeabf")
 	)
-	(text "D-Pad?\nGain?\nTransform  Selector (z, laplace, fourier)?\n\n"
+	(text "Transform Selector"
 		(exclude_from_sim no)
-		(at 177.8 31.75 0)
+		(at 187.96 31.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "fc438a90-d6b3-4b18-8f8b-80b43c945450")
+		(uuid "ebac55a4-075c-4d5d-b78a-ecd3b438eebf")
+	)
+	(text "D-Pad"
+		(exclude_from_sim no)
+		(at 222.25 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ef3d1342-5bd8-49a5-8edf-9b29bc24673c")
+	)
+	(symbol
+		(lib_id "Device:RotaryEncoder_Switch_MP")
+		(at 161.29 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13061e61-8d2c-403c-8054-b8a33d3d27f0")
+		(property "Reference" "SW?"
+			(at 161.29 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RotaryEncoder_Switch_MP"
+			(at 161.29 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
+			(at 157.48 41.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
+			(at 161.29 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "S2"
+			(uuid "c9751a30-1e59-4246-b3d7-d80086bff555")
+		)
+		(pin "C"
+			(uuid "87a1d247-35e7-4d1e-8394-f917479438b7")
+		)
+		(pin "MP"
+			(uuid "7d1d76f4-08d3-4d00-a305-5933e6a992cd")
+		)
+		(pin "B"
+			(uuid "4dae0498-5e9a-4547-a357-502ad6d6f5ca")
+		)
+		(pin "A"
+			(uuid "a6b10f76-e2f1-48df-8f4c-d297cf71c9ec")
+		)
+		(pin "S1"
+			(uuid "36ce8a44-4557-45e2-aee2-8306f340c6d4")
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/6ff1d53f-9520-4015-acff-de10540e78ee"
+					(reference "SW?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:RotaryEncoder_Switch_MP")
+		(at 187.96 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "167f0752-233a-407e-b5b2-10289b7c02ac")
+		(property "Reference" "SW?"
+			(at 187.96 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RotaryEncoder_Switch_MP"
+			(at 187.96 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
+			(at 184.15 41.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
+			(at 187.96 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "S2"
+			(uuid "d0127e85-b3e1-4eee-86e8-b65f45336690")
+		)
+		(pin "C"
+			(uuid "52d05f55-a7c0-407c-b236-0131e40b7a55")
+		)
+		(pin "MP"
+			(uuid "49d6715c-75a3-4329-9df4-e788b2aab966")
+		)
+		(pin "B"
+			(uuid "aa9e61ba-ac50-485b-bfcb-8ea8719bc9c4")
+		)
+		(pin "A"
+			(uuid "aeed4afa-dea9-4fcc-bc7e-03dd44941a70")
+		)
+		(pin "S1"
+			(uuid "ff033ad2-3ac8-4f12-b62d-5e47591b6127")
+		)
+		(instances
+			(project "Input Board"
+				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/6ff1d53f-9520-4015-acff-de10540e78ee"
+					(reference "SW?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:RotaryEncoder_Switch_MP")

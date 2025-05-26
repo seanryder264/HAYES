@@ -895,6 +895,16 @@
 		)
 		(uuid "067a2974-1d53-4ca3-a68b-51b3bffb073c")
 	)
+	(text "This shouldnt really be ground should it? should be 1.65V??\n"
+		(exclude_from_sim no)
+		(at 17.78 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0ad856ed-58cb-427b-ae7b-65f80c000cf0")
+	)
 	(text "×17.7 @1MHz\nGain slightly less\nto preserve bandwidth\n\n"
 		(exclude_from_sim no)
 		(at 237.49 147.32 0)
