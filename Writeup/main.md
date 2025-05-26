@@ -12,13 +12,19 @@ Block diagrams are as follows:
 
 ### Receiver Grid & Row Amplifier
 
-![Transfer Function for Row Amplifier](./bptransfer.png)
+<figure>
+  <img src="bptransfer.png" alt="Alt Text" width="400">
+  <figcaption>Transfer Function for Row Amplifier</figcaption>
+</figure>
 
 ### Demultiplexer
 
 ### ADC Amplifier and Bandpass Filter
 
-![Transfer Function for ADC Amplifier/Filter](./rowtransfer.png)
+<figure>
+  <img src="rowtransfer.png" alt="Alt Text" width="400">
+  <figcaption>Transfer Function for ADC Amplifier/Filter</figcaption>
+</figure>
 
 ### Microcontroller/Rotary Encoders/Buttons
 
