@@ -1351,7 +1351,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "0fc095cc-6ee6-4117-a537-6519c9828b80")
-		(property "Sheetname" "Demux & Amplifier 4"
+		(property "Sheetname" "Mux & Amplifier 1"
 			(at 50.8 25.9584 0)
 			(effects
 				(font
@@ -1508,8 +1508,8 @@
 		)
 	)
 	(sheet
-		(at 135.89 153.67)
-		(size 27.94 24.13)
+		(at 139.7 139.7)
+		(size 25.4 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1524,7 +1524,7 @@
 		)
 		(uuid "11f39170-493e-4ecf-a6ba-aee1374b2ff1")
 		(property "Sheetname" "Power"
-			(at 135.89 152.9584 0)
+			(at 139.7 138.9884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1533,7 +1533,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 135.89 178.3846 0)
+			(at 139.7 165.6846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1779,7 +1779,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "908995ee-e872-4b00-89ed-692dff603043")
-		(property "Sheetname" "Demux & Amplifier 3"
+		(property "Sheetname" "Mux & Amplifier 4"
 			(at 50.8 102.1584 0)
 			(effects
 				(font
@@ -1951,7 +1951,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "be7b6b67-fb63-4121-a158-51987fefa9a9")
-		(property "Sheetname" "Demux & Amplifier 1"
+		(property "Sheetname" "Mux & Amplifier 3"
 			(at 50.8 76.7584 0)
 			(effects
 				(font
@@ -2123,7 +2123,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "bf2971a4-4e8b-460e-806a-6c5050f52bee")
-		(property "Sheetname" "Demux & Amplifier 2"
+		(property "Sheetname" "Mux & Amplifier 2"
 			(at 50.8 51.3584 0)
 			(effects
 				(font
