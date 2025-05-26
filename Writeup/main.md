@@ -8,23 +8,23 @@
 
 Block diagrams are as follows:
 
-###LC Pieces
+### LC Pieces
 
-###Receiver Grid & Row Amplifier
+### Receiver Grid & Row Amplifier
 
-###Demultiplexer
+### Demultiplexer
 
-###ADC Amplifier and Bandpass Filter
+### ADC Amplifier and Bandpass Filter
 
-###Microcontroller/Rotary Encoders/Buttons
+### Microcontroller/Rotary Encoders/Buttons
 
-###USB Interface
+### USB Interface
 
-###OLED Display and Display Driver Code
+### OLED Display and Display Driver Code
 
-###Waveform Detector
+### Waveform Detector
 
-###Column Driver and Driver Code
+### Column Driver and Driver Code
 
-###Power Supply 
+### Power Supply 
 
