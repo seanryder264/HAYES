@@ -291,16 +291,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 88.9) (xy 72.39 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a24bf34-d81f-40f6-978e-ae8cd18e01fb")
-	)
-	(wire
-		(pts
 			(xy 240.03 64.77) (xy 242.57 64.77)
 		)
 		(stroke
@@ -328,16 +318,6 @@
 			(type default)
 		)
 		(uuid "0c9e422f-4625-46a7-884f-0ac4fb45a7e2")
-	)
-	(wire
-		(pts
-			(xy 262.89 64.77) (xy 264.16 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "138e7c32-01cd-45c9-b30e-21196d6d1b87")
 	)
 	(wire
 		(pts
@@ -391,16 +371,6 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 39.37) (xy 264.16 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "236d66c5-ad12-4795-974b-d07f65c3bcd3")
-	)
-	(wire
-		(pts
 			(xy 110.49 76.2) (xy 113.03 76.2)
 		)
 		(stroke
@@ -411,26 +381,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 76.2) (xy 134.62 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e223489-38f4-4a8a-91ff-686015d7136c")
-	)
-	(wire
-		(pts
-			(xy 262.89 26.67) (xy 264.16 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ea8206b-4a65-4cf4-8870-8e0e592f610c")
-	)
-	(wire
-		(pts
 			(xy 110.49 114.3) (xy 113.03 114.3)
 		)
 		(stroke
@@ -438,16 +388,6 @@
 			(type default)
 		)
 		(uuid "2ee6c960-4810-4592-a5c7-ecbbd5aa99c7")
-	)
-	(wire
-		(pts
-			(xy 71.12 38.1) (xy 72.39 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f5f855d-b014-4c19-a27e-165824d5f36b")
 	)
 	(wire
 		(pts
@@ -491,46 +431,6 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 115.57) (xy 264.16 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bc8a59f-5f02-44c0-bd54-b8d6f61e8e4b")
-	)
-	(wire
-		(pts
-			(xy 262.89 77.47) (xy 264.16 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3df54cc3-0475-4511-b3e1-9d5b4dc9707d")
-	)
-	(wire
-		(pts
-			(xy 193.04 90.17) (xy 194.31 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e6a37ac-99a3-46eb-8607-3474af594d7a")
-	)
-	(wire
-		(pts
-			(xy 193.04 115.57) (xy 194.31 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44e6ecd1-5a7f-4515-b300-c3351cdea7d7")
-	)
-	(wire
-		(pts
 			(xy 36.83 63.5) (xy 39.37 63.5)
 		)
 		(stroke
@@ -558,16 +458,6 @@
 			(type default)
 		)
 		(uuid "4f89179f-ce02-44d4-b76c-88c373eacd90")
-	)
-	(wire
-		(pts
-			(xy 193.04 39.37) (xy 194.31 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5263910b-77b9-49b0-9bc1-bbd18773c9c9")
 	)
 	(wire
 		(pts
@@ -601,26 +491,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 76.2) (xy 72.39 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5eb4388a-e8de-4bc0-8b45-2ea9af470aed")
-	)
-	(wire
-		(pts
-			(xy 133.35 50.8) (xy 134.62 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6386be6e-3640-40a5-b826-5ab7ae1cf253")
-	)
-	(wire
-		(pts
 			(xy 110.49 101.6) (xy 113.03 101.6)
 		)
 		(stroke
@@ -628,16 +498,6 @@
 			(type default)
 		)
 		(uuid "638e6ee4-4811-42da-8bf8-0031b39b05d0")
-	)
-	(wire
-		(pts
-			(xy 133.35 114.3) (xy 134.62 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65c3ef54-95cd-43e6-831a-14778ed4a801")
 	)
 	(wire
 		(pts
@@ -651,36 +511,6 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 52.07) (xy 264.16 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6783a04a-5dc2-435f-acd2-73c87cf74d23")
-	)
-	(wire
-		(pts
-			(xy 193.04 77.47) (xy 194.31 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6850fce0-cd6a-4bca-8b57-d1f7b9a5b360")
-	)
-	(wire
-		(pts
-			(xy 71.12 50.8) (xy 72.39 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69071fee-cb6c-4816-8823-57c6366fc07e")
-	)
-	(wire
-		(pts
 			(xy 229.87 26.67) (xy 232.41 26.67)
 		)
 		(stroke
@@ -691,16 +521,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 101.6) (xy 72.39 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e05d886-6bae-4c3d-82ee-c541b294183f")
-	)
-	(wire
-		(pts
 			(xy 100.33 88.9) (xy 102.87 88.9)
 		)
 		(stroke
@@ -708,16 +528,6 @@
 			(type default)
 		)
 		(uuid "6e37dbff-1ceb-4bbc-b6d6-47e6347baac3")
-	)
-	(wire
-		(pts
-			(xy 133.35 25.4) (xy 134.62 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7112ec03-7973-4729-87ef-3545f82b9170")
 	)
 	(wire
 		(pts
@@ -748,16 +558,6 @@
 			(type default)
 		)
 		(uuid "7bd95911-6c27-47ea-8028-eaf11661e2b0")
-	)
-	(wire
-		(pts
-			(xy 193.04 26.67) (xy 194.31 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ce209c3-7bd0-4438-be6b-bfedc45b2f4b")
 	)
 	(wire
 		(pts
@@ -798,16 +598,6 @@
 			(type default)
 		)
 		(uuid "8bbac786-2705-41f2-b680-ff8e08e79537")
-	)
-	(wire
-		(pts
-			(xy 133.35 101.6) (xy 134.62 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c9aea40-e05d-4fb1-947e-2a6a2d14019c")
 	)
 	(wire
 		(pts
@@ -911,16 +701,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 63.5) (xy 72.39 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b21992ee-68e1-4320-a077-160c6cfe95d5")
-	)
-	(wire
-		(pts
 			(xy 240.03 102.87) (xy 242.57 102.87)
 		)
 		(stroke
@@ -928,16 +708,6 @@
 			(type default)
 		)
 		(uuid "b2be6cf3-39ac-4695-a64e-3820676c9e17")
-	)
-	(wire
-		(pts
-			(xy 193.04 64.77) (xy 194.31 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4965db6-a609-4a21-a15d-b737e3c65518")
 	)
 	(wire
 		(pts
@@ -971,16 +741,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 102.87) (xy 194.31 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd165372-023d-46a9-9609-e2e93696a940")
-	)
-	(wire
-		(pts
 			(xy 36.83 114.3) (xy 39.37 114.3)
 		)
 		(stroke
@@ -998,16 +758,6 @@
 			(type default)
 		)
 		(uuid "c47b28d4-f4b5-4b57-949a-6dca1482d32c")
-	)
-	(wire
-		(pts
-			(xy 133.35 88.9) (xy 134.62 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc6ac60b-6e65-4dab-8333-a5308f1d15c8")
 	)
 	(wire
 		(pts
@@ -1071,36 +821,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 38.1) (xy 134.62 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc927cb2-c55e-451f-9971-7743b45fad90")
-	)
-	(wire
-		(pts
-			(xy 71.12 114.3) (xy 72.39 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd9472b8-99f0-4829-9e86-3b8f58aa6678")
-	)
-	(wire
-		(pts
-			(xy 71.12 25.4) (xy 72.39 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de569886-ded4-45da-a41b-b58cf999a6fc")
-	)
-	(wire
-		(pts
 			(xy 100.33 114.3) (xy 102.87 114.3)
 		)
 		(stroke
@@ -1118,16 +838,6 @@
 			(type default)
 		)
 		(uuid "e713dba7-cbdc-4352-9f45-69ab475869de")
-	)
-	(wire
-		(pts
-			(xy 262.89 90.17) (xy 264.16 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9d95a86-94d7-477a-bc06-16b1aca4eff8")
 	)
 	(wire
 		(pts
@@ -1171,26 +881,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 63.5) (xy 134.62 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f10b7167-77db-4edf-9fc3-f778974895d1")
-	)
-	(wire
-		(pts
-			(xy 262.89 102.87) (xy 264.16 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1cfba74-cec3-4784-b83d-a880611f9d8b")
-	)
-	(wire
-		(pts
 			(xy 110.49 38.1) (xy 113.03 38.1)
 		)
 		(stroke
@@ -1219,19 +909,9 @@
 		)
 		(uuid "f5a5ac8a-ece8-40d9-b08c-cff88314715b")
 	)
-	(wire
-		(pts
-			(xy 193.04 52.07) (xy 194.31 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffe4afb3-261b-4477-9592-908fd4e84899")
-	)
 	(hierarchical_label "Rx23"
 		(shape output)
-		(at 194.31 102.87 0)
+		(at 172.72 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1242,7 +922,7 @@
 	)
 	(hierarchical_label "Rx11"
 		(shape output)
-		(at 134.62 50.8 0)
+		(at 113.03 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1253,7 +933,7 @@
 	)
 	(hierarchical_label "Rx19"
 		(shape output)
-		(at 194.31 52.07 0)
+		(at 172.72 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1264,7 +944,7 @@
 	)
 	(hierarchical_label "Rx18"
 		(shape output)
-		(at 194.31 39.37 0)
+		(at 172.72 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1275,7 +955,7 @@
 	)
 	(hierarchical_label "Rx29"
 		(shape output)
-		(at 264.16 77.47 0)
+		(at 242.57 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1286,7 +966,7 @@
 	)
 	(hierarchical_label "Rx20"
 		(shape output)
-		(at 194.31 64.77 0)
+		(at 172.72 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1297,7 +977,7 @@
 	)
 	(hierarchical_label "Rx1"
 		(shape output)
-		(at 72.39 25.4 0)
+		(at 50.8 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1308,7 +988,7 @@
 	)
 	(hierarchical_label "Rx26"
 		(shape output)
-		(at 264.16 39.37 0)
+		(at 242.57 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1319,7 +999,7 @@
 	)
 	(hierarchical_label "Rx17"
 		(shape output)
-		(at 194.31 26.67 0)
+		(at 172.72 26.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1330,7 +1010,7 @@
 	)
 	(hierarchical_label "Rx14"
 		(shape output)
-		(at 134.62 88.9 0)
+		(at 113.03 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1341,7 +1021,7 @@
 	)
 	(hierarchical_label "Rx22"
 		(shape output)
-		(at 194.31 90.17 0)
+		(at 172.72 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1352,7 +1032,7 @@
 	)
 	(hierarchical_label "Rx9"
 		(shape output)
-		(at 134.62 25.4 0)
+		(at 113.03 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1363,7 +1043,7 @@
 	)
 	(hierarchical_label "Rx10"
 		(shape output)
-		(at 134.62 38.1 0)
+		(at 113.03 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1374,7 +1054,7 @@
 	)
 	(hierarchical_label "Rx5"
 		(shape output)
-		(at 72.39 76.2 0)
+		(at 50.8 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1385,7 +1065,7 @@
 	)
 	(hierarchical_label "Rx27"
 		(shape output)
-		(at 264.16 52.07 0)
+		(at 242.57 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1396,7 +1076,7 @@
 	)
 	(hierarchical_label "Rx21"
 		(shape output)
-		(at 194.31 77.47 0)
+		(at 172.72 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1407,7 +1087,7 @@
 	)
 	(hierarchical_label "Rx25"
 		(shape output)
-		(at 264.16 26.67 0)
+		(at 242.57 26.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1418,7 +1098,7 @@
 	)
 	(hierarchical_label "Rx16"
 		(shape output)
-		(at 134.62 114.3 0)
+		(at 113.03 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1429,7 +1109,7 @@
 	)
 	(hierarchical_label "Rx6"
 		(shape output)
-		(at 72.39 88.9 0)
+		(at 50.8 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1440,7 +1120,7 @@
 	)
 	(hierarchical_label "Rx12"
 		(shape output)
-		(at 134.62 63.5 0)
+		(at 113.03 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1451,7 +1131,7 @@
 	)
 	(hierarchical_label "Rx13"
 		(shape output)
-		(at 134.62 76.2 0)
+		(at 113.03 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1462,7 +1142,7 @@
 	)
 	(hierarchical_label "Rx3"
 		(shape output)
-		(at 72.39 50.8 0)
+		(at 50.8 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1473,7 +1153,7 @@
 	)
 	(hierarchical_label "Rx2"
 		(shape output)
-		(at 72.39 38.1 0)
+		(at 50.8 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1484,7 +1164,7 @@
 	)
 	(hierarchical_label "Rx24"
 		(shape output)
-		(at 194.31 115.57 0)
+		(at 172.72 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1495,7 +1175,7 @@
 	)
 	(hierarchical_label "Rx28"
 		(shape output)
-		(at 264.16 64.77 0)
+		(at 242.57 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1506,7 +1186,7 @@
 	)
 	(hierarchical_label "Rx8"
 		(shape output)
-		(at 72.39 114.3 0)
+		(at 50.8 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1517,7 +1197,7 @@
 	)
 	(hierarchical_label "Rx7"
 		(shape output)
-		(at 72.39 101.6 0)
+		(at 50.8 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1528,7 +1208,7 @@
 	)
 	(hierarchical_label "Rx15"
 		(shape output)
-		(at 134.62 101.6 0)
+		(at 113.03 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1539,7 +1219,7 @@
 	)
 	(hierarchical_label "Rx30"
 		(shape output)
-		(at 264.16 90.17 0)
+		(at 242.57 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1550,7 +1230,7 @@
 	)
 	(hierarchical_label "Rx31"
 		(shape output)
-		(at 264.16 102.87 0)
+		(at 242.57 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1561,7 +1241,7 @@
 	)
 	(hierarchical_label "Rx32"
 		(shape output)
-		(at 264.16 115.57 0)
+		(at 242.57 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1572,7 +1252,7 @@
 	)
 	(hierarchical_label "Rx4"
 		(shape output)
-		(at 72.39 63.5 0)
+		(at 50.8 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4518,7 +4198,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "5abadad4-06a1-4fa1-8410-c865f0427d17")
+			(uuid "5abadad4-06a1-4fa1-8410-c865f0427d18")
 		)
 		(instances
 			(project ""
@@ -5054,7 +4734,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "5abadad4-06a1-4fa1-8410-c865f0427d17")
+			(uuid "5abadad4-06a1-4fa1-8410-c865f0427d19")
 		)
 		(instances
 			(project ""
@@ -5523,7 +5203,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "5abadad4-06a1-4fa1-8410-c865f0427d17")
+			(uuid "5abadad4-06a1-4fa1-8410-c865f0427d1a")
 		)
 		(instances
 			(project ""
@@ -5657,7 +5337,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "5abadad4-06a1-4fa1-8410-c865f0427d17")
+			(uuid "5abadad4-06a1-4fa1-8410-c865f0427d1b")
 		)
 		(instances
 			(project ""
@@ -5865,818 +5545,6 @@
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
 					(reference "#PWR0224")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 242.57 25.4)
-		(size 20.32 92.71)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "01c2bf4d-41af-41b2-9c7a-085aeaf63fad")
-		(property "Sheetname" "Rx Row Amplifier 4"
-			(at 242.57 24.6884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 242.57 118.6946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "RXIN1" input
-			(at 242.57 26.67 180)
-			(uuid "11bdcdb6-7348-40a9-a1c5-76668ce93aae")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN2" input
-			(at 242.57 39.37 180)
-			(uuid "ad2c60d0-dc74-4222-9e6b-72ec2ece457f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN3" input
-			(at 242.57 52.07 180)
-			(uuid "a27cfb04-cef4-47e3-af3e-8f96e44b7610")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN4" input
-			(at 242.57 64.77 180)
-			(uuid "9553216f-5ffa-439c-bfe6-225d6e27b8e9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN5" input
-			(at 242.57 77.47 180)
-			(uuid "615d43a0-4cb5-42c2-bce1-d3e0c7d204bc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN6" input
-			(at 242.57 90.17 180)
-			(uuid "549186a6-240b-4f05-84a3-15db97bb13e8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN7" input
-			(at 242.57 102.87 180)
-			(uuid "f6c10850-2b44-49db-be07-c98580347071")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN8" input
-			(at 242.57 115.57 180)
-			(uuid "59b1ef16-ca40-4480-b430-9eece973c5ac")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXOUT1" input
-			(at 262.89 26.67 0)
-			(uuid "d60044d5-9a24-4465-bb6e-e02e0593c6db")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT2" input
-			(at 262.89 39.37 0)
-			(uuid "7a18c1d8-56a2-47d0-aaad-576b9a47a6a7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT3" input
-			(at 262.89 52.07 0)
-			(uuid "42ecd54e-99cc-4d14-8603-621072c94506")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT4" input
-			(at 262.89 64.77 0)
-			(uuid "071a810f-6c21-4911-a2c5-d790695f283d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT5" input
-			(at 262.89 77.47 0)
-			(uuid "d35396eb-9225-49a8-9e58-e8be4c768ad4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT6" input
-			(at 262.89 90.17 0)
-			(uuid "bfb7b6f1-ebfd-4294-8b9c-8d37218b7d41")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT7" input
-			(at 262.89 102.87 0)
-			(uuid "960b06cd-06ab-4bf1-b5b2-f5e6ffd7bea8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT8" input
-			(at 262.89 115.57 0)
-			(uuid "0822713a-35ba-4d3e-9cb0-410dc5e26002")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 172.72 25.4)
-		(size 20.32 92.71)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "8c0f373c-112a-4e29-93aa-c1271dfd575d")
-		(property "Sheetname" "Rx Row Amplifier 3"
-			(at 172.72 24.6884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 172.72 118.6946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "RXIN1" input
-			(at 172.72 26.67 180)
-			(uuid "0b4808a9-075a-4c66-beb7-f7b9d886b032")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN2" input
-			(at 172.72 39.37 180)
-			(uuid "ebcef7e3-2d4c-486e-b1c3-203e7b21e4ba")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN3" input
-			(at 172.72 52.07 180)
-			(uuid "514c43b6-9263-41f6-bd73-f138f86ccfe4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN4" input
-			(at 172.72 64.77 180)
-			(uuid "64d4cc39-a3c2-472c-88c9-1c3a91e2916b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN5" input
-			(at 172.72 77.47 180)
-			(uuid "56583e83-94c9-4bc8-9910-5a88cfdd5536")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN6" input
-			(at 172.72 90.17 180)
-			(uuid "1e79cc73-e8fd-42fe-b840-27962e211b63")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN7" input
-			(at 172.72 102.87 180)
-			(uuid "3348acb1-b30f-408f-b1de-9becc061c8f1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN8" input
-			(at 172.72 115.57 180)
-			(uuid "89d9d63b-326c-4b6d-bf68-dea17f553047")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXOUT1" input
-			(at 193.04 26.67 0)
-			(uuid "209dbbf7-5198-4f7d-8abd-f73dbfa53f88")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT2" input
-			(at 193.04 39.37 0)
-			(uuid "8d145955-9539-4fa4-a553-5d984a6818a1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT3" input
-			(at 193.04 52.07 0)
-			(uuid "70e4f1d3-d453-47ac-96ea-e46dbd689ec4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT4" input
-			(at 193.04 64.77 0)
-			(uuid "542f535c-4fcf-405b-b7bd-79154c584f39")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT5" input
-			(at 193.04 77.47 0)
-			(uuid "73485ba5-7f58-44d4-855c-7d4ff549251e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT6" input
-			(at 193.04 90.17 0)
-			(uuid "e888c539-f2e9-4aed-b568-4cd12ca4a0b9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT7" input
-			(at 193.04 102.87 0)
-			(uuid "36d2b53f-1bec-44fe-ac69-b913ca28b172")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT8" input
-			(at 193.04 115.57 0)
-			(uuid "b9002d42-0e92-4cdd-b25b-bcef9cc019fd")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 113.03 24.13)
-		(size 20.32 92.71)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "955f0dbf-7479-41ed-8780-432d3b9b57a9")
-		(property "Sheetname" "Rx Row Amplifier 2"
-			(at 113.03 23.4184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 113.03 117.4246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "RXIN1" input
-			(at 113.03 25.4 180)
-			(uuid "02c67d9b-a91d-4bd6-9caf-0316c2fa8911")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN2" input
-			(at 113.03 38.1 180)
-			(uuid "65916c34-337b-4948-89d3-98d6994b68c3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN3" input
-			(at 113.03 50.8 180)
-			(uuid "01a941e0-b07b-4aa5-accd-13d23aef79b0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN4" input
-			(at 113.03 63.5 180)
-			(uuid "4fa45a39-216d-4063-bb49-b5e4db20d640")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN5" input
-			(at 113.03 76.2 180)
-			(uuid "269eab37-64da-4483-ad31-bf2fc76059a0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN6" input
-			(at 113.03 88.9 180)
-			(uuid "3ef396d3-35ee-4f08-a6b1-98c5d8d8bf3d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN7" input
-			(at 113.03 101.6 180)
-			(uuid "e8c18d6a-5ec6-4971-8ece-fdfad80de42a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN8" input
-			(at 113.03 114.3 180)
-			(uuid "55406b9e-0301-4b43-8f1a-760a10dad4b3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXOUT1" input
-			(at 133.35 25.4 0)
-			(uuid "d828e4e4-b990-49ee-8117-8df3360692ab")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT2" input
-			(at 133.35 38.1 0)
-			(uuid "c4792d52-b13a-421a-b4f6-dfed508305f6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT3" input
-			(at 133.35 50.8 0)
-			(uuid "d81cef06-0daf-40be-8537-d79beaf7c276")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT4" input
-			(at 133.35 63.5 0)
-			(uuid "7188fb46-f5c0-4b9d-a4ce-0224168bbc70")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT5" input
-			(at 133.35 76.2 0)
-			(uuid "8d8807a9-f2cd-40f3-b888-9d20c6788a06")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT6" input
-			(at 133.35 88.9 0)
-			(uuid "095d798a-bea9-42ff-b207-52e85c756b79")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT7" input
-			(at 133.35 101.6 0)
-			(uuid "1234d952-a389-4823-b9c0-3fb5774aad67")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT8" input
-			(at 133.35 114.3 0)
-			(uuid "123bc1c0-56fa-4550-a83f-3310ef6d0d41")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 50.8 24.13)
-		(size 20.32 92.71)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "f2897f03-1c65-406d-938e-483190e13ecf")
-		(property "Sheetname" "Rx Row Amplifier 1"
-			(at 50.8 23.4184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Rx_Preamp.kicad_sch"
-			(at 50.8 117.4246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "RXIN1" input
-			(at 50.8 25.4 180)
-			(uuid "eac4bb77-5d2e-4a88-b18a-00bbc0ba3ffc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN2" input
-			(at 50.8 38.1 180)
-			(uuid "06a1a438-f226-465a-8bd1-8386656cf786")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN3" input
-			(at 50.8 50.8 180)
-			(uuid "c2de1a91-1649-4c42-90bf-53c3ce10d861")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN4" input
-			(at 50.8 63.5 180)
-			(uuid "cfa78530-fb52-40fc-b52a-85154ca81ad3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN5" input
-			(at 50.8 76.2 180)
-			(uuid "bc74259b-0d5c-4554-8e63-accae18dbd48")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN6" input
-			(at 50.8 88.9 180)
-			(uuid "a1e00a19-3125-4edf-a9a4-53f70dd43054")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN7" input
-			(at 50.8 101.6 180)
-			(uuid "74077dfc-cb2d-41d4-bd6b-eaf6af4a2a53")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXIN8" input
-			(at 50.8 114.3 180)
-			(uuid "c612fc31-3802-4e28-aa23-df639001508a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RXOUT1" input
-			(at 71.12 25.4 0)
-			(uuid "2c5463b2-4555-4213-84f1-060d160a291b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT2" input
-			(at 71.12 38.1 0)
-			(uuid "63e8edf6-483b-4707-88c2-5be200d6b708")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT3" input
-			(at 71.12 50.8 0)
-			(uuid "b9378d28-d608-4d58-82cc-35e61330db19")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT4" input
-			(at 71.12 63.5 0)
-			(uuid "92e41314-7e66-4646-b11d-eb7b771cdaf7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT5" input
-			(at 71.12 76.2 0)
-			(uuid "b95149ac-a285-4792-8854-9d30c369bbd5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT6" input
-			(at 71.12 88.9 0)
-			(uuid "aaa15223-1a46-4904-ba5c-cfa04bb47962")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT7" input
-			(at 71.12 101.6 0)
-			(uuid "94f99403-186d-4a39-b004-22733041db52")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RXOUT8" input
-			(at 71.12 114.3 0)
-			(uuid "10a287f6-1da6-4ccf-bb6a-d798bf1d62d2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/e110e9b7-e557-4981-bab6-c28116ad040e"
-					(page "3")
 				)
 			)
 		)

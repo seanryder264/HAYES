@@ -731,43 +731,47 @@
     ],
     [
       "e110e9b7-e557-4981-bab6-c28116ad040e",
-      "Receiver Stage"
+      "Receiver Coils"
     ],
     [
-      "f2897f03-1c65-406d-938e-483190e13ecf",
-      "Rx Row Amplifier 1"
+      "d23d52ec-a889-4bbd-aba5-a40e602680dc",
+      "Amplifiers"
     ],
     [
-      "955f0dbf-7479-41ed-8780-432d3b9b57a9",
-      "Rx Row Amplifier 2"
+      "b7f03e3e-552f-47a8-8f1f-3153dd4fc5b5",
+      "Filter Amplifiers 1"
     ],
     [
-      "8c0f373c-112a-4e29-93aa-c1271dfd575d",
-      "Rx Row Amplifier 3"
-    ],
-    [
-      "01c2bf4d-41af-41b2-9c7a-085aeaf63fad",
-      "Rx Row Amplifier 4"
+      "f88a2a47-87f5-43a1-8b0c-4746b07895bc",
+      "Filter Amplifiers 2"
     ],
     [
       "ccfc9974-2797-4490-9af9-c0259e48d54a",
-      "Mux & Amplifier 1"
+      "Mux 1"
     ],
     [
-      "99a15fca-8895-44e6-9a10-1270216dbd6f",
-      "Mux & Amplifier 2"
+      "b80db4a6-5527-4d70-9248-6955b0f1705c",
+      "Mux 2"
+    ],
+    [
+      "14bc790a-082c-40b1-b107-ffe6e8dd7ae4",
+      "Mux 3"
+    ],
+    [
+      "574da1dc-01eb-4050-86ef-527a3fa7422b",
+      "Mux 4"
     ],
     [
       "5c16bd2e-d56c-40b8-b84c-f5532d41d46a",
       "Measurement & Control"
     ],
     [
-      "ced93e12-f689-438b-9d87-486bfa8af468",
-      "Transmit Coils"
-    ],
-    [
       "6ff1d53f-9520-4015-acff-de10540e78ee",
       "User Input"
+    ],
+    [
+      "ced93e12-f689-438b-9d87-486bfa8af468",
+      "Transmit Coils"
     ],
     [
       "11f39170-493e-4ecf-a6ba-aee1374b2ff1",
