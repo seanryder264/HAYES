@@ -754,10 +754,6 @@
       "Mux & Amplifier 1"
     ],
     [
-      "5dadbb41-7bdd-4fee-9f4b-d4b4a64c7097",
-      "Dual H-Bridge1"
-    ],
-    [
       "99a15fca-8895-44e6-9a10-1270216dbd6f",
       "Mux & Amplifier 2"
     ],
@@ -780,6 +776,10 @@
     [
       "c7ca0110-3f74-4b47-9986-2317814e0c37",
       "OLED"
+    ],
+    [
+      "5dadbb41-7bdd-4fee-9f4b-d4b4a64c7097",
+      "Dual H-Bridge1"
     ],
     [
       "384ceefe-3169-42e9-a44a-c592d5ab0124",
