@@ -1,5 +1,5 @@
 module phase_to_rgb (
-    input signed [15:0] phase, // Q1.15: -π to +π
+    input signed [7:0] phase, // Q1.15: -π to +π
     output reg [7:0] r, g, b
 );
 

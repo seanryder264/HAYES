@@ -62,8 +62,6 @@ input           s_axi_lite_wvalid
 
 );
 
-localparam X_SIZE = 640;
-localparam Y_SIZE = 480;
 parameter  REG_FILE_SIZE = 8;
 localparam int REG_ADDR_WIDTH = $bits(REG_FILE_SIZE);
 localparam REG_FILE_AWIDTH = $clog2(REG_FILE_SIZE);
@@ -194,39 +192,29 @@ assign s_axi_lite_wready = (writeState == AWAIT_WADD_AND_DATA || writeState == A
 assign s_axi_lite_bvalid = (writeState == AWAIT_RESP);
 assign s_axi_lite_bresp = ({{(REG_ADDR_WIDTH-3){1'b0}}, writeAddr} < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
 
-reg [9:0] x;
-reg [8:0] y;
-
-wire first = (x == 0) & (y==0);
-wire lastx = (x == X_SIZE - 1);
-wire lasty = (y == Y_SIZE - 1);
-wire [7:0] frame = regfile[0][7:0];
-wire ready;
-
-always @(posedge out_stream_aclk) begin
-    if (periph_resetn) begin
-        if (ready & valid_int) begin
-            if (lastx) begin
-                x <= 10'd0;
-                if (lasty) y <= 9'd0;
-                else y <= y + 9'd1;
-            end
-            else x <= x + 9'd1;
-        end
-    end
-    else begin
-        x <= 0;
-        y <= 0;
-    end
-end
-
-wire valid_int = 1'b1;
-
+wire signed [9:0] z_re;
+wire signed [8:0] z_im;
+wire first, lastx, ready, valid_int;
+wire signed [9:0] w_re, w_im;
+wire [7:0] mag, phase;
 wire [7:0] r, g, b;
-assign r = x[7:0] + frame;
-assign g = y[7:0] + frame;
-assign b = x[6:0]+y[6:0] + frame;
 
+coord_gen coord_gen_inst(   .out_stream_aclk(out_stream_aclk),
+                            .periph_resetn(periph_resetn),
+                            .ready(ready),
+                            .z_re(z_re), .z_im(z_im), 
+                            .first_pixel(first), .last_re(lastx),
+                            .valid(valid_int));
+
+assign w_re = z_re;
+assign w_im = {{z_im[8]}, z_im};
+
+phase_lookup phase_lookup_inst (    .x_in(w_re),
+                                    .y_in(w_im),
+                                    .phase(phase) );
+
+phase_to_rgb phase_to_rgb_inst( .phase(phase),
+                                .r(r), .g(g), .b(b) );
 
 packer pixel_packer(    .aclk(out_stream_aclk),
                         .aresetn(periph_resetn),
