@@ -8,7 +8,7 @@ pixels = []
 with open("data_stream.bin", "rb") as f:
     while len(pixels) < max_pixels:
         chunk = f.read(12)
-        if len(chunk) < 12:
+        if len(chunk) < :
             break
         w0, w1, w2 = struct.unpack("<III", chunk)
 
