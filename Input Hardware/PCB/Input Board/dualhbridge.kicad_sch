@@ -2409,7 +2409,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e4342c0-b355-4a72-9fa4-ab35d47a8aba")
-		(property "Reference" "C?"
+		(property "Reference" "C3"
 			(at 49.53 140.9699 0)
 			(effects
 				(font
@@ -2463,19 +2463,19 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/3348e333-540f-4189-88fa-1e260714a778"
-					(reference "C?")
+					(reference "C18")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/384ceefe-3169-42e9-a44a-c592d5ab0124"
-					(reference "C?")
+					(reference "C8")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/5dadbb41-7bdd-4fee-9f4b-d4b4a64c7097"
-					(reference "C?")
+					(reference "C3")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/73e19bdf-0bab-4953-9d31-c9e84adc5464"
-					(reference "C?")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -2569,7 +2569,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "255984c7-ece9-4fb3-b137-e312cfa16483")
-		(property "Reference" "U?"
+		(property "Reference" "U5"
 			(at 146.9233 172.72 0)
 			(effects
 				(font
@@ -2644,19 +2644,19 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/3348e333-540f-4189-88fa-1e260714a778"
-					(reference "U?")
+					(reference "U20")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/384ceefe-3169-42e9-a44a-c592d5ab0124"
-					(reference "U?")
+					(reference "U10")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/5dadbb41-7bdd-4fee-9f4b-d4b4a64c7097"
-					(reference "U?")
+					(reference "U5")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/73e19bdf-0bab-4953-9d31-c9e84adc5464"
-					(reference "U?")
+					(reference "U15")
 					(unit 1)
 				)
 			)
@@ -2768,7 +2768,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
+		(property "Footprint" "Package_DFN_QFN:DHVQFN-16-1EP_2.5x3.5mm_P0.5mm_EP1x2mm"
 			(at 60.96 59.69 0)
 			(effects
 				(font
@@ -2952,7 +2952,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40624ac5-491c-4bd3-96d9-670b9e774945")
-		(property "Reference" "C?"
+		(property "Reference" "C2"
 			(at 36.83 140.9699 0)
 			(effects
 				(font
@@ -3006,19 +3006,19 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/3348e333-540f-4189-88fa-1e260714a778"
-					(reference "C?")
+					(reference "C17")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/384ceefe-3169-42e9-a44a-c592d5ab0124"
-					(reference "C?")
+					(reference "C7")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/5dadbb41-7bdd-4fee-9f4b-d4b4a64c7097"
-					(reference "C?")
+					(reference "C2")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/73e19bdf-0bab-4953-9d31-c9e84adc5464"
-					(reference "C?")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -3191,7 +3191,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4d685834-8ee8-49b8-b937-145f981058df")
-		(property "Reference" "C?"
+		(property "Reference" "C5"
 			(at 74.93 140.9699 0)
 			(effects
 				(font
@@ -3245,19 +3245,19 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/3348e333-540f-4189-88fa-1e260714a778"
-					(reference "C?")
+					(reference "C20")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/384ceefe-3169-42e9-a44a-c592d5ab0124"
-					(reference "C?")
+					(reference "C10")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/5dadbb41-7bdd-4fee-9f4b-d4b4a64c7097"
-					(reference "C?")
+					(reference "C5")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/73e19bdf-0bab-4953-9d31-c9e84adc5464"
-					(reference "C?")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -3741,7 +3741,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80108db8-1e4d-47e5-8590-8d485186f2a0")
-		(property "Reference" "C?"
+		(property "Reference" "C4"
 			(at 62.23 140.9699 0)
 			(effects
 				(font
@@ -3795,19 +3795,19 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/3348e333-540f-4189-88fa-1e260714a778"
-					(reference "C?")
+					(reference "C19")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/384ceefe-3169-42e9-a44a-c592d5ab0124"
-					(reference "C?")
+					(reference "C9")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/5dadbb41-7bdd-4fee-9f4b-d4b4a64c7097"
-					(reference "C?")
+					(reference "C4")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/73e19bdf-0bab-4953-9d31-c9e84adc5464"
-					(reference "C?")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -3901,7 +3901,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8fcea5c7-0efb-4640-974b-d6ca9365a4db")
-		(property "Reference" "C?"
+		(property "Reference" "C6"
 			(at 87.63 140.9699 0)
 			(effects
 				(font
@@ -3955,19 +3955,19 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/3348e333-540f-4189-88fa-1e260714a778"
-					(reference "C?")
+					(reference "C21")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/384ceefe-3169-42e9-a44a-c592d5ab0124"
-					(reference "C?")
+					(reference "C11")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/5dadbb41-7bdd-4fee-9f4b-d4b4a64c7097"
-					(reference "C?")
+					(reference "C6")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/73e19bdf-0bab-4953-9d31-c9e84adc5464"
-					(reference "C?")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -3983,7 +3983,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a69e56e1-6b97-4707-a7c4-307c7859ca02")
-		(property "Reference" "U?"
+		(property "Reference" "U2"
 			(at 143.1133 46.99 0)
 			(effects
 				(font
@@ -4058,19 +4058,19 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/3348e333-540f-4189-88fa-1e260714a778"
-					(reference "U?")
+					(reference "U17")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/384ceefe-3169-42e9-a44a-c592d5ab0124"
-					(reference "U?")
+					(reference "U7")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/5dadbb41-7bdd-4fee-9f4b-d4b4a64c7097"
-					(reference "U?")
+					(reference "U2")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/73e19bdf-0bab-4953-9d31-c9e84adc5464"
-					(reference "U?")
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -4476,7 +4476,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "efd3b60d-e5a5-4d14-9b1b-1c4e1c691aa4")
-		(property "Reference" "U?"
+		(property "Reference" "U4"
 			(at 145.6533 130.81 0)
 			(effects
 				(font
@@ -4551,19 +4551,19 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/3348e333-540f-4189-88fa-1e260714a778"
-					(reference "U?")
+					(reference "U19")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/384ceefe-3169-42e9-a44a-c592d5ab0124"
-					(reference "U?")
+					(reference "U9")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/5dadbb41-7bdd-4fee-9f4b-d4b4a64c7097"
-					(reference "U?")
+					(reference "U4")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/73e19bdf-0bab-4953-9d31-c9e84adc5464"
-					(reference "U?")
+					(reference "U14")
 					(unit 1)
 				)
 			)
@@ -4579,7 +4579,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f92dde82-39ce-410e-9f41-6c24f3c081fd")
-		(property "Reference" "U?"
+		(property "Reference" "U3"
 			(at 144.3833 88.9 0)
 			(effects
 				(font
@@ -4654,19 +4654,19 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/3348e333-540f-4189-88fa-1e260714a778"
-					(reference "U?")
+					(reference "U18")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/384ceefe-3169-42e9-a44a-c592d5ab0124"
-					(reference "U?")
+					(reference "U8")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/5dadbb41-7bdd-4fee-9f4b-d4b4a64c7097"
-					(reference "U?")
+					(reference "U3")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468/73e19bdf-0bab-4953-9d31-c9e84adc5464"
-					(reference "U?")
+					(reference "U13")
 					(unit 1)
 				)
 			)
