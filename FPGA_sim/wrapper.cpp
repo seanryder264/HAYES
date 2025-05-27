@@ -2,7 +2,7 @@
 #include "verilated.h"
 #include <fstream>
 #include <iostream>
-#include <vector>
+
 
 int main(int argc, char** argv) {
     VerilatedContext* contextp = new VerilatedContext;
@@ -27,16 +27,19 @@ int main(int argc, char** argv) {
     top->periph_resetn = 1;
 
     const int max_pixels = 640 * 480;
-    int pixel_count = 0;
+    int x = 0, y = 0;
+    bool sof = false;
 
-    std::vector<uint32_t> buffer;
-
-    for (int cycle = 0; cycle < 400000 && pixel_count < max_pixels; cycle++) {
+    for (int cycle = 0; cycle < 350000; cycle++) {
         top->out_stream_aclk = 1;
         top->s_axi_lite_aclk = 1;
         top->eval();
 
-        if (top->out_stream_tvalid && top->out_stream_tready) {
+        if (top->out_stream_tuser == 1) {
+            sof = true;
+        }
+
+        if (sof && top->out_stream_tvalid && top->out_stream_tready) {
             uint32_t word = top->out_stream_tdata;
             raw_data.write(reinterpret_cast<const char*>(&word), sizeof(word));
         }

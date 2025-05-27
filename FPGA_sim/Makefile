@@ -11,4 +11,4 @@ run: sim
 	obj_dir/V$(TOP)
 
 clean:
-	rm -rf obj_dir *.vcd *.log out_stream_log.csv
+	rm -rf obj_dir *.bin *.png
