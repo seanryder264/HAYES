@@ -754,10 +754,6 @@
       "Mux & Amplifier 1"
     ],
     [
-      "68613be0-37ce-4ae1-818e-4d1968bcb9f7",
-      "Dual H-Bridge1"
-    ],
-    [
       "99a15fca-8895-44e6-9a10-1270216dbd6f",
       "Mux & Amplifier 2"
     ],
@@ -780,66 +776,6 @@
     [
       "c7ca0110-3f74-4b47-9986-2317814e0c37",
       "OLED"
-    ],
-    [
-      "7e105ace-37c1-41ac-91bc-44a8e149f906",
-      "Dual H-Bridge"
-    ],
-    [
-      "d3cc50e2-adb3-426c-a892-c5ca15c4f00e",
-      "Dual H-Bridge4"
-    ],
-    [
-      "ad46ac77-609e-44a2-a039-281a422ac41e",
-      "Dual H-Bridge2"
-    ],
-    [
-      "4ff0e34b-01ae-40fd-9bd6-55ac567cddc9",
-      "Dual H-Bridge3"
-    ],
-    [
-      "d06d9ca5-fe5d-4aa0-88dc-d9f721a2cf8b",
-      "Dual H-Bridge5"
-    ],
-    [
-      "3b0f1f2c-0c4d-4778-8589-61e155b2b10c",
-      "Dual H-Bridge6"
-    ],
-    [
-      "d2dc531a-a7c3-48d7-9efc-160f75a7dda4",
-      "Dual H-Bridge7"
-    ],
-    [
-      "3f207fbe-6ec2-4241-8009-ea74ec6a254e",
-      "Dual H-Bridge8"
-    ],
-    [
-      "bb5ba06a-a2d1-406a-ae34-f6b542144a83",
-      "Dual H-Bridge9"
-    ],
-    [
-      "6b0b4b94-486e-45f6-9108-736bd2b511c6",
-      "Dual H-Bridge10"
-    ],
-    [
-      "a74c1b60-ec90-48dd-a2c2-d9777dd84b40",
-      "Dual H-Bridge11"
-    ],
-    [
-      "5de2e6c7-7fbe-4cbd-acec-bea4927955cd",
-      "Dual H-Bridge12"
-    ],
-    [
-      "3e89924b-18c1-49d5-9b49-0938d9861d04",
-      "Dual H-Bridge13"
-    ],
-    [
-      "d0bf4270-d5a0-4f48-84c2-13e482d7f2cf",
-      "Dual H-Bridge14"
-    ],
-    [
-      "b518833a-75b9-4176-ad55-7a224a3c585d",
-      "Dual H-Bridge15"
     ]
   ],
   "text_variables": {}
