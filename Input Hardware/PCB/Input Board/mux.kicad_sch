@@ -3662,7 +3662,7 @@
 	)
 	(hierarchical_label "In10"
 		(shape input)
-		(at 48.26 93.98 180)
+		(at 48.26 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3684,7 +3684,7 @@
 	)
 	(hierarchical_label "In16"
 		(shape input)
-		(at 48.26 109.22 180)
+		(at 48.26 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3717,7 +3717,7 @@
 	)
 	(hierarchical_label "In4"
 		(shape input)
-		(at 46.99 45.72 180)
+		(at 46.99 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3728,7 +3728,7 @@
 	)
 	(hierarchical_label "In2"
 		(shape input)
-		(at 46.99 40.64 180)
+		(at 46.99 45.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3750,7 +3750,7 @@
 	)
 	(hierarchical_label "In8"
 		(shape input)
-		(at 46.99 55.88 180)
+		(at 46.99 48.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3772,7 +3772,7 @@
 	)
 	(hierarchical_label "In12"
 		(shape input)
-		(at 48.26 99.06 180)
+		(at 48.26 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3849,7 +3849,7 @@
 	)
 	(hierarchical_label "In13"
 		(shape input)
-		(at 48.26 101.6 180)
+		(at 48.26 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3871,7 +3871,7 @@
 	)
 	(hierarchical_label "In5"
 		(shape input)
-		(at 46.99 48.26 180)
+		(at 46.99 55.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5693,7 +5693,7 @@
 	)
 	(symbol
 		(lib_id "Device:Opamp_Quad")
-		(at 140.97 96.52 0)
+		(at 207.01 96.52 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5702,7 +5702,7 @@
 		(fields_autoplaced yes)
 		(uuid "69fb78a2-bbe2-4691-915e-031e2235ca65")
 		(property "Reference" "U701"
-			(at 140.97 86.36 0)
+			(at 207.01 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5710,7 +5710,7 @@
 			)
 		)
 		(property "Value" "ADA4891"
-			(at 140.97 88.9 0)
+			(at 207.01 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5718,7 +5718,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 153.67 96.52 0)
+			(at 219.71 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5727,7 +5727,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 96.52 0)
+			(at 207.01 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5736,7 +5736,7 @@
 			)
 		)
 		(property "Description" "Quad operational amplifier"
-			(at 140.97 96.52 0)
+			(at 207.01 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5745,7 +5745,7 @@
 			)
 		)
 		(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 140.97 96.52 0)
+			(at 207.01 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5754,7 +5754,7 @@
 			)
 		)
 		(property "Sim.Name" "kicad_builtin_opamp_quad"
-			(at 140.97 96.52 0)
+			(at 207.01 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5763,7 +5763,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 140.97 96.52 0)
+			(at 207.01 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5772,7 +5772,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vcc 5=in2+ 6=in2- 7=out2 8=out3 9=in3- 10=in3+ 11=vee 12=in4+ 13=in4- 14=out4"
-			(at 140.97 96.52 0)
+			(at 207.01 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6530,7 +6530,7 @@
 	)
 	(symbol
 		(lib_id "Device:Opamp_Quad")
-		(at 207.01 96.52 0)
+		(at 140.97 96.52 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6539,7 +6539,7 @@
 		(fields_autoplaced yes)
 		(uuid "a86c8c65-195c-40bb-8b24-acd2877b4820")
 		(property "Reference" "U701"
-			(at 207.01 86.36 0)
+			(at 140.97 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6547,7 +6547,7 @@
 			)
 		)
 		(property "Value" "ADA4891"
-			(at 207.01 88.9 0)
+			(at 140.97 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6555,7 +6555,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 219.71 96.52 0)
+			(at 153.67 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6564,7 +6564,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 207.01 96.52 0)
+			(at 140.97 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6573,7 +6573,7 @@
 			)
 		)
 		(property "Description" "Quad operational amplifier"
-			(at 207.01 96.52 0)
+			(at 140.97 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6582,7 +6582,7 @@
 			)
 		)
 		(property "Sim.Library" "${KICAD9_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 207.01 96.52 0)
+			(at 140.97 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6591,7 +6591,7 @@
 			)
 		)
 		(property "Sim.Name" "kicad_builtin_opamp_quad"
-			(at 207.01 96.52 0)
+			(at 140.97 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6600,7 +6600,7 @@
 			)
 		)
 		(property "Sim.Device" "SUBCKT"
-			(at 207.01 96.52 0)
+			(at 140.97 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6609,7 +6609,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vcc 5=in2+ 6=in2- 7=out2 8=out3 9=in3- 10=in3+ 11=vee 12=in4+ 13=in4- 14=out4"
-			(at 207.01 96.52 0)
+			(at 140.97 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
