@@ -5179,6 +5179,10 @@
 		(uuid "ce50fe06-f2a7-47f0-91f4-58c84c96d864")
 	)
 	(no_connect
+		(at 27.94 152.4)
+		(uuid "d2f599bc-d4cd-4ca9-90b3-f218204ebd92")
+	)
+	(no_connect
 		(at 50.8 58.42)
 		(uuid "f2104b47-9ceb-4cc4-b51d-6d481d33cabe")
 	)
@@ -5435,16 +5439,6 @@
 			(type default)
 		)
 		(uuid "2cf0a67f-98a7-4704-8bd5-3564a67ec776")
-	)
-	(wire
-		(pts
-			(xy 25.4 152.4) (xy 27.94 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d43d03e-2374-4fbe-9d1e-b8ada1292e42")
 	)
 	(wire
 		(pts
@@ -6326,16 +6320,6 @@
 		)
 		(uuid "e3e23d8e-ad08-4625-9c79-6b9a080afcbc")
 	)
-	(wire
-		(pts
-			(xy 76.2 101.6) (xy 71.12 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e675f5a2-4397-433e-8bf7-055b11d7a377")
-	)
 	(polyline
 		(pts
 			(xy 255.27 124.46) (xy 259.08 124.46)
@@ -6706,16 +6690,6 @@
 		)
 		(uuid "8c0f9229-4e9a-43e9-9844-29f1625502b7")
 	)
-	(label "TX_SRCLK"
-		(at 71.12 101.6 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9f9245d2-c372-4dae-ad3f-8f3b02b605ad")
-	)
 	(label "BOOT0"
 		(at 210.82 48.26 180)
 		(effects
@@ -6983,7 +6957,7 @@
 	)
 	(hierarchical_label "Rx4"
 		(shape input)
-		(at 246.38 114.3 0)
+		(at 246.38 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7030,13 +7004,13 @@
 	)
 	(hierarchical_label "Rx1"
 		(shape input)
-		(at 210.82 58.42 180)
+		(at 246.38 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 				(color 255 30 0 1)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "23dc9ad4-ffa1-47db-820a-f9dacbe8b04b")
 	)
@@ -7133,7 +7107,7 @@
 	)
 	(hierarchical_label "Rx1"
 		(shape input)
-		(at 246.38 53.34 0)
+		(at 246.38 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7223,13 +7197,13 @@
 	)
 	(hierarchical_label "Rx4"
 		(shape input)
-		(at 246.38 116.84 0)
+		(at 210.82 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 				(color 255 30 0 1)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "96168d31-292f-4f3a-a85b-eea7c83aeec2")
 	)
@@ -8795,73 +8769,6 @@
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
 					(reference "#PWR0931")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 76.2 101.6 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "437a5ce5-fafc-42fd-aa98-230b3076e12d")
-		(property "Reference" "TP904"
-			(at 81.28 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 81.28 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 76.2 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 76.2 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6fe5ade7-4dbd-488b-9fbc-f3a63e74030b")
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP904")
 					(unit 1)
 				)
 			)
@@ -12854,73 +12761,6 @@
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
 					(reference "TP911")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 25.4 152.4 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ed3d984a-574d-4e90-874f-10576d8ffa12")
-		(property "Reference" "TP901"
-			(at 20.32 152.4 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 20.32 161.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
-			(at 25.4 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 25.4 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 25.4 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "449e3d47-2409-40e0-83a9-7a16faaaca01")
-		)
-		(instances
-			(project "Input Board"
-				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP901")
 					(unit 1)
 				)
 			)
