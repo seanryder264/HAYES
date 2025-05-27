@@ -1,0 +1,16 @@
+.DRV8837DSGR :1 ;1.8A Low Voltage Brushed DC Motor Driver (PWM Ctrl)
+SON50P200X200X80-9N
+*STM IC
+*NGS
+*PLB 1="VM" 2="OUT1" 3="OUT2" 4="GND" 5="IN2" 6="IN1" 7="NSLEEP" 8="VCC" 9="EP"
+*MXP 9
+*DFN DRV8837DSGR
+~!Mouser Part Number (595-DRV8837DSGR)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8837DSGR?qs=l6ZoeTYLMwO0pKIJ8222Ww%3D%3D)
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (DRV8837DSGR)
+~!Link Datasheet (http://www.ti.com/lit/gpn/drv8837)
+~!Height (0.8mm)
+~!3D_Model (DRV8837DSGR)
+DRV8837DSGR
+1.1!U 2.1!U 3.1!U 4.1!U 9.1!U 8.1!U 7.1!U 6.1!U 5.1!U 
