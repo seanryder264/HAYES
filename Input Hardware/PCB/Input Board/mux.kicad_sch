@@ -3871,7 +3871,7 @@
 				)
 			)
 		)
-		(property "Value" "56p"
+		(property "Value" "39p"
 			(at 182.88 88.9 90)
 			(effects
 				(font
@@ -4305,7 +4305,7 @@
 				)
 			)
 		)
-		(property "Value" "39p"
+		(property "Value" "33p"
 			(at 133.35 76.2 90)
 			(effects
 				(font
@@ -4813,7 +4813,7 @@
 				)
 			)
 		)
-		(property "Value" "56p"
+		(property "Value" "39p"
 			(at 170.18 88.9 90)
 			(effects
 				(font
@@ -4885,7 +4885,7 @@
 				)
 			)
 		)
-		(property "Value" "39p"
+		(property "Value" "33p"
 			(at 132.08 22.86 90)
 			(effects
 				(font
@@ -4957,7 +4957,7 @@
 				)
 			)
 		)
-		(property "Value" "56p"
+		(property "Value" "39p"
 			(at 168.91 35.56 90)
 			(effects
 				(font
@@ -6157,7 +6157,7 @@
 				)
 			)
 		)
-		(property "Value" "56p"
+		(property "Value" "39p"
 			(at 181.61 35.56 90)
 			(effects
 				(font

@@ -1732,7 +1732,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 69.85) (xy 86.36 69.85)
+			(xy 88.9 77.47) (xy 91.44 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1772,7 +1772,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 69.85) (xy 107.95 72.39)
+			(xy 113.03 77.47) (xy 113.03 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1792,7 +1792,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 69.85) (xy 86.36 72.39)
+			(xy 91.44 77.47) (xy 91.44 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1802,7 +1802,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 82.55) (xy 86.36 80.01)
+			(xy 91.44 90.17) (xy 91.44 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1812,7 +1812,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 82.55) (xy 107.95 80.01)
+			(xy 113.03 90.17) (xy 113.03 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1832,7 +1832,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 69.85) (xy 107.95 69.85)
+			(xy 110.49 77.47) (xy 113.03 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1931,7 +1931,7 @@
 		(uuid "fc7ca9c3-1ae2-4ef7-a7ff-3473710f7413")
 	)
 	(label "LED_IX"
-		(at 86.36 82.55 180)
+		(at 91.44 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2061,7 +2061,7 @@
 		(uuid "fb36ee03-65d4-4997-9b4c-1c21b30a1dfc")
 	)
 	(label "LED_IY"
-		(at 107.95 82.55 180)
+		(at 113.03 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3413,7 +3413,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 107.95 76.2 0)
+		(at 113.03 83.82 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3423,7 +3423,7 @@
 		(fields_autoplaced yes)
 		(uuid "4e6935a9-5671-4004-82f6-d8919ab8392e")
 		(property "Reference" "R1106"
-			(at 110.49 74.9301 0)
+			(at 115.57 82.5501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3432,7 +3432,7 @@
 			)
 		)
 		(property "Value" "TBD"
-			(at 110.49 77.4701 0)
+			(at 115.57 85.0901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3441,7 +3441,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 109.728 76.2 90)
+			(at 114.808 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3450,7 +3450,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 107.95 76.2 0)
+			(at 113.03 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3459,7 +3459,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 107.95 76.2 0)
+			(at 113.03 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4422,7 +4422,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 80.01 69.85 0)
+		(at 85.09 77.47 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4432,7 +4432,7 @@
 		(fields_autoplaced yes)
 		(uuid "b454acd1-0794-46ea-9eee-afdf2c05a01e")
 		(property "Reference" "D1103"
-			(at 78.4225 73.66 0)
+			(at 83.5025 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4440,7 +4440,7 @@
 			)
 		)
 		(property "Value" "X"
-			(at 78.4225 76.2 0)
+			(at 83.5025 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4448,7 +4448,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 80.01 69.85 0)
+			(at 85.09 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4457,7 +4457,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 80.01 69.85 0)
+			(at 85.09 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4466,7 +4466,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 80.01 69.85 0)
+			(at 85.09 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4475,7 +4475,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 80.01 69.85 0)
+			(at 85.09 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4500,7 +4500,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 86.36 76.2 0)
+		(at 91.44 83.82 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4510,7 +4510,7 @@
 		(fields_autoplaced yes)
 		(uuid "b593309d-b023-464b-af2e-1b9a0c311fd5")
 		(property "Reference" "R1103"
-			(at 88.9 74.9301 0)
+			(at 93.98 82.5501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4519,7 +4519,7 @@
 			)
 		)
 		(property "Value" "TBD"
-			(at 88.9 77.4701 0)
+			(at 93.98 85.0901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4528,7 +4528,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 88.138 76.2 90)
+			(at 93.218 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4537,7 +4537,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 76.2 0)
+			(at 91.44 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4546,7 +4546,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 86.36 76.2 0)
+			(at 91.44 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4571,7 +4571,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 76.2 69.85 90)
+		(at 81.28 77.47 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4580,7 +4580,7 @@
 		(fields_autoplaced yes)
 		(uuid "baadb537-cd8a-4408-a603-39e3fc819e33")
 		(property "Reference" "#PWR01109"
-			(at 80.01 69.85 0)
+			(at 85.09 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4589,7 +4589,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 72.39 69.8499 90)
+			(at 77.47 77.4699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4598,7 +4598,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.2 69.85 0)
+			(at 81.28 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4607,7 +4607,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 76.2 69.85 0)
+			(at 81.28 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4616,7 +4616,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 76.2 69.85 0)
+			(at 81.28 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4709,7 +4709,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 97.79 69.85 90)
+		(at 102.87 77.47 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4718,7 +4718,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd6d6b92-9ebf-4859-80cc-9ef7431f085b")
 		(property "Reference" "#PWR01112"
-			(at 101.6 69.85 0)
+			(at 106.68 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4727,7 +4727,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 93.98 69.8499 90)
+			(at 99.06 77.4699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4736,7 +4736,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 97.79 69.85 0)
+			(at 102.87 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4745,7 +4745,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 97.79 69.85 0)
+			(at 102.87 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4754,7 +4754,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 97.79 69.85 0)
+			(at 102.87 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5283,7 +5283,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 101.6 69.85 0)
+		(at 106.68 77.47 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5293,7 +5293,7 @@
 		(fields_autoplaced yes)
 		(uuid "f6467841-9731-445b-be5c-65026f4da8fd")
 		(property "Reference" "D1106"
-			(at 100.0125 73.66 0)
+			(at 105.0925 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5301,7 +5301,7 @@
 			)
 		)
 		(property "Value" "Y"
-			(at 100.0125 76.2 0)
+			(at 105.0925 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5309,7 +5309,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 101.6 69.85 0)
+			(at 106.68 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5318,7 +5318,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 69.85 0)
+			(at 106.68 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5327,7 +5327,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 101.6 69.85 0)
+			(at 106.68 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5336,7 +5336,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 101.6 69.85 0)
+			(at 106.68 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
