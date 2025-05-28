@@ -6900,7 +6900,7 @@
 	)
 	(hierarchical_label "S_A"
 		(shape input)
-		(at 210.82 71.12 180)
+		(at 210.82 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6958,7 +6958,7 @@
 	)
 	(hierarchical_label "S_B"
 		(shape input)
-		(at 210.82 73.66 180)
+		(at 210.82 71.12 180)
 		(effects
 			(font
 				(size 1.27 1.27)
