@@ -4138,7 +4138,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220"
+		(property "Value" "150"
 			(at 30.48 97.7899 0)
 			(effects
 				(font
@@ -4691,7 +4691,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d1171aa0-22da-47ee-8ddc-b2d1d6254bfd")
-		(property "Reference" "C1709"
+		(property "Reference" "C1708"
 			(at 165.735 66.04 0)
 			(effects
 				(font
@@ -4799,7 +4799,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/11f39170-493e-4ecf-a6ba-aee1374b2ff1"
-					(reference "C1709")
+					(reference "C1708")
 					(unit 1)
 				)
 			)
