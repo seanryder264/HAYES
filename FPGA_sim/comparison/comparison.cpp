@@ -12,8 +12,8 @@ const int WIDTH = 640;
 const int HEIGHT = 480;
 
 // Function parameters: poles and zeroes
-std::vector<std::complex<double>> poles = { {0.5, 0.9} };
-std::vector<std::complex<double>> zeroes = { {-0.5, 0} };
+std::vector<std::complex<double>> poles = { {-0.5, 0}, {0.5, 0} };
+std::vector<std::complex<double>> zeroes = { {0.0, 0.5}, {0.0, -0.5}  };
 
 // Evaluate complex function H(z) = product(z - zeroes) / product(z - poles)
 std::complex<double> evaluate_function(const std::complex<double>& z) {
@@ -78,10 +78,22 @@ int main() {
             int r, g, b;
             phase_to_rgb(phase, r, g, b);
 
-            // Brightness factor: darker as mag → 1
-            double brightness = std::max(0.25, 1.0 - 0.5*(3*mag - std::floor(3*mag)));
+            double t = 1.0; // Adjust this parameter to tune the visualization
+
+            // Extract real and imaginary parts of f(z)
+            double real_part = val.real();
+            double imag_part = val.imag();
+
+            double hz = std::abs(std::sin(M_PI * real_part * t)) * std::abs(std::sin(M_PI * imag_part * t));
+            hz = std::pow(hz, 0.2);
+
+            double mod = 1.0 - (mag - std::floor(mag));
+            mod = std::pow(mod, 0.25);
+            double raw_brightness = std::min(hz, mod); 
+            double brightness = std::max(0.1, std::min(raw_brightness, 1.0)); 
 
 
+            // Apply brightness to RGB
             r = static_cast<int>(r * brightness);
             g = static_cast<int>(g * brightness);
             b = static_cast<int>(b * brightness);
