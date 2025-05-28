@@ -794,19 +794,19 @@
     ],
     [
       "5dadbb41-7bdd-4fee-9f4b-d4b4a64c7097",
-      "Dual H-Bridge1"
+      "Dual H-Bridge 2"
     ],
     [
       "384ceefe-3169-42e9-a44a-c592d5ab0124",
-      "Dual H-Bridge2"
+      "Dual H-Bridge 3"
     ],
     [
       "73e19bdf-0bab-4953-9d31-c9e84adc5464",
-      "Dual H-Bridge3"
+      "Dual H-Bridge 4"
     ],
     [
       "3348e333-540f-4189-88fa-1e260714a778",
-      "Dual H-Bridge"
+      "Dual H-Bridge 1"
     ]
   ],
   "text_variables": {}
