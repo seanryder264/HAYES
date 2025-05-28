@@ -1,2 +1,5 @@
 test.vcd
 obj_dir/
+*.png
+*.ppm
+FPGA_sim/comparison/comparison
