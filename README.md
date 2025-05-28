@@ -7,7 +7,7 @@
 | | Harry | Aadin | Yuki | Ethan | Sean |
 | --- | --- | --- | --- | --- | --- |
 | **Week 1** | project ideas, hardware design | project ideas, setting up PYNQ board, building the starter projects, got vivado stuff set up | project ideas, variable input ideas, hardware design | project ideas, visualisation, python | Admin/Planning, Setting up simulation, project ideas, block diagram of logic |
-| **Week 2** | | | | | |
+| **Week 2** | | Helped out with simulation. Wrote comparison C++ code
 | **Week 3** | | | | | |
 | **Week 4** | | | | | |
 
@@ -19,7 +19,7 @@
 
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 | --- | --- | --- | --- | --- | --- | --- |
-| 9:00 Group Registration, 12:00 Option Allocation | 10:00 Academic Writing | 13:00 Second Year Meeting | 10:00 Ed Stott Meeting | | | |
+| 9:00 Group Registration, 12:00 Option Allocation | 10:00 Academic Writing | 13:00 Second Year Meeting | 10:00 Ed Stott Meeting | |Demo Project Running
 
 **Proposals** - https://imperiallondon-my.sharepoint.com/:w:/r/personal/hh1823_ic_ac_uk/Documents/Ideas%20for%20Consultation.docx?d=w64da16023ef14e0098bc3b67b661a416&csf=1&web=1&e=dfb4Sq
 
