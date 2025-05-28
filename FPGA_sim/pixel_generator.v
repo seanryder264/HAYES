@@ -195,9 +195,6 @@ assign s_axi_lite_bresp = ({{(REG_ADDR_WIDTH-3){1'b0}}, writeAddr} < REG_FILE_SI
 wire signed [9:0] z_re;
 wire signed [8:0] z_im;
 wire first, lastx, ready, valid_int;
-wire signed [9:0] w_re, w_im;
-wire [7:0] mag, phase;
-wire [7:0] r, g, b;
 
 coord_gen coord_gen_inst(   .clk(out_stream_aclk),
                             .resetn(periph_resetn),
@@ -206,15 +203,19 @@ coord_gen coord_gen_inst(   .clk(out_stream_aclk),
                             .first(first), .lastx(lastx),
                             .valid(valid_int));
 
-assign w_re = z_re;
-assign w_im = {{z_im[8]}, z_im};
+// func_eval will go here
+wire signed [9:0] w_re = z_re;
+wire signed [8:0] w_im = z_im;
+wire [8:0] phase;
 
-phase_lookup phase_lookup_inst (    .x_in(w_re),
-                                    .y_in(w_im),
-                                    .phase(phase) );
+atan_lut atan_lut_inst (    .x(w_re),
+                            .y(w_im),
+                            .angle(phase) );
+
+wire [7:0] r, g, b;
 
 phase_to_rgb phase_to_rgb_inst( .phase(phase),
-                                .r(r), .g(g), .b(b) );
+                                .red(r), .green(g), .blue(b) );
 
 packer pixel_packer(    .aclk(out_stream_aclk),
                         .aresetn(periph_resetn),

@@ -7,15 +7,12 @@
 #include <cstdlib>
 #include <chrono>
 
-// Image dimensions
 const int WIDTH = 640;
 const int HEIGHT = 480;
 
-// Function parameters: poles and zeroes
 std::vector<std::complex<double>> poles = { {-0.5, 0}, {0.5, 0} };
 std::vector<std::complex<double>> zeroes = { {0.0, 0.5}, {0.0, -0.5}  };
 
-// Evaluate complex function H(z) = product(z - zeroes) / product(z - poles)
 std::complex<double> evaluate_function(const std::complex<double>& z) {
     std::complex<double> numerator(1.0, 0.0);
     std::complex<double> denominator(1.0, 0.0);
@@ -24,7 +21,6 @@ std::complex<double> evaluate_function(const std::complex<double>& z) {
     return numerator / denominator;
 }
 
-// Map phase [-pi, pi] to RGB (simple HSV to RGB mapping)
 void phase_to_rgb(double phase, int& r, int& g, int& b) {
     double hue = (phase + M_PI) / (2 * M_PI); // [0,1]
     double s = 1.0, v = 1.0;
