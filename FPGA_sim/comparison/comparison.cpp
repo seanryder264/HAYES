@@ -79,7 +79,7 @@ int main() {
             phase_to_rgb(phase, r, g, b);
 
             // Brightness factor: darker as mag → 1
-            double brightness = std::max(0.5, 1.0 - (2*mag - std::floor(2*mag)));
+            double brightness = std::max(0.25, 1.0 - 0.5*(3*mag - std::floor(3*mag)));
 
 
             r = static_cast<int>(r * brightness);
