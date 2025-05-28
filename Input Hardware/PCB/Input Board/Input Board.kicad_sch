@@ -314,6 +314,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 35.56) (xy 180.34 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1be6f9fc-4915-49aa-b270-25edc73f077a")
+	)
+	(wire
+		(pts
 			(xy 39.37 111.76) (xy 50.8 111.76)
 		)
 		(stroke
@@ -1704,6 +1714,16 @@
 				(justify left)
 			)
 		)
+		(pin "SLEEP" input
+			(at 165.1 35.56 0)
+			(uuid "04e417a9-5e0c-4f5c-bf64-c696ec1256a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3"
@@ -2617,6 +2637,16 @@
 		(pin "DRIVER_SRCLK" input
 			(at 180.34 30.48 180)
 			(uuid "c583ad61-1ffa-4b36-b3f3-9f1f30fca90a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SLEEP" input
+			(at 180.34 35.56 180)
+			(uuid "4095aadf-41bd-4e6b-834a-272f72eec2f6")
 			(effects
 				(font
 					(size 1.27 1.27)

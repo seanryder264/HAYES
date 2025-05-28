@@ -405,6 +405,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 36.83) (xy 101.6 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37bd3d78-5d1f-4294-aaea-5474e40954fe")
+	)
+	(wire
+		(pts
 			(xy 138.43 33.02) (xy 140.97 33.02)
 		)
 		(stroke
@@ -412,6 +422,16 @@
 			(type default)
 		)
 		(uuid "3d979423-dfa2-4795-a13f-d424bf97d95f")
+	)
+	(wire
+		(pts
+			(xy 172.72 36.83) (xy 175.26 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "409c44d1-6f4d-43dd-aab8-24d7bef9a15b")
 	)
 	(wire
 		(pts
@@ -715,6 +735,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 95.25) (xy 175.26 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8948e7c7-5864-425c-9475-b86eff795724")
+	)
+	(wire
+		(pts
 			(xy 212.09 45.72) (xy 214.63 45.72)
 		)
 		(stroke
@@ -955,6 +985,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 95.25) (xy 101.6 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3c24f9e-b37c-436b-af6e-4420d1dd4935")
+	)
+	(wire
+		(pts
 			(xy 138.43 115.57) (xy 140.97 115.57)
 		)
 		(stroke
@@ -1103,6 +1143,46 @@
 		)
 		(uuid "5b567b0a-2b46-4d55-a917-ac370ebdc36b")
 	)
+	(label "S "
+		(at 99.06 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8be481ba-fca8-42e7-9306-68a0932e161e")
+	)
+	(label "S "
+		(at 172.72 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "94a1e098-0a07-4816-b22c-c95923517e06")
+	)
+	(label "S "
+		(at 99.06 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a7470299-2614-47b6-81de-c382de21bd30")
+	)
+	(label "S "
+		(at 172.72 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c43fa2c2-71c2-4d7e-9236-833f135dd6f6")
+	)
 	(hierarchical_label "DRIVER_SRCLK"
 		(shape input)
 		(at 96.52 90.17 180)
@@ -1146,6 +1226,17 @@
 			(justify right)
 		)
 		(uuid "4ec0b892-e74b-46e9-91c4-9e98e11ad5cc")
+	)
+	(hierarchical_label "SLEEP"
+		(shape input)
+		(at 97.79 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "50b01bee-9db5-4b59-a383-e7adc893e99f")
 	)
 	(hierarchical_label "DRIVER_SRCLK"
 		(shape input)
@@ -5652,6 +5743,16 @@
 				(justify right)
 			)
 		)
+		(pin "SLEEP" input
+			(at 101.6 36.83 180)
+			(uuid "54adeaaa-00ac-4635-b17e-28b91169a62b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468"
@@ -5820,6 +5921,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "SLEEP" input
+			(at 175.26 36.83 180)
+			(uuid "c2509830-ccff-4c61-98a2-b0751a09a645")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -5992,6 +6103,16 @@
 				(justify right)
 			)
 		)
+		(pin "SLEEP" input
+			(at 101.6 95.25 180)
+			(uuid "0ad0df07-f6ba-48f7-a2a9-1c1b7819e19a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ced93e12-f689-438b-9d87-486bfa8af468"
@@ -6160,6 +6281,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "SLEEP" input
+			(at 175.26 95.25 180)
+			(uuid "503c915b-56ba-46ef-b7a0-7be1f7f7e22e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
