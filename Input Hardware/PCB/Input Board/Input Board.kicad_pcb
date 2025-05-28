@@ -36288,7 +36288,7 @@
 	(footprint "Connector_USB:USB_C_Receptacle_GCT_USB4110"
 		(layer "B.Cu")
 		(uuid "4d9a2c48-f90b-4260-9f56-dc921c60ba5a")
-		(at 255 53.71)
+		(at 255 53.395)
 		(descr "USB 2.0 Type C Receptacle, GCT, 16P, top mounted, horizontal, 5A, https://gct.co/files/drawings/usb4110.pdf")
 		(tags "USB 2.0 C Type-C Receptacle SMD 16P 16C USB4110-GF-A")
 		(property "Reference" "J901"
