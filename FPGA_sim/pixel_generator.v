@@ -199,11 +199,11 @@ wire signed [9:0] w_re, w_im;
 wire [7:0] mag, phase;
 wire [7:0] r, g, b;
 
-coord_gen coord_gen_inst(   .out_stream_aclk(out_stream_aclk),
-                            .periph_resetn(periph_resetn),
+coord_gen coord_gen_inst(   .clk(out_stream_aclk),
+                            .resetn(periph_resetn),
                             .ready(ready),
-                            .z_re(z_re), .z_im(z_im), 
-                            .first_pixel(first), .last_re(lastx),
+                            .x(z_re), .y(z_im), 
+                            .first(first), .lastx(lastx),
                             .valid(valid_int));
 
 assign w_re = z_re;
