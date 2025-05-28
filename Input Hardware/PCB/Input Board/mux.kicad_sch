@@ -6295,7 +6295,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d6a5de8-ff09-4a8c-addc-e2fc108d6525")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR0710"
 			(at 62.23 185.42 0)
 			(effects
 				(font
@@ -6345,11 +6345,11 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/99a15fca-8895-44e6-9a10-1270216dbd6f"
-					(reference "#PWR090")
+					(reference "#PWR0810")
 					(unit 1)
 				)
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/ccfc9974-2797-4490-9af9-c0259e48d54a"
-					(reference "#PWR089")
+					(reference "#PWR0710")
 					(unit 1)
 				)
 			)

@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -188,7 +188,12 @@
       ],
       "track_widths": [
         0.0,
+        0.1,
+        0.15,
+        0.2,
+        0.25,
         0.5,
+        0.6,
         1.0
       ],
       "tuning_pattern_settings": {
@@ -781,16 +786,8 @@
       "Transmit Coils"
     ],
     [
-      "6ff1d53f-9520-4015-acff-de10540e78ee",
-      "User Input"
-    ],
-    [
-      "11f39170-493e-4ecf-a6ba-aee1374b2ff1",
-      "Power"
-    ],
-    [
-      "c7ca0110-3f74-4b47-9986-2317814e0c37",
-      "OLED"
+      "3348e333-540f-4189-88fa-1e260714a778",
+      "Dual H-Bridge 1"
     ],
     [
       "5dadbb41-7bdd-4fee-9f4b-d4b4a64c7097",
@@ -805,8 +802,16 @@
       "Dual H-Bridge 4"
     ],
     [
-      "3348e333-540f-4189-88fa-1e260714a778",
-      "Dual H-Bridge 1"
+      "6ff1d53f-9520-4015-acff-de10540e78ee",
+      "User Input"
+    ],
+    [
+      "c7ca0110-3f74-4b47-9986-2317814e0c37",
+      "OLED"
+    ],
+    [
+      "11f39170-493e-4ecf-a6ba-aee1374b2ff1",
+      "Power"
     ]
   ],
   "text_variables": {}

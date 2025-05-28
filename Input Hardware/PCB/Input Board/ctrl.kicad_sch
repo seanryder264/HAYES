@@ -5151,6 +5151,10 @@
 		(uuid "ec9534c1-923f-4b7a-8322-760ca8030332")
 	)
 	(no_connect
+		(at 246.38 96.52)
+		(uuid "bbc3ef71-c1a1-4e09-9caa-bf6066535eae")
+	)
+	(no_connect
 		(at 210.82 63.5)
 		(uuid "ce50fe06-f2a7-47f0-91f4-58c84c96d864")
 	)
@@ -6386,7 +6390,7 @@
 		)
 		(uuid "ffeaacb2-9ebb-4c97-ae90-554cdc8094ca")
 	)
-	(label "TX_DSO"
+	(label "TX_SDO"
 		(at 101.6 148.59 180)
 		(effects
 			(font
@@ -6435,16 +6439,6 @@
 			(justify left)
 		)
 		(uuid "21a8381a-ff78-43f7-97b2-ba2e8f2799e7")
-	)
-	(label "TX_~{OE}"
-		(at 246.38 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2f706aa0-283e-41a6-971c-25eaef655e7b")
 	)
 	(label "UI_SER"
 		(at 101.6 158.75 180)
@@ -6546,7 +6540,7 @@
 		)
 		(uuid "79f62c7c-b581-4032-99d4-6315c23c7d84")
 	)
-	(label "TX_DSO"
+	(label "TX_SDO"
 		(at 246.38 99.06 0)
 		(effects
 			(font
@@ -7295,7 +7289,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "057a846e-fd7b-4c16-92e1-7f4284a50a2f")
-		(property "Reference" "TP905"
+		(property "Reference" "TP901"
 			(at 81.28 120.65 90)
 			(effects
 				(font
@@ -7347,7 +7341,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP905")
+					(reference "TP901")
 					(unit 1)
 				)
 			)
@@ -7883,7 +7877,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "205facd4-a2ec-40f5-bb42-b69c104d70c9")
-		(property "Reference" "TP910"
+		(property "Reference" "TP906"
 			(at 205.74 78.74 90)
 			(effects
 				(font
@@ -7935,7 +7929,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP910")
+					(reference "TP906")
 					(unit 1)
 				)
 			)
@@ -9216,7 +9210,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5030eb95-d02d-49b1-a0e9-15a5e058ebf8")
-		(property "Reference" "JP?"
+		(property "Reference" "JP901"
 			(at 196.85 44.45 0)
 			(effects
 				(font
@@ -9269,7 +9263,7 @@
 		(instances
 			(project ""
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "JP?")
+					(reference "JP901")
 					(unit 1)
 				)
 			)
@@ -9415,7 +9409,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "57f93200-997e-4800-b023-6bbfcf43428d")
-		(property "Reference" "TP908"
+		(property "Reference" "TP904"
 			(at 81.28 128.27 90)
 			(effects
 				(font
@@ -9467,7 +9461,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP908")
+					(reference "TP904")
 					(unit 1)
 				)
 			)
@@ -9888,7 +9882,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "72f3cd8b-a432-4a3b-a306-5523c3897508")
-		(property "Reference" "TP912"
+		(property "Reference" "TP908"
 			(at 251.46 60.96 90)
 			(effects
 				(font
@@ -9940,7 +9934,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP912")
+					(reference "TP908")
 					(unit 1)
 				)
 			)
@@ -9955,7 +9949,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7355655f-dcac-4f0f-8eb5-2353f576e6da")
-		(property "Reference" "TP914"
+		(property "Reference" "TP910"
 			(at 251.46 81.28 90)
 			(effects
 				(font
@@ -10007,7 +10001,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP914")
+					(reference "TP910")
 					(unit 1)
 				)
 			)
@@ -10158,7 +10152,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7879b564-1728-41f0-b233-06a043bfda1e")
-		(property "Reference" "TP907"
+		(property "Reference" "TP903"
 			(at 81.28 125.73 90)
 			(effects
 				(font
@@ -10210,7 +10204,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP907")
+					(reference "TP903")
 					(unit 1)
 				)
 			)
@@ -11232,7 +11226,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a0c8d6d4-3706-42fa-8ec4-b45c6f85e6df")
-		(property "Reference" "TP906"
+		(property "Reference" "TP902"
 			(at 81.28 123.19 90)
 			(effects
 				(font
@@ -11284,7 +11278,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP906")
+					(reference "TP902")
 					(unit 1)
 				)
 			)
@@ -11432,7 +11426,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a84be61f-a915-4788-8aa1-5ca8939b5166")
-		(property "Reference" "TP916"
+		(property "Reference" "TP912"
 			(at 251.46 111.76 90)
 			(effects
 				(font
@@ -11484,7 +11478,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP916")
+					(reference "TP912")
 					(unit 1)
 				)
 			)
@@ -11840,7 +11834,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d175e88d-87d0-483f-8ca1-82af9ab067a9")
-		(property "Reference" "TP909"
+		(property "Reference" "TP905"
 			(at 81.28 130.81 90)
 			(effects
 				(font
@@ -11892,7 +11886,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP909")
+					(reference "TP905")
 					(unit 1)
 				)
 			)
@@ -12408,7 +12402,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eadf8a86-d7ee-4f01-b128-047280479302")
-		(property "Reference" "TP911"
+		(property "Reference" "TP907"
 			(at 205.74 81.28 90)
 			(effects
 				(font
@@ -12460,7 +12454,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP911")
+					(reference "TP907")
 					(unit 1)
 				)
 			)
@@ -12475,7 +12469,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ed8d0866-0ec6-4a49-9d2c-b952846df2d3")
-		(property "Reference" "TP915"
+		(property "Reference" "TP911"
 			(at 251.46 104.14 90)
 			(effects
 				(font
@@ -12527,7 +12521,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP915")
+					(reference "TP911")
 					(unit 1)
 				)
 			)
@@ -12612,7 +12606,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f29de7d3-f5d2-479c-a891-24ff96af44ad")
-		(property "Reference" "TP913"
+		(property "Reference" "TP909"
 			(at 251.46 63.5 90)
 			(effects
 				(font
@@ -12664,7 +12658,7 @@
 		(instances
 			(project "Input Board"
 				(path "/198ad8d1-66e3-4deb-889c-1af2b81e67c3/5c16bd2e-d56c-40b8-b84c-f5532d41d46a"
-					(reference "TP913")
+					(reference "TP909")
 					(unit 1)
 				)
 			)
