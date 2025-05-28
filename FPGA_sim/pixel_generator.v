@@ -21,6 +21,8 @@
 
 
 module pixel_generator(
+input [7:0]     temp_test,
+
 input           out_stream_aclk,
 input           s_axi_lite_aclk,
 input           axi_resetn,
@@ -200,7 +202,8 @@ reg [8:0] y;
 wire first = (x == 0) & (y==0);
 wire lastx = (x == X_SIZE - 1);
 wire lasty = (y == Y_SIZE - 1);
-wire [7:0] frame = regfile[0][7:0];
+//NOTE: add this back in after testing
+//wire [7:0] frame = regfile[0][7:0];
 wire ready;
 
 always @(posedge out_stream_aclk) begin
@@ -222,10 +225,11 @@ end
 
 wire valid_int = 1'b1;
 
+//NOTE: change temp_test to frame later
 wire [7:0] r, g, b;
-assign r = x[7:0] + frame;
-assign g = y[7:0] + frame;
-assign b = x[6:0]+y[6:0] + frame;
+assign r = x[7:0] + temp_test;
+assign g = y[7:0] + temp_test;
+assign b = x[6:0]+y[6:0] + temp_test;
 
 
 packer pixel_packer(    .aclk(out_stream_aclk),

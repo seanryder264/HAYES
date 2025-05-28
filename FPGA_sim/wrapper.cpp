@@ -30,23 +30,27 @@ int main(int argc, char** argv) {
     int x = 0, y = 0;
     bool sof = false;
 
-    for (int cycle = 0; cycle < 350000; cycle++) {
-        top->out_stream_aclk = 1;
-        top->s_axi_lite_aclk = 1;
-        top->eval();
+    top->temp_test = 0;
+    for (int i = 0; i < 10; i++){
+        top->temp_test = 10*i;
+        for (int cycle = 0; cycle < 350000; cycle++) {
+            top->out_stream_aclk = 1;
+            top->s_axi_lite_aclk = 1;
+            top->eval();
 
-        if (top->out_stream_tuser == 1) {
-            sof = true;
+            if (top->out_stream_tuser == 1) {
+                sof = true;
+            }
+
+            if (sof && top->out_stream_tvalid && top->out_stream_tready) {
+                uint32_t word = top->out_stream_tdata;
+                raw_data.write(reinterpret_cast<const char*>(&word), sizeof(word));
+            }
+
+            top->out_stream_aclk = 0;
+            top->s_axi_lite_aclk = 0;
+            top->eval();
         }
-
-        if (sof && top->out_stream_tvalid && top->out_stream_tready) {
-            uint32_t word = top->out_stream_tdata;
-            raw_data.write(reinterpret_cast<const char*>(&word), sizeof(word));
-        }
-
-        top->out_stream_aclk = 0;
-        top->s_axi_lite_aclk = 0;
-        top->eval();
     }
 
     delete top;
