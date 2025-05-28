@@ -122,7 +122,7 @@
 	(pad "1" smd roundrect
 		(at 0.65 -1)
 		(size 1.5 1.5)
-		(layers "F.Cu" "F.Mask")
+		(layers "F.Cu")
 		(roundrect_rratio 0.15)
 		(zone_connect 2)
 		(thermal_bridge_angle 45)
@@ -131,7 +131,7 @@
 	(pad "2" smd roundrect
 		(at 0.65 1)
 		(size 1.5 1.5)
-		(layers "F.Cu" "F.Mask")
+		(layers "F.Cu")
 		(roundrect_rratio 0.15)
 		(zone_connect 2)
 		(thermal_bridge_angle 45)
