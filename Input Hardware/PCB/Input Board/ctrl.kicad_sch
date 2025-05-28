@@ -6637,12 +6637,12 @@
 	)
 	(hierarchical_label "O_UP"
 		(shape input)
-		(at 246.38 106.68 0)
+		(at 210.82 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "128e8fb9-54d3-47b8-bc99-8ea803efda0e")
 	)
@@ -6947,12 +6947,12 @@
 	)
 	(hierarchical_label "O_LEFT"
 		(shape input)
-		(at 210.82 101.6 180)
+		(at 246.38 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "b16862e6-012b-4104-b7a9-eecec92b6dc4")
 	)
@@ -6980,7 +6980,7 @@
 	)
 	(hierarchical_label "O_CENTER"
 		(shape input)
-		(at 210.82 106.68 180)
+		(at 210.82 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
