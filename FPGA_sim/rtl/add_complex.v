@@ -1,10 +1,12 @@
-module complex_adder (
-    input  wire [31:0] a_re,
-    input  wire [31:0] a_im,
-    input  wire [31:0] b_re,
-    input  wire [31:0] b_im,
-    output wire [31:0] sum_re,
-    output wire [31:0] sum_im
+module complex_adder #(
+    parameter DATA_WIDTH = 16
+) (
+    input  wire [DATA_WIDTH:0] a_re,
+    input  wire [DATA_WIDTH:0] a_im,
+    input  wire [DATA_WIDTH:0] b_re,
+    input  wire [DATA_WIDTH:0] b_im,
+    output wire [DATA_WIDTH:0] sum_re,
+    output wire [DATA_WIDTH:0] sum_im
 );
 
     assign sum_real = a_real + b_real;
