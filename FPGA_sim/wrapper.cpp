@@ -9,7 +9,11 @@ int main(int argc, char** argv) {
     contextp->commandArgs(argc, argv);
     Vpixel_generator* top = new Vpixel_generator{contextp};
 
-    std::ofstream raw_data("data_stream.bin", std::ios::binary);
+    std::ofstream output("coloured_function.ppm");
+
+    output << "P3\n";
+    output << 512 << " " << 512 << "\n";
+    output << "255\n";
 
     top->axi_resetn = 0;
     top->periph_resetn = 0;
@@ -26,29 +30,28 @@ int main(int argc, char** argv) {
     top->axi_resetn = 1;
     top->periph_resetn = 1;
 
-    const int max_pixels = 640 * 480;
-    int x = 0, y = 0;
-    bool sof = false;
+    const int max_pixels = 512 * 512;
+    int pixels = 0;
 
-    for (int cycle = 0; cycle < 350000; cycle++) {
+    while (pixels < max_pixels) {
+
         top->out_stream_aclk = 1;
         top->s_axi_lite_aclk = 1;
         top->eval();
 
-        if (top->out_stream_tuser == 1) {
-            sof = true;
-        }
+        uint8_t red   = top->r;
+        uint8_t green = top->g;
+        uint8_t blue  = top->b;
 
-        if (sof && top->out_stream_tvalid && top->out_stream_tready) {
-            uint32_t word = top->out_stream_tdata;
-            raw_data.write(reinterpret_cast<const char*>(&word), sizeof(word));
-        }
+        output << (int)red << " " << (int)green << " " << (int)blue << "\n";
+        pixels++;
 
         top->out_stream_aclk = 0;
         top->s_axi_lite_aclk = 0;
         top->eval();
     }
 
+    output.close();
     delete top;
     return 0;
 }

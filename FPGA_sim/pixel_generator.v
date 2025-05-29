@@ -32,7 +32,7 @@ output [3:0]    out_stream_tkeep,
 output          out_stream_tlast,
 input           out_stream_tready,
 output          out_stream_tvalid,
-output [0:0]    out_stream_tuser, 
+output [0:0]    out_stream_tuser,
 
 //AXI-Lite S
 
@@ -58,7 +58,9 @@ output          s_axi_lite_rvalid,
 
 input  [31:0]   s_axi_lite_wdata,
 output          s_axi_lite_wready,
-input           s_axi_lite_wvalid
+input           s_axi_lite_wvalid,
+
+output [7:0] r, g, b
 
 );
 
@@ -192,8 +194,8 @@ assign s_axi_lite_wready = (writeState == AWAIT_WADD_AND_DATA || writeState == A
 assign s_axi_lite_bvalid = (writeState == AWAIT_RESP);
 assign s_axi_lite_bresp = ({{(REG_ADDR_WIDTH-3){1'b0}}, writeAddr} < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
 
-wire signed [9:0] z_re;
-wire signed [8:0] z_im;
+wire signed [15:0] z_re;
+wire signed [15:0] z_im;
 wire first, lastx, ready, valid_int;
 
 coord_gen coord_gen_inst(   .clk(out_stream_aclk),
@@ -203,16 +205,26 @@ coord_gen coord_gen_inst(   .clk(out_stream_aclk),
                             .first(first), .lastx(lastx),
                             .valid(valid_int));
 
-// func_eval will go here
-wire signed [9:0] w_re = z_re;
-wire signed [8:0] w_im = z_im;
-wire [8:0] phase;
+wire signed [15:0] w_re, w_im;
+
+func_eval func_eval_inst(   .z_re(z_re), .z_im(z_im),
+                            .w_re(w_re), .w_im(w_im));
+
+
+wire [15:0] phase;
 
 atan_lut atan_lut_inst (    .x(w_re),
                             .y(w_im),
-                            .angle(phase) );
+                            .angle(phase));
+                        
+// always @* begin
+//     $display("(%d) + i(%d), phase = %d", w_re, w_im, phase);
+// end
+// wire [9:0] mag;
 
-wire [7:0] r, g, b;
+// complex_mag complex_mag_inst (  .z_re(w_re),
+//                                 .z_im(w_im),
+//                                 .mag(mag));
 
 phase_to_rgb phase_to_rgb_inst( .phase(phase),
                                 .red(r), .green(g), .blue(b) );

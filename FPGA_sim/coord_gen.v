@@ -1,22 +1,22 @@
 module coord_gen (
-    input                   clk,
-    input                   resetn,
-    input                   ready,
+    input                       clk,
+    input                       resetn,
+    input                       ready,
 
-    output reg signed [9:0] x,
-    output reg signed [8:0] y, 
-    output                  first,
-    output                  lastx,
-    output                  valid
+    output reg signed [15:0]    x,
+    output reg signed [15:0]    y, 
+    output                      first,
+    output                      lastx,
+    output                      valid
 );
 
-    localparam signed [9:0] X_SIZE = 640;
-    localparam signed [8:0] Y_SIZE = 480;
+    localparam signed [15:0] X_SIZE = 16'd512;
+    localparam signed [15:0] Y_SIZE = 16'd512;
 
-    wire signed [9:0] x_min = -X_SIZE / 2;          // -320
-    wire signed [9:0] x_max = X_SIZE / 2 - 1;       // +319
-    wire signed [8:0] y_min = 1 - Y_SIZE / 2;       // -239
-    wire signed [8:0] y_max = Y_SIZE / 2;           // +240
+    wire signed [15:0] x_min = -X_SIZE / 2;
+    wire signed [15:0] x_max = X_SIZE / 2 - 1;
+    wire signed [15:0] y_min = 1 - Y_SIZE / 2;
+    wire signed [15:0] y_max = Y_SIZE / 2;
 
     assign valid = 1'b1;
     assign first  = (x == x_min) && (y == y_min);
