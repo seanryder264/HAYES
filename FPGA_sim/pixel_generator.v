@@ -32,7 +32,7 @@ output [3:0]    out_stream_tkeep,
 output          out_stream_tlast,
 input           out_stream_tready,
 output          out_stream_tvalid,
-output [0:0]    out_stream_tuser, 
+output [0:0]    out_stream_tuser,
 
 //AXI-Lite S
 
@@ -58,12 +58,12 @@ output          s_axi_lite_rvalid,
 
 input  [31:0]   s_axi_lite_wdata,
 output          s_axi_lite_wready,
-input           s_axi_lite_wvalid
+input           s_axi_lite_wvalid,
+
+output [7:0] r, g, b
 
 );
 
-localparam X_SIZE = 640;
-localparam Y_SIZE = 480;
 parameter  REG_FILE_SIZE = 8;
 localparam int REG_ADDR_WIDTH = $bits(REG_FILE_SIZE);
 localparam REG_FILE_AWIDTH = $clog2(REG_FILE_SIZE);
@@ -194,39 +194,42 @@ assign s_axi_lite_wready = (writeState == AWAIT_WADD_AND_DATA || writeState == A
 assign s_axi_lite_bvalid = (writeState == AWAIT_RESP);
 assign s_axi_lite_bresp = ({{(REG_ADDR_WIDTH-3){1'b0}}, writeAddr} < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
 
-reg [9:0] x;
-reg [8:0] y;
+wire signed [15:0] z_re;
+wire signed [15:0] z_im;
+wire first, lastx, ready, valid_int;
 
-wire first = (x == 0) & (y==0);
-wire lastx = (x == X_SIZE - 1);
-wire lasty = (y == Y_SIZE - 1);
-wire [7:0] frame = regfile[0][7:0];
-wire ready;
+coord_gen coord_gen_inst(   .clk(out_stream_aclk),
+                            .resetn(periph_resetn),
+                            .ready(ready),
+                            .x(z_re), .y(z_im), 
+                            .first(first), .lastx(lastx),
+                            .valid(valid_int));
 
-always @(posedge out_stream_aclk) begin
-    if (periph_resetn) begin
-        if (ready & valid_int) begin
-            if (lastx) begin
-                x <= 10'd0;
-                if (lasty) y <= 9'd0;
-                else y <= y + 9'd1;
-            end
-            else x <= x + 9'd1;
-        end
-    end
-    else begin
-        x <= 0;
-        y <= 0;
-    end
-end
+wire signed [15:0] w_re, w_im;
 
-wire valid_int = 1'b1;
+func_eval func_eval_inst(   .z_re(z_re), .z_im(z_im),
+                            .w_re(w_re), .w_im(w_im));
 
-wire [7:0] r, g, b;
-assign r = x[7:0] + frame;
-assign g = y[7:0] + frame;
-assign b = x[6:0]+y[6:0] + frame;
 
+
+
+wire [15:0] phase;
+
+atan_lut atan_lut_inst (    .x(w_re),
+                            .y(w_im),
+                            .angle(phase));
+                        
+// always @* begin
+//     $display("(%d) + i(%d), phase = %d", w_re, w_im, phase);
+// end
+// wire [9:0] mag;
+
+// complex_mag complex_mag_inst (  .z_re(w_re),
+//                                 .z_im(w_im),
+//                                 .mag(mag));
+
+phase_to_rgb phase_to_rgb_inst( .phase(phase),
+                                .red(r), .green(g), .blue(b) );
 
 packer pixel_packer(    .aclk(out_stream_aclk),
                         .aresetn(periph_resetn),
