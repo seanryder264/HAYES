@@ -1,7 +1,7 @@
 module atan_lut (
-    input  signed [15:0] x, 
-    input  signed [15:0] y,
-    output reg [15:0]    angle
+    input signed [15:0] x, 
+    input signed [15:0] y,
+    output reg [15:0]   angle
 );
 
     wire [15:0] abs_x = (x > 0) ? x : -x;

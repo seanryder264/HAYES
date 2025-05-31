@@ -1,10 +1,11 @@
 module data_mem #(
-    parameter  REG_FILE_SIZE = 8;
+    parameter  REG_FILE_SIZE = 8,
+    parameter  AXI_LITE_ADDR_WIDTH = 8
 )(
     input   aclk,
     input   resetn,
 
-    output reg [31:0 * REG_FILE_SIZE-1:0]   regfile_flat;
+    output reg [(32 * REG_FILE_SIZE) - 1:0]  regfile_flat,
 
     /* verilator lint_off UNUSED */
     // read address 
@@ -37,7 +38,6 @@ module data_mem #(
 
     localparam int REG_ADDR_WIDTH = $bits(REG_FILE_SIZE);
     localparam REG_FILE_AWIDTH = $clog2(REG_FILE_SIZE);
-    parameter  AXI_LITE_ADDR_WIDTH = 8;
 
     localparam AWAIT_WADD_AND_DATA = 3'b000;
     localparam AWAIT_WDATA = 3'b001;
@@ -56,13 +56,13 @@ module data_mem #(
     reg [31:0]                          readData, writeData;
     reg [1:0]                           readState = AWAIT_RADD;
     reg [2:0]                           writeState = AWAIT_WADD_AND_DATA;
-    reg [31:0]                          regfile [REG_FILE_SIZE-1:0]
+    reg [31:0]                          regfile [REG_FILE_SIZE-1:0];
 
     integer i;
 
     always @* begin
         for (i = 0; i < REG_FILE_SIZE; i = i + 1) begin
-            regfile_flat[i*32 +: 32] <= regfile[i];
+            assign regfile_flat[i*32 +: 32] = regfile[i];
         end
     end
 

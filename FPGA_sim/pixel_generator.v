@@ -41,21 +41,24 @@ output [7:0] r, g, b
 
 );
 
-parameter  REG_FILE_SIZE = 2;
+parameter  REG_FILE_SIZE = 8;
+parameter  AXI_LITE_ADDR_WIDTH = 8;
 
-reg [31:0]  regfile [REG_FILE_SIZE-1:0];
+reg [(32 * REG_FILE_SIZE) - 1:0] regfile_flat;
 
 data_mem #( 
-    .REG_FILE_SIZE(REG_FILE_SIZE)
-) data_mem_inst (  .aclk(s_axi_lite_aclk), 
+    .REG_FILE_SIZE(REG_FILE_SIZE),
+    .AXI_LITE_ADDR_WIDTH(AXI_LITE_ADDR_WIDTH)
+) data_mem_inst (  
+    .aclk(s_axi_lite_aclk), 
     .resetn(axi_resetn),
-    .regfile_flat(regfile_flat)
+    .regfile_flat(regfile_flat),
     .araddr(s_axi_lite_araddr),
     .arready(s_axi_lite_arready),
     .arvalid(s_axi_lite_arvalid),
     .awaddr(s_axi_lite_awaddr),
     .awready(s_axi_lite_awready),
-    .arvalid(s_axi_lite_awvalid),
+    .awvalid(s_axi_lite_awvalid),
     .bready(s_axi_lite_bready),
     .bresp(s_axi_lite_bresp),
     .bvalid(s_axi_lite_bvalid),
@@ -79,11 +82,12 @@ coordinate_gen coordinate_gen(  .clk(out_stream_aclk),
                                 .valid(valid_int));
 
 reg [31:0] poles_and_zeros [REG_FILE_SIZE-1:0];
-wire [16:0] w_re [REG_FILE_SIZE-1:0];
-wire [16:0] w_im [REG_FILE_SIZE-1:0];
-wire [16:0] diff_re [REG_FILE_SIZE-1:0];
-wire [16:0] diff_im [REG_FILE_SIZE-1:0];
-wire [16:0] phase [REG_FILE_SIZE-1:0];
+wire signed [15:0] w_re [REG_FILE_SIZE-1:0];
+wire signed [15:0] w_im [REG_FILE_SIZE-1:0];
+wire signed [15:0] diff_re [REG_FILE_SIZE-1:0];
+wire signed [15:0] diff_im [REG_FILE_SIZE-1:0];
+wire signed [15:0] phase [REG_FILE_SIZE-1:0];
+wire [(16 * REG_FILE_SIZE) - 1:0] phase_flat;
 
 genvar i;
 generate 
@@ -100,6 +104,10 @@ generate
 
         assign w_re[i] = poles_and_zeros[i][31:16];
         assign w_im[i] = poles_and_zeros[i][15:0];
+        
+        always @* begin
+            $display("%d %d %d", diff_re[i], diff_im[i], phase[i]);
+        end
 
         complex_sub complex_sub_inst_i (
             .a_re(z_re), .a_im(z_im),
@@ -112,13 +120,21 @@ generate
             .angle(phase[i])
         );
 
-        wire []
+        assign phase_flat[i*16 +: 16] = phase[i];
     end
 endgenerate
 
-phase_eval phase_eval();
+wire [15:0] acc_phase;
 
-phase_to_rgb phase_to_rgb(  .phase(phase),
+pz_accumulator #(
+    .REG_FILE_SIZE(REG_FILE_SIZE)
+) phase_accumulator (
+    .clk(out_stream_aclk),
+    .flat_pz(phase_flat),
+    .acc_pz(acc_phase)
+);
+
+phase_to_rgb phase_to_rgb(  .phase(acc_phase),
                             .red(r), .green(g), .blue(b) );
 
 packer pixel_packer(    .aclk(out_stream_aclk),
