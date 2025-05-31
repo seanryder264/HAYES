@@ -32,7 +32,7 @@ module atan_lut (
         end else if (x < 0 && y < 0) begin // Q3
             angle = (abs_x >= abs_y) ? 16'd32768 + base_angle : 16'd49152 - base_angle;
         end else if (x >= 0 && y < 0) begin // Q4
-            angle = (abs_x >= abs_y) ? 16'd65536 - base_angle : 16'd49152 + base_angle;
+            angle = (abs_x >= abs_y) ? 16'd0 - base_angle : 16'd49152 + base_angle;
         end
     end
 

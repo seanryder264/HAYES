@@ -1,4 +1,4 @@
-module latch_poles_zeros (
+module frame_reg (
     input wire             clk,
     input wire             reset,
     input wire             frame_done,

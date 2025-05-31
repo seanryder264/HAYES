@@ -61,8 +61,6 @@ output          s_axi_lite_wready,
 input           s_axi_lite_wvalid,
 
 output [7:0] r, g, b
-output [31:0] square_sum
-
 );
 
 parameter  REG_FILE_SIZE = 8;
@@ -199,19 +197,18 @@ wire signed [15:0] x_re;
 wire signed [15:0] y_im;
 wire first, lastx, ready, valid_int;
 
+reg [31:0] latched_zeroes [3:0];
+reg [31:0] latched_poles [3:0];
 
 frame_reg frame_reg_inst (
     .clk(out_stream_aclk),
-    .resetn(periph_resetn),
+    .reset(periph_resetn),
     .frame_done(out_stream_tlast), 
     .zeroes_in({regfile[3], regfile[2], regfile[1], regfile[0]}),
     .poles_in({regfile[7], regfile[6], regfile[5], regfile[4]}),
     .zeroes_out(latched_zeroes),
     .poles_out(latched_poles),
 );
-
-reg [31:0] latched_zeroes [3:0];
-reg [31:0] latched_poles [3:0];
 
 coord_gen coord_gen_inst(   .clk(out_stream_aclk),
                             .resetn(periph_resetn),
@@ -245,7 +242,7 @@ phase_eval phase_eval_inst (  .zero_diff_re(zero_diff_re),
 wire [15:0] phase;
 
 
-colour_eval colour_eval_inst (  .phase(phase),
+colour_map colour_map_inst (  .phase(phase),
                                 .r(r), .g(g), .b(b) );
 
 
