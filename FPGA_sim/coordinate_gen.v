@@ -1,4 +1,4 @@
-module coord_gen (
+module coordinate_gen (
     input                       clk,
     input                       resetn,
     input                       ready,
