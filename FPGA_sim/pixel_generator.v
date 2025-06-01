@@ -88,7 +88,9 @@ wire signed [15:0] w_im [REG_FILE_SIZE-1:0];
 wire signed [15:0] diff_re [REG_FILE_SIZE-1:0];
 wire signed [15:0] diff_im [REG_FILE_SIZE-1:0];
 wire [15:0] phase [REG_FILE_SIZE-1:0];
+wire [7:0] log_mag [REG_FILE_SIZE-1:0];
 wire [(16 * REG_FILE_SIZE) - 1:0] phase_flat;
+wire [(8 * REG_FILE_SIZE) - 1:0] log_mag_flat;
 
 genvar i;
 generate 
@@ -112,14 +114,6 @@ generate
         assign w_re[i] = poles_and_zeros[i][31:16];
         assign w_im[i] = poles_and_zeros[i][15:0];
 
-        
-        always @* begin
-            // $display("%d %d", poles_and_zeros[0][31:16], poles_and_zeros[0][15:0]);
-            if (first == 1) begin
-            $display("%d", first);
-            end
-        end
-
         complex_sub complex_sub_inst_i (
             .a_re(z_re), .a_im(z_im),
             .b_re(w_re[i]), .b_im(w_im[i]),
@@ -131,16 +125,25 @@ generate
             .angle(phase[i])
         );
 
+        log_mag_calc mag_calc_inst_i (
+            .x(diff_re[i]), .y(diff_im[i]),
+            .log_mag(log_mag[i])
+        );
+
         assign phase_flat[i*16 +: 16] = phase[i];
+        assign log_mag_flat[i*8 +: 8] = log_mag[i];
     end
 endgenerate
 
-wire [15:0] acc_phase;
-wire [31:0] no_z = 32'd2;
+wire [31:0] no_z = 32'd3;
 wire [31:0] no_p = 32'd2;
 
+wire [15:0] acc_phase;
+wire [7:0] acc_log_mag;
+
 pz_accumulator #(
-    .REG_FILE_SIZE(REG_FILE_SIZE)
+    .REG_FILE_SIZE(REG_FILE_SIZE),
+    .DATA_SIZE(16)
 ) phase_accumulator (
     .clk(out_stream_aclk),
     .no_z(no_z), .no_p(no_p),
@@ -148,8 +151,21 @@ pz_accumulator #(
     .acc_pz(acc_phase)
 );
 
-phase_to_rgb phase_to_rgb(  .phase(acc_phase),
-                            .red(r), .green(g), .blue(b) );
+pz_accumulator #(
+    .REG_FILE_SIZE(REG_FILE_SIZE),
+    .DATA_SIZE(8)
+) log_mag_accumulator (
+    .clk(out_stream_aclk),
+    .no_z(no_z), .no_p(no_p),
+    .flat_pz(log_mag_flat),
+    .acc_pz(acc_log_mag)
+);
+
+colour_app colour_app_inst(  
+    .phase(acc_phase),
+    .log_mag(acc_log_mag),
+    .red(r), .green(g), .blue(b) 
+);
 
 packer pixel_packer(    .aclk(out_stream_aclk),
                         .aresetn(periph_resetn),
