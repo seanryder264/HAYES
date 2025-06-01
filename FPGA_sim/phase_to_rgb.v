@@ -10,47 +10,47 @@ module phase_to_rgb (
     // Map phase to hue [0, 255]
     wire [7:0] hue = phase[15:8] + 8'd128;  // top 8 bits for hue
 
-    reg [7:0] c, x;
+    reg [7:0] max, x;
     reg [7:0] r1, g1, b1;
 
     always @* begin
-        c = 8'd255;
+        max = 8'd255;
         case (hue / 43)  // 256 / 6 ≈ 43 per sector
-            0: begin
+            0: begin    // red -> yellow 
                 x = (hue * 6);
-                r1 = c;
+                r1 = max;
                 g1 = x;
                 b1 = 8'd0;
             end
-            1: begin
-                x = (43 * 2 - hue) * 6;
-                r1 = x;
-                g1 = c;
+            1: begin    // yellow -> green
+                x = (hue - 43) * 6;
+                r1 = 255 - x;
+                g1 = max;
                 b1 = 8'd0;
             end
-            2: begin
+            2: begin    // green -> cyan
                 x = (hue - 86) * 6;
                 r1 = 8'd0;
-                g1 = c;
+                g1 = max;
                 b1 = x;
             end
-            3: begin
-                x = (129 - hue) * 6;
+            3: begin    // cyan -> blue
+                x = (hue - 129) * 6;
                 r1 = 8'd0;
-                g1 = x;
-                b1 = c;
+                g1 = 255 - x;
+                b1 = max;
             end
-            4: begin
+            4: begin    // blue -> magenta
                 x = (hue - 172) * 6;
                 r1 = x;
                 g1 = 8'd0;
-                b1 = c;
+                b1 = max;
             end
-            default: begin
-                x = (215 - hue) * 6;
-                r1 = c;
+            default: begin  // magenta -> red
+                x = (hue - 214) * 6;
+                r1 = max;
                 g1 = 8'd0;
-                b1 = x;
+                b1 = 255 - x;
             end
         endcase
 
