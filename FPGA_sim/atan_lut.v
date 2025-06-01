@@ -16,8 +16,7 @@ module atan_lut (
    /* verilator lint_off UNUSED */
     wire [31:0] ratio_32 = opp_32 / adj_32;
     /* verilator lint_on UNUSED */
-    wire [15:0] ratio = ratio_32[15:0];
-
+    wire [15:0] ratio = (ratio_32[31:16] != 0) ? 16'd65535 : ratio_32[15:0];
 
     reg [15:0] atan_lut [0:65535];
     initial $readmemb("atan_lut.mem", atan_lut);
