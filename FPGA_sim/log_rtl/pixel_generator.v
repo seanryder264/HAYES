@@ -1,66 +1,40 @@
-
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 16.05.2024 22:03:08
-// Design Name: 
-// Module Name: test_block_v
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 module pixel_generator(
-input           out_stream_aclk,
-input           s_axi_lite_aclk,
-input           axi_resetn,
-input           periph_resetn,
+    input           out_stream_aclk,
+    input           s_axi_lite_aclk,
+    input           axi_resetn,
+    input           periph_resetn,
 
-//Stream output
-output [31:0]   out_stream_tdata,
-output [3:0]    out_stream_tkeep,
-output          out_stream_tlast,
-input           out_stream_tready,
-output          out_stream_tvalid,
-output [0:0]    out_stream_tuser,
+    // Stream output
+    output [31:0]   out_stream_tdata,
+    output [3:0]    out_stream_tkeep,
+    output          out_stream_tlast,
+    input           out_stream_tready,
+    output          out_stream_tvalid,
+    output [0:0]    out_stream_tuser,
 
-//AXI-Lite S
+    // AXI-Lite S
+    input [AXI_LITE_ADDR_WIDTH-1:0]     s_axi_lite_araddr,
+    output          s_axi_lite_arready,
+    input           s_axi_lite_arvalid,
 
-/* verilator lint_off UNUSED */
-input [AXI_LITE_ADDR_WIDTH-1:0]     s_axi_lite_araddr,
-output          s_axi_lite_arready,
-input           s_axi_lite_arvalid,
+    input [AXI_LITE_ADDR_WIDTH-1:0]     s_axi_lite_awaddr,
+    output          s_axi_lite_awready,
+    input           s_axi_lite_awvalid,
 
-input [AXI_LITE_ADDR_WIDTH-1:0]     s_axi_lite_awaddr,
-output          s_axi_lite_awready,
-input           s_axi_lite_awvalid,
+    input           s_axi_lite_bready,
+    output [1:0]    s_axi_lite_bresp,
+    output          s_axi_lite_bvalid,
 
-/* verilator lint_on UNUSED */
+    output [31:0]   s_axi_lite_rdata,
+    input           s_axi_lite_rready,
+    output [1:0]    s_axi_lite_rresp,
+    output          s_axi_lite_rvalid,
 
-input           s_axi_lite_bready,
-output [1:0]    s_axi_lite_bresp,
-output          s_axi_lite_bvalid,
+    input  [31:0]   s_axi_lite_wdata,
+    output          s_axi_lite_wready,
+    input           s_axi_lite_wvalid,
 
-output [31:0]   s_axi_lite_rdata,
-input           s_axi_lite_rready,
-output [1:0]    s_axi_lite_rresp,
-output          s_axi_lite_rvalid,
-
-input  [31:0]   s_axi_lite_wdata,
-output          s_axi_lite_wready,
-input           s_axi_lite_wvalid,
-
-output [7:0] r, g, b
+    output [7:0]    r, g, b
 );
 
 parameter  REG_FILE_SIZE = 8;
@@ -193,66 +167,101 @@ assign s_axi_lite_wready = (writeState == AWAIT_WADD_AND_DATA || writeState == A
 assign s_axi_lite_bvalid = (writeState == AWAIT_RESP);
 assign s_axi_lite_bresp = ({{(REG_ADDR_WIDTH-3){1'b0}}, writeAddr} < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
 
-wire signed [15:0] x_re;
-wire signed [15:0] y_im;
-wire first, lastx, ready, valid_int;
+    wire signed [15:0] x_re;
+    wire signed [15:0] y_im;
+    wire first, lastx, ready, valid_int;
 
-reg [31:0] latched_zeroes [3:0];
-reg [31:0] latched_poles [3:0];
+    // Individual zero/pole registers
+    wire [31:0] latched_zeroes_0, latched_zeroes_1, latched_zeroes_2, latched_zeroes_3;
+    wire [31:0] latched_poles_0, latched_poles_1, latched_poles_2, latched_poles_3;
 
-frame_reg frame_reg_inst (
-    .clk(out_stream_aclk),
-    .reset(periph_resetn),
-    .frame_done(out_stream_tlast), 
-    .zeroes_in({regfile[3], regfile[2], regfile[1], regfile[0]}),
-    .poles_in({regfile[7], regfile[6], regfile[5], regfile[4]}),
-    .zeroes_out(latched_zeroes),
-    .poles_out(latched_poles),
-);
+    frame_reg frame_reg_inst (
+        .clk(out_stream_aclk),
+        .reset(!periph_resetn),
+        .frame_done(out_stream_tlast),
+        .zero_in_0(regfile[0]), .zero_in_1(regfile[1]), 
+        .zero_in_2(regfile[2]), .zero_in_3(regfile[3]),
+        .pole_in_0(regfile[4]), .pole_in_1(regfile[5]),
+        .pole_in_2(regfile[6]), .pole_in_3(regfile[7]),
+        .zero_0(latched_zeroes_0), .zero_1(latched_zeroes_1),
+        .zero_2(latched_zeroes_2), .zero_3(latched_zeroes_3),
+        .pole_0(latched_poles_0), .pole_1(latched_poles_1),
+        .pole_2(latched_poles_2), .pole_3(latched_poles_3)
+    );
 
-coord_gen coord_gen_inst(   .clk(out_stream_aclk),
-                            .resetn(periph_resetn),
-                            .ready(ready),
-                            .x(x_re), .y(y_im), 
-                            .first(first), .lastx(lastx),
-                            .valid(valid_int));
+    coord_gen coord_gen_inst(
+        .clk(out_stream_aclk),
+        .resetn(periph_resetn),
+        .ready(ready),
+        .x(x_re),
+        .y(y_im),
+        .first(first),
+        .lastx(lastx),
+        .valid(valid_int)
+    );
 
-complex_sub complex_sub_inst (  .x(x_re),
-                                .y(y_im),
-                                .zero(latched_zeroes),
-                                .pole(latched_poles),
-                                .zero_diff_re(zero_diff_re),
-                                .zero_diff_im(zero_diff_im),
-                                .pole_diff_re(pole_diff_re),
-                                .pole_diff_im(pole_diff_im) );
+    // Complex sub outputs
+    wire signed [15:0] zero_diff_re_0, zero_diff_re_1, zero_diff_re_2, zero_diff_re_3;
+    wire signed [15:0] zero_diff_im_0, zero_diff_im_1, zero_diff_im_2, zero_diff_im_3;
+    wire signed [15:0] pole_diff_re_0, pole_diff_re_1, pole_diff_re_2, pole_diff_re_3;
+    wire signed [15:0] pole_diff_im_0, pole_diff_im_1, pole_diff_im_2, pole_diff_im_3;
 
+    complex_sub complex_sub_inst (
+        .x(x_re),
+        .y(y_im),
+        .zero_0(latched_zeroes_0), .zero_1(latched_zeroes_1),
+        .zero_2(latched_zeroes_2), .zero_3(latched_zeroes_3),
+        .pole_0(latched_poles_0), .pole_1(latched_poles_1),
+        .pole_2(latched_poles_2), .pole_3(latched_poles_3),
+        .zero_diff_re_0(zero_diff_re_0), .zero_diff_re_1(zero_diff_re_1),
+        .zero_diff_re_2(zero_diff_re_2), .zero_diff_re_3(zero_diff_re_3),
+        .zero_diff_im_0(zero_diff_im_0), .zero_diff_im_1(zero_diff_im_1),
+        .zero_diff_im_2(zero_diff_im_2), .zero_diff_im_3(zero_diff_im_3),
+        .pole_diff_re_0(pole_diff_re_0), .pole_diff_re_1(pole_diff_re_1),
+        .pole_diff_re_2(pole_diff_re_2), .pole_diff_re_3(pole_diff_re_3),
+        .pole_diff_im_0(pole_diff_im_0), .pole_diff_im_1(pole_diff_im_1),
+        .pole_diff_im_2(pole_diff_im_2), .pole_diff_im_3(pole_diff_im_3)
+    );
 
-reg signed [15:0] zero_diff_re [0:3];
-reg signed [15:0] zero_diff_im [0:3];
-reg signed [15:0] pole_diff_re [0:3];
-reg signed [15:0] pole_diff_im [0:3];
+    // Pack differences for phase_eval
+    wire [63:0] zero_diff_re_packed = {zero_diff_re_3, zero_diff_re_2, zero_diff_re_1, zero_diff_re_0};
+    wire [63:0] zero_diff_im_packed = {zero_diff_im_3, zero_diff_im_2, zero_diff_im_1, zero_diff_im_0};
+    wire [63:0] pole_diff_re_packed = {pole_diff_re_3, pole_diff_re_2, pole_diff_re_1, pole_diff_re_0};
+    wire [63:0] pole_diff_im_packed = {pole_diff_im_3, pole_diff_im_2, pole_diff_im_1, pole_diff_im_0};
 
+    wire [15:0] phase;
 
-phase_eval phase_eval_inst (  .zero_diff_re(zero_diff_re),
-                                .zero_diff_im(zero_diff_im),
-                                .pole_diff_re(pole_diff_re),
-                                .pole_diff_im(pole_diff_im),
-                                .phase_out(phase) );
+    phase_eval phase_eval_inst (
+        .zero_diff_re(zero_diff_re_packed),
+        .zero_diff_im(zero_diff_im_packed),
+        .pole_diff_re(pole_diff_re_packed),
+        .pole_diff_im(pole_diff_im_packed),
+        .phase_out(phase)
+    );
 
-wire [15:0] phase;
+    colour_map colour_map_inst (
+        .phase(phase),
+        .r(r),
+        .g(g),
+        .b(b)
+    );
 
+    packer pixel_packer(
+        .aclk(out_stream_aclk),
+        .aresetn(periph_resetn),
+        .r(r),
+        .g(g),
+        .b(b),
+        .eol(lastx),
+        .in_stream_ready(ready),
+        .valid(valid_int),
+        .sof(first),
+        .out_stream_tdata(out_stream_tdata),
+        .out_stream_tkeep(out_stream_tkeep),
+        .out_stream_tlast(out_stream_tlast),
+        .out_stream_tready(out_stream_tready),
+        .out_stream_tvalid(out_stream_tvalid),
+        .out_stream_tuser(out_stream_tuser)
+    );
 
-colour_map colour_map_inst (  .phase(phase),
-                                .r(r), .g(g), .b(b) );
-
-
-packer pixel_packer(    .aclk(out_stream_aclk),
-                        .aresetn(periph_resetn),
-                        .r(r), .g(g), .b(b),
-                        .eol(lastx), .in_stream_ready(ready), .valid(valid_int), .sof(first),
-                        .out_stream_tdata(out_stream_tdata), .out_stream_tkeep(out_stream_tkeep),
-                        .out_stream_tlast(out_stream_tlast), .out_stream_tready(out_stream_tready),
-                        .out_stream_tvalid(out_stream_tvalid), .out_stream_tuser(out_stream_tuser) );
-
- 
 endmodule

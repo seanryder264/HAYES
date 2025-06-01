@@ -2,25 +2,19 @@ module frame_reg (
     input wire             clk,
     input wire             reset,
     input wire             frame_done,
-    input wire [31:0]      zero_in [3:0],   // 4 complex zeroes: {re, im}
-    input wire [31:0]      pole_in [3:0],   // 4 complex poles:  {re, im}
-    output reg [31:0]      zero [3:0],      // Latched zeroes
-    output reg [31:0]      pole [3:0]       // Latched poles
+    input wire [31:0]      zero_in_0, zero_in_1, zero_in_2, zero_in_3,
+    input wire [31:0]      pole_in_0, pole_in_1, pole_in_2, pole_in_3,
+    output [31:0]      zero_0, zero_1, zero_2, zero_3,
+    output [31:0]      pole_0, pole_1, pole_2, pole_3
 );
-
-    integer i;
 
     always @(posedge clk) begin
         if (reset) begin
-            for (i = 0; i < 4; i = i + 1) begin
-                zero[i] <= 32'd0;
-                pole[i] <= 32'd0;
-            end
+            zero_0 <= 32'd0; zero_1 <= 32'd0; zero_2 <= 32'd0; zero_3 <= 32'd0;
+            pole_0 <= 32'd0; pole_1 <= 32'd0; pole_2 <= 32'd0; pole_3 <= 32'd0;
         end else if (frame_done) begin
-            for (i = 0; i < 4; i = i + 1) begin
-                zero[i] <= zero_in[i];
-                pole[i] <= pole_in[i];
-            end
+            zero_0 <= zero_in_0; zero_1 <= zero_in_1; zero_2 <= zero_in_2; zero_3 <= zero_in_3;
+            pole_0 <= pole_in_0; pole_1 <= pole_in_1; pole_2 <= pole_in_2; pole_3 <= pole_in_3;
         end
     end
 
