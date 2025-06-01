@@ -66,6 +66,12 @@ module data_mem #(
         end
     end
 
+    initial begin
+        regfile[0]     = {16'd100, 16'd100}; // First entry
+        regfile[1]    = {-16'd100, -16'd100}; // Second entry 
+    end
+
+
     //Read from the register file
     always @(posedge aclk) begin
         

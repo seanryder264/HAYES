@@ -41,7 +41,7 @@ output [7:0] r, g, b
 
 );
 
-parameter  REG_FILE_SIZE = 8;
+parameter  REG_FILE_SIZE = 2;
 parameter  AXI_LITE_ADDR_WIDTH = 8;
 
 reg [(32 * REG_FILE_SIZE) - 1:0] regfile_flat;
@@ -81,32 +81,43 @@ coordinate_gen coordinate_gen(  .clk(out_stream_aclk),
                                 .first(first), .lastx(lastx),
                                 .valid(valid_int));
 
+wire signed [31:0] reg_word [REG_FILE_SIZE-1:0];
 reg [31:0] poles_and_zeros [REG_FILE_SIZE-1:0];
 wire signed [15:0] w_re [REG_FILE_SIZE-1:0];
 wire signed [15:0] w_im [REG_FILE_SIZE-1:0];
 wire signed [15:0] diff_re [REG_FILE_SIZE-1:0];
 wire signed [15:0] diff_im [REG_FILE_SIZE-1:0];
-wire signed [15:0] phase [REG_FILE_SIZE-1:0];
+wire [15:0] phase [REG_FILE_SIZE-1:0];
 wire [(16 * REG_FILE_SIZE) - 1:0] phase_flat;
 
 genvar i;
 generate 
     for (i = 0; i < REG_FILE_SIZE; i++) begin : per_pole
-        wire [31:0] reg_word = regfile_flat[i*32 +: 32];
+        assign reg_word[i] = regfile_flat[i*32 +: 32];
 
-        regfile_latch regfile_latch_inst_i (
-            .clk(out_stream_aclk),
-            .resetn(periph_resetn),
-            .latch(first),
-            .wdata(reg_word),
-            .rdata(poles_and_zeros[i])
-        );
+        always @* begin
+            // $display("%d %d", reg_word[0][31:16], reg_word[0][15:0]);
+        end
+
+        // regfile_latch regfile_latch_inst_i (
+        //     .clk(out_stream_aclk),
+        //     .resetn(periph_resetn),
+        //     .latch(first),
+        //     .wdata(reg_word[i]),
+        //     .rdata(poles_and_zeros[i])
+        // );
+
+        assign poles_and_zeros[i] = reg_word[i];
 
         assign w_re[i] = poles_and_zeros[i][31:16];
         assign w_im[i] = poles_and_zeros[i][15:0];
+
         
         always @* begin
-            $display("%d %d %d", diff_re[i], diff_im[i], phase[i]);
+            // $display("%d %d", poles_and_zeros[0][31:16], poles_and_zeros[0][15:0]);
+            if (first == 1) begin
+            $display("%d", first);
+            end
         end
 
         complex_sub complex_sub_inst_i (
@@ -125,11 +136,14 @@ generate
 endgenerate
 
 wire [15:0] acc_phase;
+wire [31:0] no_z = 32'd2;
+wire [31:0] no_p = 32'b0;
 
 pz_accumulator #(
     .REG_FILE_SIZE(REG_FILE_SIZE)
 ) phase_accumulator (
     .clk(out_stream_aclk),
+    .no_z(no_z), .no_p(no_p),
     .flat_pz(phase_flat),
     .acc_pz(acc_phase)
 );
