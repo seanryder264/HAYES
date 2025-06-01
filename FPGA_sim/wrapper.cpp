@@ -12,7 +12,7 @@ int main(int argc, char** argv) {
     std::ofstream output("coloured_function.ppm");
 
     output << "P3\n";
-    output << 512 << " " << 512 << "\n";
+    output << 1024 << " " << 1024 << "\n";
     output << "255\n";
 
     top->axi_resetn = 0;
@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
     top->axi_resetn = 1;
     top->periph_resetn = 1;
 
-    const int max_pixels = 512 * 512;
+    const int max_pixels = 1024 * 1024;
     int pixels = 0;
 
     while (pixels < max_pixels) {

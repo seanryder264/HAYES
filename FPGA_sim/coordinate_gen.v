@@ -10,8 +10,8 @@ module coordinate_gen (
     output                      valid
 );
 
-    localparam signed [15:0] X_SIZE = 16'd512;
-    localparam signed [15:0] Y_SIZE = 16'd512;
+    localparam signed [15:0] X_SIZE = 16'd1024;
+    localparam signed [15:0] Y_SIZE = 16'd1024;
 
     wire signed [15:0] x_min = -X_SIZE / 2;
     wire signed [15:0] x_max = X_SIZE / 2 - 1;

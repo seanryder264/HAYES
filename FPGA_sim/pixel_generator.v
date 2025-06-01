@@ -135,8 +135,8 @@ generate
     end
 endgenerate
 
-wire [31:0] no_z = 32'd3;
-wire [31:0] no_p = 32'd2;
+wire [31:0] no_z = 32'd4;
+wire [31:0] no_p = 32'd4;
 
 wire [15:0] acc_phase;
 wire [7:0] acc_log_mag;
