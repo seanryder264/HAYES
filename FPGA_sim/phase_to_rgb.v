@@ -1,35 +1,65 @@
 module phase_to_rgb (
     /* verilator lint_off UNUSED */
-    input  [15:0]       phase, 
+    input  wire [15:0] phase,  // 0 = -π, 65535 = π
     /* verilator lint_on UNUSED */
-    output reg [7:0]    red, 
-    output reg [7:0]    green, 
-    output reg [7:0]    blue
+    output reg  [7:0] red,
+    output reg  [7:0] green,
+    output reg  [7:0] blue
 );
 
+    // Map phase to hue [0, 255]
+    wire [7:0] hue = phase[15:8] + 8'd128;  // top 8 bits for hue
 
-    wire [7:0] phase_8 = phase[15:8];
+    reg [7:0] c, x;
+    reg [7:0] r1, g1, b1;
 
     always @* begin
-        red   = 8'd0;
-        green = 8'd0;
-        blue  = 8'd0;
+        c = 8'd255;
+        case (hue / 43)  // 256 / 6 ≈ 43 per sector
+            0: begin
+                x = (hue * 6);
+                r1 = c;
+                g1 = x;
+                b1 = 8'd0;
+            end
+            1: begin
+                x = (43 * 2 - hue) * 6;
+                r1 = x;
+                g1 = c;
+                b1 = 8'd0;
+            end
+            2: begin
+                x = (hue - 86) * 6;
+                r1 = 8'd0;
+                g1 = c;
+                b1 = x;
+            end
+            3: begin
+                x = (129 - hue) * 6;
+                r1 = 8'd0;
+                g1 = x;
+                b1 = c;
+            end
+            4: begin
+                x = (hue - 172) * 6;
+                r1 = x;
+                g1 = 8'd0;
+                b1 = c;
+            end
+            default: begin
+                x = (215 - hue) * 6;
+                r1 = c;
+                g1 = 8'd0;
+                b1 = x;
+            end
+        endcase
 
-        if (phase_8 < 8'd85) begin
-            red   = 8'd255 - (phase_8 * 3);
-            green = phase_8 * 3;
-        end 
-        else if (phase_8 < 8'd170) begin
-            green = 8'd255 - ((phase_8 - 8'd85) * 3);
-            blue  = (phase_8 - 8'd85) * 3;
-        end 
-        else begin
-            blue = 8'd255 - ((phase_8 - 8'd170) * 3);
-            red  = (phase_8 - 8'd170) * 3;
-        end
-
-        // $display("%d %d %d %d", phase_8, red, blue, green);
+        // Set RGB output
+        red   = r1;
+        green = g1;
+        blue  = b1;
     end
 
 endmodule
+
 

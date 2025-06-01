@@ -7,11 +7,11 @@
 #include <cstdlib>
 #include <chrono>
 
-const int WIDTH = 640;
-const int HEIGHT = 480;
+const int WIDTH = 512;
+const int HEIGHT = 512;
 
-std::vector<std::complex<double>> poles = { {-0.5, 0}, {0.5, 0} };
-std::vector<std::complex<double>> zeroes = { {0.0, 0.5}, {0.0, -0.5}  };
+std::vector<std::complex<double>> poles = { {0.5, -0.5}, {-0.5, 0.5} };
+std::vector<std::complex<double>> zeroes = { {0.5, 0.5}, {-0.5, -0.5}  };
 
 std::complex<double> evaluate_function(const std::complex<double>& z) {
     std::complex<double> numerator(1.0, 0.0);
@@ -88,7 +88,8 @@ int main() {
             double raw_brightness = std::min(hz, mod); 
             double brightness = std::max(0.1, std::min(raw_brightness, 1.0)); 
 
-
+            brightness = 1;
+            
             // Apply brightness to RGB
             r = static_cast<int>(r * brightness);
             g = static_cast<int>(g * brightness);

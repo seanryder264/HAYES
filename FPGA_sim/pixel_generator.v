@@ -41,7 +41,7 @@ output [7:0] r, g, b
 
 );
 
-parameter  REG_FILE_SIZE = 2;
+parameter  REG_FILE_SIZE = 16;
 parameter  AXI_LITE_ADDR_WIDTH = 8;
 
 reg [(32 * REG_FILE_SIZE) - 1:0] regfile_flat;
@@ -137,7 +137,7 @@ endgenerate
 
 wire [15:0] acc_phase;
 wire [31:0] no_z = 32'd2;
-wire [31:0] no_p = 32'b0;
+wire [31:0] no_p = 32'd2;
 
 pz_accumulator #(
     .REG_FILE_SIZE(REG_FILE_SIZE)
