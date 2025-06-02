@@ -12,7 +12,7 @@ int main(int argc, char** argv) {
     std::ofstream output("coloured_function.ppm");
 
     output << "P3\n";
-    output << 1024 << " " << 1024 << "\n";
+    output << 3840 << " " << 2160 << "\n";
     output << "255\n";
 
     top->axi_resetn = 0;
@@ -30,7 +30,7 @@ int main(int argc, char** argv) {
     top->axi_resetn = 1;
     top->periph_resetn = 1;
 
-    const int max_pixels = 1024 * 1024;
+    const int max_pixels = 3840 * 2160;
     int pixels = 0;
 
     while (pixels < max_pixels) {
@@ -53,5 +53,11 @@ int main(int argc, char** argv) {
 
     output.close();
     delete top;
+
+    int ret = std::system("convert coloured_function.ppm coloured_function.png");
+    if (ret != 0) {
+        std::cerr << "Error: Could not convert PPM to PNG. Make sure ImageMagick is installed.\n";
+        return 1;
+    }
     return 0;
 }

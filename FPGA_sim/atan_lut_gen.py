@@ -2,16 +2,16 @@ import math
 
 def generate_atan_lut(filename="atan_lut.mem"):
     lut = []
-    for i in range(65536):
+    for i in range(256):
 
-        ratio = i / 65535
+        ratio = i / 255
         angle_rad = math.atan(ratio)
-        val = int((angle_rad / (2 * math.pi)) * 65535)
+        val = int((angle_rad / (2 * math.pi)) * 255)
         lut.append(val)
 
     with open(filename, "w") as f:
         for val in lut:
-            f.write(f"{val:016b}\n")
+            f.write(f"{val:08b}\n")
 
     print(f"Lookup table written to {filename}")
 

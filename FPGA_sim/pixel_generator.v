@@ -87,9 +87,9 @@ wire signed [15:0] w_re [REG_FILE_SIZE-1:0];
 wire signed [15:0] w_im [REG_FILE_SIZE-1:0];
 wire signed [15:0] diff_re [REG_FILE_SIZE-1:0];
 wire signed [15:0] diff_im [REG_FILE_SIZE-1:0];
-wire [15:0] phase [REG_FILE_SIZE-1:0];
+wire [7:0] phase [REG_FILE_SIZE-1:0];
 wire [7:0] log_mag [REG_FILE_SIZE-1:0];
-wire [(16 * REG_FILE_SIZE) - 1:0] phase_flat;
+wire [(8 * REG_FILE_SIZE) - 1:0] phase_flat;
 wire [(8 * REG_FILE_SIZE) - 1:0] log_mag_flat;
 
 genvar i;
@@ -130,7 +130,7 @@ generate
             .log_mag(log_mag[i])
         );
 
-        assign phase_flat[i*16 +: 16] = phase[i];
+        assign phase_flat[i*8 +: 8] = phase[i];
         assign log_mag_flat[i*8 +: 8] = log_mag[i];
     end
 endgenerate
@@ -138,12 +138,12 @@ endgenerate
 wire [31:0] no_z = 32'd4;
 wire [31:0] no_p = 32'd4;
 
-wire [15:0] acc_phase;
+wire [7:0] acc_phase;
 wire [7:0] acc_log_mag;
 
 pz_accumulator #(
     .REG_FILE_SIZE(REG_FILE_SIZE),
-    .DATA_SIZE(16)
+    .DATA_SIZE(8)
 ) phase_accumulator (
     .clk(out_stream_aclk),
     .no_z(no_z), .no_p(no_p),

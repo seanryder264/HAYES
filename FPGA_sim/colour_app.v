@@ -1,6 +1,6 @@
 module colour_app (
     /* verilator lint_off UNUSED */
-    input  wire [15:0] phase,  // 0 = -π, 65535 = π
+    input  wire [7:0] phase,  // 0 = -π, 65535 = π
     input  wire [7:0] log_mag,
     /* verilator lint_on UNUSED */
     output reg  [7:0] red,
@@ -9,7 +9,7 @@ module colour_app (
 );
 
     // Map phase to hue [0, 255]
-    wire [7:0] hue = phase[15:8] + 8'd128;
+    wire [7:0] hue = phase + 8'd128;
 
     reg [7:0] max, x;
     reg [7:0] r1, g1, b1;
