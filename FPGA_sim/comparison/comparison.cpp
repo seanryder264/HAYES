@@ -6,20 +6,20 @@
 #include <cstdio>
 #include <cstdlib>
 #include <chrono>
+#include <complex>
 
-const int WIDTH = 1024;
-const int HEIGHT = 1024;
+const int WIDTH = 2048;
+const int HEIGHT = 2048;
+constexpr double pi = 3.14159265358979323846;
 
-std::vector<std::complex<double>> poles = { {0.5, -0.5}, {-0.5, 0.5}, {0.1, 0.1}, {-0.9, 0.9}};
-std::vector<std::complex<double>> zeroes = { {0.5, 0.5}, {-0.5, -0.5}, {0.75, 0.23}, {0.87, 0.4}  };
-
-std::complex<double> evaluate_function(const std::complex<double>& z) {
-    std::complex<double> numerator(1.0, 0.0);
-    std::complex<double> denominator(1.0, 0.0);
-    for (const auto& zero : zeroes) numerator *= (z - zero);
-    for (const auto& pole : poles) denominator *= (z - pole);
-    return numerator / denominator;
-}
+std::vector<std::complex<double>> poles_zeros = {{500, 500}, 
+                                                {-200, -100}, 
+                                                {400, 300},
+                                                {-900, 500},
+                                                {20, 150}, 
+                                                {-50, -300},
+                                                {400, -200},
+                                                {-50, 10}};
 
 void phase_to_rgb(double phase, int& r, int& g, int& b) {
     double hue = (phase + M_PI) / (2 * M_PI); // [0,1]
@@ -39,77 +39,70 @@ void phase_to_rgb(double phase, int& r, int& g, int& b) {
     b = static_cast<int>((b1 + m) * 255);
 }
 
-void mag_to_rgb(double mag, int& r, int& g, int& b) {
-    // Simple mapping: low magnitude to blue, high magnitude to red
-    double norm_mag = mag ;
-    r = static_cast<int>(norm_mag * 255);
-    g = 0;
-    b = static_cast<int>((1.0 - norm_mag) * 255);
-}
-
 int main() {
-    // Start timing
     auto start = std::chrono::high_resolution_clock::now();
 
-    // Write to a temporary PPM file
     const char* ppm_filename = "comparison_temp.ppm";
     std::ofstream ofs(ppm_filename);
     ofs << "P3\n" << WIDTH << " " << HEIGHT << "\n255\n";
 
-    for (int y = 0; y < HEIGHT; ++y) {
-        for (int x = 0; x < WIDTH; ++x) {
-            // Normalise axis to [-1, 1]
-            double re = 2.0 * x / (WIDTH - 1) - 1.0;
-            double im = 2.0 * y / (HEIGHT - 1) - 1.0;
-            std::complex<double> z(re, im);
+    for (int y = 0; y < HEIGHT; ++y){
+        for (int x = 0; x < WIDTH; ++x){
+            std::complex<double> z(x - WIDTH / 2.0, (HEIGHT - 1 - y) - HEIGHT / 2.0);
+            std::vector<std::complex<double>> w(poles_zeros.size());
+            std::vector<double> theta(poles_zeros.size());
+            std::vector<double> r(poles_zeros.size());
+            double phase = 0;
+            double log_mag = 0;
+            
+            double sum_zeros_phase = 0;
+            double sum_poles_phase = 0;
+            double sum_zeros_mag = 0;
+            double sum_poles_mag = 0;
 
-            // Evaluate function
-            std::complex<double> val = evaluate_function(z);
+            for (size_t i = 0; i < poles_zeros.size(); ++i) {
+                w[i] = z - poles_zeros[i];
 
-            // Calculate phase and magnitude
-            double phase = std::arg(val);
-            double mag = std::abs(val);
+                theta[i] = std::arg(w[i]);
+                r[i] = (std::log2(std::abs(w[i])) - std::floor(std::log2(std::abs(w[i]))));
 
-            // Map phase to hue-based RGB first
-            int r, g, b;
-            phase_to_rgb(phase, r, g, b);
+                size_t no_zeros = 4;
+            
+                if (i < no_zeros){
+                    sum_zeros_phase += theta[i];
+                    sum_zeros_mag += r[i];
+                } else {
+                    sum_poles_phase += theta[i];
+                    sum_poles_mag += r[i];
+                }
+            }
 
-            double t = 1.0; // Adjust this parameter to tune the visualization
+            phase = std::remainder(sum_zeros_phase - sum_poles_phase, 2 * pi);
+            double raw_mag = sum_zeros_mag - sum_poles_mag;
+            log_mag = raw_mag - std::floor(raw_mag);
 
-            // Extract real and imaginary parts of f(z)
-            double real_part = val.real();
-            double imag_part = val.imag();
+            double brightness = log_mag;
 
-            double hz = std::abs(std::sin(M_PI * real_part * t)) * std::abs(std::sin(M_PI * imag_part * t));
-            hz = std::pow(hz, 0.2);
+            int red, green, blue;
 
-            double mod = 1.0 - (mag - std::floor(mag));
-            mod = std::pow(mod, 0.25);
-            double raw_brightness = std::min(hz, mod); 
-            double brightness = std::max(0.1, std::min(raw_brightness, 1.0)); 
+            phase_to_rgb(phase, red, green, blue);
 
-            brightness = 1;
+            red = static_cast<int>(red * brightness);
+            green = static_cast<int>(green * brightness);
+            blue = static_cast<int>(blue * brightness);
 
-            // Apply brightness to RGB
-            r = static_cast<int>(r * brightness);
-            g = static_cast<int>(g * brightness);
-            b = static_cast<int>(b * brightness);
-
-            // Write RGB to file
-            ofs << r << " " << g << " " << b << " ";
+            ofs << red << " " << green << " " << blue << " ";
         }
         ofs << "\n";
     }
 
     ofs.close();
 
-    // End timing
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end - start;
     std::cout << "Frame generation time: " << elapsed.count() << " seconds\n";
 
-    // Convert PPM to PNG using ImageMagick's convert command
-    int ret = std::system("convert comparison_temp.ppm comparison.png");
+        int ret = std::system("convert comparison_temp.ppm comparison.png");
     if (ret != 0) {
         std::cerr << "Error: Could not convert PPM to PNG. Make sure ImageMagick is installed.\n";
         return 1;

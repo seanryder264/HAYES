@@ -26,7 +26,7 @@ module log_mag_calc (
 
 
     wire [5:0] log2_int = log2_floor(mag_sqr);
-    wire [7:0] frac = mag_sqr[(log2_int-1) -: 8];  // 10-bit fractional interpolation
+    wire [7:0] frac = mag_sqr[(log2_int-1) -: 8]; 
 
     assign log_mag = frac;          
 endmodule

@@ -6,12 +6,12 @@ module pz_accumulator #(
     input wire [DATA_SIZE*REG_FILE_SIZE-1:0] flat_pz,
     input wire [31:0] no_z,
     input wire [31:0] no_p,
-    output reg signed [DATA_SIZE - 1:0] acc_pz
+    output reg [DATA_SIZE - 1:0] acc_pz
 );
 
     integer i;
-    reg signed [DATA_SIZE - 1:0] acc_z_temp, acc_p_temp;
-    reg signed [DATA_SIZE - 1:0] z_i, p_i;
+    reg [DATA_SIZE - 1:0] acc_z_temp, acc_p_temp;
+    reg [DATA_SIZE - 1:0] z_i, p_i;
 
     always @* begin
         acc_z_temp = 0;

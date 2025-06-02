@@ -67,12 +67,12 @@ module data_mem #(
     end
 
     initial begin
-        regfile[0] = {16'd500, 16'd500}; // First entry
-        regfile[1] = {-16'd200, -16'd100}; // Second entry 
+        regfile[0] = {16'd500, 16'd500};
+        regfile[1] = {-16'd200, -16'd100};
         regfile[2] = {16'd400, 16'd300};
         regfile[3] = {-16'd900, 16'd500};
-        regfile[4] = {16'd20, 16'd150}; // First entry
-        regfile[5] = {-16'd50, -16'd300}; // Second entry 
+        regfile[4] = {16'd20, 16'd150};
+        regfile[5] = {-16'd50, -16'd300}; 
         regfile[6] = {16'd400, -16'd200};
         regfile[7] = {-16'd50, 16'd10};
     end
