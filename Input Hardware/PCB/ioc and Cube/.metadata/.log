@@ -1,0 +1,18 @@
+!SESSION 2025-06-03 13:30:29.589 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-06-03 13:31:18.363
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-06-03 13:31:18.370
+!MESSAGE Log4j2 initialized with config file E:\Git\Group Project\HAYES\Input Hardware\PCB\ioc and Cube\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-06-03 13:31:23.695
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-06-03 13:35:34.509
+!MESSAGE Indexed 'ioc and Cube' (27 sources, 89 headers) in 3.5 sec: 6,149 declarations; 46,911 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0038%)
