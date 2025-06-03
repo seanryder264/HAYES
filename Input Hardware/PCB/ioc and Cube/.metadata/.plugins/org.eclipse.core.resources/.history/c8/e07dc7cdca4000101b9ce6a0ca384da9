@@ -822,12 +822,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void Shift_Reg_Write(SPI_HandleTypeDef *hspi, GPIO_TypeDef* rclkPort, uint16_t rclkPin, uint8_t data)
-{
-    HAL_GPIO_WritePin(rclkPort, rclkPin, GPIO_PIN_RESET);  // Latch LOW
-    HAL_SPI_Transmit(hspi, &data, 1, HAL_MAX_DELAY);       // Send data
-    HAL_GPIO_WritePin(rclkPort, rclkPin, GPIO_PIN_SET);    // Latch HIGH
-}
+
 /* USER CODE END 4 */
 
 /**
