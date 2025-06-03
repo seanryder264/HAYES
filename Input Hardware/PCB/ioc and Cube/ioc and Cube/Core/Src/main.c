@@ -135,7 +135,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  Shift_Reg_Write(SPI_HandleTypeDef *hspi, GPIO_TypeDef *rclkPort, uint16_t rclkPin, uint32_t data, uint8_t numBits);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -822,11 +822,17 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void Shift_Reg_Write(SPI_HandleTypeDef *hspi, GPIO_TypeDef* rclkPort, uint16_t rclkPin, uint8_t data)
+void Shift_Reg_Write(SPI_HandleTypeDef *hspi, GPIO_TypeDef *rclkPort, uint16_t rclkPin, uint32_t data, uint8_t numBits)
 {
-    HAL_GPIO_WritePin(rclkPort, rclkPin, GPIO_PIN_RESET);  // Latch LOW
-    HAL_SPI_Transmit(hspi, &data, 1, HAL_MAX_DELAY);       // Send data
-    HAL_GPIO_WritePin(rclkPort, rclkPin, GPIO_PIN_SET);    // Latch HIGH
+    uint8_t numBytes = (numBits + 7) / 8;
+    uint8_t spiBuffer[4] = {0};
+    for (int i = 0; i < numBytes; i++)
+    {
+        spiBuffer[i] = (data >> (8 * (numBytes - 1 - i))) & 0xFF;
+    }
+    HAL_GPIO_WritePin(rclkPort, rclkPin, GPIO_PIN_RESET);
+    HAL_SPI_Transmit(hspi, spiBuffer, numBytes, HAL_MAX_DELAY);
+    HAL_GPIO_WritePin(rclkPort, rclkPin, GPIO_PIN_SET);
 }
 /* USER CODE END 4 */
 
