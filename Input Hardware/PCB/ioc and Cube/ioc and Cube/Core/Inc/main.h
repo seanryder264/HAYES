@@ -127,8 +127,12 @@ void Error_Handler(void);
 #define UI_RCLK_GPIO_Port GPIOC
 #define UI_MOSI_Pin GPIO_PIN_12
 #define UI_MOSI_GPIO_Port GPIOC
+#define TX_CLK_Pin GPIO_PIN_3
+#define TX_CLK_GPIO_Port GPIOB
 #define PUSH_2_Pin GPIO_PIN_4
 #define PUSH_2_GPIO_Port GPIOB
+#define TX_MOSI_Pin GPIO_PIN_5
+#define TX_MOSI_GPIO_Port GPIOB
 #define TX_RCLK_Pin GPIO_PIN_6
 #define TX_RCLK_GPIO_Port GPIOB
 #define PUSH_3_Pin GPIO_PIN_7
