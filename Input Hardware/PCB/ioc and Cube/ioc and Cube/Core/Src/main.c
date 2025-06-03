@@ -122,12 +122,10 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
-	  /*USER CODE BEGIN USER CODE BEGIN USER CODE BEGIN USER CODE BEGIN USER CODE BEGIN */
   {
-    HAL_GPIO_WritePin(GPIO);
-    HAL_Delay(500);
-    HAL_GPIO_WritePin(GPIO);
-    HAL_Delay(500);
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
@@ -619,19 +617,19 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(INPUT_COM_GPIO_Port, INPUT_COM_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, MUX_A_Pin|MUX_B_Pin|MUX_C_Pin|MUX_INHIBIT_Pin
-                          |UI_RCLK_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, OUTPUT_COM_Pin|TP906_Pin|TP907_Pin|MUX_A_Pin
+                          |MUX_B_Pin|MUX_C_Pin|MUX_INHIBIT_Pin|UI_RCLK_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(TX_SLEEP_GPIO_Port, TX_SLEEP_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, TP908_Pin|TX_SLEEP_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, PUSH_2_Pin|TX_RCLK_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, TP909_Pin|PUSH_2_Pin|TX_RCLK_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : OFFSET_CENTER_Pin OFFSET_RIGHT_Pin OFFSET_UP_Pin OUTPUT_COM_Pin
-                           SCALE_B_Pin SCALE_A_Pin SCALE_PUSH_Pin */
-  GPIO_InitStruct.Pin = OFFSET_CENTER_Pin|OFFSET_RIGHT_Pin|OFFSET_UP_Pin|OUTPUT_COM_Pin
-                          |SCALE_B_Pin|SCALE_A_Pin|SCALE_PUSH_Pin;
+  /*Configure GPIO pins : OFFSET_CENTER_Pin OFFSET_RIGHT_Pin OFFSET_UP_Pin SCALE_B_Pin
+                           SCALE_A_Pin SCALE_PUSH_Pin */
+  GPIO_InitStruct.Pin = OFFSET_CENTER_Pin|OFFSET_RIGHT_Pin|OFFSET_UP_Pin|SCALE_B_Pin
+                          |SCALE_A_Pin|SCALE_PUSH_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
@@ -643,21 +641,28 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(INPUT_COM_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : MUX_A_Pin MUX_B_Pin MUX_C_Pin MUX_INHIBIT_Pin
-                           UI_RCLK_Pin */
-  GPIO_InitStruct.Pin = MUX_A_Pin|MUX_B_Pin|MUX_C_Pin|MUX_INHIBIT_Pin
-                          |UI_RCLK_Pin;
+  /*Configure GPIO pins : OUTPUT_COM_Pin TP906_Pin TP907_Pin MUX_A_Pin
+                           MUX_B_Pin MUX_C_Pin MUX_INHIBIT_Pin UI_RCLK_Pin */
+  GPIO_InitStruct.Pin = OUTPUT_COM_Pin|TP906_Pin|TP907_Pin|MUX_A_Pin
+                          |MUX_B_Pin|MUX_C_Pin|MUX_INHIBIT_Pin|UI_RCLK_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : TX_SLEEP_Pin */
-  GPIO_InitStruct.Pin = TX_SLEEP_Pin;
+  /*Configure GPIO pins : TP908_Pin TX_SLEEP_Pin */
+  GPIO_InitStruct.Pin = TP908_Pin|TX_SLEEP_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(TX_SLEEP_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : TP909_Pin PUSH_2_Pin TX_RCLK_Pin */
+  GPIO_InitStruct.Pin = TP909_Pin|PUSH_2_Pin|TX_RCLK_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : OLED_SCL_Pin OLED_SDA_Pin */
   GPIO_InitStruct.Pin = OLED_SCL_Pin|OLED_SDA_Pin;
@@ -687,13 +692,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
   GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : PUSH_2_Pin TX_RCLK_Pin */
-  GPIO_InitStruct.Pin = PUSH_2_Pin|TX_RCLK_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PUSH_3_Pin OFFSET_UPB8_Pin OFFSET_DOWN_Pin */
