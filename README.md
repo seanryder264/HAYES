@@ -52,3 +52,7 @@ Inspiration for Complex Function Colouring Proposal - https://www.algorithm-arch
 ## Interim Presentation
 
 https://docs.google.com/presentation/d/1BTT8j2C3yh5_B_K2_p1NdAU0HLvElthAQJqZgBe2U2k/edit?slide=id.g35f5acde5a9_1_14
+
+## Report
+
+https://www.overleaf.com/3583842195knwrcvvsffbx#b1fd1f
