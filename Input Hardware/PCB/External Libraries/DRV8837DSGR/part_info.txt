@@ -1,9 +1,0 @@
-Manufacturer=Texas Instruments
-PartNumber=DRV8837DSGR
-PartCategory=Integrated Circuit
-PackageCategory=Small Outline No-lead
-PinCount=9
-Version=1.1
-Released=2020-04-12 16:30:38
-Downloaded=2025-05-27 17:30:01
-3D=Y

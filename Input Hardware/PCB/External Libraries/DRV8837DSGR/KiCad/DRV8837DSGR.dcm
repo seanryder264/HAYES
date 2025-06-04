@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP DRV8837DSGR
-D 1.8A Low Voltage Brushed DC Motor Driver (PWM Ctrl)
-K
-F http://www.ti.com/lit/gpn/drv8837
-$ENDCMP
-#
-#End Doc Library
