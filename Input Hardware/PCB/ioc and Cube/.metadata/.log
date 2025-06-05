@@ -82,3 +82,6 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 E:\Git\Group Project\H
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-06-04 18:08:16.193
 !MESSAGE Indexed 'ioc and Cube' (29 sources, 122 headers) in 1.48 sec: 11,884 declarations; 71,938 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.18%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-06-04 19:34:26.068
+!MESSAGE Indexed 'ioc and Cube' (32 sources, 140 headers) in 3.54 sec: 13,520 declarations; 91,276 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.14%)
