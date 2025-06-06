@@ -88,10 +88,10 @@
 #define OFFSET_DOWN_Pin GPIO_PIN_9
 #define OFFSET_DOWN_GPIO_Port GPIOB
 
+void GPIO_TX_Init(void);
+void GPIO_MUX_Init(void);
 
-static void MX_GPIO_Init(void);
+void MX_GPIO_Init(void);
 
-static void GPIO_TX_Init(void);
-static void GPIO_MUX_Init(void);
 
 #endif

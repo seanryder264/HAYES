@@ -1,4 +1,4 @@
-#include "GPIO.h"
+#include "Peripherals/GPIO.h"
 #include "stm32f3xx_hal.h"
 
 /**
@@ -6,7 +6,7 @@
  * @param None
  * @retval None
  */
-static void GPIO_Init(void)
+void GPIO_Init(void)
 {
     GPIO_InitTypeDef GPIO_InitStruct = {0};
     /* GPIO Ports Clock Enable */
@@ -78,7 +78,7 @@ static void GPIO_Init(void)
  
 }
 
-static void GPIO_TX_Init(void)
+void GPIO_TX_Init(void)
 {
     /* GPIO Ports Clock Enable */
 
@@ -118,7 +118,7 @@ static void GPIO_TX_Init(void)
     HAL_GPIO_WritePin(TX_RCLK_GPIO_Port, TX_RCLK_Pin, GPIO_PIN_SET);
 }
 
-static void GPIO_MUX_Init(void)
+void GPIO_MUX_Init(void)
 {
     /* GPIO Ports Clock Enable */
 
