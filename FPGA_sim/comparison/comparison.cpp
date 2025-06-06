@@ -12,14 +12,15 @@ const int WIDTH = 2048;
 const int HEIGHT = 2048;
 constexpr double pi = 3.14159265358979323846;
 
-std::vector<std::complex<double>> poles_zeros = {{500, 500}, 
-                                                {-200, -100}, 
-                                                {400, 300},
-                                                {-900, 500},
-                                                {20, 150}, 
-                                                {-50, -300},
-                                                {400, -200},
-                                                {-50, 10}};
+std::vector<std::complex<double>> poles_zeros = 
+{{500, 500}, {500, 500}, 
+{400, 300}, {400, 300},
+{20, 150}, {20, 150},
+{400, -200}, {400, -200}, 
+{-200,-100}, {-200, -100},                                              
+{-900, 500}, {-900, 500},                           
+{-50, -300}, {-50, -300},                            
+{-50, 10}, {-50, 10}};
 
 void phase_to_rgb(double phase, int& r, int& g, int& b) {
     double hue = (phase + M_PI) / (2 * M_PI); // [0,1]
@@ -66,7 +67,7 @@ int main() {
                 theta[i] = std::arg(w[i]);
                 r[i] = (std::log2(std::abs(w[i])) - std::floor(std::log2(std::abs(w[i]))));
 
-                size_t no_zeros = 4;
+                size_t no_zeros = 8;
             
                 if (i < no_zeros){
                     sum_zeros_phase += theta[i];
@@ -91,9 +92,8 @@ int main() {
             green = static_cast<int>(green * brightness);
             blue = static_cast<int>(blue * brightness);
 
-            ofs << red << " " << green << " " << blue << " ";
+            ofs << red << " " << green << " " << blue << "\n";
         }
-        ofs << "\n";
     }
 
     ofs.close();
