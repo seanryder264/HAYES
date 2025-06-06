@@ -150,3 +150,50 @@ void GPIO_MUX_Init(void)
 
     HAL_GPIO_WritePin(MUX_INHIBIT_GPIO_Port, MUX_INHIBIT_Pin, GPIO_PIN_RESET);
 }
+
+void GPIO_TP_Init(void)
+{
+    /* GPIO Ports Clock Enable */
+
+    if (__HAL_RCC_GPIOA_IS_CLK_DISABLED()) {
+        __HAL_RCC_GPIOA_CLK_ENABLE();
+    }
+
+    if (__HAL_RCC_GPIOB_IS_CLK_DISABLED()) {
+        __HAL_RCC_GPIOB_CLK_ENABLE();
+    }
+
+    if (__HAL_RCC_GPIOC_IS_CLK_DISABLED()) {
+        __HAL_RCC_GPIOC_CLK_ENABLE();
+    }
+
+    /*Configure GPIO Muxes*/
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+    GPIO_InitStruct.Pin = TP908_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+    
+    GPIO_InitStruct.Pin = TP909_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+    GPIO_InitStruct.Pin = TP906_Pin|TP907_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+    /*Set Default Output Values*/
+
+    HAL_GPIO_WritePin(GPIOA, TP908_Pin, GPIO_PIN_RESET);
+
+    HAL_GPIO_WritePin(GPIOB, TP909_Pin, GPIO_PIN_RESET);
+
+    HAL_GPIO_WritePin(GPIOC, TP906_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(GPIOC, TP907_Pin, GPIO_PIN_RESET);
+}
