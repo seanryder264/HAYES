@@ -1,11 +1,12 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
-#include "Peripherals/GPIO.h"
-#include "Peripherals/ADC.h"
-#include "Peripherals/Clock.h"
+#include "peripherals/GPIO.h"
+#include "peripherals/ADC.h"
+#include "peripherals/clock.h"
+#include "peripherals/SPI.h"
 
-#include "Tasks/Blink.h"
+#include "tasks/blink.h"
 
 #include <stdlib.h>
 
@@ -26,19 +27,19 @@ int main(void)
     GPIO_TX_Init();
     GPIO_MUX_Init();
 
+    SPI_TX_Init();
+
     GPIO_TP_Init();
 
-    xTaskCreate(Blink, "Blink Task", 128, NULL, 0, NULL);
+    xTaskCreate(blink, "Blink Task", 128, NULL, 0, NULL);
 
     vTaskStartScheduler();
     
-    while(1) {
-
-    }
+    Error_Handler();
 }
 
 void Error_Handler(void)
 {
-  __disable_irq();
-  while (1);
+    __disable_irq();
+    while (1);
 }

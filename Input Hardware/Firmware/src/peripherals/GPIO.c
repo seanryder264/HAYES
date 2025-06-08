@@ -1,5 +1,4 @@
-#include "Peripherals/GPIO.h"
-#include "stm32f3xx_hal.h"
+#include "peripherals/GPIO.h"
 
 /**
  * @brief GPIO Initialization Function
@@ -90,11 +89,15 @@ void GPIO_TX_Init(void)
         __HAL_RCC_GPIOB_CLK_ENABLE();
     }
 
+    if (__HAL_RCC_SPI1_IS_CLK_DISABLED()) {
+        __HAL_RCC_SPI1_CLK_ENABLE();
+    }
+
     /*Configure GPIO TX Drivers*/
     GPIO_InitTypeDef GPIO_InitStruct = {0};
 
     GPIO_InitStruct.Pin = TX_RCLK_Pin;
-    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
@@ -106,7 +109,7 @@ void GPIO_TX_Init(void)
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
     GPIO_InitStruct.Pin = TX_CLK_Pin|TX_MOSI_Pin;
-    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
+    GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
@@ -115,7 +118,7 @@ void GPIO_TX_Init(void)
     /*Set Default Output Values*/
 
     HAL_GPIO_WritePin(TX_SLEEP_GPIO_Port, TX_SLEEP_Pin, GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(TX_RCLK_GPIO_Port, TX_RCLK_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(TX_RCLK_GPIO_Port, TX_RCLK_Pin, GPIO_PIN_RESET);
 }
 
 void GPIO_MUX_Init(void)
