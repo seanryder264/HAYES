@@ -58,7 +58,9 @@ output          s_axi_lite_rvalid,
 
 input  [31:0]   s_axi_lite_wdata,
 output          s_axi_lite_wready,
-input           s_axi_lite_wvalid
+input           s_axi_lite_wvalid,
+
+output wire [7:0] r, g, b
 
 );
 
@@ -295,9 +297,6 @@ pz_accumulator #(
     .flat_pz(log_mag_flat),
     .acc_pz(acc_log_mag)
 );
-
-
-wire [7:0] r, g, b;
 
 colour_app colour_app_inst( 
     .clk(out_stream_aclk),
