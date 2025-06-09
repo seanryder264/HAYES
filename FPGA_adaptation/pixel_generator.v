@@ -37,14 +37,15 @@ input           out_stream_tready,
 output          out_stream_tvalid,
 output [0:0]    out_stream_tuser, 
 
-//AXI-Lite S
+/* verilator lint_off UNUSED */
 input [AXI_LITE_ADDR_WIDTH-1:0]     s_axi_lite_araddr,
-output          s_axi_lite_arready,
-input           s_axi_lite_arvalid,
+output                              s_axi_lite_arready,
+input                               s_axi_lite_arvalid,
 
 input [AXI_LITE_ADDR_WIDTH-1:0]     s_axi_lite_awaddr,
-output          s_axi_lite_awready,
-input           s_axi_lite_awvalid,
+output                              s_axi_lite_awready,
+input                               s_axi_lite_awvalid,
+/* verilator lint_on UNUSED */
 
 input           s_axi_lite_bready,
 output [1:0]    s_axi_lite_bresp,
@@ -61,9 +62,8 @@ input           s_axi_lite_wvalid
 
 );
 
-localparam X_SIZE = 640;
-localparam Y_SIZE = 480;
 localparam REG_FILE_AWIDTH = $clog2(REG_FILE_SIZE);
+localparam int REG_ADDR_WIDTH = $bits(REG_FILE_SIZE);
 
 localparam AWAIT_WADD_AND_DATA = 3'b000;
 localparam AWAIT_WDATA = 3'b001;
@@ -120,7 +120,7 @@ always @(posedge s_axi_lite_aclk) begin
 end
 
 assign s_axi_lite_arready = (readState == AWAIT_RADD);
-assign s_axi_lite_rresp = (readAddr < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
+assign s_axi_lite_rresp = ({{(REG_ADDR_WIDTH-3){1'b0}}, readAddr} < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
 assign s_axi_lite_rvalid = (readState == AWAIT_READ);
 assign s_axi_lite_rdata = readData;
 
@@ -188,7 +188,7 @@ end
 assign s_axi_lite_awready = (writeState == AWAIT_WADD_AND_DATA || writeState == AWAIT_WADD);
 assign s_axi_lite_wready = (writeState == AWAIT_WADD_AND_DATA || writeState == AWAIT_WDATA);
 assign s_axi_lite_bvalid = (writeState == AWAIT_RESP);
-assign s_axi_lite_bresp = (writeAddr < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
+assign s_axi_lite_bresp = ({{(REG_ADDR_WIDTH-3){1'b0}}, writeAddr} < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
 
 
 wire signed [15:0] z_re;
@@ -332,9 +332,6 @@ wire final_valid = valid_pipe[PIPE_LATENCY];
 wire final_first = first_pipe[PIPE_LATENCY];
 wire final_lastx = lastx_pipe[PIPE_LATENCY];
 
-
-
-
 //Do the wiring for packer: Valid needs to be redone
 packer pixel_packer(    .aclk(out_stream_aclk),
                         .aresetn(periph_resetn),
@@ -344,5 +341,4 @@ packer pixel_packer(    .aclk(out_stream_aclk),
                         .out_stream_tlast(out_stream_tlast), .out_stream_tready(out_stream_tready),
                         .out_stream_tvalid(out_stream_tvalid), .out_stream_tuser(out_stream_tuser) );
 
- 
 endmodule

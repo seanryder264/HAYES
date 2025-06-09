@@ -73,10 +73,11 @@ module colour_app (
     reg [7:0]  b1_s3;
     reg [7:0]  brightness_s3; // Renamed from log_mag
 
-    //Pipeline 3
+    /* verilator lint_off UNUSED */
     wire [15:0] r2_s3 = r1_s3 * brightness_s3;
     wire [15:0] g2_s3 = g1_s3 * brightness_s3;
     wire [15:0] b2_s3 = b1_s3 * brightness_s3;
+    /* verilator lint_on UNUSED */
 
     //Control Logic
     always @(posedge clk) begin

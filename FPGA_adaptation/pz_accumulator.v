@@ -7,8 +7,10 @@ module pz_accumulator #(
     input ready,
 
     input wire [DATA_SIZE*REG_FILE_SIZE-1:0] flat_pz,
+    /* verilator lint_off UNUSED */
     input wire [31:0] no_z, // Number of 'zero' terms to process
     input wire [31:0] no_p, // Number of 'pole' terms to process
+    /* verilator lint_on UNUSED */
     output reg [DATA_SIZE - 1:0] acc_pz
 );
 
@@ -59,7 +61,9 @@ module pz_accumulator #(
     wire [DATA_SIZE+2:0] acc_z_final = z_sum2_s3[0] + z_sum2_s3[1];
     wire [DATA_SIZE+2:0] acc_p_final = p_sum2_s3[0] + p_sum2_s3[1];
 
+    /* verilator lint_off UNUSED */
     wire [DATA_SIZE+2:0] final_result = acc_z_final - acc_p_final;
+     /* verilator lint_on UNUSED */
 
     //Control Logic
     integer j;
@@ -89,7 +93,7 @@ module pz_accumulator #(
                 p_sum2_s3[j] <= p_sum2_s2[j];
             end
             
-            acc_pz    <= final_result; // Implicit truncation to DATA_SIZE
+            acc_pz    <= final_result[7:0]; // Implicit truncation to DATA_SIZE
         end
     end
 

@@ -16,7 +16,7 @@ module log_mag_calc (
     reg [31:0] sqr_y_s2;
 
     //Pipeline 2
-    wire [32:0] mag_sqr = sqr_x + sqr_y;
+    wire [32:0] mag_sqr = sqr_x_s2 + sqr_y_s2;
 
     function [5:0] log2_floor;
         input [32:0] val;
