@@ -67,7 +67,7 @@ SPI_HandleTypeDef hspi1;
 SPI_HandleTypeDef hspi3;
 
 osThreadId USB_TransmitHandle;
-osThreadId myTask02Handle;
+osThreadId LED_WriteHandle;
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -88,7 +88,7 @@ static void MX_I2C2_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_SPI3_Init(void);
 void StartUSB_Transmit(void const * argument);
-void StartTask02(void const * argument);
+void StartLED_Write(void const * argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -96,8 +96,9 @@ void StartTask02(void const * argument);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-char *usbdata = "Poles: Zeroes:";
+char *usbdata = "Poles: Zeroes: \n";
 char *startupmessage = "STARTING...";
+uint8_t led_status = 0b01111111;
 /* USER CODE END 0 */
 
 /**
@@ -141,9 +142,6 @@ int main(void)
   MX_I2C2_Init();
   MX_SPI1_Init();
   MX_SPI3_Init();
-
-
-
   /* USER CODE BEGIN 2 */
 
 
@@ -186,9 +184,9 @@ int main(void)
   osThreadDef(USB_Transmit, StartUSB_Transmit, osPriorityNormal, 0, 128);
   USB_TransmitHandle = osThreadCreate(osThread(USB_Transmit), NULL);
 
-  /* definition and creation of myTask02 */
-  osThreadDef(myTask02, StartTask02, osPriorityLow, 0, 128);
-  myTask02Handle = osThreadCreate(osThread(myTask02), NULL);
+  /* definition and creation of LED_Write */
+  osThreadDef(LED_Write, StartLED_Write, osPriorityLow, 0, 128);
+  LED_WriteHandle = osThreadCreate(osThread(LED_Write), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -751,12 +749,12 @@ static void MX_SPI3_Init(void)
   hspi3.Instance = SPI3;
   hspi3.Init.Mode = SPI_MODE_MASTER;
   hspi3.Init.Direction = SPI_DIRECTION_2LINES;
-  hspi3.Init.DataSize = SPI_DATASIZE_4BIT;
+  hspi3.Init.DataSize = SPI_DATASIZE_8BIT;
   hspi3.Init.CLKPolarity = SPI_POLARITY_LOW;
   hspi3.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi3.Init.NSS = SPI_NSS_SOFT;
-  hspi3.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
-  hspi3.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  hspi3.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_32;
+  hspi3.Init.FirstBit = SPI_FIRSTBIT_LSB;
   hspi3.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi3.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
   hspi3.Init.CRCPolynomial = 7;
@@ -893,10 +891,10 @@ static void MX_GPIO_Init(void)
   * @retval None
   */
 /* USER CODE END Header_StartUSB_Transmit */
-
 void StartUSB_Transmit(void const * argument)
 {
   /* init code for USB_DEVICE */
+  MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
   osDelay(1);
@@ -919,22 +917,26 @@ void StartUSB_Transmit(void const * argument)
   /* USER CODE END 5 */
 }
 
-/* USER CODE BEGIN Header_StartTask02 */
+/* USER CODE BEGIN Header_StartLED_Write */
 /**
-* @brief Function implementing the myTask02 thread.
+* @brief Function implementing the LED_Write thread.
 * @param argument: Not used
 * @retval None
 */
-/* USER CODE END Header_StartTask02 */
-void StartTask02(void const * argument)
+/* USER CODE END Header_StartLED_Write */
+void StartLED_Write(void const * argument)
 {
-  /* USER CODE BEGIN StartTask02 */
+  /* USER CODE BEGIN StartLED_Write */
   /* Infinite loop */
   for(;;)
   {
+	uint8_t current_leds = led_status & 0b11110000;
+	HAL_SPI_Transmit(&hspi3, &current_leds, 1, HAL_MAX_DELAY);
+	HAL_GPIO_WritePin(GPIOC, UI_RCLK_Pin, GPIO_PIN_SET);
     osDelay(1);
+	HAL_GPIO_WritePin(GPIOC, UI_RCLK_Pin, GPIO_PIN_RESET);
   }
-  /* USER CODE END StartTask02 */
+  /* USER CODE END StartLED_Write */
 }
 
 /**

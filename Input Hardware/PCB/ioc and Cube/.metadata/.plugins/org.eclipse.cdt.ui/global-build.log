@@ -2178,3 +2178,306 @@ Finished building: default.size.stdout
  
 Finished building: Firmware.list
  
+22:38:18 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  56236	    392	  12304	  68932	  10d44	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:02:09 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'StartLED_Write':
+../Core/Src/main.c:934:34: error: 'UI_RCLK' undeclared (first use in this function); did you mean 'UI_RCLK_Pin'?
+  934 |         HAL_GPIO_WritePin(GPIOC, UI_RCLK, GPIO_PIN_RESET);
+      |                                  ^~~~~~~
+      |                                  UI_RCLK_Pin
+../Core/Src/main.c:934:34: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:936:34: error: 'LATCUI_RCLK' undeclared (first use in this function)
+  936 |         HAL_GPIO_WritePin(GPIOC, LATCUI_RCLK, GPIO_PIN_SET);
+      |                                  ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:02:30 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'StartLED_Write':
+../Core/Src/main.c:936:34: error: 'LATCUI_RCLK_Pin' undeclared (first use in this function); did you mean 'UI_RCLK_Pin'?
+  936 |         HAL_GPIO_WritePin(GPIOC, LATCUI_RCLK_Pin, GPIO_PIN_SET);
+      |                                  ^~~~~~~~~~~~~~~
+      |                                  UI_RCLK_Pin
+../Core/Src/main.c:936:34: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:02:35 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57772	    392	  12304	  70468	  11344	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:04:39 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'StartLED_Write':
+../Core/Src/main.c:933:32: warning: overflow in conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '(int)led_status & 286326784' to '0' [-Woverflow]
+  933 |         uint8_t current_leds = led_status & 0x11110000;
+      |                                ^~~~~~~~~~
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57756	    392	  12304	  70452	  11334	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:06:11 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:101:22: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '11111111' to '199' [-Woverflow]
+  101 | uint8_t led_status = 11111111;
+      |                      ^~~~~~~~
+../Core/Src/main.c: In function 'StartLED_Write':
+../Core/Src/main.c:933:32: warning: overflow in conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '(int)led_status & 286326784' to '0' [-Woverflow]
+  933 |         uint8_t current_leds = led_status & 0x11110000;
+      |                                ^~~~~~~~~~
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57756	    392	  12304	  70452	  11334	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:07:53 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:101:22: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '11111111' to '199' [-Woverflow]
+  101 | uint8_t led_status = 11111111;
+      |                      ^~~~~~~~
+../Core/Src/main.c: In function 'StartLED_Write':
+../Core/Src/main.c:933:32: warning: overflow in conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '(int)led_status & 286326784' to '0' [-Woverflow]
+  933 |         uint8_t current_leds = led_status & 0x11110000;
+      |                                ^~~~~~~~~~
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57756	    392	  12304	  70452	  11334	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:08:57 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:101:22: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '11111111' to '199' [-Woverflow]
+  101 | uint8_t led_status = 11111111;
+      |                      ^~~~~~~~
+../Core/Src/main.c: In function 'StartLED_Write':
+../Core/Src/main.c:933:32: warning: overflow in conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '(int)led_status & 286326784' to '0' [-Woverflow]
+  933 |         uint8_t current_leds = led_status & 0x11110000;
+      |                                ^~~~~~~~~~
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57756	    392	  12304	  70452	  11334	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:11:30 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:101:22: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '11111111' to '199' [-Woverflow]
+  101 | uint8_t led_status = 11111111;
+      |                      ^~~~~~~~
+../Core/Src/main.c: In function 'StartLED_Write':
+../Core/Src/main.c:933:32: warning: overflow in conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '(int)led_status & 286326784' to '0' [-Woverflow]
+  933 |         uint8_t current_leds = led_status & 0x11110000;
+      |                                ^~~~~~~~~~
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57756	    392	  12304	  70452	  11334	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:12:47 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:101:22: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '11111111' to '199' [-Woverflow]
+  101 | uint8_t led_status = 11111111;
+      |                      ^~~~~~~~
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57772	    396	  12300	  70468	  11344	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:13:54 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-size  Firmware.elf 
+   text	   data	    bss	    dec	    hex	filename
+  57772	    396	  12300	  70468	  11344	Firmware.elf
+Finished building: default.size.stdout
+ 
+23:14:29 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:101:22: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '11111111' to '199' [-Woverflow]
+  101 | uint8_t led_status = 11111111;
+      |                      ^~~~~~~~
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57772	    396	  12300	  70468	  11344	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:16:13 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:101:22: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '11111111' to '199' [-Woverflow]
+  101 | uint8_t led_status = 11111111;
+      |                      ^~~~~~~~
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57772	    396	  12300	  70468	  11344	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:18:22 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:101:22: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '11111111' to '199' [-Woverflow]
+  101 | uint8_t led_status = 11111111;
+      |                      ^~~~~~~~
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57772	    396	  12300	  70468	  11344	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:19:26 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:101:22: warning: unsigned conversion from 'int' to 'uint8_t' {aka 'unsigned char'} changes value from '286331153' to '17' [-Woverflow]
+  101 | uint8_t led_status = 0x11111111;
+      |                      ^~~~~~~~~~
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57772	    396	  12300	  70468	  11344	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:20:35 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57756	    396	  12300	  70452	  11334	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:22:08 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57772	    396	  12300	  70468	  11344	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:22:54 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57772	    396	  12300	  70468	  11344	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
+23:23:25 **** Incremental Build of configuration Debug for project Firmware ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -c -I../Core/Inc -I"E:/Git/Group Project/HAYES/Input Hardware/Firmware/Drivers/OLED" -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Firmware.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Git\Group Project\HAYES\Input Hardware\Firmware\STM32F303RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware.elf
+ 
+arm-none-eabi-size  Firmware.elf 
+arm-none-eabi-objdump -h -S Firmware.elf  > "Firmware.list"
+   text	   data	    bss	    dec	    hex	filename
+  57772	    396	  12300	  70468	  11344	Firmware.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware.list
+ 
