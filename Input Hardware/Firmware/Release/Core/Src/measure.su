@@ -1,0 +1,3 @@
+../Core/Src/measure.c:40:6:measure_start_collection	24	static,ignoring_inline_asm
+../Core/Src/measure.c:16:6:measure	8	static
+../Core/Src/measure.c:67:6:HAL_ADC_ConvCpltCallback	8	static

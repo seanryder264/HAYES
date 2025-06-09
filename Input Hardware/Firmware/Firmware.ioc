@@ -1,7 +1,9 @@
 #MicroXplorer Configuration settings - do not modify
 ADC1.Channel-0\#ChannelRegularConversion=ADC_CHANNEL_5
 ADC1.ClockPrescaler=ADC_CLOCK_SYNC_PCLK_DIV1
-ADC1.IPParameters=Rank-0\#ChannelRegularConversion,master,Channel-0\#ChannelRegularConversion,SamplingTime-0\#ChannelRegularConversion,SamplingTimeOPAMP-0\#ChannelRegularConversion,OffsetNumber-0\#ChannelRegularConversion,Offset-0\#ChannelRegularConversion,NbrOfConversionFlag,ClockPrescaler
+ADC1.ContinuousConvMode=ENABLE
+ADC1.ExternalTrigConv=ADC_EXTERNALTRIGCONV_T3_CC4
+ADC1.IPParameters=Rank-0\#ChannelRegularConversion,master,Channel-0\#ChannelRegularConversion,SamplingTime-0\#ChannelRegularConversion,SamplingTimeOPAMP-0\#ChannelRegularConversion,OffsetNumber-0\#ChannelRegularConversion,Offset-0\#ChannelRegularConversion,NbrOfConversionFlag,ClockPrescaler,ContinuousConvMode,ExternalTrigConv
 ADC1.NbrOfConversionFlag=1
 ADC1.Offset-0\#ChannelRegularConversion=0
 ADC1.OffsetNumber-0\#ChannelRegularConversion=ADC_OFFSET_NONE
@@ -11,7 +13,9 @@ ADC1.SamplingTimeOPAMP-0\#ChannelRegularConversion=ADC_SAMPLETIME_19CYCLES_5
 ADC1.master=1
 ADC2.Channel-0\#ChannelRegularConversion=ADC_CHANNEL_3
 ADC2.ClockPrescaler=ADC_CLOCK_SYNC_PCLK_DIV1
-ADC2.IPParameters=Rank-0\#ChannelRegularConversion,Channel-0\#ChannelRegularConversion,SamplingTime-0\#ChannelRegularConversion,SamplingTimeOPAMP-0\#ChannelRegularConversion,OffsetNumber-0\#ChannelRegularConversion,Offset-0\#ChannelRegularConversion,NbrOfConversionFlag,ClockPrescaler
+ADC2.ContinuousConvMode=ENABLE
+ADC2.ExternalTrigConv=ADC_EXTERNALTRIGCONV_T3_CC4
+ADC2.IPParameters=Rank-0\#ChannelRegularConversion,Channel-0\#ChannelRegularConversion,SamplingTime-0\#ChannelRegularConversion,SamplingTimeOPAMP-0\#ChannelRegularConversion,OffsetNumber-0\#ChannelRegularConversion,Offset-0\#ChannelRegularConversion,NbrOfConversionFlag,ClockPrescaler,ContinuousConvMode,ExternalTrigConv
 ADC2.NbrOfConversionFlag=1
 ADC2.Offset-0\#ChannelRegularConversion=0
 ADC2.OffsetNumber-0\#ChannelRegularConversion=ADC_OFFSET_NONE
@@ -20,7 +24,9 @@ ADC2.SamplingTime-0\#ChannelRegularConversion=ADC_SAMPLETIME_1CYCLE_5
 ADC2.SamplingTimeOPAMP-0\#ChannelRegularConversion=ADC_SAMPLETIME_19CYCLES_5
 ADC3.Channel-0\#ChannelRegularConversion=ADC_CHANNEL_1
 ADC3.ClockPrescaler=ADC_CLOCK_SYNC_PCLK_DIV1
-ADC3.IPParameters=Rank-0\#ChannelRegularConversion,master,Channel-0\#ChannelRegularConversion,SamplingTime-0\#ChannelRegularConversion,SamplingTimeOPAMP-0\#ChannelRegularConversion,OffsetNumber-0\#ChannelRegularConversion,Offset-0\#ChannelRegularConversion,NbrOfConversionFlag,ClockPrescaler
+ADC3.ContinuousConvMode=ENABLE
+ADC3.ExternalTrigConv=ADC_EXTERNALTRIGCONV_T3_CC1
+ADC3.IPParameters=Rank-0\#ChannelRegularConversion,master,Channel-0\#ChannelRegularConversion,SamplingTime-0\#ChannelRegularConversion,SamplingTimeOPAMP-0\#ChannelRegularConversion,OffsetNumber-0\#ChannelRegularConversion,Offset-0\#ChannelRegularConversion,NbrOfConversionFlag,ClockPrescaler,ContinuousConvMode,ExternalTrigConv
 ADC3.NbrOfConversionFlag=1
 ADC3.Offset-0\#ChannelRegularConversion=0
 ADC3.OffsetNumber-0\#ChannelRegularConversion=ADC_OFFSET_NONE
@@ -30,7 +36,9 @@ ADC3.SamplingTimeOPAMP-0\#ChannelRegularConversion=ADC_SAMPLETIME_4CYCLES_5
 ADC3.master=1
 ADC4.Channel-0\#ChannelRegularConversion=ADC_CHANNEL_3
 ADC4.ClockPrescaler=ADC_CLOCK_SYNC_PCLK_DIV1
-ADC4.IPParameters=Rank-0\#ChannelRegularConversion,Channel-0\#ChannelRegularConversion,SamplingTime-0\#ChannelRegularConversion,SamplingTimeOPAMP-0\#ChannelRegularConversion,OffsetNumber-0\#ChannelRegularConversion,Offset-0\#ChannelRegularConversion,NbrOfConversionFlag,ClockPrescaler
+ADC4.ContinuousConvMode=ENABLE
+ADC4.ExternalTrigConv=ADC_EXTERNALTRIGCONV_T3_TRGO
+ADC4.IPParameters=Rank-0\#ChannelRegularConversion,Channel-0\#ChannelRegularConversion,SamplingTime-0\#ChannelRegularConversion,SamplingTimeOPAMP-0\#ChannelRegularConversion,OffsetNumber-0\#ChannelRegularConversion,Offset-0\#ChannelRegularConversion,NbrOfConversionFlag,ClockPrescaler,ContinuousConvMode,ExternalTrigConv
 ADC4.NbrOfConversionFlag=1
 ADC4.Offset-0\#ChannelRegularConversion=0
 ADC4.OffsetNumber-0\#ChannelRegularConversion=ADC_OFFSET_NONE
@@ -40,6 +48,18 @@ ADC4.SamplingTimeOPAMP-0\#ChannelRegularConversion=ADC_SAMPLETIME_19CYCLES_5
 CAD.formats=
 CAD.pinconfig=
 CAD.provider=
+COMP3.Hysteresis=COMP_HYSTERESIS_HIGH
+COMP3.IPParameters=Hysteresis,Output
+COMP3.Output=COMP_OUTPUT_TIM4IC1
+COMP4.Hysteresis=COMP_HYSTERESIS_HIGH
+COMP4.IPParameters=Hysteresis,Output
+COMP4.Output=COMP_OUTPUT_TIM4IC2
+COMP5.Hysteresis=COMP_HYSTERESIS_HIGH
+COMP5.IPParameters=Hysteresis,Output
+COMP5.Output=COMP_OUTPUT_TIM4IC3
+COMP6.Hysteresis=COMP_HYSTERESIS_HIGH
+COMP6.IPParameters=Hysteresis,Output
+COMP6.Output=COMP_OUTPUT_TIM4IC4
 Dma.ADC1.0.Direction=DMA_PERIPH_TO_MEMORY
 Dma.ADC1.0.Instance=DMA1_Channel1
 Dma.ADC1.0.MemDataAlignment=DMA_MDATAALIGN_HALFWORD
@@ -81,8 +101,15 @@ Dma.Request1=ADC2
 Dma.Request2=ADC3
 Dma.Request3=ADC4
 Dma.RequestsNb=4
-FREERTOS.IPParameters=Tasks01
-FREERTOS.Tasks01=defaultTask,0,128,StartDefaultTask,Default,NULL,Dynamic,NULL,NULL
+FREERTOS.FootprintOK=true
+<<<<<<< Updated upstream
+FREERTOS.IPParameters=Tasks01,FootprintOK
+FREERTOS.Tasks01=USB_Transmit,0,128,StartUSB_Transmit,Default,NULL,Dynamic,NULL,NULL;myTask02,-2,128,StartTask02,Default,NULL,Dynamic,NULL,NULL
+=======
+FREERTOS.IPParameters=Tasks01,configTOTAL_HEAP_SIZE,FootprintOK
+FREERTOS.Tasks01=AAAAAAA,8,128,Default,Default,NULL,Static,AAAAAAABuffer,AAAAAAAControlBlock
+FREERTOS.configTOTAL_HEAP_SIZE=20480
+>>>>>>> Stashed changes
 File.Version=6
 GPIO.groupedBy=Group By Peripherals
 I2C2.IPParameters=Timing
@@ -98,7 +125,14 @@ Mcu.IP12=RCC
 Mcu.IP13=SPI1
 Mcu.IP14=SPI3
 Mcu.IP15=SYS
+<<<<<<< Updated upstream
 Mcu.IP16=USB
+Mcu.IP17=USB_DEVICE
+=======
+Mcu.IP16=TIM3
+Mcu.IP17=TIM4
+Mcu.IP18=USB
+>>>>>>> Stashed changes
 Mcu.IP2=ADC3
 Mcu.IP3=ADC4
 Mcu.IP4=COMP3
@@ -107,7 +141,11 @@ Mcu.IP6=COMP5
 Mcu.IP7=COMP6
 Mcu.IP8=DMA
 Mcu.IP9=FREERTOS
-Mcu.IPNb=17
+<<<<<<< Updated upstream
+Mcu.IPNb=18
+=======
+Mcu.IPNb=19
+>>>>>>> Stashed changes
 Mcu.Name=STM32F303R(B-C)Tx
 Mcu.Package=LQFP64
 Mcu.Pin0=PC13
@@ -152,14 +190,26 @@ Mcu.Pin43=PB6
 Mcu.Pin44=PB7
 Mcu.Pin45=PB8
 Mcu.Pin46=PB9
-Mcu.Pin47=VP_FREERTOS_VS_CMSIS_V1
+Mcu.Pin47=VP_FREERTOS_VS_CMSIS_V2
 Mcu.Pin48=VP_SYS_VS_tim1
+<<<<<<< Updated upstream
+Mcu.Pin49=VP_USB_DEVICE_VS_USB_DEVICE_CDC_FS
+=======
+Mcu.Pin49=VP_TIM3_VS_OPM
+>>>>>>> Stashed changes
 Mcu.Pin5=PC0
+Mcu.Pin50=VP_TIM4_VS_ControllerModeReset
+Mcu.Pin51=VP_TIM4_VS_ClockSourceITR
+Mcu.Pin52=VP_TIM4_VS_OPM
 Mcu.Pin6=PC1
 Mcu.Pin7=PC2
 Mcu.Pin8=PC3
 Mcu.Pin9=PF4
-Mcu.PinsNb=49
+<<<<<<< Updated upstream
+Mcu.PinsNb=50
+=======
+Mcu.PinsNb=53
+>>>>>>> Stashed changes
 Mcu.ThirdPartyNb=0
 Mcu.UserConstants=
 Mcu.UserName=STM32F303RBTx
@@ -186,8 +236,10 @@ NVIC.SavedSvcallIrqHandlerGenerated=true
 NVIC.SavedSystickIrqHandlerGenerated=true
 NVIC.SysTick_IRQn=true\:15\:0\:false\:false\:false\:true\:false\:true\:false
 NVIC.TIM1_UP_TIM16_IRQn=true\:15\:0\:false\:false\:true\:false\:false\:true\:true
+NVIC.TIM3_IRQn=true\:5\:0\:false\:false\:true\:true\:true\:true\:true
 NVIC.TimeBase=TIM1_UP_TIM16_IRQn
 NVIC.TimeBaseIP=TIM1
+NVIC.USB_LP_CAN_RX0_IRQn=true\:5\:0\:false\:false\:true\:true\:false\:true\:true
 NVIC.UsageFault_IRQn=true\:0\:0\:false\:false\:true\:false\:false\:false\:false
 PA10.GPIOParameters=GPIO_Label
 PA10.GPIO_Label=OLED_SDA
@@ -391,6 +443,7 @@ PF4.Signal=ADC1_IN5
 PinOutPanel.RotationAngle=0
 ProjectManager.AskForMigrate=true
 ProjectManager.BackupPrevious=false
+ProjectManager.CompilerLinker=GCC
 ProjectManager.CompilerOptimize=6
 ProjectManager.ComputerToolchain=false
 ProjectManager.CoupleFile=false
@@ -419,7 +472,11 @@ ProjectManager.ToolChainLocation=
 ProjectManager.UAScriptAfterPath=
 ProjectManager.UAScriptBeforePath=
 ProjectManager.UnderRoot=true
-ProjectManager.functionlistsort=1-SystemClock_Config-RCC-false-HAL-false,2-MX_GPIO_Init-GPIO-false-HAL-true,3-MX_DMA_Init-DMA-false-HAL-true,4-MX_ADC3_Init-ADC3-false-HAL-true,5-MX_COMP3_Init-COMP3-false-HAL-true,6-MX_COMP4_Init-COMP4-false-HAL-true,7-MX_COMP5_Init-COMP5-false-HAL-true,8-MX_COMP6_Init-COMP6-false-HAL-true,9-MX_USB_PCD_Init-USB-false-HAL-true,10-MX_ADC1_Init-ADC1-false-HAL-true,11-MX_ADC2_Init-ADC2-false-HAL-true,12-MX_ADC4_Init-ADC4-false-HAL-true,13-MX_I2C2_Init-I2C2-false-HAL-true,14-MX_SPI1_Init-SPI1-false-HAL-true,15-MX_SPI3_Init-SPI3-false-HAL-true
+<<<<<<< Updated upstream
+ProjectManager.functionlistsort=1-SystemClock_Config-RCC-false-HAL-false,2-MX_GPIO_Init-GPIO-false-HAL-true,3-MX_DMA_Init-DMA-false-HAL-true,4-MX_ADC3_Init-ADC3-false-HAL-true,5-MX_COMP3_Init-COMP3-false-HAL-true,6-MX_COMP4_Init-COMP4-false-HAL-true,7-MX_COMP5_Init-COMP5-false-HAL-true,8-MX_COMP6_Init-COMP6-false-HAL-true,9-MX_ADC1_Init-ADC1-false-HAL-true,10-MX_ADC2_Init-ADC2-false-HAL-true,11-MX_ADC4_Init-ADC4-false-HAL-true,12-MX_I2C2_Init-I2C2-false-HAL-true,13-MX_SPI1_Init-SPI1-false-HAL-true,14-MX_SPI3_Init-SPI3-false-HAL-true,15-MX_USB_DEVICE_Init-USB_DEVICE-false-HAL-false
+=======
+ProjectManager.functionlistsort=1-SystemClock_Config-RCC-false-HAL-false,2-MX_GPIO_Init-GPIO-false-HAL-true,3-MX_DMA_Init-DMA-false-HAL-true,4-MX_ADC3_Init-ADC3-false-HAL-true,5-MX_COMP3_Init-COMP3-false-HAL-true,6-MX_COMP4_Init-COMP4-false-HAL-true,7-MX_COMP5_Init-COMP5-false-HAL-true,8-MX_COMP6_Init-COMP6-false-HAL-true,9-MX_USB_PCD_Init-USB-false-HAL-true,10-MX_ADC1_Init-ADC1-false-HAL-true,11-MX_ADC2_Init-ADC2-false-HAL-true,12-MX_ADC4_Init-ADC4-false-HAL-true,13-MX_I2C2_Init-I2C2-false-HAL-true,14-MX_SPI1_Init-SPI1-false-HAL-true,15-MX_SPI3_Init-SPI3-false-HAL-true,16-MX_TIM3_Init-TIM3-false-HAL-true,17-MX_TIM4_Init-TIM4-false-HAL-true
+>>>>>>> Stashed changes
 RCC.ADC12outputFreq_Value=72000000
 RCC.ADC34outputFreq_Value=72000000
 RCC.AHBFreq_Value=72000000
@@ -474,9 +531,41 @@ SPI3.Direction=SPI_DIRECTION_2LINES
 SPI3.IPParameters=VirtualType,Mode,Direction,CalculateBaudRate,BaudRatePrescaler
 SPI3.Mode=SPI_MODE_MASTER
 SPI3.VirtualType=VM_MASTER
+<<<<<<< Updated upstream
+USB_DEVICE.CLASS_NAME_FS=CDC
+USB_DEVICE.IPParameters=VirtualMode,VirtualModeFS,CLASS_NAME_FS
+USB_DEVICE.VirtualMode=Cdc
+USB_DEVICE.VirtualModeFS=Cdc_FS
 VP_FREERTOS_VS_CMSIS_V1.Mode=CMSIS_V1
 VP_FREERTOS_VS_CMSIS_V1.Signal=FREERTOS_VS_CMSIS_V1
 VP_SYS_VS_tim1.Mode=TIM1
 VP_SYS_VS_tim1.Signal=SYS_VS_tim1
+VP_USB_DEVICE_VS_USB_DEVICE_CDC_FS.Mode=CDC_FS
+VP_USB_DEVICE_VS_USB_DEVICE_CDC_FS.Signal=USB_DEVICE_VS_USB_DEVICE_CDC_FS
+=======
+TIM3.IPParameters=Prescaler,TIM_MasterOutputTrigger,Period,TIM_MasterSlaveMode
+TIM3.Period=10
+TIM3.Prescaler=71
+TIM3.TIM_MasterOutputTrigger=TIM_TRGO_UPDATE
+TIM3.TIM_MasterSlaveMode=TIM_MASTERSLAVEMODE_ENABLE
+TIM4.IPParameters=Prescaler,Period,TIM_MasterSlaveMode,TIM_MasterOutputTrigger
+TIM4.Period=8000
+TIM4.Prescaler=0
+TIM4.TIM_MasterOutputTrigger=TIM_TRGO_UPDATE
+TIM4.TIM_MasterSlaveMode=TIM_MASTERSLAVEMODE_ENABLE
+VP_FREERTOS_VS_CMSIS_V2.Mode=CMSIS_V2
+VP_FREERTOS_VS_CMSIS_V2.Signal=FREERTOS_VS_CMSIS_V2
+VP_SYS_VS_tim1.Mode=TIM1
+VP_SYS_VS_tim1.Signal=SYS_VS_tim1
+VP_TIM3_VS_OPM.Mode=OPM_bit
+VP_TIM3_VS_OPM.Signal=TIM3_VS_OPM
+VP_TIM4_VS_ClockSourceITR.Mode=TriggerSource_ITR2
+VP_TIM4_VS_ClockSourceITR.Signal=TIM4_VS_ClockSourceITR
+VP_TIM4_VS_ControllerModeReset.Mode=Reset Mode
+VP_TIM4_VS_ControllerModeReset.Signal=TIM4_VS_ControllerModeReset
+VP_TIM4_VS_OPM.Mode=OPM_bit
+VP_TIM4_VS_OPM.Signal=TIM4_VS_OPM
+>>>>>>> Stashed changes
 board=custom
 rtos.0.ip=FREERTOS
+isbadioc=false
