@@ -19,10 +19,16 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "usb_device.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "usbd_cdc_if.h"
+#include "string.h"
+#include "ssd1306_fonts.h"
+#include "ssd1306.h"
+#include "ssd1306_conf.h"
+#include "usbd_core.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -60,9 +66,8 @@ I2C_HandleTypeDef hi2c2;
 SPI_HandleTypeDef hspi1;
 SPI_HandleTypeDef hspi3;
 
-PCD_HandleTypeDef hpcd_USB_FS;
-
-osThreadId defaultTaskHandle;
+osThreadId USB_TransmitHandle;
+osThreadId myTask02Handle;
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -76,14 +81,14 @@ static void MX_COMP3_Init(void);
 static void MX_COMP4_Init(void);
 static void MX_COMP5_Init(void);
 static void MX_COMP6_Init(void);
-static void MX_USB_PCD_Init(void);
 static void MX_ADC1_Init(void);
 static void MX_ADC2_Init(void);
 static void MX_ADC4_Init(void);
 static void MX_I2C2_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_SPI3_Init(void);
-void StartDefaultTask(void const * argument);
+void StartUSB_Transmit(void const * argument);
+void StartTask02(void const * argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -91,7 +96,8 @@ void StartDefaultTask(void const * argument);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+char *usbdata = "Poles: Zeroes:";
+char *startupmessage = "STARTING...";
 /* USER CODE END 0 */
 
 /**
@@ -129,14 +135,33 @@ int main(void)
   MX_COMP4_Init();
   MX_COMP5_Init();
   MX_COMP6_Init();
-  MX_USB_PCD_Init();
   MX_ADC1_Init();
   MX_ADC2_Init();
   MX_ADC4_Init();
   MX_I2C2_Init();
   MX_SPI1_Init();
   MX_SPI3_Init();
+
+
+
   /* USER CODE BEGIN 2 */
+
+
+
+
+
+
+  ssd1306_Init();
+  ssd1306_Fill(White);
+  ssd1306_SetCursor(6, 20);
+  ssd1306_WriteString(startupmessage, Font_6x8, Black);
+  ssd1306_UpdateScreen();
+
+  MX_USB_DEVICE_Init();
+
+
+
+
 
   /* USER CODE END 2 */
 
@@ -157,9 +182,13 @@ int main(void)
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
-  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+  /* definition and creation of USB_Transmit */
+  osThreadDef(USB_Transmit, StartUSB_Transmit, osPriorityNormal, 0, 128);
+  USB_TransmitHandle = osThreadCreate(osThread(USB_Transmit), NULL);
+
+  /* definition and creation of myTask02 */
+  osThreadDef(myTask02, StartTask02, osPriorityLow, 0, 128);
+  myTask02Handle = osThreadCreate(osThread(myTask02), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -744,37 +773,6 @@ static void MX_SPI3_Init(void)
 }
 
 /**
-  * @brief USB Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USB_PCD_Init(void)
-{
-
-  /* USER CODE BEGIN USB_Init 0 */
-
-  /* USER CODE END USB_Init 0 */
-
-  /* USER CODE BEGIN USB_Init 1 */
-
-  /* USER CODE END USB_Init 1 */
-  hpcd_USB_FS.Instance = USB;
-  hpcd_USB_FS.Init.dev_endpoints = 8;
-  hpcd_USB_FS.Init.speed = PCD_SPEED_FULL;
-  hpcd_USB_FS.Init.phy_itface = PCD_PHY_EMBEDDED;
-  hpcd_USB_FS.Init.low_power_enable = DISABLE;
-  hpcd_USB_FS.Init.battery_charging_enable = DISABLE;
-  if (HAL_PCD_Init(&hpcd_USB_FS) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USB_Init 2 */
-
-  /* USER CODE END USB_Init 2 */
-
-}
-
-/**
   * Enable DMA controller clock
   */
 static void MX_DMA_Init(void)
@@ -888,22 +886,55 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE END 4 */
 
-/* USER CODE BEGIN Header_StartDefaultTask */
+/* USER CODE BEGIN Header_StartUSB_Transmit */
 /**
-  * @brief  Function implementing the defaultTask thread.
+  * @brief  Function implementing the USB_Transmit thread.
   * @param  argument: Not used
   * @retval None
   */
-/* USER CODE END Header_StartDefaultTask */
-void StartDefaultTask(void const * argument)
+/* USER CODE END Header_StartUSB_Transmit */
+
+void StartUSB_Transmit(void const * argument)
 {
+  /* init code for USB_DEVICE */
   /* USER CODE BEGIN 5 */
+  /* Infinite loop */
+  osDelay(1);
+  for(;;)
+  {
+	  osDelay(1);
+	  if (CDC_Transmit_FS((uint8_t *) usbdata, strlen(usbdata)) != USBD_OK) {
+		  ssd1306_Fill(White);
+	  	  ssd1306_SetCursor(6, 20);
+	  	  ssd1306_WriteString("COM not established", Font_6x8, Black);
+	  	  ssd1306_UpdateScreen();
+	  }
+	  else {
+		  ssd1306_Fill(White);
+	  	  ssd1306_SetCursor(6, 20);
+	  	  ssd1306_WriteString("COM established", Font_6x8, Black);
+	  	  ssd1306_UpdateScreen();
+	  }
+  }
+  /* USER CODE END 5 */
+}
+
+/* USER CODE BEGIN Header_StartTask02 */
+/**
+* @brief Function implementing the myTask02 thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartTask02 */
+void StartTask02(void const * argument)
+{
+  /* USER CODE BEGIN StartTask02 */
   /* Infinite loop */
   for(;;)
   {
     osDelay(1);
   }
-  /* USER CODE END 5 */
+  /* USER CODE END StartTask02 */
 }
 
 /**
