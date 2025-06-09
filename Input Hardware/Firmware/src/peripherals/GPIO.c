@@ -1,4 +1,8 @@
 #include "peripherals/GPIO.h"
+#include "peripherals/ADC.h"
+#include "peripherals/DMA.h"
+
+#include "stm32f3xx_hal.h"
 
 /**
  * @brief GPIO Initialization Function
