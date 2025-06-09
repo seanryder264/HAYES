@@ -1,16 +1,18 @@
 TOP = pixel_generator
+PIPE = pixel_pipe
 
-all: run
+all: sim
 
+# Build simulation executable
 sim:
-	verilator -Wall --cc $(TOP).v --exe wrapper.cpp -CFLAGS "-I/usr/local/share/verilator/include"
+	touch coloured_function.ppm
+	python3 atan_lut_gen.py
+	verilator -Wall --cc $(TOP).v --exe wrapper.cpp
 	make -C obj_dir -j -f V$(TOP).mk V$(TOP)
 
-run: sim
-	obj_dir/V$(TOP)
-	python3 data_to_img.py
-	python3 video_playback.py
-	vlc output_video.mp4
+# Run only the simulation (writes to pipe)
+run: clean sim
+	./obj_dir/V$(TOP)
 
 clean:
-	rm -rf obj_dir output_images *.bin *.png *.mp4
+	rm -rf obj_dir *.bin *.png *.mem *.ppm *.txt
