@@ -1,4 +1,8 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
+Core/Src/main.o: ../Core/Src/main.c \
+ E:/Git/Group\ Project/HAYES/Input\ Hardware/PCB/ioc\ and\ Cube/ioc\ and\ Cube/Drivers/OLED/ssd1306_conf.h \
+ E:/Git/Group\ Project/HAYES/Input\ Hardware/PCB/ioc\ and\ Cube/ioc\ and\ Cube/Drivers/OLED/ssd1306_fonts.h \
+ E:/Git/Group\ Project/HAYES/Input\ Hardware/PCB/ioc\ and\ Cube/ioc\ and\ Cube/Drivers/OLED/ssd1306.h \
+ E:/Git/Group\ Project/HAYES/Input\ Hardware/PCB/ioc\ and\ Cube/ioc\ and\ Cube/Drivers/OLED/ssd1306_conf.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h \
  ../Core/Inc/stm32f3xx_hal_conf.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h \
@@ -33,8 +37,15 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h \
  ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h \
- ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h
-../Core/Inc/main.h:
+ ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h \
+ ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h \
+ ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h \
+ E:/Git/Group\ Project/HAYES/Input\ Hardware/PCB/ioc\ and\ Cube/ioc\ and\ Cube/Drivers/OLED/ssd1306.h \
+ ../Core/Inc/main.h
+E:/Git/Group\ Project/HAYES/Input\ Hardware/PCB/ioc\ and\ Cube/ioc\ and\ Cube/Drivers/OLED/ssd1306_conf.h:
+E:/Git/Group\ Project/HAYES/Input\ Hardware/PCB/ioc\ and\ Cube/ioc\ and\ Cube/Drivers/OLED/ssd1306_fonts.h:
+E:/Git/Group\ Project/HAYES/Input\ Hardware/PCB/ioc\ and\ Cube/ioc\ and\ Cube/Drivers/OLED/ssd1306.h:
+E:/Git/Group\ Project/HAYES/Input\ Hardware/PCB/ioc\ and\ Cube/ioc\ and\ Cube/Drivers/OLED/ssd1306_conf.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:
 ../Core/Inc/stm32f3xx_hal_conf.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_rcc.h:
@@ -70,3 +81,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_pwr_ex.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi.h:
 ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_spi_ex.h:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim.h:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_tim_ex.h:
+E:/Git/Group\ Project/HAYES/Input\ Hardware/PCB/ioc\ and\ Cube/ioc\ and\ Cube/Drivers/OLED/ssd1306.h:
+../Core/Inc/main.h:

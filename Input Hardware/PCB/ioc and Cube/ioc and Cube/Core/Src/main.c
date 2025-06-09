@@ -133,7 +133,15 @@ int main(void)
   MX_SPI1_Init();
   MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
+  ssd1306_Init();
+  ssd1306_Fill(White);
+  ssd1306_UpdateScreen();
 
+  HAL_Delay(50);
+
+  ssd1306_SetCursor(10, 20);
+  ssd1306_WriteString("HELLO WORLD", Font_6x8, Black);
+  ssd1306_UpdateScreen();
   /* USER CODE END 2 */
 
   /* Infinite loop */
