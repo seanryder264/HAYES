@@ -68,6 +68,7 @@ SPI_HandleTypeDef hspi3;
 
 osThreadId USB_TransmitHandle;
 osThreadId LED_WriteHandle;
+osThreadId UI_ReadHandle;
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -89,6 +90,7 @@ static void MX_SPI1_Init(void);
 static void MX_SPI3_Init(void);
 void StartUSB_Transmit(void const * argument);
 void StartLED_Write(void const * argument);
+void StartUI_Read(void const * argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -98,7 +100,35 @@ void StartLED_Write(void const * argument);
 /* USER CODE BEGIN 0 */
 char *usbdata = "Poles: Zeroes: \n";
 char *startupmessage = "STARTING...";
+
 uint8_t led_status = 0b01111111;
+
+int32_t encoder1_count = 0;
+int32_t encoder2_count = 0;
+uint8_t last_a_encoder1 = 0;
+uint8_t last_a_encoder2 = 0;
+
+uint8_t button1_state = 0;
+uint8_t button2_state = 0;
+uint8_t button3_state = 0;
+uint8_t encoder1_button_state = 0;
+uint8_t encoder2_button_state = 0;
+
+uint8_t dpad1_up = 0;
+uint8_t dpad1_down = 0;
+uint8_t dpad1_left = 0;
+uint8_t dpad1_right = 0;
+uint8_t dpad1_button = 0;
+uint8_t dpad2_up = 0;
+uint8_t dpad2_down = 0;
+uint8_t dpad2_left = 0;
+uint8_t dpad2_right = 0;
+uint8_t dpad2_button = 0;
+
+uint8_t a1 = 0;
+uint8_t a2 = 0;
+uint8_t b1 = 0;
+uint8_t b2 = 0;
 /* USER CODE END 0 */
 
 /**
@@ -187,6 +217,10 @@ int main(void)
   /* definition and creation of LED_Write */
   osThreadDef(LED_Write, StartLED_Write, osPriorityLow, 0, 128);
   LED_WriteHandle = osThreadCreate(osThread(LED_Write), NULL);
+
+  /* definition and creation of UI_Read */
+  osThreadDef(UI_Read, StartUI_Read, osPriorityLow, 0, 128);
+  UI_ReadHandle = osThreadCreate(osThread(UI_Read), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -817,7 +851,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(INPUT_COM_GPIO_Port, INPUT_COM_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOC, OUTPUT_COM_Pin|TP906_Pin|TP907_Pin|MUX_A_Pin
+  HAL_GPIO_WritePin(GPIOC, OFFSET_COM_Pin|TP906_Pin|TP907_Pin|MUX_A_Pin
                           |MUX_B_Pin|MUX_C_Pin|MUX_INHIBIT_Pin|UI_RCLK_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
@@ -841,9 +875,9 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(INPUT_COM_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : OUTPUT_COM_Pin TP906_Pin TP907_Pin MUX_A_Pin
+  /*Configure GPIO pins : OFFSET_COM_Pin TP906_Pin TP907_Pin MUX_A_Pin
                            MUX_B_Pin MUX_C_Pin MUX_INHIBIT_Pin UI_RCLK_Pin */
-  GPIO_InitStruct.Pin = OUTPUT_COM_Pin|TP906_Pin|TP907_Pin|MUX_A_Pin
+  GPIO_InitStruct.Pin = OFFSET_COM_Pin|TP906_Pin|TP907_Pin|MUX_A_Pin
                           |MUX_B_Pin|MUX_C_Pin|MUX_INHIBIT_Pin|UI_RCLK_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -870,8 +904,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(PUSH_1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PUSH_3_Pin OFFSET_UPB8_Pin OFFSET_DOWN_Pin */
-  GPIO_InitStruct.Pin = PUSH_3_Pin|OFFSET_UPB8_Pin|OFFSET_DOWN_Pin;
+  /*Configure GPIO pins : PUSH_3_Pin OFFSET_LEFT_Pin OFFSET_DOWN_Pin */
+  GPIO_InitStruct.Pin = PUSH_3_Pin|OFFSET_LEFT_Pin|OFFSET_DOWN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
@@ -937,6 +971,74 @@ void StartLED_Write(void const * argument)
 	HAL_GPIO_WritePin(GPIOC, UI_RCLK_Pin, GPIO_PIN_RESET);
   }
   /* USER CODE END StartLED_Write */
+}
+
+/* USER CODE BEGIN Header_StartUI_Read */
+/**
+* @brief Function implementing the UI_Read thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartUI_Read */
+void StartUI_Read(void const * argument)
+{
+  /* USER CODE BEGIN StartUI_Read */
+  HAL_GPIO_WritePin(GPIOC, OFFSET_COM_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOF, INPUT_COM_Pin, GPIO_PIN_SET);
+
+  /* Infinite loop */
+  for(;;)
+  {
+      /* --- Rotary Encoder 1 --- */
+      HAL_GPIO_WritePin(GPIOC, OFFSET_COM_Pin, GPIO_PIN_RESET);
+      osDelay(1);
+      a1 = HAL_GPIO_ReadPin(GPIOC, SCALE_A_Pin);
+      b1 = HAL_GPIO_ReadPin(GPIOC, SCALE_B_Pin);
+      encoder1_button_state = HAL_GPIO_ReadPin(GPIOC, SCALE_PUSH_Pin);
+
+      if(a1 != last_a_encoder1) {
+        encoder1_count += (b1 != a1) ? 1 : -1;
+      }
+      last_a_encoder1 = a1;
+
+      /* --- D-Pad 2 --- */
+      dpad2_up = HAL_GPIO_ReadPin(GPIOC, OFFSET_UP_Pin);
+      dpad2_down = HAL_GPIO_ReadPin(GPIOB, OFFSET_DOWN_Pin);
+      dpad2_left = HAL_GPIO_ReadPin(GPIOB, OFFSET_LEFT_Pin);
+      dpad2_right = HAL_GPIO_ReadPin(GPIOC, OFFSET_RIGHT_Pin);
+      dpad2_button = HAL_GPIO_ReadPin(GPIOC, OFFSET_CENTER_Pin);
+
+      HAL_GPIO_WritePin(GPIOC, OFFSET_COM_Pin, GPIO_PIN_SET);
+      osDelay(1);
+
+      /* --- Rotary Encoder 2 --- */
+      HAL_GPIO_WritePin(GPIOF, INPUT_COM_Pin, GPIO_PIN_RESET);
+      osDelay(1);
+      a2 = HAL_GPIO_ReadPin(GPIOC, SCALE_A_Pin);
+      b2 = HAL_GPIO_ReadPin(GPIOC, SCALE_B_Pin);
+      encoder2_button_state = HAL_GPIO_ReadPin(GPIOC, SCALE_PUSH_Pin);
+
+      if(a2 != last_a_encoder2) {
+        encoder2_count += (b2 != a2) ? 1 : -1;
+      }
+      last_a_encoder2 = a2;
+
+      /* --- D-Pad 1 --- */
+      dpad1_up = HAL_GPIO_ReadPin(GPIOC, OFFSET_UP_Pin);
+      dpad1_down = HAL_GPIO_ReadPin(GPIOB, OFFSET_DOWN_Pin);
+      dpad1_left = HAL_GPIO_ReadPin(GPIOB, OFFSET_LEFT_Pin);
+      dpad1_right = HAL_GPIO_ReadPin(GPIOC, OFFSET_RIGHT_Pin);
+      dpad1_button = HAL_GPIO_ReadPin(GPIOC, OFFSET_CENTER_Pin);
+
+      HAL_GPIO_WritePin(GPIOF, INPUT_COM_Pin, GPIO_PIN_SET);
+      osDelay(1);
+
+      /* --- Standalone Buttons --- */
+      button1_state = HAL_GPIO_ReadPin(GPIOA, PUSH_1_Pin);
+      button2_state = HAL_GPIO_ReadPin(GPIOB, PUSH_2_Pin);
+      button3_state = HAL_GPIO_ReadPin(GPIOB, PUSH_3_Pin);
+    }
+  /* USER CODE END StartUI_Read */
 }
 
 /**

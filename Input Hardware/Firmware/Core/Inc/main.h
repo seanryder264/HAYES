@@ -65,8 +65,8 @@ void Error_Handler(void);
 #define OFFSET_UP_GPIO_Port GPIOC
 #define INPUT_COM_Pin GPIO_PIN_1
 #define INPUT_COM_GPIO_Port GPIOF
-#define OUTPUT_COM_Pin GPIO_PIN_0
-#define OUTPUT_COM_GPIO_Port GPIOC
+#define OFFSET_COM_Pin GPIO_PIN_0
+#define OFFSET_COM_GPIO_Port GPIOC
 #define SCALE_B_Pin GPIO_PIN_1
 #define SCALE_B_GPIO_Port GPIOC
 #define SCALE_A_Pin GPIO_PIN_2
@@ -137,8 +137,8 @@ void Error_Handler(void);
 #define TX_RCLK_GPIO_Port GPIOB
 #define PUSH_3_Pin GPIO_PIN_7
 #define PUSH_3_GPIO_Port GPIOB
-#define OFFSET_UPB8_Pin GPIO_PIN_8
-#define OFFSET_UPB8_GPIO_Port GPIOB
+#define OFFSET_LEFT_Pin GPIO_PIN_8
+#define OFFSET_LEFT_GPIO_Port GPIOB
 #define OFFSET_DOWN_Pin GPIO_PIN_9
 #define OFFSET_DOWN_GPIO_Port GPIOB
 
