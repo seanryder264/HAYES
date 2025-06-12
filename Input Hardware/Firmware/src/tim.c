@@ -153,8 +153,6 @@ void MX_TIM17_Init(void)
 
 void HAL_TIM_IC_MspInit(TIM_HandleTypeDef* tim_icHandle)
 {
-
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
   if(tim_icHandle->Instance==TIM4)
   {
     /* TIM4 clock enable */
@@ -208,8 +206,6 @@ void HAL_TIM_IC_MspInit(TIM_HandleTypeDef* tim_icHandle)
 
 void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
 {
-
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
   if(tim_baseHandle->Instance==TIM16)
   {
     /* TIM16 clock enable */
