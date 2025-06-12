@@ -918,46 +918,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "OPAMP NOT ALWAYS STABLE\n"
-		(exclude_from_sim no)
-		(at 237.49 142.24 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "067a2974-1d53-4ca3-a68b-51b3bffb073c")
-	)
-	(text "TSV994"
-		(exclude_from_sim no)
-		(at 88.9 17.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5d6e5298-ef28-45ef-aa7b-e04636d9f517")
-	)
-	(text "×17.7 @1MHz\nGain slightly less\nto preserve bandwidth\n\n"
-		(exclude_from_sim no)
-		(at 237.49 147.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "70a82b67-640a-4c0f-80e0-a95e9bfe9023")
-	)
-	(text "This is almost certainly wrong look at the transfer functions\nalso sims rely on a slight approximation of this opamp so \nmay actually be completley incorrect"
-		(exclude_from_sim no)
-		(at 236.22 152.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a266b629-0857-42cc-87a0-4fe476346c3e")
-	)
 	(junction
 		(at 41.91 85.09)
 		(diameter 0)

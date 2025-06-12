@@ -4578,16 +4578,6 @@
 		)
 		(uuid "171f2dcc-de17-45d9-90e2-692b8aacaf99")
 	)
-	(text "Set IO as open-drain"
-		(exclude_from_sim no)
-		(at 120.65 129.54 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1b2d56bc-db7f-4e49-84a0-11e38c82494f")
-	)
 	(text "SPI1_MOSI"
 		(exclude_from_sim no)
 		(at 260.35 99.06 0)
