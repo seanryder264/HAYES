@@ -123,26 +123,7 @@ void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackTy
   * @retval None
   */
 void MX_FREERTOS_Init(void) {
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
-  /* USER CODE BEGIN RTOS_MUTEX */
-  /* add mutexes, ... */
-  /* USER CODE END RTOS_MUTEX */
-
-  /* USER CODE BEGIN RTOS_SEMAPHORES */
-  /* add semaphores, ... */
-  /* USER CODE END RTOS_SEMAPHORES */
-
-  /* USER CODE BEGIN RTOS_TIMERS */
-  /* start timers, add new ones, ... */
-  /* USER CODE END RTOS_TIMERS */
-
-  /* USER CODE BEGIN RTOS_QUEUES */
-  /* add queues, ... */
-  /* USER CODE END RTOS_QUEUES */
-
+  
   /* Create the thread(s) */
   /* definition and creation of USB_Transmit */
   osThreadDef(USB_Transmit, StartUSB_Transmit, osPriorityNormal, 0, 128);
@@ -178,15 +159,15 @@ void StartUSB_Transmit(void const * argument)
   for(;;) {
     osDelay(1);
 	  if (CDC_Transmit_FS((uint8_t *) usbdata, strlen(usbdata)) != USBD_OK) {
-		  ssd1306_Fill(White);
-      ssd1306_SetCursor(6, 20);
-      ssd1306_WriteString("COM not established", Font_6x8, Black);
-      ssd1306_UpdateScreen();
+		  //ssd1306_Fill(White);
+      //ssd1306_SetCursor(6, 20);
+      //ssd1306_WriteString("COM not established", Font_6x8, Black);
+      //ssd1306_UpdateScreen();
 	  } else {
-		  ssd1306_Fill(White);
-      ssd1306_SetCursor(6, 20);
-      ssd1306_WriteString("COM established", Font_6x8, Black);
-      ssd1306_UpdateScreen();
+		  //ssd1306_Fill(White);
+      //ssd1306_SetCursor(6, 20);
+      //ssd1306_WriteString("COM established", Font_6x8, Black);
+      //ssd1306_UpdateScreen();
 	  }
   }
   /* USER CODE END StartUSB_Transmit */

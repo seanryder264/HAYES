@@ -10,5 +10,6 @@ for e in [env, projenv, DefaultEnvironment()]:
         LINKFLAGS=[
             "-mfloat-abi=hard",
             "-mfpu=fpv5-sp-d16",
+            "-u_printf_float",
         ]
     )
