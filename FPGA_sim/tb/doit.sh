@@ -52,9 +52,11 @@ for file in "${files[@]}"; do
     # Special case override
     [[ "$name" == "wrapper.cpp" ]] && name="pixel_generator"
 
+    python3 "$RTL_FOLDER/log_lut_gen.py" "$RTL_FOLDER/log_lut.mem"
+
     # Compile with Verilator
-    verilator -Wall -trace \
-        -cc "$RTL_FOLDER/$name.sv" \
+    verilator -Wall -sv -trace \
+        -cc "$RTL_FOLDER/$name.v" \
         --exe "$file" \
         -y "$RTL_FOLDER" \
         --prefix "Vdut" \
@@ -67,7 +69,6 @@ for file in "${files[@]}"; do
         continue
     fi
 
-    # Build generated C++ code
     make -j -C obj_dir/ -f Vdut.mk
     if [[ $? -ne 0 ]]; then
         echo "${RED}❌ Build failed for $name${RESET}"
@@ -75,8 +76,13 @@ for file in "${files[@]}"; do
         continue
     fi
 
-    # Run simulation
-    ./obj_dir/Vdut
+    cp "$RTL_FOLDER/log_lut.mem" obj_dir/
+
+    # Run simulation from inside obj_dir so $readmemb("log_lut.mem") works
+    cd obj_dir/
+    ./Vdut
+    cd ..
+
     if [[ $? -eq 0 ]]; then
         echo "${GREEN}✅ Passed${RESET}"
         ((passes++))
