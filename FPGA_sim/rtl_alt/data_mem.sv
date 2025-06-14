@@ -1,11 +1,12 @@
 module data_mem #(
-    parameter  REG_FILE_SIZE = 8,
-    parameter  AXI_LITE_ADDR_WIDTH = 8
+    parameter int DATA_WIDTH = 16,
+    parameter logic [5:0] REG_FILE_SIZE = 6'd33,
+    parameter int AXI_LITE_ADDR_WIDTH = 8
 )(
     input   aclk,
     input   resetn,
 
-    output reg [(32 * REG_FILE_SIZE) - 1:0]  regfile_flat,
+    output logic [DATA_WIDTH - 1:0] regfile [0 : REG_FILE_SIZE-1],
 
     /* verilator lint_off UNUSED */
     // read address 
@@ -25,18 +26,17 @@ module data_mem #(
     output          bvalid,
 
     // read data & response
-    output [31:0]   rdata,
+    output [DATA_WIDTH-1:0]   rdata,
     input           rready,
     output [1:0]    rresp,
     output          rvalid,
 
     // write data
-    input  [31:0]   wdata,
+    input  [DATA_WIDTH-1:0]   wdata,
     output          wready,
     input           wvalid
 );
 
-    localparam int REG_ADDR_WIDTH = $bits(REG_FILE_SIZE);
     localparam REG_FILE_AWIDTH = $clog2(REG_FILE_SIZE);
 
     localparam AWAIT_WADD_AND_DATA = 3'b000;
@@ -53,28 +53,60 @@ module data_mem #(
     localparam AXI_ERR = 2'b10;
 
     reg [REG_FILE_AWIDTH-1:0]           writeAddr, readAddr;
-    reg [31:0]                          readData, writeData;
+    reg [DATA_WIDTH-1:0]                readData, writeData;
     reg [1:0]                           readState = AWAIT_RADD;
     reg [2:0]                           writeState = AWAIT_WADD_AND_DATA;
-    reg [31:0]                          regfile [REG_FILE_SIZE-1:0];
-
-    integer i;
-
-    always @* begin
-        for (i = 0; i < REG_FILE_SIZE; i = i + 1) begin
-            assign regfile_flat[i*32 +: 32] = regfile[i];
-        end
-    end
 
     initial begin
-        regfile[0] = {16'd500, 16'd500};
-        regfile[1] = {-16'd200, -16'd100};
-        regfile[2] = {16'd400, 16'd300};
-        regfile[3] = {-16'd900, 16'd500};
-        regfile[4] = {16'd20, 16'd150};
-        regfile[5] = {-16'd50, -16'd300}; 
-        regfile[6] = {16'd400, -16'd200};
-        regfile[7] = {-16'd50, 16'd10};
+        regfile[0] = {8'd1, 8'd0};
+
+        regfile[1] = 16'd250; 
+        regfile[2] = 16'd0;
+
+        regfile[3] = 16'd500;
+        regfile[4] = 16'd500;
+
+        regfile[5] = 16'd400;
+        regfile[6] = 16'd300;
+        
+        regfile[7] = 16'd400;
+        regfile[8] = 16'd300;
+
+        regfile[9] = 16'd20;
+        regfile[10] = 16'd150;
+
+        regfile[11] = 16'd20;
+        regfile[12] = 16'd150;
+
+        regfile[13] = 16'd400;
+        regfile[14] = -16'd200;
+
+        regfile[15] = 16'd400;
+        regfile[16] = -16'd200;
+
+        regfile[17] = -16'd200;
+        regfile[18] = -16'd100;
+
+        regfile[19] = -16'd200;
+        regfile[20] = -16'd100;
+
+        regfile[21] = -16'd900;
+        regfile[22] = 16'd500;
+    
+        regfile[23] = -16'd900;
+        regfile[24] = 16'd500;
+
+        regfile[25] = -16'd50;
+        regfile[26] = -16'd300;
+
+        regfile[27] = -16'd50;
+        regfile[28] = -16'd300;
+
+        regfile[29] = -16'd50;
+        regfile[30] = -16'd10;
+
+        regfile[31] = -16'd50;
+        regfile[32] = -16'd10;
     end
 
 
@@ -114,7 +146,7 @@ module data_mem #(
     end
 
     assign arready = (readState == AWAIT_RADD);
-    assign rresp = ({{(REG_ADDR_WIDTH-3){1'b0}}, readAddr} < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
+    assign rresp = (readAddr < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
     assign rvalid = (readState == AWAIT_READ);
     assign rdata = readData;
 
@@ -182,6 +214,6 @@ module data_mem #(
     assign awready = (writeState == AWAIT_WADD_AND_DATA || writeState == AWAIT_WADD);
     assign wready = (writeState == AWAIT_WADD_AND_DATA || writeState == AWAIT_WDATA);
     assign bvalid = (writeState == AWAIT_RESP);
-    assign bresp = ({{(REG_ADDR_WIDTH-3){1'b0}}, writeAddr} < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
+    assign bresp = ( writeAddr < REG_FILE_SIZE) ? AXI_OK : AXI_ERR;
 
 endmodule
