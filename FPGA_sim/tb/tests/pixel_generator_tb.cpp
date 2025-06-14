@@ -14,18 +14,37 @@ class PixelGeneratorTestbench : public BaseTestbench
 protected:
     void initializeInputs() override
     {
-    top->axi_resetn = 0;
-    top->periph_resetn = 0;
-    top->out_stream_aclk = 0;
-    top->s_axi_lite_aclk = 0;
-    top->out_stream_tready = 1;
+        top->periph_resetn = 1;
+        
+        runSimulation(1);
 
-    top->out_stream_aclk = !top->out_stream_aclk;
-    top->s_axi_lite_aclk = top->out_stream_aclk;
-    top->eval();
-    
-    top->axi_resetn = 1;
-    top->periph_resetn = 1;
+        top->periph_resetn = 0;
+
+        runSimulation(1);
+
+        top->periph_resetn = 1;
+        top->out_stream_tready = 1;
+    }
+
+    void runSimulation(int cycles = 1)
+    {
+        for (int i = 0; i < cycles; i++)
+        {
+            for (int clk = 0; clk < 2; clk++)
+            {
+                top->eval();
+#ifndef __APPLE__
+                tfp->dump(2 * ticks + clk);
+#endif
+                top->out_stream_aclk = !top->out_stream_aclk;
+            }
+            ticks++;
+
+            if (Verilated::gotFinish())
+            {
+                exit(0);
+            }
+        }
     }
 };
 
@@ -43,11 +62,11 @@ TEST_F(PixelGeneratorTestbench, PixelGenerator0WorksTest)
     const int max_pixels = WIDTH * HEIGHT;
     int pixels = 0;
 
+    initializeInputs();
+
     while (pixels < max_pixels) {
 
-        top->out_stream_aclk = 1;
-        top->s_axi_lite_aclk = 1;
-        top->eval();
+        runSimulation(1);
 
         if (top->final_valid){
             uint8_t red   = top->r;
@@ -57,12 +76,6 @@ TEST_F(PixelGeneratorTestbench, PixelGenerator0WorksTest)
             output << (int)red << " " << (int)green << " " << (int)blue << "\n";
             pixels++;
         }
-
-        top->out_stream_aclk = 0;
-        top->s_axi_lite_aclk = 0;
-        top->eval();
-        tfp->dump(ticks);
-        ticks++;
     }
 
     output.close();
