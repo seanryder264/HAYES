@@ -23,8 +23,21 @@ extern TIM_HandleTypeDef htim15;
 extern TIM_HandleTypeDef htim16;
 extern TIM_HandleTypeDef htim17;
 
+#define N_SAMPLES 256
+
+#define EV_ADC0   (1UL<<0)
+#define EV_IC0    (1UL<<1)
+#define EV_ADC1   (1UL<<2)
+#define EV_IC1    (1UL<<3)
+#define EV_ADC2   (1UL<<4)
+#define EV_IC2    (1UL<<5)
+#define EV_ADC3   (1UL<<6)
+#define EV_IC3    (1UL<<7)
+
+#define EV_ALL    (EV_ADC0|EV_IC0|EV_ADC1|EV_IC1|EV_ADC2|EV_IC2|EV_ADC3|EV_IC3)
+
 typedef struct {
-    int16_t ADC_buffer[256];
+    int16_t ADC_buffer[N_SAMPLES];
     uint16_t IC_buffer[2];
 } measure_sample;
 
