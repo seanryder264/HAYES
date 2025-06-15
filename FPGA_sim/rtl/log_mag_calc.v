@@ -8,18 +8,17 @@ module log_mag_calc (
     output reg [7:0] log_mag
 );
 
-    //Pipeline 1
-    reg [31:0] x_sqr = 32'b0;
-    reg [31:0] y_sqr = 32'b0;
+    reg [31:0] x_sqr;
+    reg [31:0] y_sqr;
 
-    reg [32:0] mag_sqr = 33'b0;
+    reg [32:0] mag_sqr;
 
-    integer i = 32;
-    reg [5:0] msb_pos = 6'b0;
-    reg found = 0;
+    integer i;
+    reg [5:0] msb_pos;
+    reg found;
 
     /* verilator lint_off UNUSED */
-    reg [32:0] norm_mag_full  = 33'b0;
+    reg [32:0] norm_mag_full;
     /* verilator lint_on UNUSED */
 
     reg [7:0] log_lut [0:255];
@@ -38,7 +37,7 @@ module log_mag_calc (
         end
     end // STAGE 1
 
-    always_ff @(posedge clk) begin
+    always @(posedge clk) begin
         if (!resetn) begin
             mag_sqr <= 'b0;
         end else if (ready) begin

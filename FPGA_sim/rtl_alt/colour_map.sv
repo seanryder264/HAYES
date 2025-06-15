@@ -30,12 +30,12 @@ module colour_map (
 
     always_comb begin
         case (hue_region)
-            RED_YELLOW    : begin r_hue = 8'd255;        g_hue = mod_hue_8;     b_hue = 8'd0;         end
-            YELLOW_GREEN  : begin r_hue = ~mod_hue_8;    g_hue = 8'd255;        b_hue = 8'd0;         end
-            GREEN_CYAN    : begin r_hue = 8'd0;          g_hue = 8'd255;        b_hue = mod_hue_8;    end
-            CYAN_BLUE     : begin r_hue = 8'd0;          g_hue = ~mod_hue_8;    b_hue = 8'd255;       end
-            BLUE_MAGENTA  : begin r_hue = mod_hue_8;     g_hue = 8'd0;          b_hue = 8'd255;       end
-            MAGENTA_RED   : begin r_hue = 8'd255;        g_hue = 8'd0;          b_hue = ~mod_hue_8;   end
+            RED_YELLOW    : begin r_hue = 8'd255;        g_hue = increasing;    b_hue = 8'd0;         end
+            YELLOW_GREEN  : begin r_hue = decreasing;    g_hue = 8'd255;        b_hue = 8'd0;         end
+            GREEN_CYAN    : begin r_hue = 8'd0;          g_hue = 8'd255;        b_hue = increasing;   end
+            CYAN_BLUE     : begin r_hue = 8'd0;          g_hue = decreasing;    b_hue = 8'd255;       end
+            BLUE_MAGENTA  : begin r_hue = increasing;    g_hue = 8'd0;          b_hue = 8'd255;       end
+            MAGENTA_RED   : begin r_hue = 8'd255;        g_hue = 8'd0;          b_hue = decreasing;   end
             default       : begin r_hue = 8'd255;        g_hue = 8'd255;        b_hue = 8'd255;       end
         endcase
     end

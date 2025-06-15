@@ -32,7 +32,7 @@ module coordinate_gen (
 
     always @(posedge clk) begin
         if (!resetn) begin
-            x <= X_MIN;
+            x <= X_MIN - 1;
             y <= Y_MAX;
             valid <= 0;
         end else if (ready) begin

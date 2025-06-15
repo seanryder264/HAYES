@@ -42,7 +42,7 @@ output          s_axi_lite_wready,
 input           s_axi_lite_wvalid,
 
 output [7:0] r, g, b,
-output final_valid
+output final_valid, ready, first
 
 );
 
@@ -176,7 +176,7 @@ assign s_axi_lite_bresp = ({1'b0, writeAddr} < REG_FILE_SIZE) ? AXI_OK : AXI_ERR
 
 wire signed [15:0] z_re;
 wire signed [15:0] z_im;
-wire first, lastx, ready, valid_coord;
+wire lastx, valid_coord;
 
 wire signed [31:0] reg_word [REG_FILE_SIZE-1:0];
 wire signed [31:0] poles_and_zeros [REG_FILE_SIZE-1:0];
@@ -185,7 +185,7 @@ wire signed [15:0] w_im [REG_FILE_SIZE-1:0];
 wire signed [15:0] diff_re [REG_FILE_SIZE-1:0];
 wire signed [15:0] diff_im [REG_FILE_SIZE-1:0];
 wire [15:0] phase [REG_FILE_SIZE-1:0];
-wire [7:0] log_mag [REG_FILE_SIZE-1:0];
+reg [7:0] log_mag [REG_FILE_SIZE-1:0];
 wire [(16 * REG_FILE_SIZE) - 1:0] phase_flat;
 wire [(8 * REG_FILE_SIZE) - 1:0] log_mag_flat;
 
@@ -201,12 +201,10 @@ generate
     for (i = 0; i < 8; i = i + 1) begin
         assign reg_word[i] = regfile[i];
 
-
         assign poles_and_zeros[i] = reg_word[i];
 
         assign w_re[i] = poles_and_zeros[i][31:16];
         assign w_im[i] = poles_and_zeros[i][15:0];
-
 
         //Might want to reverse order of subtraction inside submodule
         complex_sub complex_sub_inst_i (
@@ -219,13 +217,13 @@ generate
         );
 
         // Look over this
-        // atan_approx atan_approx_inst_i (
-        //     .clk(out_stream_aclk),
-        //     .resetn(periph_resetn),
-        //     .ready(ready),
-        //     .x(diff_re[i]), .y(diff_im[i]),
-        //     .angle(phase[i])
-        // );
+        atan_approx atan_approx_inst_i (
+            .clk(out_stream_aclk),
+            .resetn(periph_resetn),
+            .ready(ready),
+            .x(diff_re[i]), .y(diff_im[i]),
+            .angle(phase[i])
+        );
 
         // wire [17:0] phase_temp;
 
@@ -238,9 +236,6 @@ generate
         
         // assign phase[i] = phase_temp[15:0];
 
-        assign phase[i] = 0;
-
-        wire [7:0] mag_temp;
         //Added mag_temp wire in case it decides to optimise a register away
         //Look over this
         log_mag_calc mag_calc_inst_i (
@@ -248,10 +243,9 @@ generate
             .resetn(periph_resetn),
             .ready(ready),
             .x(diff_re[i]), .y(diff_im[i]),
-            .log_mag(mag_temp)
+            .log_mag(log_mag[i])
         );
-
-        assign log_mag[i] = mag_temp;
+      
 
         assign phase_flat[i*16 +: 16] = phase[i];
         assign log_mag_flat[i*8 +: 8] = log_mag[i];
@@ -300,7 +294,7 @@ colour_app colour_app_inst(
     .red(r), .green(g), .blue(b) 
 );
 
-localparam PIPE_LATENCY = 29; // Total latency of the data path
+localparam PIPE_LATENCY = 8; // Total latency of the data path
 
 reg [PIPE_LATENCY:0] valid_pipe;
 reg [PIPE_LATENCY:0] first_pipe;
@@ -323,9 +317,6 @@ end
 assign final_valid = valid_pipe[PIPE_LATENCY];
 wire final_first = first_pipe[PIPE_LATENCY];
 wire final_lastx = lastx_pipe[PIPE_LATENCY];
-
-
-
 
 //Do the wiring for packer: Valid needs to be redone
 packer pixel_packer(    .aclk(out_stream_aclk),

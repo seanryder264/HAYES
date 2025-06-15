@@ -14,7 +14,7 @@ class PixelGeneratorTestbench : public BaseTestbench
 protected:
     void initializeInputs() override
     {
-        top->periph_resetn = 1;
+        top->periph_resetn = 0;
         
         runSimulation(1);
 
@@ -68,7 +68,7 @@ TEST_F(PixelGeneratorTestbench, PixelGenerator0WorksTest)
 
         runSimulation(1);
 
-        if (top->final_valid){
+        if (top->final_valid && top->ready){
             uint8_t red   = top->r;
             uint8_t green = top->g;
             uint8_t blue  = top->b;

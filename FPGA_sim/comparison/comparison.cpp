@@ -8,22 +8,17 @@
 #include <chrono>
 #include <complex>
 
-const int WIDTH = 2048;
-const int HEIGHT = 2048;
+const int WIDTH = 640;
+const int HEIGHT = 480;
 constexpr double pi = 3.14159265358979323846;
 
 std::vector<std::complex<double>> poles_zeros = 
-{{500, 500}, {500, 500}, 
-{400, 300}, {400, 300},
-{20, 150}, {20, 150},
-{400, -200}, {400, -200}, 
-{-200,-100}, {-200, -100},                                              
-{-900, 500}, {-900, 500},                           
-{-50, -300}, {-50, -300},                            
-{-50, 10}, {-50, 10}};
+{{160.0, 120.0}, {-160.0, 120.0}, {160.0, -120.0}, {-160.0, -120.0}};
 
 void phase_to_rgb(double phase, int& r, int& g, int& b) {
     double hue = (phase + M_PI) / (2 * M_PI); // [0,1]
+    hue -= 0.5; // shift so 0 phase = red
+    if (hue < 0) hue += 1.0; // wrap around
     double s = 1.0, v = 1.0;
     double c = v * s;
     double x = c * (1 - fabs(fmod(hue * 6, 2) - 1));
@@ -43,13 +38,16 @@ void phase_to_rgb(double phase, int& r, int& g, int& b) {
 int main() {
     auto start = std::chrono::high_resolution_clock::now();
 
-    const char* ppm_filename = "comparison_temp.ppm";
+    const char* ppm_filename = "comparison.ppm";
     std::ofstream ofs(ppm_filename);
     ofs << "P3\n" << WIDTH << " " << HEIGHT << "\n255\n";
 
     for (int y = 0; y < HEIGHT; ++y){
         for (int x = 0; x < WIDTH; ++x){
-            std::complex<double> z(x - WIDTH / 2.0, (HEIGHT - 1 - y) - HEIGHT / 2.0);
+            std::complex<double> z(
+                x - (WIDTH - 1) / 2.0,
+                (HEIGHT - 1 - y) - (HEIGHT - 1) / 2.0
+            );
             std::vector<std::complex<double>> w(poles_zeros.size());
             std::vector<double> theta(poles_zeros.size());
             std::vector<double> r(poles_zeros.size());
@@ -65,9 +63,9 @@ int main() {
                 w[i] = z - poles_zeros[i];
 
                 theta[i] = std::arg(w[i]);
-                r[i] = (std::log2(std::abs(w[i])) - std::floor(std::log2(std::abs(w[i]))));
+                r[i] = (std::log2(std::norm(w[i])) - std::floor(std::log2(std::norm(w[i]))));
 
-                size_t no_zeros = 8;
+                size_t no_zeros = 2;
             
                 if (i < no_zeros){
                     sum_zeros_phase += theta[i];
@@ -102,7 +100,7 @@ int main() {
     std::chrono::duration<double> elapsed = end - start;
     std::cout << "Frame generation time: " << elapsed.count() << " seconds\n";
 
-        int ret = std::system("convert comparison_temp.ppm comparison.png");
+        int ret = std::system("convert comparison.ppm comparison.png");
     if (ret != 0) {
         std::cerr << "Error: Could not convert PPM to PNG. Make sure ImageMagick is installed.\n";
         return 1;

@@ -14,15 +14,14 @@ module colour_app (
     // =================================================================
     // Pipeline 1: Calculate Hue and Sector from 16-bit phase
     // =================================================================
-    wire [15:0] hue_s1 = phase + 16'd32768;
+    wire [15:0] hue_s1 = phase;
     /* verilator lint_off WIDTH */
-    wire [2:0]  sector_s1 = hue_s1[15:8] / 43;
+    wire [2:0] sector_s1 = phase / 16'd10922;
     /* verilator lint_on WIDTH */
 
     // Pipeline registers for stage 2
     reg [15:0] hue_s2;
     reg [2:0]  sector_s2;
-    reg [7:0]  log_mag_s2; // Changed to 8 bits
 
     // =================================================================
     // Pipeline 2: Calculate full-brightness RGB based on hue
@@ -71,13 +70,12 @@ module colour_app (
             // Stage 1 -> Stage 2
             hue_s2      <= hue_s1;
             sector_s2   <= sector_s1;
-            log_mag_s2  <= log_mag;
-            
+
             // Stage 2 -> Stage 3
             r1_s3         <= r1_s2;
             g1_s3         <= g1_s2;
             b1_s3         <= b1_s2;
-            brightness_s3 <= log_mag_s2;
+            brightness_s3 <= log_mag;
 
             // Stage 3 -> Output
             // Scale the 24-bit product down to 8 bits by taking the top 8 bits.

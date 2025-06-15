@@ -53,6 +53,7 @@ for file in "${files[@]}"; do
     [[ "$name" == "wrapper.cpp" ]] && name="pixel_generator"
 
     python3 "$RTL_FOLDER/log_lut_gen.py" "$RTL_FOLDER/log_lut.mem"
+    python3 "$RTL_FOLDER/atan_lut_gen.py" "$RTL_FOLDER/atan_lut.mem"
 
     # Compile with Verilator
     verilator -Wall -sv -trace \
@@ -77,6 +78,7 @@ for file in "${files[@]}"; do
     fi
 
     cp "$RTL_FOLDER/log_lut.mem" obj_dir/
+    cp "$RTL_FOLDER/atan_lut.mem" obj_dir/
 
     # Run simulation from inside obj_dir so $readmemb("log_lut.mem") works
     cd obj_dir/
